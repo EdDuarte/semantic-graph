@@ -83,46 +83,46 @@ class grafo:
 
     def triplestodotOp(self):
         print ("triplestodot")
-        out = file("graph.dot", 'wb')
+        out = file("graph.dot", 'w')
         out.write('digraph "Trabalho Prático - Web Semântica" {\n')
         out.write('\tlabelloc="t"\n'
                   '\tlabel="Trabalho Prático - Web Semântica"\n')
         for sub, pre, obj in self.triples((None, None, None)):
             if pre == "name":
-                out.write('\t%s [shape=circle, color="#FF4040"]\n' % (obj.encode('utf-8')))
-                out.write('\t%s -> %s [label="%s"]\n' % (sub.encode('utf-8'), obj.encode('utf-8'), pre.encode('utf-8')))
+                out.write('\t%s [shape=circle, color="#FF4040"]\n' % (obj))
+                out.write('\t%s -> %s [label="%s"]\n' % (sub, obj, pre))
             elif pre == "is_son":
                 out.write('\t%s -> %s [label="%s", color="#0090FF"]\n' % (
-                    sub.encode('utf-8'), obj.encode('utf-8'), pre.encode('utf-8')))
+                    sub, obj, pre))
             elif pre == "is_parent":
                 out.write('\t%s -> %s [label="%s", color="#F58735"]\n' % (
-                    sub.encode('utf-8'), obj.encode('utf-8'), pre.encode('utf-8')))
+                    sub, obj, pre))
             elif pre == "is_grandparent":
                 out.write('\t%s -> %s [label="%s", color="#21988C"]\n' % (
-                    sub.encode('utf-8'), obj.encode('utf-8'), pre.encode('utf-8')))
+                    sub, obj, pre))
             elif pre == "is_great_grandparent":
                 out.write('\t%s -> %s [label="%s", color="#8D430C"]\n' % (
-                    sub.encode('utf-8'), obj.encode('utf-8'), pre.encode('utf-8')))
+                    sub, obj, pre))
             elif pre == "is_grandchildren":
                 out.write('\t%s -> %s [label="%s", color="#AB754E"]\n' % (
-                    sub.encode('utf-8'), obj.encode('utf-8'), pre.encode('utf-8')))
+                    sub, obj, pre))
             elif pre == "is_brother":
                 out.write('\t%s -> %s [label="%s", color="#8727A2"]\n' % (
-                    sub.encode('utf-8'), obj.encode('utf-8'), pre.encode('utf-8')))
+                    sub, obj, pre))
             elif pre == "is_couple":
                 out.write('\t%s -> %s [label="%s", color="#F5E635"]\n' % (
-                    sub.encode('utf-8'), obj.encode('utf-8'), pre.encode('utf-8')))
+                    sub, obj, pre))
             elif pre == "is_cousin":
                 out.write('\t%s -> %s [label="%s", color="#4A095D"]\n' % (
-                    sub.encode('utf-8'), obj.encode('utf-8'), pre.encode('utf-8')))
+                    sub, obj, pre))
             elif pre == "is_uncle":
                 out.write('\t%s -> %s [label="%s", color="#8D0F0C"]\n' % (
-                    sub.encode('utf-8'), obj.encode('utf-8'), pre.encode('utf-8')))
+                    sub, obj, pre))
             elif pre == "is_nephew":
                 out.write('\t%s -> %s [label="%s", color="#AB5E4E"]\n' % (
-                    sub.encode('utf-8'), obj.encode('utf-8'), pre.encode('utf-8')))
+                    sub, obj, pre))
             else:
-                out.write('\t%s -> %s [label="%s"]\n' % (sub.encode('utf-8'), obj.encode('utf-8'), pre.encode('utf-8')))
+                out.write('\t%s -> %s [label="%s"]\n' % (sub, obj, pre))
 
         out.write('\t{'
                   '\t\trank = sink;\n'
