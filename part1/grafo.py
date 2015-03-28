@@ -6,7 +6,7 @@ from PIL import Image
 import pydot
 
 
-class grafo:
+class Grafo:
     # indice: [(sub, [(pred, set([obj]))])]
     def __init__(self):
         self._spo = []
@@ -83,7 +83,7 @@ class grafo:
 
     def triplestodotOp(self):
         print ("triplestodot")
-        out = file("graph.dot", 'w')
+        out = file("graph.dot", "w")
         out.write('digraph "Trabalho Prático - Web Semântica" {\n')
         out.write('\tlabelloc="t"\n'
                   '\tlabel="Trabalho Prático - Web Semântica"\n')
@@ -281,8 +281,13 @@ class grafo:
     def load(self, filename):
         doc = open(filename, "r")
         reader = csv.reader(doc)
-        for sub, pre, obj in reader:
-            self.add(sub, pre, obj)
+
+        for triple in reader:
+            if len(triple) == 3:
+                self.add(triple[0], triple[1], triple[2])
+
+        #for sub, pre, obj in reader:
+            #self.add(sub, pre, obj)
         doc.close()
 
     # guarda o conteudo num ficheiro .csv
@@ -346,200 +351,12 @@ class grafo:
                 bindings = newb              # sbstituiu lista por nova
         return bindings
 
-    def applyInferenceParent(self, rule):
-        graph = grafo()
-        queries = rule.getQueries()
-        bindings = []
-        for query in queries:
-            bindings += self.query(query)
-        for b in bindings:
-            pai = b.get('idPai')
-            filho = b.get('idFilho')
-            new_triples = rule.makeTriples(pai, filho)
-            for triple in new_triples:
-                if triple[0] == None:
-                    print ('error')
-                elif triple[1] == None:
-                    print ('error')
-                elif triple[2] == None:
-                    print ('error')
-                else:
-                    graph.add((triple[0], triple[1], triple[2]))
-        graph.save('Inferences/Parent.csv')
-
-    def applyInferenceGrandParent(self, rule):
-        graph = grafo()
-        queries = rule.getQueries()
-        bindings = []
-        for query in queries:
-            bindings += self.query(query)
-        for b in bindings:
-            avo = b.get('idAvo')
-            neto = b.get('idNeto')
-            new_triples = rule.makeTriples(avo, neto)
-            for triple in new_triples:
-                if triple[0] == None:
-                    print ('error')
-                elif triple[1] == None:
-                    print ('error')
-                elif triple[2] == None:
-                    print ('error')
-                else:
-                    graph.add((triple[0], triple[1], triple[2]))
-
-        graph.save('Inferences/GrandParent.csv')
-
-    def applyInferenceGreatGrandParent(self, rule):
-        graph = grafo()
-        queries = rule.getQueries()
-        bindings = []
-        for query in queries:
-            bindings += self.query(query)
-        for b in bindings:
-            bisavo = b.get('idBisAvo')
-            neto = b.get('idNeto')
-            new_triples = rule.makeTriples(bisavo, neto)
-            for triple in new_triples:
-                if triple[0] == None:
-                    print ('error')
-                elif triple[1] == None:
-                    print ('error')
-                elif triple[2] == None:
-                    print ('error')
-                else:
-                    graph.add((triple[0], triple[1], triple[2]))
-
-        graph.save('Inferences/GreatGrandParent.csv')
-
-    def applyInferenceGrandChildren(self, rule):
-        graph = grafo()
-        queries = rule.getQueries()
-        bindings = []
-        for query in queries:
-            bindings += self.query(query)
-        for b in bindings:
-            avo = b.get('idAvo')
-            neto = b.get('idNeto')
-            new_triples = rule.makeTriples(avo, neto)
-            for triple in new_triples:
-                if triple[0] == None:
-                    print ('error')
-                elif triple[1] == None:
-                    print ('error')
-                elif triple[2] == None:
-                    print ('error')
-                else:
-                    graph.add((triple[0], triple[1], triple[2]))
-
-        graph.save('Inferences/GrandChildren.csv')
-
-    def applyInferenceBrother(self, rule):
-        graph = grafo()
-        queries = rule.getQueries()
-        bindings = []
-        for query in queries:
-            bindings += self.query(query)
-        for b in bindings:
-            irmao1 = b.get('idIrmao1')
-            irmao2 = b.get('idIrmao2')
-            if (irmao1 != irmao2):
-                new_triples = rule.makeTriples(irmao1, irmao2)
-                for triple in new_triples:
-                    if triple[0] == None:
-                        print ('error')
-                    elif triple[1] == None:
-                        print ('error')
-                    elif triple[2] == None:
-                        print ('error')
-                    else:
-                        graph.add((triple[0], triple[1], triple[2]))
-
-        graph.save('Inferences/Brother.csv')
-
-    def applyInferenceCouple(self, rule):
-        graph = grafo()
-        queries = rule.getQueries()
-        bindings = []
-        for query in queries:
-            bindings += self.query(query)
-        for b in bindings:
-            pessoa1 = b.get('idCouple1')
-            pessoa2 = b.get('idCouple2')
-            new_triples = rule.makeTriples(pessoa1, pessoa2)
-            for triple in new_triples:
-                if triple[0] == None:
-                    print ('error')
-                elif triple[1] == None:
-                    print ('error')
-                elif triple[2] == None:
-                    print ('error')
-                else:
-                    graph.add((triple[0], triple[1], triple[2]))
-
-        graph.save('Inferences/Couple.csv')
-
-    def applyInferenceCousin(self, rule):
-        graph = grafo()
-        queries = rule.getQueries()
-        bindings = []
-        for query in queries:
-            bindings += self.query(query)
-        for b in bindings:
-            primo1 = b.get('idPrimo1')
-            primo2 = b.get('idPrimo2')
-            new_triples = rule.makeTriples(primo1, primo2)
-            for triple in new_triples:
-                if triple[0] == None:
-                    print ('error')
-                elif triple[1] == None:
-                    print ('error')
-                elif triple[2] == None:
-                    print ('error')
-                else:
-                    graph.add((triple[0], triple[1], triple[2]))
-
-        graph.save('Inferences/Cousin.csv')
-
-    def applyInferenceUncle(self, rule):
-        graph = grafo()
-        queries = rule.getQueries()
-        bindings = []
-        for query in queries:
-            bindings += self.query(query)
-        for b in bindings:
-            tio = b.get('idTio')
-            sobrinho = b.get('idSobrinho')
-            new_triples = rule.makeTriples(tio, sobrinho)
-            for triple in new_triples:
-                if triple[0] == None:
-                    print ('error')
-                elif triple[1] == None:
-                    print ('error')
-                elif triple[2] == None:
-                    print ('error')
-                else:
-                    graph.add((triple[0], triple[1], triple[2]))
-
-        graph.save('Inferences/Uncle.csv')
-
-    def applyInferenceNephew(self, rule):
-        graph = grafo()
-        queries = rule.getQueries()
-        bindings = []
-        for query in queries:
-            bindings += self.query(query)
-        for b in bindings:
-            tio = b.get('idTio')
-            sobrinho = b.get('idSobrinho')
-            new_triples = rule.makeTriples(tio, sobrinho)
-            for triple in new_triples:
-                if triple[0] == None:
-                    print ('error')
-                elif triple[1] == None:
-                    print ('error')
-                elif triple[2] == None:
-                    print ('error')
-                else:
-                    graph.add((triple[0], triple[1], triple[2]))
-
-        graph.save('Inferences/Nephew.csv')
+    def applyinference(self,rule):
+            queries = rule.getqueries()
+            bindings=[]
+            for query in queries:
+                bindings += self.query(query)
+            for b in bindings:
+                new_triples = rule.maketriples(b)
+                for s, p, o in new_triples:
+                    self.add(s, p, o)
