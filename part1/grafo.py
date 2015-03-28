@@ -264,7 +264,7 @@ class grafo:
                                 for retSub, tuple2 in tuple[1]:
                                     #for retPre in tuple2[1]:
                                     for retPre in tuple2:
-                                        result.append(retSub, retPre, obj)
+                                        result.append((retSub, retPre, obj))
                     else:
                         # temos (None, None, None)
                         for tuple in self._spo:
