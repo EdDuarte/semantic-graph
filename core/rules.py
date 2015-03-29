@@ -36,4 +36,4 @@ class ParentSpeciesRule(InferenceRule):
 
     def _maketriples(self, typeId, specieId, familyId, specieParentId):
         if specieId != specieParentId:
-        return [(specieId, 'parent_of', specieParentId)]
+            return [(specieId, 'parent_of', specieParentId)]
