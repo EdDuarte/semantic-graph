@@ -11,6 +11,8 @@ uiDesigner.xml
 
 tomcat.*
 
+db.sqlite3
+
 target
 logs
 
@@ -33,9 +35,9 @@ build/*
 xcuserdata
 
 # images
-.svn
-.png
-.dot
+*.svn
+*.png
+*.dot
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
