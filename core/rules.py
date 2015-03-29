@@ -25,7 +25,7 @@ class TypeRule(InferenceRule):
             kingdomName = 'Planta'
         return [(specieId, 'is', kingdomName)]
 
-class SameHabitatRule(InferenceRule):
+class ParentSpeciesRule(InferenceRule):
     def getqueries(self):
         partner_enemy = [
             ('?typeId', 'name', 'Species'),
