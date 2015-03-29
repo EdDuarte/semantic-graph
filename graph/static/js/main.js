@@ -1,20 +1,38 @@
 $(document).ready(function() {
 
-    $('#queryfield').devbridgeAutocomplete({
+    var predicates = [
+        { value: 'belongs_to', data: 'belongs_to' },
+        { value: 'is_type', data: 'is_type' }
+    ];
+
+    $('#subjectField').devbridgeAutocomplete({
         minChars: 1,
-        width: 1000,
+        width: 300,
         triggerSelectOnValidInput: false,
         preventBadQueries: false,
-        serviceUrl: '/web/suggest',
-        onSelect: function (suggestion) {
-            search(suggestion.value);
-        }
+        serviceUrl: '/web/suggestSubject'
+    });
+
+    $('#predicateField').devbridgeAutocomplete({
+        minChars: 1,
+        width: 300,
+        triggerSelectOnValidInput: false,
+        preventBadQueries: false,
+        lookup: predicates
+    });
+
+    $('#objectField').devbridgeAutocomplete({
+        minChars: 1,
+        width: 300,
+        triggerSelectOnValidInput: false,
+        preventBadQueries: false,
+        serviceUrl: '/web/suggestObject'
     });
 
     $("#searchform").submit(function(event) {
         event.preventDefault();
 
-        search($("#queryfield").val())
+        search($("#subjectField").val(), $("#predicateField").val(), $("#objectField").val())
     });
 
     $("#load").hide();
@@ -24,10 +42,10 @@ $(document).ready(function() {
 
 var lastSearchRequest;
 
-function search(searchQuery) {
+function search(subject) {
     $("#clearFacet").hide();
     $("#load").hide();
-    $('#queryfield').val(searchQuery);
+    $('#subjectField').val(subject);
 
     $('#results').html(
         '<div style="text-align: center; margin-top: 50px; ">' +
@@ -59,7 +77,7 @@ function search(searchQuery) {
     }
 
     lastSearchRequest = {
-        "searchQuery":searchQuery,
+        "subject":subject,
         "startAt":0,
         "fieldNames":fieldNames,
         "facetQueries":[]
@@ -108,7 +126,7 @@ function mlt(file, fieldName) {
 function continueSearch() {
 
     lastSearchRequest = {
-        "searchQuery":lastSearchRequest.searchQuery,
+        "subject":lastSearchRequest.subject,
         "startAt":lastSearchRequest.startAt + 10,
         "fieldNames":lastSearchRequest.fieldNames,
         "facetQueries":lastSearchRequest.facetQueries
@@ -175,7 +193,7 @@ function facetSearch(facetQuery) {
     lastSearchRequest.facetQueries.push(facetQuery);
 
     lastSearchRequest = {
-        "searchQuery":lastSearchRequest.searchQuery,
+        "subject":lastSearchRequest.subject,
         "startAt":0,
         "fieldNames":fieldNames,
         "facetQueries":lastSearchRequest.facetQueries
@@ -190,7 +208,7 @@ function facetSearch(facetQuery) {
         success: function (response) {
             parseResponse(response);
             $("#clearFacet").unbind('click').click(function(){
-                search(lastSearchRequest.searchQuery);
+                search(lastSearchRequest.subject);
             }).show();
         }
     });

@@ -88,14 +88,26 @@ while True:
                 app.set_inference(ClassInFamilyRule())
 
             elif intOption == 6:
-                print(app.search("Champiaceae", None, None))
+                subject = input("Subject: ")
+                if isBlank(subject):
+                    subject = None
+
+                predicate = input("Predicate: ")
+                if isBlank(predicate):
+                    predicate = None
+
+                obj = input("Object: ")
+                if isBlank(obj):
+                    obj = None
+
+                print(app.search(subject, predicate, obj))
 
             elif intOption == 0:
                 break
 
             else:
-                print("ERROR: Must be a numnber between 0 and 6")
+                print("ERROR: Must be a number between 0 and 6")
 
         except ValueError:
-            print("ERROR: Must be a numnber between 0 and 6")
+            print("ERROR: Must be a number between 0 and 6")
 
