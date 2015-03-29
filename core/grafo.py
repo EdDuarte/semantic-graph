@@ -256,5 +256,6 @@ class Grafo:
                 bindings += self.query(query)
             for b in bindings:
                 new_triples = rule.maketriples(b)
-                for s, p, o in new_triples:
-                    self.add(s, p, o)
+                if new_triples is not None:
+                    for s, p, o in new_triples:
+                        self.add(s, p, o)
