@@ -181,7 +181,7 @@ class Grafo:
 
     def triplestodot(triples, filename):
         out = open(filename, 'w')
-        out.write('graph "SimpleGraph" {\n')
+        out.write('graph "Grafo" {\n')
         out.write('overlap = "scale";\n')
         for t in triples:
             out.write('"%s" -- "%s" [label="%s"]\n' % (t[0], t[2], t[1]))
