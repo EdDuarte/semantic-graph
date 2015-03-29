@@ -26,11 +26,10 @@ class App:
 def getMainMenu():
     return (
         '1 - Load data\n'
-        '2 - Save data"\n'
-        '3 - Apply Inference Rule "specie belongs to class"\n'
-        '4 - Apply Inference Rule "specie belongs to order"\n'
-        '5 - Apply Inference Rule "family belongs to class"\n'
-        '6 - Search & show graph\n'
+        '2 - Save data\n'
+        '3 - Apply Inference Rule "Define specie type"\n'
+        '4 - Apply Inference Rule "Define species that are parents"\n'
+        '5 - Search & show graph\n'
         '0 - Exit'
     )
 
@@ -79,15 +78,12 @@ while True:
                     app.save_data(fileName)
 
             elif intOption == 3:
-                app.set_inference(ClassInSpecieRule())
+                app.set_inference(TypeRule())
 
             elif intOption == 4:
-                app.set_inference(OrderInSpecieRule())
+                app.set_inference(ParentSpeciesRule())
 
             elif intOption == 5:
-                app.set_inference(ClassInFamilyRule())
-
-            elif intOption == 6:
                 subject = input("Subject: ")
                 if isBlank(subject):
                     subject = None
