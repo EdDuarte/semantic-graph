@@ -3,6 +3,7 @@
 
 import csv
 import os.path
+import sys
 
 class Grafo:
     # indice: [(sub, [(pred, set([obj]))])]
@@ -79,7 +80,7 @@ class Grafo:
         except KeyError:
             pass
 
-    def triplestodot(self, triples, filename):
+    def triples_to_dot(self, triples, filename):
         out = open(filename, 'w')
         out.write('graph "Graph" {\n')
         out.write('overlap = "scale";\n')
@@ -88,16 +89,16 @@ class Grafo:
         out.write('}\n')
         out.close()
 
-    def createGraph(self, triples):
+    def create_graph(self, triples):
         graphFileName = 'graph.dot'
         if os.path.isfile(graphFileName):
             os.remove(graphFileName)
 
-        self.triplestodot(triples, graphFileName)
+        self.triples_to_dot(triples, graphFileName)
 
         os.system("dot -Tpng graph.dot -o graph.png")
 
-    #pesquisa de um triplo
+    # pesquisa de um triplo
     def triples(self, sub, pre, obj):
         result = list()
         try:
@@ -176,26 +177,27 @@ class Grafo:
 
     # carrega o conteudo de um ficheiro .csv
     def load(self, filename):
-        doc = open(filename, "r")
-        reader = csv.reader(doc)
+        f = open(filename, "r")
+        reader = csv.reader(f)
 
         for triple in reader:
             if len(triple) == 3:
                 self.add(triple[0], triple[1], triple[2])
 
-        #for sub, pre, obj in reader:
-            #self.add(sub, pre, obj)
-        doc.close()
+        f.close()
+        print("Loaded!")
 
     # guarda o conteudo num ficheiro .csv
     def save(self, filename):
-        doc = open(filename, "wb")
-        writer = csv.writer(doc)
-        print (self.triples((None, None, None)))
+        if sys.version_info >= (3,0,0):
+            f = open(filename, 'w', newline='')
+        else:
+            f = open(filename, 'wb')
+        writer = csv.writer(f)
 
-        for sub, pre, obj in self.triples((None, None, None)):
-            writer.writerow([sub, pre, obj])
-        doc.close()
+        for sub, pred, obj in self.triples(None, None, None):
+            writer.writerow([sub, pred, obj])
+        f.close()
 
     # faz um query ao grafo,
     # passando-lhe uma lista de tuples (triplos restrição)
@@ -208,7 +210,7 @@ class Grafo:
             for pos, x in enumerate(clause): # enumera o triplo, para poder ir buscar cada elemento e sua posição
                 if x.startswith('?'):        # para as variáveis
                     qc.append(None)          # adiciona o valor None à lista de elementos a pssar ao método triples
-                    #bpos[x] = pos            # guarda a posição da variável no triplo (0,1 ou 2)
+                    #bpos[x] = pos           # guarda a posição da variável no triplo (0,1 ou 2)
                     bpos[x[
                          1:]] = pos          # linha de cima re-escrita porque é necessário guardar o nome da variável, mas sem o ponto de interrogação (?)
                 else:
@@ -248,7 +250,7 @@ class Grafo:
                 bindings = newb              # sbstituiu lista por nova
         return bindings
 
-    def applyinference(self,rule):
+    def apply_inference(self,rule):
             queries = rule.getqueries()
             bindings=[]
             for query in queries:
