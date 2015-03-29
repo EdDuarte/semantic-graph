@@ -6,7 +6,7 @@ $(document).ready(function() {
     ];
 
     $('#subjectField').devbridgeAutocomplete({
-        minChars: 1,
+        minChars: 0,
         width: 300,
         triggerSelectOnValidInput: false,
         preventBadQueries: false,
@@ -131,4 +131,9 @@ function parseResponse(rawResponse) {
         img.src = 'data:image/png;base64,' + rawResponse;
         $('#results').html("<br><br><br><br>").append(img);
     }
+}
+
+
+function addInference() {
+
 }

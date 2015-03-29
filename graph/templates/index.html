@@ -92,17 +92,17 @@
                         <div class="grid grid-pad">
                             <div class="col-1-4">
                                 <div class="content">
-                                    <input id="subjectField" type="text" autofocus class="form-control" placeholder="Subject">
+                                    <input id="subjectField" type="text" class="form-control" placeholder="Subject">
                                 </div>
                             </div>
                             <div class="col-1-4">
                                 <div class="content">
-                                    <input id="predicateField" type="text" autofocus class="form-control" placeholder="Predicate">
+                                    <input id="predicateField" type="text" class="form-control" placeholder="Predicate">
                                 </div>
                             </div>
                             <div class="col-1-4">
                                 <div class="content">
-                                    <input id="objectField" type="text" autofocus class="form-control" placeholder="Object">
+                                    <input id="objectField" type="text" class="form-control" placeholder="Object">
                                     {#                                    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>#}
                                 </div>
                             </div>
@@ -131,34 +131,11 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="form-signin-heading">Set search fields</h2>
-
-                    Select below the fields that should be searched.<br><br>
-                    <label>
-                        <input type="checkbox"
-                               id="medicine_name"
-                               name="medicine_name" />
-                        Medicine Name
-                    </label>
-                    <label>
-                        <input type="checkbox"
-                               id="file_path"
-                               name="file_path" />
-                        File Path
-                    </label>
-                    <label>
-                        <input type="checkbox"
-                               id="text"
-                               name="text"
-                               checked />
-                        Text
-                    </label>
-                    <label>
-                        <input type="checkbox"
-                               id="secondary_effects"
-                               name="secondary_effects" />
-                        Secondary Effects
-                    </label>
+                    <h2 class="form-signin-heading">Add inferences</h2>
+                </div>
+                <div class="modal-body">
+                    Select below the inferences you wish to process, so that these are included in the triplestore:<br><br>
+                    <button type="button" class="btn btn-default" onclick="addInference()">Inference 1</button>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
