@@ -2,9 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import csv
-from PIL import Image
-import pydot
-
+import os.path
 
 class Grafo:
     # indice: [(sub, [(pred, set([obj]))])]
@@ -81,133 +79,23 @@ class Grafo:
         except KeyError:
             pass
 
-    def triplestodotOp(self):
-        print ("triplestodot")
-        out = file("graph.dot", "w")
-        out.write('digraph "Trabalho Prático - Web Semântica" {\n')
-        out.write('\tlabelloc="t"\n'
-                  '\tlabel="Trabalho Prático - Web Semântica"\n')
-        for sub, pre, obj in self.triples((None, None, None)):
-            if pre == "name":
-                out.write('\t%s [shape=circle, color="#FF4040"]\n' % (obj))
-                out.write('\t%s -> %s [label="%s"]\n' % (sub, obj, pre))
-            elif pre == "is_son":
-                out.write('\t%s -> %s [label="%s", color="#0090FF"]\n' % (
-                    sub, obj, pre))
-            elif pre == "is_parent":
-                out.write('\t%s -> %s [label="%s", color="#F58735"]\n' % (
-                    sub, obj, pre))
-            elif pre == "is_grandparent":
-                out.write('\t%s -> %s [label="%s", color="#21988C"]\n' % (
-                    sub, obj, pre))
-            elif pre == "is_great_grandparent":
-                out.write('\t%s -> %s [label="%s", color="#8D430C"]\n' % (
-                    sub, obj, pre))
-            elif pre == "is_grandchildren":
-                out.write('\t%s -> %s [label="%s", color="#AB754E"]\n' % (
-                    sub, obj, pre))
-            elif pre == "is_brother":
-                out.write('\t%s -> %s [label="%s", color="#8727A2"]\n' % (
-                    sub, obj, pre))
-            elif pre == "is_couple":
-                out.write('\t%s -> %s [label="%s", color="#F5E635"]\n' % (
-                    sub, obj, pre))
-            elif pre == "is_cousin":
-                out.write('\t%s -> %s [label="%s", color="#4A095D"]\n' % (
-                    sub, obj, pre))
-            elif pre == "is_uncle":
-                out.write('\t%s -> %s [label="%s", color="#8D0F0C"]\n' % (
-                    sub, obj, pre))
-            elif pre == "is_nephew":
-                out.write('\t%s -> %s [label="%s", color="#AB5E4E"]\n' % (
-                    sub, obj, pre))
-            else:
-                out.write('\t%s -> %s [label="%s"]\n' % (sub, obj, pre))
-
-        out.write('\t{'
-                  '\t\trank = sink;\n'
-                  '\t\tLegend [shape=none, margin=0, label=<\n'
-                  '\t\t<table BORDER="0" cellborder="1" cellspacing="0" cellpadding="4">\n'
-                  '\t\t\t<tr>\n'
-                  '\t\t\t\t<td colspan="2">\n'
-                  '\t\t\t\t\t<b>Legend</b>\n'
-                  '\t\t\t\t</td>\n'
-                  '\t\t\t</tr>\n'
-                  '\t\t\t<tr>\n'
-                  '\t\t\t\t<td>is_son</td>\n'
-                  '\t\t\t\t<td bgcolor="#0090FF"></td>\n'
-                  '\t\t\t</tr>\n'
-                  '\t\t\t<tr>\n'
-                  '\t\t\t\t<td>is_parent</td>\n'
-                  '\t\t\t\t<td bgcolor="#F58735"></td>\n'
-                  '\t\t\t</tr>\n'
-                  '\t\t\t<tr>\n'
-                  '\t\t\t\t<td>is_grandparent</td>\n'
-                  '\t\t\t\t<td bgcolor="#21988C"></td>\n'
-                  '\t\t\t</tr>\n'
-                  '\t\t\t<tr>\n'
-                  '\t\t\t\t<td>is_great_grandparent</td>\n'
-                  '\t\t\t\t<td bgcolor="#8D430C"></td>\n'
-                  '\t\t\t</tr>\n'
-                  '\t\t\t<tr>\n'
-                  '\t\t\t\t<td>is_grandchildren</td>\n'
-                  '\t\t\t\t<td bgcolor="#AB754E"></td>\n'
-                  '\t\t\t</tr>\n'
-                  '\t\t\t<tr>\n'
-                  '\t\t\t\t<td>is_brother</td>\n'
-                  '\t\t\t\t<td bgcolor="#8727A2"></td>\n'
-                  '\t\t\t</tr>\n'
-                  '\t\t\t<tr>\n'
-                  '\t\t\t\t<td>is_couple</td>\n'
-                  '\t\t\t\t<td bgcolor="#F5E635"></td>\n'
-                  '\t\t\t</tr>\n'
-                  '\t\t\t<tr>\n'
-                  '\t\t\t\t<td>is_cousin</td>\n'
-                  '\t\t\t\t<td bgcolor="#4A095D"></td>\n'
-                  '\t\t\t</tr>\n'
-                  '\t\t\t<tr>\n'
-                  '\t\t\t\t<td>is_uncle</td>\n'
-                  '\t\t\t\t<td bgcolor="#8D0F0C"></td>\n'
-                  '\t\t\t</tr>\n'
-                  '\t\t\t<tr>\n'
-                  '\t\t\t\t<td>is_nephew</td>\n'
-                  '\t\t\t\t<td bgcolor="#AB5E4E"></td>\n'
-                  '\t\t\t</tr>\n'
-                  '\t\t</table>\n'
-                  '\t\t>];\n'
-                  '\t}')
-        out.write('}\n')
-        out.close()
-
-    def triplestodot(triples, filename):
+    def triplestodot(self, triples, filename):
         out = open(filename, 'w')
-        out.write('graph "SimpleGraph" {\n')
+        out.write('graph "Graph" {\n')
         out.write('overlap = "scale";\n')
         for t in triples:
             out.write('"%s" -- "%s" [label="%s"]\n' % (t[0], t[2], t[1]))
-            out.write('}\n')
+        out.write('}\n')
         out.close()
 
-    #
-    # def triplestodot(self):
-    #     print ("triplestodot")
-    #
-    #     graph = pydot.Dot(graph_type='digraph', labelloc='t', label='Trabalho Prático - Web Semântica')
-    #     for sub, pre, obj in self.triples(None, None, None):
-    #         if pre == "is_parent" or pre == "is_grandparent" or pre == "is_great_grandparent" or pre == "is_grandchildren" or pre == "is_brother" or pre == "is_couple" or pre == "is_cousin" or pre == "is_uncle" or pre == "is_nephew":
-    #             color = "#FF4040"
-    #         else:
-    #             color = "#000000"
-    #         node_a = pydot.Node(sub.encode('utf-8'), shape="circle")
-    #         graph.add_node(node_a)
-    #         node_b = pydot.Node(obj.encode('utf-8'), shape="circle")
-    #         graph.add_node(node_b)
-    #         graph.add_edge(pydot.Edge(node_a, node_b, label=pre.encode('utf-8'), color=color))
-    #
-    #     graph.write_png('graph.png')
-    #     graph.write('graph.dot')
-    #     im1 = Image.open("graph.png")
-    #     im1.show()
+    def createGraph(self, triples):
+        graphFileName = 'graph.dot'
+        if os.path.isfile(graphFileName):
+            os.remove(graphFileName)
+
+        self.triplestodot(triples, graphFileName)
+
+        os.system("dot -Tpng graph.dot -o graph.png")
 
     #pesquisa de um triplo
     def triples(self, sub, pre, obj):

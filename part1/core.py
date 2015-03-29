@@ -1,6 +1,8 @@
 
 from grafo import Grafo
 from interface import Interface
+import os.path
+import webbrowser
 
 class Core:
 
@@ -24,3 +26,8 @@ class Core:
 
     def getInferencedData(self, predicate):
         return self.grafo.triples(None,predicate,None)
+
+    def showGraph(self):
+        self.grafo.createGraph(self.grafo.triples("Codiaceae", None, None))
+        webbrowser.open('file://' + os.path.realpath("graph.png"))
+        return ""

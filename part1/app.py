@@ -25,5 +25,7 @@ while 1:
         system.setInference(ClassInFamilyRule())
     elif(int(option) == 5):
         print (system.getInferencedData('belongs_to_class'))
+    elif(int(option) == 6):
+        system.showGraph()
     elif(int(option) == 0):
         break
