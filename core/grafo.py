@@ -239,8 +239,7 @@ class Grafo:
                         tempbinding = binding.copy() # faz copia temporaria do dicionario
                         for var, pos in bpos.items(): # para cada variavel em sua posição
                             if var in tempbinding: # caso a variavel esteja presente no dicionario
-                                if tempbinding[var] != row[
-                                    pos]: # se o valor da variavel diferente do valor na sua posicao no triplo
+                                if tempbinding[var] != row[pos]: # se o valor da variavel diferente do valor na sua posicao no triplo
                                     validmatch = False # o dicionário não serve
                             else:
                                 tempbinding[var] = row[
@@ -252,7 +251,7 @@ class Grafo:
 
     def apply_inference(self,rule):
             queries = rule.getqueries()
-            bindings=[]
+            bindings = []
             for query in queries:
                 bindings += self.query(query)
             for b in bindings:
