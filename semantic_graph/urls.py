@@ -25,6 +25,6 @@ urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name="index.html")),
     url(r'^index.html', TemplateView.as_view(template_name="index.html")),
     url(r'^suggestSubject/$', suggestSubject),
-    url(r'^suggestObject/$', suggestSubject),
+    url(r'^suggestObject/$', suggestObject),
     url(r'^search/$', search)
 )

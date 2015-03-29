@@ -20,18 +20,42 @@ grafo = Grafo()
 filename = os.path.realpath('taxon.csv')
 grafo.load(filename)
 
+def search_subjects(query):
+    query = query.lower()
+    triples = grafo.triples(None, None, None)
+    result = list()
+    for t in triples:
+        if t[0].lower().startswith(query):
+            result.append(t[0])
+    return result
+
+def search_object(query):
+    query = query.lower()
+    triples = grafo.triples(None, None, None)
+    result = list()
+    for t in triples:
+        if t[2].lower().startswith(query):
+            result.append(t[2])
+    return result
+
 @csrf_exempt
 def suggestSubject(request):
     if request.method == 'GET':
         query = request.GET.get('query', '')
 
         return HttpResponse(
-            json.dumps({"query": query, "suggestions": ["a", "b", "c"]}),
+            json.dumps({"query": query, "suggestions": search_subjects(query)}),
             content_type="application/json"
         )
 
 def suggestObject(request):
-    return ""
+    if request.method == 'GET':
+        query = request.GET.get('query', '')
+
+        return HttpResponse(
+            json.dumps({"query": query, "suggestions": search_object(query)}),
+            content_type="application/json"
+        )
 
 @csrf_exempt
 def search(request):
