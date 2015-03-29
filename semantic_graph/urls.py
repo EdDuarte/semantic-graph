@@ -22,9 +22,9 @@ router.register(r'users', UserViewSet)
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'semantic_graph.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
     url(r'^$', TemplateView.as_view(template_name="index.html")),
     url(r'^index.html', TemplateView.as_view(template_name="index.html")),
-    # url(r'^api/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^suggestSubject/$', suggestSubject),
+    url(r'^suggestObject/$', suggestSubject),
+    url(r'^search/$', search)
 )
