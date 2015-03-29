@@ -73,26 +73,11 @@ def search(request):
 
         # open the image created above
         graph_file_name = os.path.realpath('graph.png')
-        # image = Image.open(graph_file_name)
 
-        # serialize image to HTTP response
-        # buffer = io.BytesIO()
-        # image.save(buffer, format="PNG")
+        # serialize image to Base64
         return HttpResponse(
             base64.encodestring(open(graph_file_name,"rb").read())
         )
-
-        # post = Post.objects.get(pk=int(QueryDict(request.body).get('postpk')))
-        #
-        # post.delete()
-
-        # response_data = {}
-        # response_data['msg'] = 'Post was deleted.'
-        #
-        # return HttpResponse(
-        #     json.dumps(response_data),
-        #     content_type="application/json"
-        # )
     else:
         return HttpResponse(
             json.dumps({"nothing to see": "this isn't happening"}),
