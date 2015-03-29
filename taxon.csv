@@ -1,0 +1,4840 @@
+Animalia,is_type,Kingdom
+Abagrotis alternata,belongs_to,Noctuidae
+Abagrotis alternata,is_type,Species
+Acarospora fuscata,belongs_to,Acarosporaceae
+Acarospora fuscata,is_type,Species
+Acarosporaceae,belongs_to,Acarosporales
+Acarosporaceae,is_type,Family
+Acarosporales,belongs_to,Lecanoromycetes
+Acarosporales,is_type,Order
+Accipiter cooperii,belongs_to,Accipitridae
+Accipiter cooperii,is_type,Species
+Accipitridae,belongs_to,Accipitriformes
+Accipitridae,belongs_to,Accipitriformes
+Accipitridae,belongs_to,Accipitriformes
+Accipitridae,is_type,Family
+Accipitridae,is_type,Family
+Accipitridae,is_type,Family
+Accipitriformes,belongs_to,Aves
+Accipitriformes,belongs_to,Aves
+Accipitriformes,belongs_to,Aves
+Accipitriformes,belongs_to,Aves
+Accipitriformes,belongs_to,Aves
+Accipitriformes,is_type,Order
+Accipitriformes,is_type,Order
+Accipitriformes,is_type,Order
+Accipitriformes,is_type,Order
+Accipitriformes,is_type,Order
+Acer pseudoplatanus,belongs_to,Sapindaceae
+Acer pseudoplatanus,is_type,Species
+Acer rubrum,belongs_to,Sapindaceae
+Acer rubrum,is_type,Species
+Achillea millefolium,belongs_to,Asteraceae
+Achillea millefolium,is_type,Species
+Acrididae,belongs_to,Orthoptera
+Acrididae,is_type,Family
+Acrolophidae,belongs_to,Lepidoptera
+Acrolophidae,is_type,Family
+Acrolophus morus,belongs_to,Acrolophidae
+Acrolophus morus,is_type,Species
+Actinopterygii,belongs_to,Chordata
+Actinopterygii,belongs_to,Chordata
+Actinopterygii,belongs_to,Chordata
+Actinopterygii,is_type,Class
+Actinopterygii,is_type,Class
+Actinopterygii,is_type,Class
+Agalinis acuta,belongs_to,Scrophulariaceae
+Agalinis acuta,is_type,Species
+Agaricaceae,belongs_to,Agaricales
+Agaricaceae,belongs_to,Agaricales
+Agaricaceae,is_type,Family
+Agaricaceae,is_type,Family
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,belongs_to,Agaricomycetes
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricales,is_type,Order
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,belongs_to,Basidiomycota
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agaricomycetes,is_type,Class
+Agnorisma badinodis,belongs_to,Noctuidae
+Agnorisma badinodis,is_type,Species
+Agonopterix thelmae,belongs_to,Noctuidae
+Agonopterix thelmae,is_type,Species
+Alcedinidae,belongs_to,Coraciiformes
+Alcedinidae,is_type,Family
+Alismatales,belongs_to,Liliopsida
+Alismatales,is_type,Order
+Alnus glutinosa,belongs_to,Betulaceae
+Alnus glutinosa,is_type,Species
+Amanita aestivalis,belongs_to,Amanitaceae
+Amanita aestivalis,is_type,Species
+Amanita amerifulva,belongs_to,Amanitaceae
+Amanita amerifulva,is_type,Species
+Amanita amerirubescens,belongs_to,Amanitaceae
+Amanita amerirubescens,is_type,Species
+Amanita brunescens,belongs_to,Amanitaceae
+Amanita brunescens,is_type,Species
+Amanita citrinia,belongs_to,Amanitaceae
+Amanita citrinia,is_type,Species
+Amanita crenulata,belongs_to,Amanitaceae
+Amanita crenulata,is_type,Species
+Amanita falvoconia,belongs_to,Amanitaceae
+Amanita falvoconia,is_type,Species
+Amanita flavorubens,belongs_to,Amanitaceae
+Amanita flavorubens,is_type,Species
+Amanita fulva,belongs_to,Amanitaceae
+Amanita fulva,is_type,Species
+Amanita solaneolens,belongs_to,Amanitaceae
+Amanita solaneolens,is_type,Species
+Amanita tuberosa,belongs_to,Amanitaceae
+Amanita tuberosa,is_type,Species
+Amanita virginiana,belongs_to,Amanitaceae
+Amanita virginiana,is_type,Species
+Amanitaceae,belongs_to,Agaricales
+Amanitaceae,belongs_to,Agaricales
+Amanitaceae,belongs_to,Agaricales
+Amanitaceae,belongs_to,Agaricales
+Amanitaceae,belongs_to,Agaricales
+Amanitaceae,belongs_to,Agaricales
+Amanitaceae,belongs_to,Agaricales
+Amanitaceae,belongs_to,Agaricales
+Amanitaceae,belongs_to,Agaricales
+Amanitaceae,belongs_to,Agaricales
+Amanitaceae,belongs_to,Agaricales
+Amanitaceae,belongs_to,Agaricales
+Amanitaceae,is_type,Family
+Amanitaceae,is_type,Family
+Amanitaceae,is_type,Family
+Amanitaceae,is_type,Family
+Amanitaceae,is_type,Family
+Amanitaceae,is_type,Family
+Amanitaceae,is_type,Family
+Amanitaceae,is_type,Family
+Amanitaceae,is_type,Family
+Amanitaceae,is_type,Family
+Amanitaceae,is_type,Family
+Amanitaceae,is_type,Family
+Ampelopsis brevipedunculata,belongs_to,Vitaceae
+Ampelopsis brevipedunculata,is_type,Species
+Amphibia,belongs_to,Chordata
+Amphibia,belongs_to,Chordata
+Amphibia,belongs_to,Chordata
+Amphibia,belongs_to,Chordata
+Amphibia,is_type,Class
+Amphibia,is_type,Class
+Amphibia,is_type,Class
+Amphibia,is_type,Class
+Amphipyra glabella,belongs_to,Noctuidae
+Amphipyra glabella,is_type,Species
+Amphipyra pyramidoides,belongs_to,Noctuidae
+Amphipyra pyramidoides,is_type,Species
+Anacardiaceae,belongs_to,Sapindales
+Anacardiaceae,belongs_to,Sapindales
+Anacardiaceae,belongs_to,Sapindales
+Anacardiaceae,is_type,Family
+Anacardiaceae,is_type,Family
+Anacardiaceae,is_type,Family
+Anas platyrhynchos,belongs_to,Anatidae
+Anas platyrhynchos,is_type,Species
+Anatidae,belongs_to,Anseriformes
+Anatidae,belongs_to,Anseriformes
+Anatidae,belongs_to,Anseriformes
+Anatidae,is_type,Family
+Anatidae,is_type,Family
+Anatidae,is_type,Family
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Animalia,is_type,Kingdom
+Annelida,belongs_to,Animalia
+Annelida,is_type,Phylum
+Anseriformes,belongs_to,Aves
+Anseriformes,belongs_to,Aves
+Anseriformes,belongs_to,Aves
+Anseriformes,is_type,Order
+Anseriformes,is_type,Order
+Anseriformes,is_type,Order
+Anthemis cotula,belongs_to,Asteraceae
+Anthemis cotula,is_type,Species
+Anthicidae,belongs_to,Coleoptera
+Anthicidae,is_type,Family
+Anthozoa,belongs_to,Cnidaria
+Anthozoa,is_type,Class
+Anura,belongs_to,Amphibia
+Anura,belongs_to,Amphibia
+Anura,belongs_to,Amphibia
+Anura,belongs_to,Amphibia
+Anura,is_type,Order
+Anura,is_type,Order
+Anura,is_type,Order
+Anura,is_type,Order
+Apiaceae,belongs_to,Apiales
+Apiaceae,is_type,Family
+Apiales,belongs_to,Magnoliopsida
+Apiales,is_type,Order
+Apidae,belongs_to,Hymenoptera
+Apidae,belongs_to,Hymenoptera
+Apidae,belongs_to,Hymenoptera
+Apidae,is_type,Family
+Apidae,is_type,Family
+Apidae,is_type,Family
+Apios americana,belongs_to,Fabaceae
+Apios americana,is_type,Species
+Apis mellifera,belongs_to,Apidae
+Apis mellifera,is_type,Species
+Aquifoliaceae,belongs_to,Aquifoliales
+Aquifoliaceae,belongs_to,Aquifoliales
+Aquifoliaceae,is_type,Family
+Aquifoliaceae,is_type,Family
+Aquifoliales,belongs_to,Magnoliopsida
+Aquifoliales,belongs_to,Magnoliopsida
+Aquifoliales,is_type,Order
+Aquifoliales,is_type,Order
+Arbacia punctulata,belongs_to,Arbaciidae
+Arbacia punctulata,is_type,Species
+Arbaciidae,belongs_to,Arbacioida
+Arbaciidae,is_type,Family
+Arbacioida,belongs_to,Echinoidea
+Arbacioida,is_type,Order
+Arctiidae,belongs_to,Lepidoptera
+Arctiidae,is_type,Family
+Arctostaphylos uva-ursi,belongs_to,Ericaceae
+Arctostaphylos uva-ursi,is_type,Species
+Ardeidae,belongs_to,Pelecaniformes
+Ardeidae,is_type,Family
+Armadillidiidae,belongs_to,Isopoda
+Armadillidiidae,is_type,Family
+Armadillidium vulgare,belongs_to,Armadillidiidae
+Armadillidium vulgare,is_type,Species
+Armillaria gallica,belongs_to,Physalacriaceae
+Armillaria gallica,is_type,Species
+Armillaria mellea,belongs_to,Physalacriaceae
+Armillaria mellea,is_type,Species
+Armillaria tabescens,belongs_to,Physalacriaceae
+Armillaria tabescens,is_type,Species
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,belongs_to,Animalia
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Arthropoda,is_type,Phylum
+Ascidiacea,belongs_to,Chordata
+Ascidiacea,belongs_to,Chordata
+Ascidiacea,belongs_to,Chordata
+Ascidiacea,belongs_to,Chordata
+Ascidiacea,is_type,Class
+Ascidiacea,is_type,Class
+Ascidiacea,is_type,Class
+Ascidiacea,is_type,Class
+Asclepiadaceae,belongs_to,Gentianales
+Asclepiadaceae,belongs_to,Gentianales
+Asclepiadaceae,belongs_to,Gentianales
+Asclepiadaceae,is_type,Family
+Asclepiadaceae,is_type,Family
+Asclepiadaceae,is_type,Family
+Asclepias syriaca,belongs_to,Asclepiadaceae
+Asclepias syriaca,is_type,Species
+Asclepias tuberosa,belongs_to,Asclepiadaceae
+Asclepias tuberosa,is_type,Species
+Ascomycota,belongs_to,Fungi
+Ascomycota,belongs_to,Fungi
+Ascomycota,belongs_to,Fungi
+Ascomycota,belongs_to,Fungi
+Ascomycota,belongs_to,Fungi
+Ascomycota,belongs_to,Fungi
+Ascomycota,is_type,Phylum
+Ascomycota,is_type,Phylum
+Ascomycota,is_type,Phylum
+Ascomycota,is_type,Phylum
+Ascomycota,is_type,Phylum
+Ascomycota,is_type,Phylum
+Asparagales,belongs_to,Liliopsida
+Asparagales,is_type,Order
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,belongs_to,Asterales
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asteraceae,is_type,Family
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,belongs_to,Magnoliopsida
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterales,is_type,Order
+Asterias forbesi,belongs_to,Asteriidae
+Asterias forbesi,is_type,Species
+Asteriidae,belongs_to,Forcipulatida
+Asteriidae,is_type,Family
+Asteroidea,belongs_to,Echinodermata
+Asteroidea,is_type,Class
+Astrangia poculata,belongs_to,Rhizangiidae
+Astrangia poculata,is_type,Species
+Atheriniformes,belongs_to,Actinopterygii
+Atheriniformes,is_type,Order
+Atherinopsidae,belongs_to,Atheriniformes
+Atherinopsidae,is_type,Family
+Atriplex patula,belongs_to,Chenopodiaceae
+Atriplex patula,is_type,Species
+Atteva aurea,belongs_to,Yponomeutidae
+Atteva aurea,is_type,Species
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,belongs_to,Chordata
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Aves,is_type,Class
+Baccharis halimifolia,belongs_to,Asteraceae
+Baccharis halimifolia,is_type,Species
+Baccharis pilularis,belongs_to,Asteraceae
+Baccharis pilularis,is_type,Species
+Baeolophus bicolor,belongs_to,Paridae
+Baeolophus bicolor,is_type,Species
+Balaenopteridae,belongs_to,Cetacea
+Balaenopteridae,is_type,Family
+Balanidae,belongs_to,Sessilia
+Balanidae,is_type,Family
+Balanus balanus,belongs_to,Balanidae
+Balanus balanus,is_type,Species
+Balsaminaceae,belongs_to,Ericales
+Balsaminaceae,is_type,Family
+Bankeraceae,belongs_to,Boletales
+Bankeraceae,belongs_to,Thelephorales
+Bankeraceae,is_type,Family
+Bankeraceae,is_type,Family
+Baptisia tinctoria,belongs_to,Fabaceae
+Baptisia tinctoria,is_type,Species
+Bartonia virginica,belongs_to,Gentianaceae
+Bartonia virginica,is_type,Species
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,belongs_to,Fungi
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Basidiomycota,is_type,Phylum
+Betula pendula,belongs_to,Betulaceae
+Betula pendula,is_type,Species
+Betulaceae,belongs_to,Fagales
+Betulaceae,belongs_to,Fagales
+Betulaceae,belongs_to,Fagales
+Betulaceae,is_type,Family
+Betulaceae,is_type,Family
+Betulaceae,is_type,Family
+Bidens frondosa,belongs_to,Asteraceae
+Bidens frondosa,is_type,Species
+Bivalvia,belongs_to,Mollusca
+Bivalvia,belongs_to,Mollusca
+Bivalvia,is_type,Class
+Bivalvia,is_type,Class
+Blechnaceae,belongs_to,Polypodiales
+Blechnaceae,belongs_to,Polypodiales
+Blechnaceae,is_type,Family
+Blechnaceae,is_type,Family
+Boletaceae,belongs_to,Boletales
+Boletaceae,belongs_to,Boletales
+Boletaceae,belongs_to,Boletales
+Boletaceae,belongs_to,Boletales
+Boletaceae,belongs_to,Boletales
+Boletaceae,belongs_to,Boletales
+Boletaceae,belongs_to,Boletales
+Boletaceae,belongs_to,Boletales
+Boletaceae,belongs_to,Boletales
+Boletaceae,is_type,Family
+Boletaceae,is_type,Family
+Boletaceae,is_type,Family
+Boletaceae,is_type,Family
+Boletaceae,is_type,Family
+Boletaceae,is_type,Family
+Boletaceae,is_type,Family
+Boletaceae,is_type,Family
+Boletaceae,is_type,Family
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,belongs_to,Agaricomycetes
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletales,is_type,Order
+Boletus bicolor,belongs_to,Boletaceae
+Boletus bicolor,is_type,Species
+Bolinopsidae,belongs_to,Lobata
+Bolinopsidae,is_type,Family
+Boloria selene,belongs_to,Nymphalidae
+Boloria selene,is_type,Species
+Bombus abnormis,belongs_to,Apidae
+Bombus abnormis,is_type,Species
+Bombus impatiens,belongs_to,Apidae
+Bombus impatiens,is_type,Species
+Botryllidae,belongs_to,Pleurogona
+Botryllidae,is_type,Family
+Botryllus schlosseri,belongs_to,Botryllidae
+Botryllus schlosseri,is_type,Species
+Botryosphaeriaceae,belongs_to,Dothideales
+Botryosphaeriaceae,is_type,Family
+Branta canadensis,belongs_to,Anatidae
+Branta canadensis,is_type,Species
+Bryophyta,belongs_to,Plantae
+Bryophyta,belongs_to,Plantae
+Bryophyta,belongs_to,Plantae
+Bryophyta,belongs_to,Plantae
+Bryophyta,belongs_to,Plantae
+Bryophyta,belongs_to,Plantae
+Bryophyta,is_type,Phylum
+Bryophyta,is_type,Phylum
+Bryophyta,is_type,Phylum
+Bryophyta,is_type,Phylum
+Bryophyta,is_type,Phylum
+Bryophyta,is_type,Phylum
+Bryopsida,belongs_to,Bryophyta
+Bryopsida,belongs_to,Bryophyta
+Bryopsida,belongs_to,Bryophyta
+Bryopsida,is_type,Class
+Bryopsida,is_type,Class
+Bryopsida,is_type,Class
+Bryopsidales,belongs_to,Bryopsidophyceae
+Bryopsidales,is_type,Order
+Bryopsidophyceae,belongs_to,Chlorophyta
+Bryopsidophyceae,is_type,Class
+Buccinidae,belongs_to,Neogastropoda
+Buccinidae,is_type,Family
+Bufo americanus,belongs_to,Bufonidae
+Bufo americanus,is_type,Species
+Bufonidae,belongs_to,Anura
+Bufonidae,is_type,Family
+Busycon carica,belongs_to,Buccinidae
+Busycon carica,is_type,Species
+Buteo jamaicensis,belongs_to,Accipitridae
+Buteo jamaicensis,is_type,Species
+Butorides virescens,belongs_to,Ardeidae
+Butorides virescens,is_type,Species
+Callinectes sapidus,belongs_to,Portunidae
+Callinectes sapidus,is_type,Species
+Calliphoridae,belongs_to,Diptera
+Calliphoridae,is_type,Family
+Calyptraeidae,belongs_to,Neotaenioglossa
+Calyptraeidae,is_type,Family
+Campaea perlata,belongs_to,Geometridae
+Campaea perlata,is_type,Species
+Canalipalpata,belongs_to,Polychaeta
+Canalipalpata,is_type,Order
+Cantharellaceae,belongs_to,Cantharellales
+Cantharellaceae,belongs_to,Cantharellales
+Cantharellaceae,is_type,Family
+Cantharellaceae,is_type,Family
+Cantharellales,belongs_to,Agaricomycetes
+Cantharellales,belongs_to,Agaricomycetes
+Cantharellales,is_type,Order
+Cantharellales,is_type,Order
+Cantharellus cinnabarinus,belongs_to,Cantharellaceae
+Cantharellus cinnabarinus,is_type,Species
+Caprifoliaceae,belongs_to,Dipsacales
+Caprifoliaceae,belongs_to,Dipsacales
+Caprifoliaceae,belongs_to,Dipsacales
+Caprifoliaceae,belongs_to,Dipsacales
+Caprifoliaceae,belongs_to,Dipsacales
+Caprifoliaceae,is_type,Family
+Caprifoliaceae,is_type,Family
+Caprifoliaceae,is_type,Family
+Caprifoliaceae,is_type,Family
+Caprifoliaceae,is_type,Family
+Carabidae,belongs_to,Coleoptera
+Carabidae,is_type,Family
+Cardinalidae,belongs_to,Passeriformes
+Cardinalidae,is_type,Family
+Cardinalis cardinalis,belongs_to,Cardinalidae
+Cardinalis cardinalis,is_type,Species
+Carduelis tristis,belongs_to,Fringillidae
+Carduelis tristis,is_type,Species
+Carex pensylvanica,belongs_to,Cyperaceae
+Carex pensylvanica,is_type,Species
+Carnivora,belongs_to,Mammalia
+Carnivora,belongs_to,Mammalia
+Carnivora,is_type,Order
+Carnivora,is_type,Order
+Carpodacus mexicanus,belongs_to,Fringillidae
+Carpodacus mexicanus,is_type,Species
+Caryophyllaceae,belongs_to,Caryophyllales
+Caryophyllaceae,belongs_to,Caryophyllales
+Caryophyllaceae,is_type,Family
+Caryophyllaceae,is_type,Family
+Caryophyllales,belongs_to,Magnoliopsida
+Caryophyllales,belongs_to,Magnoliopsida
+Caryophyllales,belongs_to,Magnoliopsida
+Caryophyllales,belongs_to,Magnoliopsida
+Caryophyllales,belongs_to,Magnoliopsida
+Caryophyllales,belongs_to,Magnoliopsida
+Caryophyllales,belongs_to,Magnoliopsida
+Caryophyllales,belongs_to,Magnoliopsida
+Caryophyllales,belongs_to,Magnoliopsida
+Caryophyllales,belongs_to,Magnoliopsida
+Caryophyllales,belongs_to,Magnoliopsida
+Caryophyllales,is_type,Order
+Caryophyllales,is_type,Order
+Caryophyllales,is_type,Order
+Caryophyllales,is_type,Order
+Caryophyllales,is_type,Order
+Caryophyllales,is_type,Order
+Caryophyllales,is_type,Order
+Caryophyllales,is_type,Order
+Caryophyllales,is_type,Order
+Caryophyllales,is_type,Order
+Caryophyllales,is_type,Order
+Cathartes aura,belongs_to,Cathartidae
+Cathartes aura,is_type,Species
+Cathartidae,belongs_to,Accipitriformes
+Cathartidae,is_type,Family
+Celastraceae,belongs_to,Celastrales
+Celastraceae,is_type,Family
+Celastrales,belongs_to,Magnoliopsida
+Celastrales,is_type,Order
+Celastrus orbiculatus,belongs_to,Celastraceae
+Celastrus orbiculatus,is_type,Species
+Centaurea stoebe,belongs_to,Asteraceae
+Centaurea stoebe,is_type,Species
+Ceramiales,belongs_to,Rhodophyceae
+Ceramiales,belongs_to,Rhodophyceae
+Ceramiales,is_type,Order
+Ceramiales,is_type,Order
+Cerastium glomeratum,belongs_to,Caryophyllaceae
+Cerastium glomeratum,is_type,Species
+Cetacea,belongs_to,Mammalia
+Cetacea,is_type,Order
+Chamaecyparis thyoides,belongs_to,Cupressaceae
+Chamaecyparis thyoides,is_type,Species
+Chamaedaphne calyculata,belongs_to,Ericaceae
+Chamaedaphne calyculata,is_type,Species
+Chamaesyce maculata,belongs_to,Euphorbiaceae
+Chamaesyce maculata,is_type,Species
+Champia parvula,belongs_to,Champiaceae
+Champia parvula,is_type,Species
+Champiaceae,belongs_to,Rhodymeniales
+Champiaceae,is_type,Family
+Charadriiformes,belongs_to,Aves
+Charadriiformes,belongs_to,Aves
+Charadriiformes,belongs_to,Aves
+Charadriiformes,belongs_to,Aves
+Charadriiformes,belongs_to,Aves
+Charadriiformes,is_type,Order
+Charadriiformes,is_type,Order
+Charadriiformes,is_type,Order
+Charadriiformes,is_type,Order
+Charadriiformes,is_type,Order
+Chenopodiaceae,belongs_to,Caryophyllales
+Chenopodiaceae,belongs_to,Caryophyllales
+Chenopodiaceae,is_type,Family
+Chenopodiaceae,is_type,Family
+Chimaphila maculata,belongs_to,Pyrolaceae
+Chimaphila maculata,is_type,Species
+Chimaphila umbellata,belongs_to,Pyrolaceae
+Chimaphila umbellata,is_type,Species
+Chlorophyta,belongs_to,Plantae
+Chlorophyta,belongs_to,Plantae
+Chlorophyta,is_type,Phylum
+Chlorophyta,is_type,Phylum
+Chondrus crispus,belongs_to,Gigartinaceae
+Chondrus crispus,is_type,Species
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,belongs_to,Animalia
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chordata,is_type,Phylum
+Chromista,is_type,Kingdom
+Chromista,is_type,Kingdom
+Chromista,is_type,Kingdom
+Cicadellidae,belongs_to,Hemiptera
+Cicadellidae,is_type,Family
+Cichorium intybus,belongs_to,Asteraceae
+Cichorium intybus,is_type,Species
+Cicindela sexguttata,belongs_to,Carabidae
+Cicindela sexguttata,is_type,Species
+Ciona intestinalis,belongs_to,Cionidae
+Ciona intestinalis,is_type,Species
+Cionidae,belongs_to,Enterogona
+Cionidae,is_type,Family
+Circus cyaneus,belongs_to,Accipitridae
+Circus cyaneus,is_type,Species
+Cistaceae,belongs_to,Malvales
+Cistaceae,belongs_to,Malvales
+Cistaceae,is_type,Family
+Cistaceae,is_type,Family
+Clethra alnifolia,belongs_to,Clethraceae
+Clethra alnifolia,is_type,Species
+Clethraceae,belongs_to,Ericales
+Clethraceae,is_type,Family
+Clusiaceae,belongs_to,Malpighiales
+Clusiaceae,belongs_to,Malpighiales
+Clusiaceae,belongs_to,Malpighiales
+Clusiaceae,is_type,Family
+Clusiaceae,is_type,Family
+Clusiaceae,is_type,Family
+Cnidaria,belongs_to,Animalia
+Cnidaria,is_type,Phylum
+Coccotylus truncatus,belongs_to,Phyllophoraceae
+Coccotylus truncatus,is_type,Species
+Codiaceae,belongs_to,Bryopsidales
+Codiaceae,is_type,Family
+Codium fragile,belongs_to,Codiaceae
+Codium fragile,is_type,Species
+Coleoptera,belongs_to,Insecta
+Coleoptera,belongs_to,Insecta
+Coleoptera,is_type,Order
+Coleoptera,is_type,Order
+Colinus virginianus,belongs_to,Odontophoridae
+Colinus virginianus,is_type,Species
+Collybia tuberosa,belongs_to,Tricholomataceae
+Collybia tuberosa,is_type,Species
+Columbellidae,belongs_to,Neogastropoda
+Columbellidae,is_type,Family
+Columbidae,belongs_to,Columbiformes
+Columbidae,is_type,Family
+Columbiformes,belongs_to,Aves
+Columbiformes,is_type,Order
+Commelina communis,belongs_to,Commelinaceae
+Commelina communis,is_type,Species
+Commelinaceae,belongs_to,Commelinales
+Commelinaceae,is_type,Family
+Commelinales,belongs_to,Liliopsida
+Commelinales,belongs_to,Liliopsida
+Commelinales,is_type,Order
+Commelinales,is_type,Order
+Comptonia peregrina,belongs_to,Myricaceae
+Comptonia peregrina,is_type,Species
+Coprinellus truncorum,belongs_to,Psathyrellaceae
+Coprinellus truncorum,is_type,Species
+Coprinus truncorum,belongs_to,Agaricaceae
+Coprinus truncorum,is_type,Species
+Coraciiformes,belongs_to,Aves
+Coraciiformes,is_type,Order
+Cornaceae,belongs_to,Cornales
+Cornaceae,belongs_to,Cornales
+Cornaceae,is_type,Family
+Cornaceae,is_type,Family
+Cornales,belongs_to,Magnoliopsida
+Cornales,belongs_to,Magnoliopsida
+Cornales,is_type,Order
+Cornales,is_type,Order
+Cornus florida,belongs_to,Cornaceae
+Cornus florida,is_type,Species
+Cortinariaceae,belongs_to,Agaricales
+Cortinariaceae,belongs_to,Agaricales
+Cortinariaceae,belongs_to,Agaricales
+Cortinariaceae,belongs_to,Agaricales
+Cortinariaceae,belongs_to,Agaricales
+Cortinariaceae,is_type,Family
+Cortinariaceae,is_type,Family
+Cortinariaceae,is_type,Family
+Cortinariaceae,is_type,Family
+Cortinariaceae,is_type,Family
+Cortinarius alboviolaceus,belongs_to,Cortinariaceae
+Cortinarius alboviolaceus,is_type,Species
+Cortinarius corrugatus,belongs_to,Cortinariaceae
+Cortinarius corrugatus,is_type,Species
+Cortinarius iodes,belongs_to,Cortinariaceae
+Cortinarius iodes,is_type,Species
+Cortinarius purpurascens,belongs_to,Cortinariaceae
+Cortinarius purpurascens,is_type,Species
+Cortinarius semisanguineus,belongs_to,Cortinariaceae
+Cortinarius semisanguineus,is_type,Species
+Corvidae,belongs_to,Passeriformes
+Corvidae,belongs_to,Passeriformes
+Corvidae,is_type,Family
+Corvidae,is_type,Family
+Corvus brachyrhynchos,belongs_to,Corvidae
+Corvus brachyrhynchos,is_type,Species
+Corylus cornuta,belongs_to,Betulaceae
+Corylus cornuta,is_type,Species
+Costoanachis translirata,belongs_to,Columbellidae
+Costoanachis translirata,is_type,Species
+Crambidae,belongs_to,Lepidoptera
+Crambidae,belongs_to,Lepidoptera
+Crambidae,belongs_to,Lepidoptera
+Crambidae,is_type,Family
+Crambidae,is_type,Family
+Crambidae,is_type,Family
+Craterellus cornucopiodes,belongs_to,Cantharellaceae
+Craterellus cornucopiodes,is_type,Species
+Crepidula fornicata,belongs_to,Calyptraeidae
+Crepidula fornicata,is_type,Species
+Ctenophora,belongs_to,Animalia
+Ctenophora,is_type,Phylum
+Cupido comyntas,belongs_to,Lycaenidae
+Cupido comyntas,is_type,Species
+Cupressaceae,belongs_to,Pinales
+Cupressaceae,belongs_to,Pinales
+Cupressaceae,is_type,Family
+Cupressaceae,is_type,Family
+Cyanocitta cristata,belongs_to,Corvidae
+Cyanocitta cristata,is_type,Species
+Cynanchum louiseae,belongs_to,Asclepiadaceae
+Cynanchum louiseae,is_type,Species
+Cyperaceae,belongs_to,Poales
+Cyperaceae,belongs_to,Poales
+Cyperaceae,belongs_to,Poales
+Cyperaceae,is_type,Family
+Cyperaceae,is_type,Family
+Cyperaceae,is_type,Family
+Cyperus esculentus,belongs_to,Cyperaceae
+Cyperus esculentus,is_type,Species
+Cyprinodon variegatus,belongs_to,Cyprinodontidae
+Cyprinodon variegatus,is_type,Species
+Cyprinodontidae,belongs_to,Cyprinodontiformes
+Cyprinodontidae,is_type,Family
+Cyprinodontiformes,belongs_to,Actinopterygii
+Cyprinodontiformes,is_type,Order
+Cypripedium acaule,belongs_to,Orchidaceae
+Cypripedium acaule,is_type,Species
+Danaus plexippus,belongs_to,Nymphalidae
+Danaus plexippus,is_type,Species
+Dasya baillouviana,belongs_to,Dasyaceae
+Dasya baillouviana,is_type,Species
+Dasyaceae,belongs_to,Ceramiales
+Dasyaceae,is_type,Family
+Daucus carota,belongs_to,Apiaceae
+Daucus carota,is_type,Species
+Decapoda,belongs_to,Malacostraca
+Decapoda,belongs_to,Malacostraca
+Decapoda,belongs_to,Malacostraca
+Decapoda,belongs_to,Malacostraca
+Decapoda,is_type,Order
+Decapoda,is_type,Order
+Decapoda,is_type,Order
+Decapoda,is_type,Order
+Decodon verticillatus,belongs_to,Lythraceae
+Decodon verticillatus,is_type,Species
+Dendroica coronata,belongs_to,Parulidae
+Dendroica coronata,is_type,Species
+Dendroica palmarum,belongs_to,Parulidae
+Dendroica palmarum,is_type,Species
+Dendroica petechia,belongs_to,Parulidae
+Dendroica petechia,is_type,Species
+Dennstaedtiaceae,belongs_to,Polypodiales
+Dennstaedtiaceae,is_type,Family
+Dermateaceae,belongs_to,Helotiales
+Dermateaceae,is_type,Family
+Desmodium paniculatum,belongs_to,Fabaceae
+Desmodium paniculatum,is_type,Species
+Dichanthelium clandestinum,belongs_to,Poaceae
+Dichanthelium clandestinum,is_type,Species
+Dicranaceae,belongs_to,Dicranales
+Dicranaceae,belongs_to,Dicranales
+Dicranaceae,is_type,Family
+Dicranaceae,is_type,Family
+Dicranales,belongs_to,Bryopsida
+Dicranales,belongs_to,Bryopsida
+Dicranales,is_type,Order
+Dicranales,is_type,Order
+Dicranum bonjeanii,belongs_to,Dicranaceae
+Dicranum bonjeanii,is_type,Species
+Dicranum scoparium,belongs_to,Dicranaceae
+Dicranum scoparium,is_type,Species
+Didemnidae,belongs_to,Enterogona
+Didemnidae,is_type,Family
+Didemnum albidum,belongs_to,Didemnidae
+Didemnum albidum,is_type,Species
+Digitaria sanguinalis,belongs_to,Poaceae
+Digitaria sanguinalis,is_type,Species
+Dipsacales,belongs_to,Magnoliopsida
+Dipsacales,belongs_to,Magnoliopsida
+Dipsacales,belongs_to,Magnoliopsida
+Dipsacales,belongs_to,Magnoliopsida
+Dipsacales,belongs_to,Magnoliopsida
+Dipsacales,is_type,Order
+Dipsacales,is_type,Order
+Dipsacales,is_type,Order
+Dipsacales,is_type,Order
+Dipsacales,is_type,Order
+Diptera,belongs_to,Insecta
+Diptera,belongs_to,Insecta
+Diptera,is_type,Order
+Diptera,is_type,Order
+Distichlis spicata,belongs_to,Poaceae
+Distichlis spicata,is_type,Species
+Dolichovespula maculata,belongs_to,Vespidae
+Dolichovespula maculata,is_type,Species
+Dothideales,belongs_to,Dothideomycetes
+Dothideales,is_type,Order
+Dothideomycetes,belongs_to,Ascomycota
+Dothideomycetes,is_type,Class
+Drosera rotundifolia,belongs_to,Droseraceae
+Drosera rotundifolia,is_type,Species
+Droseraceae,belongs_to,Caryophyllales
+Droseraceae,is_type,Family
+Dumetella carolinensis,belongs_to,Mimidae
+Dumetella carolinensis,is_type,Species
+Echinodermata,belongs_to,Animalia
+Echinodermata,belongs_to,Animalia
+Echinodermata,is_type,Phylum
+Echinodermata,is_type,Phylum
+Echinoidea,belongs_to,Echinodermata
+Echinoidea,is_type,Class
+Eichhornia crassipes,belongs_to,Pontederiaceae
+Eichhornia crassipes,is_type,Species
+Elaeagnaceae,belongs_to,Rosales
+Elaeagnaceae,is_type,Family
+Elaeagnus umbellata,belongs_to,Elaeagnaceae
+Elaeagnus umbellata,is_type,Species
+Emberizidae,belongs_to,Passeriformes
+Emberizidae,belongs_to,Passeriformes
+Emberizidae,belongs_to,Passeriformes
+Emberizidae,belongs_to,Passeriformes
+Emberizidae,is_type,Family
+Emberizidae,is_type,Family
+Emberizidae,is_type,Family
+Emberizidae,is_type,Family
+Enterogona,belongs_to,Ascidiacea
+Enterogona,belongs_to,Ascidiacea
+Enterogona,belongs_to,Ascidiacea
+Enterogona,is_type,Order
+Enterogona,is_type,Order
+Enterogona,is_type,Order
+Entolomataceae,belongs_to,Agaricales
+Entolomataceae,is_type,Family
+Epialtidae,belongs_to,Decapoda
+Epialtidae,is_type,Family
+Epifagus virginiana,belongs_to,Orobanchaceae
+Epifagus virginiana,is_type,Species
+Epigaea repens,belongs_to,Ericaceae
+Epigaea repens,is_type,Species
+Eragrostis spectabilis,belongs_to,Poaceae
+Eragrostis spectabilis,is_type,Species
+Ericaceae,belongs_to,Ericales
+Ericaceae,belongs_to,Ericales
+Ericaceae,belongs_to,Ericales
+Ericaceae,belongs_to,Ericales
+Ericaceae,belongs_to,Ericales
+Ericaceae,belongs_to,Ericales
+Ericaceae,belongs_to,Ericales
+Ericaceae,belongs_to,Ericales
+Ericaceae,belongs_to,Ericales
+Ericaceae,belongs_to,Ericales
+Ericaceae,belongs_to,Ericales
+Ericaceae,belongs_to,Ericales
+Ericaceae,is_type,Family
+Ericaceae,is_type,Family
+Ericaceae,is_type,Family
+Ericaceae,is_type,Family
+Ericaceae,is_type,Family
+Ericaceae,is_type,Family
+Ericaceae,is_type,Family
+Ericaceae,is_type,Family
+Ericaceae,is_type,Family
+Ericaceae,is_type,Family
+Ericaceae,is_type,Family
+Ericaceae,is_type,Family
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,belongs_to,Magnoliopsida
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Ericales,is_type,Order
+Eucosma dorsisignatana,belongs_to,Tortricidae
+Eucosma dorsisignatana,is_type,Species
+Eupatorium hyssopifolium,belongs_to,Asteraceae
+Eupatorium hyssopifolium,is_type,Species
+Eupatorium perfoliatum,belongs_to,Asteraceae
+Eupatorium perfoliatum,is_type,Species
+Euphorbiaceae,belongs_to,Malpighiales
+Euphorbiaceae,is_type,Family
+Eurybia spectabilis,belongs_to,Asteraceae
+Eurybia spectabilis,is_type,Species
+Euthamia caroliniana,belongs_to,Asteraceae
+Euthamia caroliniana,is_type,Species
+Euthamia graminifolia,belongs_to,Asteraceae
+Euthamia graminifolia,is_type,Species
+Fabaceae,belongs_to,Fabales
+Fabaceae,belongs_to,Fabales
+Fabaceae,belongs_to,Fabales
+Fabaceae,belongs_to,Fabales
+Fabaceae,belongs_to,Fabales
+Fabaceae,belongs_to,Fabales
+Fabaceae,belongs_to,Fabales
+Fabaceae,belongs_to,Fabales
+Fabaceae,belongs_to,Fabales
+Fabaceae,belongs_to,Fabales
+Fabaceae,belongs_to,Fabales
+Fabaceae,is_type,Family
+Fabaceae,is_type,Family
+Fabaceae,is_type,Family
+Fabaceae,is_type,Family
+Fabaceae,is_type,Family
+Fabaceae,is_type,Family
+Fabaceae,is_type,Family
+Fabaceae,is_type,Family
+Fabaceae,is_type,Family
+Fabaceae,is_type,Family
+Fabaceae,is_type,Family
+Fabales,belongs_to,Magnoliopsida
+Fabales,belongs_to,Magnoliopsida
+Fabales,belongs_to,Magnoliopsida
+Fabales,belongs_to,Magnoliopsida
+Fabales,belongs_to,Magnoliopsida
+Fabales,belongs_to,Magnoliopsida
+Fabales,belongs_to,Magnoliopsida
+Fabales,belongs_to,Magnoliopsida
+Fabales,belongs_to,Magnoliopsida
+Fabales,belongs_to,Magnoliopsida
+Fabales,belongs_to,Magnoliopsida
+Fabales,belongs_to,Magnoliopsida
+Fabales,belongs_to,Magnoliopsida
+Fabales,is_type,Order
+Fabales,is_type,Order
+Fabales,is_type,Order
+Fabales,is_type,Order
+Fabales,is_type,Order
+Fabales,is_type,Order
+Fabales,is_type,Order
+Fabales,is_type,Order
+Fabales,is_type,Order
+Fabales,is_type,Order
+Fabales,is_type,Order
+Fabales,is_type,Order
+Fabales,is_type,Order
+Fagaceae,belongs_to,Fagales
+Fagaceae,belongs_to,Fagales
+Fagaceae,belongs_to,Fagales
+Fagaceae,belongs_to,Fagales
+Fagaceae,belongs_to,Fagales
+Fagaceae,belongs_to,Fagales
+Fagaceae,belongs_to,Fagales
+Fagaceae,is_type,Family
+Fagaceae,is_type,Family
+Fagaceae,is_type,Family
+Fagaceae,is_type,Family
+Fagaceae,is_type,Family
+Fagaceae,is_type,Family
+Fagaceae,is_type,Family
+Fagales,belongs_to,Magnoliopsida
+Fagales,belongs_to,Magnoliopsida
+Fagales,belongs_to,Magnoliopsida
+Fagales,belongs_to,Magnoliopsida
+Fagales,belongs_to,Magnoliopsida
+Fagales,belongs_to,Magnoliopsida
+Fagales,belongs_to,Magnoliopsida
+Fagales,belongs_to,Magnoliopsida
+Fagales,belongs_to,Magnoliopsida
+Fagales,belongs_to,Magnoliopsida
+Fagales,belongs_to,Magnoliopsida
+Fagales,belongs_to,Magnoliopsida
+Fagales,belongs_to,Magnoliopsida
+Fagales,is_type,Order
+Fagales,is_type,Order
+Fagales,is_type,Order
+Fagales,is_type,Order
+Fagales,is_type,Order
+Fagales,is_type,Order
+Fagales,is_type,Order
+Fagales,is_type,Order
+Fagales,is_type,Order
+Fagales,is_type,Order
+Fagales,is_type,Order
+Fagales,is_type,Order
+Fagales,is_type,Order
+Fagus grandifolia,belongs_to,Fagaceae
+Fagus grandifolia,is_type,Species
+Falco columbarius,belongs_to,Falconidae
+Falco columbarius,is_type,Species
+Falco peregrinus,belongs_to,Falconidae
+Falco peregrinus,is_type,Species
+Falco sparverius,belongs_to,Falconidae
+Falco sparverius,is_type,Species
+Falconidae,belongs_to,Falconiformes
+Falconidae,belongs_to,Falconiformes
+Falconidae,belongs_to,Falconiformes
+Falconidae,is_type,Family
+Falconidae,is_type,Family
+Falconidae,is_type,Family
+Falconiformes,belongs_to,Aves
+Falconiformes,belongs_to,Aves
+Falconiformes,belongs_to,Aves
+Falconiformes,is_type,Order
+Falconiformes,is_type,Order
+Falconiformes,is_type,Order
+Festuca filiformis,belongs_to,Poaceae
+Festuca filiformis,is_type,Species
+Festuca rubra,belongs_to,Poaceae
+Festuca rubra,is_type,Species
+Fistulina hepatica,belongs_to,Fistulinaceae
+Fistulina hepatica,is_type,Species
+Fistulinaceae,belongs_to,Agaricales
+Fistulinaceae,is_type,Family
+Florideophyceae,belongs_to,Rhodophyta
+Florideophyceae,belongs_to,Rhodophyta
+Florideophyceae,belongs_to,Rhodophyta
+Florideophyceae,belongs_to,Rhodophyta
+Florideophyceae,is_type,Class
+Florideophyceae,is_type,Class
+Florideophyceae,is_type,Class
+Florideophyceae,is_type,Class
+Fomitopsidaceae,belongs_to,Polyporales
+Fomitopsidaceae,belongs_to,Polyporales
+Fomitopsidaceae,belongs_to,Polyporales
+Fomitopsidaceae,is_type,Family
+Fomitopsidaceae,is_type,Family
+Fomitopsidaceae,is_type,Family
+Forcipulatida,belongs_to,Asteroidea
+Forcipulatida,is_type,Order
+Formicidae,belongs_to,Hymenoptera
+Formicidae,belongs_to,Hymenoptera
+Formicidae,belongs_to,Hymenoptera
+Formicidae,is_type,Family
+Formicidae,is_type,Family
+Formicidae,is_type,Family
+Fragaria virginiana,belongs_to,Rosaceae
+Fragaria virginiana,is_type,Species
+Frangula alnus,belongs_to,Rhamnaceae
+Frangula alnus,is_type,Species
+Fringillidae,belongs_to,Passeriformes
+Fringillidae,belongs_to,Passeriformes
+Fringillidae,is_type,Family
+Fringillidae,is_type,Family
+Fucaceae,belongs_to,Fucales
+Fucaceae,is_type,Family
+Fucales,belongs_to,Phaeophyceae
+Fucales,belongs_to,Phaeophyceae
+Fucales,is_type,Order
+Fucales,is_type,Order
+Fucus vesiculosus,belongs_to,Fucaceae
+Fucus vesiculosus,is_type,Species
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Fungi,is_type,Kingdom
+Galium aparine,belongs_to,Rubiaceae
+Galium aparine,is_type,Species
+Galliformes,belongs_to,Aves
+Galliformes,belongs_to,Aves
+Galliformes,is_type,Order
+Galliformes,is_type,Order
+Gallus gallus,belongs_to,Phasianidae
+Gallus gallus,is_type,Species
+Gastropoda,belongs_to,Mollusca
+Gastropoda,belongs_to,Mollusca
+Gastropoda,belongs_to,Mollusca
+Gastropoda,belongs_to,Mollusca
+Gastropoda,belongs_to,Mollusca
+Gastropoda,belongs_to,Mollusca
+Gastropoda,is_type,Class
+Gastropoda,is_type,Class
+Gastropoda,is_type,Class
+Gastropoda,is_type,Class
+Gastropoda,is_type,Class
+Gastropoda,is_type,Class
+Gaultheria procumbens,belongs_to,Ericaceae
+Gaultheria procumbens,is_type,Species
+Gaylussacia baccata,belongs_to,Ericaceae
+Gaylussacia baccata,is_type,Species
+Gentianaceae,belongs_to,Gentianales
+Gentianaceae,is_type,Family
+Gentianales,belongs_to,Magnoliopsida
+Gentianales,belongs_to,Magnoliopsida
+Gentianales,belongs_to,Magnoliopsida
+Gentianales,belongs_to,Magnoliopsida
+Gentianales,belongs_to,Magnoliopsida
+Gentianales,is_type,Order
+Gentianales,is_type,Order
+Gentianales,is_type,Order
+Gentianales,is_type,Order
+Gentianales,is_type,Order
+Geoglossaceae,belongs_to,Helotiales
+Geoglossaceae,is_type,Family
+Geometridae,belongs_to,Lepidoptera
+Geometridae,belongs_to,Lepidoptera
+Geometridae,is_type,Family
+Geometridae,is_type,Family
+Geukensia demissa,belongs_to,Mytilidae
+Geukensia demissa,is_type,Species
+Gigartinaceae,belongs_to,Gigartinales
+Gigartinaceae,is_type,Family
+Gigartinales,belongs_to,Florideophyceae
+Gigartinales,belongs_to,Florideophyceae
+Gigartinales,belongs_to,Florideophyceae
+Gigartinales,is_type,Order
+Gigartinales,is_type,Order
+Gigartinales,is_type,Order
+Ginkgo biloba,belongs_to,Ginkgoaceae
+Ginkgo biloba,is_type,Species
+Ginkgoaceae,belongs_to,Ginkgoales
+Ginkgoaceae,is_type,Family
+Ginkgoales,belongs_to,Ginkgoopsida
+Ginkgoales,is_type,Order
+Ginkgoopsida,belongs_to,Ginkgophyta
+Ginkgoopsida,is_type,Class
+Ginkgophyta,belongs_to,Plantae
+Ginkgophyta,is_type,Phylum
+Gleditsia triacanthos,belongs_to,Fabaceae
+Gleditsia triacanthos,is_type,Species
+Grifola frondosa,belongs_to,Meripilaceae
+Grifola frondosa,is_type,Species
+Gymnopus dryophilus,belongs_to,Marasmiaceae
+Gymnopus dryophilus,is_type,Species
+Gymnopus spongiosus,belongs_to,Marasmiaceae
+Gymnopus spongiosus,is_type,Species
+Gyponana octolineata,belongs_to,Cicadellidae
+Gyponana octolineata,is_type,Species
+Gyrodon castaneus,belongs_to,Paxillaceae
+Gyrodon castaneus,is_type,Species
+Halosiphon tomentosum,belongs_to,Halosiphonaceae
+Halosiphon tomentosum,is_type,Species
+Halosiphonaceae,belongs_to,Tilopteridales
+Halosiphonaceae,is_type,Family
+Helianthemum canadense,belongs_to,Cistaceae
+Helianthemum canadense,is_type,Species
+Helotiales,belongs_to,Leotiomycetes
+Helotiales,belongs_to,Leotiomycetes
+Helotiales,is_type,Order
+Helotiales,is_type,Order
+Hemigrapsus sanguineus,belongs_to,Varunidae
+Hemigrapsus sanguineus,is_type,Species
+Hemiptera,belongs_to,Insecta
+Hemiptera,is_type,Order
+Hibiscus rosa-sinensis,belongs_to,Malvaceae
+Hibiscus rosa-sinensis,is_type,Species
+Hirundinidae,belongs_to,Passeriformes
+Hirundinidae,is_type,Family
+Holcus lanatus,belongs_to,Poaceae
+Holcus lanatus,is_type,Species
+Hominidae,belongs_to,Primates
+Hominidae,is_type,Family
+Homo sapiens,belongs_to,Hominidae
+Homo sapiens,is_type,Species
+Humidicutis marginata,belongs_to,Hygrophoraceae
+Humidicutis marginata,is_type,Species
+Hydnangiaceae,belongs_to,Agaricales
+Hydnangiaceae,is_type,Family
+Hydnellum scorbiculatum,belongs_to,Bankeraceae
+Hydnellum scorbiculatum,is_type,Species
+Hydrobatidae,belongs_to,Procellariiformes
+Hydrobatidae,is_type,Family
+Hygrophoraceae,belongs_to,Agaricales
+Hygrophoraceae,is_type,Family
+Hylidae,belongs_to,Anura
+Hylidae,is_type,Family
+Hylocomiaceae,belongs_to,Hypnales
+Hylocomiaceae,is_type,Family
+Hymenochaetaceae,belongs_to,Hymenochaetales
+Hymenochaetaceae,is_type,Family
+Hymenochaetales,belongs_to,Agaricomycetes
+Hymenochaetales,is_type,Order
+Hymenochaete olivaceum,belongs_to,Hymenochaetaceae
+Hymenochaete olivaceum,is_type,Species
+Hymenoptera,belongs_to,Insecta
+Hymenoptera,belongs_to,Insecta
+Hymenoptera,belongs_to,Insecta
+Hymenoptera,belongs_to,Insecta
+Hymenoptera,belongs_to,Insecta
+Hymenoptera,belongs_to,Insecta
+Hymenoptera,belongs_to,Insecta
+Hymenoptera,belongs_to,Insecta
+Hymenoptera,is_type,Order
+Hymenoptera,is_type,Order
+Hymenoptera,is_type,Order
+Hymenoptera,is_type,Order
+Hymenoptera,is_type,Order
+Hymenoptera,is_type,Order
+Hymenoptera,is_type,Order
+Hymenoptera,is_type,Order
+Hypericum mutilum,belongs_to,Clusiaceae
+Hypericum mutilum,is_type,Species
+Hypericum perforatum,belongs_to,Clusiaceae
+Hypericum perforatum,is_type,Species
+Hypnales,belongs_to,Bryopsida
+Hypnales,is_type,Order
+Hypochaeris radicata,belongs_to,Asteraceae
+Hypochaeris radicata,is_type,Species
+Hypocreaceae,belongs_to,Hypocreales
+Hypocreaceae,is_type,Family
+Hypocreales,belongs_to,Sordariomycetes
+Hypocreales,is_type,Order
+Hypomyces chrysospermus,belongs_to,Hypocreaceae
+Hypomyces chrysospermus,is_type,Species
+Idia aemula,belongs_to,Noctuidae
+Idia aemula,is_type,Species
+Idia americalis,belongs_to,Noctuidae
+Idia americalis,is_type,Species
+Ilex glabra,belongs_to,Aquifoliaceae
+Ilex glabra,is_type,Species
+Ilex verticillata,belongs_to,Aquifoliaceae
+Ilex verticillata,is_type,Species
+Impatiens capensis,belongs_to,Balsaminaceae
+Impatiens capensis,is_type,Species
+Inocephalus quadratus,belongs_to,Entolomataceae
+Inocephalus quadratus,is_type,Species
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,belongs_to,Arthropoda
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Insecta,is_type,Class
+Isopoda,belongs_to,Malacostraca
+Isopoda,is_type,Order
+Iva frutescens,belongs_to,Asteraceae
+Iva frutescens,is_type,Species
+Juncaceae,belongs_to,Poales
+Juncaceae,belongs_to,Poales
+Juncaceae,belongs_to,Poales
+Juncaceae,belongs_to,Poales
+Juncaceae,is_type,Family
+Juncaceae,is_type,Family
+Juncaceae,is_type,Family
+Juncaceae,is_type,Family
+Juncus gerardii,belongs_to,Juncaceae
+Juncus gerardii,is_type,Species
+Juncus tenuis,belongs_to,Juncaceae
+Juncus tenuis,is_type,Species
+Juniperus virginiana,belongs_to,Cupressaceae
+Juniperus virginiana,is_type,Species
+Junonia coenia,belongs_to,Nymphalidae
+Junonia coenia,is_type,Species
+Kalmia angustifolia,belongs_to,Ericaceae
+Kalmia angustifolia,is_type,Species
+Kalmia latifolia,belongs_to,Ericaceae
+Kalmia latifolia,is_type,Species
+Krigia biflora,belongs_to,Asteraceae
+Krigia biflora,is_type,Species
+Laccaria laccata,belongs_to,Hydnangiaceae
+Laccaria laccata,is_type,Species
+Lactarius chrysorrheus,belongs_to,Russulaceae
+Lactarius chrysorrheus,is_type,Species
+Lactarius imperleptus,belongs_to,Russulaceae
+Lactarius imperleptus,is_type,Species
+Lactarius piperatus,belongs_to,Russulaceae
+Lactarius piperatus,is_type,Species
+Lactarius quietus,belongs_to,Russulaceae
+Lactarius quietus,is_type,Species
+Lactarius rimusellus,belongs_to,Russulaceae
+Lactarius rimusellus,is_type,Species
+Lactarius subvellereus,belongs_to,Russulaceae
+Lactarius subvellereus,is_type,Species
+Lactuca biennis,belongs_to,Asteraceae
+Lactuca biennis,is_type,Species
+Laetiporus sulphureus,belongs_to,Fomitopsidaceae
+Laetiporus sulphureus,is_type,Species
+Lamiaceae,belongs_to,Lamiales
+Lamiaceae,belongs_to,Lamiales
+Lamiaceae,belongs_to,Lamiales
+Lamiaceae,is_type,Family
+Lamiaceae,is_type,Family
+Lamiaceae,is_type,Family
+Lamiales,belongs_to,Magnoliopsida
+Lamiales,belongs_to,Magnoliopsida
+Lamiales,belongs_to,Magnoliopsida
+Lamiales,belongs_to,Magnoliopsida
+Lamiales,belongs_to,Magnoliopsida
+Lamiales,belongs_to,Magnoliopsida
+Lamiales,belongs_to,Magnoliopsida
+Lamiales,belongs_to,Magnoliopsida
+Lamiales,belongs_to,Magnoliopsida
+Lamiales,belongs_to,Magnoliopsida
+Lamiales,belongs_to,Magnoliopsida
+Lamiales,belongs_to,Magnoliopsida
+Lamiales,belongs_to,Magnoliopsida
+Lamiales,is_type,Order
+Lamiales,is_type,Order
+Lamiales,is_type,Order
+Lamiales,is_type,Order
+Lamiales,is_type,Order
+Lamiales,is_type,Order
+Lamiales,is_type,Order
+Lamiales,is_type,Order
+Lamiales,is_type,Order
+Lamiales,is_type,Order
+Lamiales,is_type,Order
+Lamiales,is_type,Order
+Lamiales,is_type,Order
+Laridae,belongs_to,Charadriiformes
+Laridae,belongs_to,Charadriiformes
+Laridae,belongs_to,Charadriiformes
+Laridae,belongs_to,Charadriiformes
+Laridae,is_type,Family
+Laridae,is_type,Family
+Laridae,is_type,Family
+Laridae,is_type,Family
+Larus argentatus,belongs_to,Laridae
+Larus argentatus,is_type,Species
+Larus atricilla,belongs_to,Laridae
+Larus atricilla,is_type,Species
+Larus marinus,belongs_to,Laridae
+Larus marinus,is_type,Species
+Lasius alienus,belongs_to,Formicidae
+Lasius alienus,is_type,Species
+Lathyrus japonicus,belongs_to,Fabaceae
+Lathyrus japonicus,is_type,Species
+Lathyrus latifolius,belongs_to,Fabaceae
+Lathyrus latifolius,is_type,Species
+Lathyrus sylvestris,belongs_to,Fabaceae
+Lathyrus sylvestris,is_type,Species
+Lauraceae,belongs_to,Laurales
+Lauraceae,is_type,Family
+Laurales,belongs_to,Magnoliopsida
+Laurales,is_type,Order
+Lecanoromycetes,belongs_to,Ascomycota
+Lecanoromycetes,belongs_to,Ascomycota
+Lecanoromycetes,is_type,Class
+Lecanoromycetes,is_type,Class
+Leccinum aurantiacum,belongs_to,Boletaceae
+Leccinum aurantiacum,is_type,Species
+Lechea tenuifolia,belongs_to,Cistaceae
+Lechea tenuifolia,is_type,Species
+Leontodon autumnalis,belongs_to,Asteraceae
+Leontodon autumnalis,is_type,Species
+Leotiomycetes,belongs_to,Ascomycota
+Leotiomycetes,belongs_to,Ascomycota
+Leotiomycetes,is_type,Class
+Leotiomycetes,is_type,Class
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,belongs_to,Insecta
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lepidoptera,is_type,Order
+Lespedeza angustifolia,belongs_to,Fabaceae
+Lespedeza angustifolia,is_type,Species
+Lespedeza capitata,belongs_to,Fabaceae
+Lespedeza capitata,is_type,Species
+Leymus mollis,belongs_to,Poaceae
+Leymus mollis,is_type,Species
+Libellulidae,belongs_to,Odonata
+Libellulidae,is_type,Family
+Libinia emarginata,belongs_to,Epialtidae
+Libinia emarginata,is_type,Species
+Ligustrum lucidum,belongs_to,Oleaceae
+Ligustrum lucidum,is_type,Species
+Ligustrum obtusifolium,belongs_to,Oleaceae
+Ligustrum obtusifolium,is_type,Species
+Ligustrum vulgare,belongs_to,Oleaceae
+Ligustrum vulgare,is_type,Species
+Liliaceae,belongs_to,Liliales
+Liliaceae,belongs_to,Liliales
+Liliaceae,is_type,Family
+Liliaceae,is_type,Family
+Liliales,belongs_to,Liliopsida
+Liliales,belongs_to,Liliopsida
+Liliales,belongs_to,Liliopsida
+Liliales,belongs_to,Liliopsida
+Liliales,is_type,Order
+Liliales,is_type,Order
+Liliales,is_type,Order
+Liliales,is_type,Order
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,belongs_to,Magnoliophyta
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Liliopsida,is_type,Class
+Limonium carolinianum,belongs_to,Plumbaginaceae
+Limonium carolinianum,is_type,Species
+Linaceae,belongs_to,Malpighiales
+Linaceae,is_type,Family
+Linaria vulgaris,belongs_to,Scrophulariaceae
+Linaria vulgaris,is_type,Species
+Linum intercursum,belongs_to,Linaceae
+Linum intercursum,is_type,Species
+Lithobates catesbeianus,belongs_to,Ranidae
+Lithobates catesbeianus,is_type,Species
+Littoraria irrorata,belongs_to,Littorinidae
+Littoraria irrorata,is_type,Species
+Littorina littorea,belongs_to,Littorinidae
+Littorina littorea,is_type,Species
+Littorinidae,belongs_to,Neotaenioglossa
+Littorinidae,belongs_to,Neotaenioglossa
+Littorinidae,is_type,Family
+Littorinidae,is_type,Family
+Lobata,belongs_to,Tentaculata
+Lobata,is_type,Order
+Lonicera japonica,belongs_to,Caprifoliaceae
+Lonicera japonica,is_type,Species
+Lonicera morrowii,belongs_to,Caprifoliaceae
+Lonicera morrowii,is_type,Species
+Lucilia sericata,belongs_to,Calliphoridae
+Lucilia sericata,is_type,Species
+Luzula banksiana,belongs_to,Juncaceae
+Luzula banksiana,is_type,Species
+Luzula luzuloides,belongs_to,Juncaceae
+Luzula luzuloides,is_type,Species
+Lycaena phlaeas,belongs_to,Lycaenidae
+Lycaena phlaeas,is_type,Species
+Lycaenidae,belongs_to,Lepidoptera
+Lycaenidae,belongs_to,Lepidoptera
+Lycaenidae,is_type,Family
+Lycaenidae,is_type,Family
+Lycoperdon marginatum,belongs_to,Agaricaceae
+Lycoperdon marginatum,is_type,Species
+Lyophyllaceae,belongs_to,Agaricales
+Lyophyllaceae,is_type,Family
+Lyophyllum decastes,belongs_to,Lyophyllaceae
+Lyophyllum decastes,is_type,Species
+Lythraceae,belongs_to,Myrtales
+Lythraceae,belongs_to,Myrtales
+Lythraceae,is_type,Family
+Lythraceae,is_type,Family
+Lythrum salicaria,belongs_to,Lythraceae
+Lythrum salicaria,is_type,Species
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,belongs_to,Plantae
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliophyta,is_type,Phylum
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,belongs_to,Magnoliophyta
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Magnoliopsida,is_type,Class
+Maianthemum canadense,belongs_to,Liliaceae
+Maianthemum canadense,is_type,Species
+Maianthemum racemosum,belongs_to,Liliaceae
+Maianthemum racemosum,is_type,Species
+Malacostraca,belongs_to,Arthropoda
+Malacostraca,belongs_to,Arthropoda
+Malacostraca,belongs_to,Arthropoda
+Malacostraca,belongs_to,Arthropoda
+Malacostraca,belongs_to,Arthropoda
+Malacostraca,is_type,Class
+Malacostraca,is_type,Class
+Malacostraca,is_type,Class
+Malacostraca,is_type,Class
+Malacostraca,is_type,Class
+Malpighiales,belongs_to,Magnoliopsida
+Malpighiales,belongs_to,Magnoliopsida
+Malpighiales,belongs_to,Magnoliopsida
+Malpighiales,belongs_to,Magnoliopsida
+Malpighiales,belongs_to,Magnoliopsida
+Malpighiales,belongs_to,Magnoliopsida
+Malpighiales,belongs_to,Magnoliopsida
+Malpighiales,belongs_to,Magnoliopsida
+Malpighiales,is_type,Order
+Malpighiales,is_type,Order
+Malpighiales,is_type,Order
+Malpighiales,is_type,Order
+Malpighiales,is_type,Order
+Malpighiales,is_type,Order
+Malpighiales,is_type,Order
+Malpighiales,is_type,Order
+Malvaceae,belongs_to,Malvales
+Malvaceae,is_type,Family
+Malvales,belongs_to,Magnoliopsida
+Malvales,belongs_to,Magnoliopsida
+Malvales,belongs_to,Magnoliopsida
+Malvales,is_type,Order
+Malvales,is_type,Order
+Malvales,is_type,Order
+Mammalia,belongs_to,Chordata
+Mammalia,belongs_to,Chordata
+Mammalia,belongs_to,Chordata
+Mammalia,belongs_to,Chordata
+Mammalia,belongs_to,Chordata
+Mammalia,belongs_to,Chordata
+Mammalia,is_type,Class
+Mammalia,is_type,Class
+Mammalia,is_type,Class
+Mammalia,is_type,Class
+Mammalia,is_type,Class
+Mammalia,is_type,Class
+Marasmiaceae,belongs_to,Agaricales
+Marasmiaceae,belongs_to,Agaricales
+Marasmiaceae,is_type,Family
+Marasmiaceae,is_type,Family
+Mastocarpus stellatus,belongs_to,Petrocelidaceae
+Mastocarpus stellatus,is_type,Species
+Maxillopoda,belongs_to,Arthropoda
+Maxillopoda,is_type,Class
+Megaceryle alcyon,belongs_to,Alcedinidae
+Megaceryle alcyon,is_type,Species
+Megaptera novaeangliae,belongs_to,Balaenopteridae
+Megaptera novaeangliae,is_type,Species
+Melanerpes carolinus,belongs_to,Picidae
+Melanerpes carolinus,is_type,Species
+Melanoplus femurrubrum,belongs_to,Acrididae
+Melanoplus femurrubrum,is_type,Species
+Melospiza melodia,belongs_to,Emberizidae
+Melospiza melodia,is_type,Species
+Menidia menidia,belongs_to,Atherinopsidae
+Menidia menidia,is_type,Species
+Mephitidae,belongs_to,Carnivora
+Mephitidae,is_type,Family
+Mephitis mephitis,belongs_to,Mephitidae
+Mephitis mephitis,is_type,Species
+Meripilaceae,belongs_to,Polyporales
+Meripilaceae,belongs_to,Polyporales
+Meripilaceae,is_type,Family
+Meripilaceae,is_type,Family
+Meripilus sumstinei,belongs_to,Meripilaceae
+Meripilus sumstinei,is_type,Species
+Mimidae,belongs_to,Passeriformes
+Mimidae,belongs_to,Passeriformes
+Mimidae,is_type,Family
+Mimidae,is_type,Family
+Mimus polyglottos,belongs_to,Mimidae
+Mimus polyglottos,is_type,Species
+Mnemiopsis leidyi,belongs_to,Bolinopsidae
+Mnemiopsis leidyi,is_type,Species
+Mollisia cinerea,belongs_to,Dermateaceae
+Mollisia cinerea,is_type,Species
+Mollusca,belongs_to,Animalia
+Mollusca,belongs_to,Animalia
+Mollusca,belongs_to,Animalia
+Mollusca,belongs_to,Animalia
+Mollusca,belongs_to,Animalia
+Mollusca,belongs_to,Animalia
+Mollusca,belongs_to,Animalia
+Mollusca,belongs_to,Animalia
+Mollusca,is_type,Phylum
+Mollusca,is_type,Phylum
+Mollusca,is_type,Phylum
+Mollusca,is_type,Phylum
+Mollusca,is_type,Phylum
+Mollusca,is_type,Phylum
+Mollusca,is_type,Phylum
+Mollusca,is_type,Phylum
+Monotropa uniflora,belongs_to,Monotropaceae
+Monotropa uniflora,is_type,Species
+Monotropaceae,belongs_to,Ericales
+Monotropaceae,is_type,Family
+Morella cerifera,belongs_to,Myricaceae
+Morella cerifera,is_type,Species
+Morella pensylvanica,belongs_to,Myricaceae
+Morella pensylvanica,is_type,Species
+Morus bassanus,belongs_to,Sulidae
+Morus bassanus,is_type,Species
+Muricidae,belongs_to,Neogastropoda
+Muricidae,is_type,Family
+Mycena galericulata,belongs_to,Mycenaceae
+Mycena galericulata,is_type,Species
+Mycena haematopus,belongs_to,Mycenaceae
+Mycena haematopus,is_type,Species
+Mycenaceae,belongs_to,Agaricales
+Mycenaceae,belongs_to,Agaricales
+Mycenaceae,belongs_to,Agaricales
+Mycenaceae,is_type,Family
+Mycenaceae,is_type,Family
+Mycenaceae,is_type,Family
+Myricaceae,belongs_to,Fagales
+Myricaceae,belongs_to,Fagales
+Myricaceae,belongs_to,Fagales
+Myricaceae,is_type,Family
+Myricaceae,is_type,Family
+Myricaceae,is_type,Family
+Myrmeleon immaculatus,belongs_to,Myrmeleontidae
+Myrmeleon immaculatus,is_type,Species
+Myrmeleontidae,belongs_to,Neuroptera
+Myrmeleontidae,is_type,Family
+Myrmica rubra,belongs_to,Formicidae
+Myrmica rubra,is_type,Species
+Myrtales,belongs_to,Magnoliopsida
+Myrtales,belongs_to,Magnoliopsida
+Myrtales,is_type,Order
+Myrtales,is_type,Order
+Mytilidae,belongs_to,Mytiloida
+Mytilidae,belongs_to,Mytiloida
+Mytilidae,is_type,Family
+Mytilidae,is_type,Family
+Mytiloida,belongs_to,Bivalvia
+Mytiloida,belongs_to,Bivalvia
+Mytiloida,is_type,Order
+Mytiloida,is_type,Order
+Mytilus edulis,belongs_to,Mytilidae
+Mytilus edulis,is_type,Species
+Neogastropoda,belongs_to,Gastropoda
+Neogastropoda,belongs_to,Gastropoda
+Neogastropoda,belongs_to,Gastropoda
+Neogastropoda,is_type,Order
+Neogastropoda,is_type,Order
+Neogastropoda,is_type,Order
+Neotaenioglossa,belongs_to,Gastropoda
+Neotaenioglossa,belongs_to,Gastropoda
+Neotaenioglossa,belongs_to,Gastropoda
+Neotaenioglossa,is_type,Order
+Neotaenioglossa,is_type,Order
+Neotaenioglossa,is_type,Order
+Neuroptera,belongs_to,Insecta
+Neuroptera,is_type,Order
+Noctuidae,belongs_to,Lepidoptera
+Noctuidae,belongs_to,Lepidoptera
+Noctuidae,belongs_to,Lepidoptera
+Noctuidae,belongs_to,Lepidoptera
+Noctuidae,belongs_to,Lepidoptera
+Noctuidae,belongs_to,Lepidoptera
+Noctuidae,belongs_to,Lepidoptera
+Noctuidae,belongs_to,Lepidoptera
+Noctuidae,belongs_to,Lepidoptera
+Noctuidae,belongs_to,Lepidoptera
+Noctuidae,belongs_to,Lepidoptera
+Noctuidae,belongs_to,Lepidoptera
+Noctuidae,belongs_to,Lepidoptera
+Noctuidae,is_type,Family
+Noctuidae,is_type,Family
+Noctuidae,is_type,Family
+Noctuidae,is_type,Family
+Noctuidae,is_type,Family
+Noctuidae,is_type,Family
+Noctuidae,is_type,Family
+Noctuidae,is_type,Family
+Noctuidae,is_type,Family
+Noctuidae,is_type,Family
+Noctuidae,is_type,Family
+Noctuidae,is_type,Family
+Noctuidae,is_type,Family
+Nomophila nearctica,belongs_to,Crambidae
+Nomophila nearctica,is_type,Species
+Nymphaea odorata,belongs_to,Nymphaeaceae
+Nymphaea odorata,is_type,Species
+Nymphaeaceae,belongs_to,Nymphaeales
+Nymphaeaceae,is_type,Family
+Nymphaeales,belongs_to,Magnoliopsida
+Nymphaeales,is_type,Order
+Nymphalidae,belongs_to,Lepidoptera
+Nymphalidae,belongs_to,Lepidoptera
+Nymphalidae,belongs_to,Lepidoptera
+Nymphalidae,belongs_to,Lepidoptera
+Nymphalidae,belongs_to,Lepidoptera
+Nymphalidae,belongs_to,Lepidoptera
+Nymphalidae,belongs_to,Lepidoptera
+Nymphalidae,is_type,Family
+Nymphalidae,is_type,Family
+Nymphalidae,is_type,Family
+Nymphalidae,is_type,Family
+Nymphalidae,is_type,Family
+Nymphalidae,is_type,Family
+Nymphalidae,is_type,Family
+Nyssa sylvatica,belongs_to,Cornaceae
+Nyssa sylvatica,is_type,Species
+Oceanites oceanicus,belongs_to,Hydrobatidae
+Oceanites oceanicus,is_type,Species
+Ochrophyta,belongs_to,Chromista
+Ochrophyta,belongs_to,Chromista
+Ochrophyta,belongs_to,Chromista
+Ochrophyta,is_type,Phylum
+Ochrophyta,is_type,Phylum
+Ochrophyta,is_type,Phylum
+Ocypodidae,belongs_to,Decapoda
+Ocypodidae,is_type,Family
+Odonata,belongs_to,Insecta
+Odonata,is_type,Order
+Odontophoridae,belongs_to,Galliformes
+Odontophoridae,is_type,Family
+Oleaceae,belongs_to,Lamiales
+Oleaceae,belongs_to,Lamiales
+Oleaceae,belongs_to,Lamiales
+Oleaceae,is_type,Family
+Oleaceae,is_type,Family
+Oleaceae,is_type,Family
+Oligoporus fragilis,belongs_to,Fomitopsidaceae
+Oligoporus fragilis,is_type,Species
+Orchidaceae,belongs_to,Asparagales
+Orchidaceae,is_type,Family
+Orobanchaceae,belongs_to,Lamiales
+Orobanchaceae,is_type,Family
+Orthoptera,belongs_to,Insecta
+Orthoptera,is_type,Order
+Osmunda cinnamomea,belongs_to,Osmundaceae
+Osmunda cinnamomea,is_type,Species
+Osmundaceae,belongs_to,Osmundales
+Osmundaceae,is_type,Family
+Osmundales,belongs_to,Polypodiopsida
+Osmundales,is_type,Order
+Pandion haliaetus,belongs_to,Pandionidae
+Pandion haliaetus,is_type,Species
+Pandionidae,belongs_to,Accipitriformes
+Pandionidae,is_type,Family
+Panellus stypticus,belongs_to,Mycenaceae
+Panellus stypticus,is_type,Species
+Panicum virgatum,belongs_to,Poaceae
+Panicum virgatum,is_type,Species
+Papilio canadensis,belongs_to,Papilionidae
+Papilio canadensis,is_type,Species
+Papilionidae,belongs_to,Lepidoptera
+Papilionidae,is_type,Family
+Paridae,belongs_to,Passeriformes
+Paridae,belongs_to,Passeriformes
+Paridae,is_type,Family
+Paridae,is_type,Family
+Parthenocissus quinquefolia,belongs_to,Vitaceae
+Parthenocissus quinquefolia,is_type,Species
+Parthenocissus vitacea,belongs_to,Vitaceae
+Parthenocissus vitacea,is_type,Species
+Parulidae,belongs_to,Passeriformes
+Parulidae,belongs_to,Passeriformes
+Parulidae,belongs_to,Passeriformes
+Parulidae,is_type,Family
+Parulidae,is_type,Family
+Parulidae,is_type,Family
+Passer domesticus,belongs_to,Passeridae
+Passer domesticus,is_type,Species
+Passerculus sandwichensis,belongs_to,Emberizidae
+Passerculus sandwichensis,is_type,Species
+Passeridae,belongs_to,Passeriformes
+Passeridae,is_type,Family
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,belongs_to,Aves
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Passeriformes,is_type,Order
+Paxillaceae,belongs_to,Boletales
+Paxillaceae,is_type,Family
+Pediasia trisecta,belongs_to,Crambidae
+Pediasia trisecta,is_type,Species
+Pelecaniformes,belongs_to,Aves
+Pelecaniformes,is_type,Order
+Perciformes,belongs_to,Actinopterygii
+Perciformes,is_type,Order
+Petrocelidaceae,belongs_to,Gigartinales
+Petrocelidaceae,is_type,Family
+Phaeolus schweinitzii,belongs_to,Fomitopsidaceae
+Phaeolus schweinitzii,is_type,Species
+Phaeophyceae,belongs_to,Ochrophyta
+Phaeophyceae,belongs_to,Ochrophyta
+Phaeophyceae,belongs_to,Ochrophyta
+Phaeophyceae,is_type,Class
+Phaeophyceae,is_type,Class
+Phaeophyceae,is_type,Class
+Phalacrocoracidae,belongs_to,Suliformes
+Phalacrocoracidae,belongs_to,Suliformes
+Phalacrocoracidae,is_type,Family
+Phalacrocoracidae,is_type,Family
+Phalacrocorax auritus,belongs_to,Phalacrocoracidae
+Phalacrocorax auritus,is_type,Species
+Phalacrocorax carbo,belongs_to,Phalacrocoracidae
+Phalacrocorax carbo,is_type,Species
+Phasianidae,belongs_to,Galliformes
+Phasianidae,is_type,Family
+Phlogophora periculosa,belongs_to,Noctuidae
+Phlogophora periculosa,is_type,Species
+Phoca vitulina,belongs_to,Phocidae
+Phoca vitulina,is_type,Species
+Phocidae,belongs_to,Carnivora
+Phocidae,is_type,Family
+Photinia pyrifolia,belongs_to,Rosaceae
+Photinia pyrifolia,is_type,Species
+Phragmites australis,belongs_to,Poaceae
+Phragmites australis,is_type,Species
+Phyciodes cocyta,belongs_to,Nymphalidae
+Phyciodes cocyta,is_type,Species
+Phyciodes tharos,belongs_to,Nymphalidae
+Phyciodes tharos,is_type,Species
+Phycitodes reliquella,belongs_to,Nymphalidae
+Phycitodes reliquella,is_type,Species
+Phyllophoraceae,belongs_to,Gigartinales
+Phyllophoraceae,is_type,Family
+Phyllosticta smilacis,belongs_to,Botryosphaeriaceae
+Phyllosticta smilacis,is_type,Species
+Physalacriaceae,belongs_to,Agaricales
+Physalacriaceae,belongs_to,Agaricales
+Physalacriaceae,belongs_to,Agaricales
+Physalacriaceae,is_type,Family
+Physalacriaceae,is_type,Family
+Physalacriaceae,is_type,Family
+Phytolacca americana,belongs_to,Phytolaccaceae
+Phytolacca americana,is_type,Species
+Phytolaccaceae,belongs_to,Caryophyllales
+Phytolaccaceae,is_type,Family
+Picidae,belongs_to,Piciformes
+Picidae,belongs_to,Piciformes
+Picidae,is_type,Family
+Picidae,is_type,Family
+Piciformes,belongs_to,Aves
+Piciformes,belongs_to,Aves
+Piciformes,is_type,Order
+Piciformes,is_type,Order
+Picoides pubescens,belongs_to,Picidae
+Picoides pubescens,is_type,Species
+Pieridae,belongs_to,Lepidoptera
+Pieridae,is_type,Family
+Pieris rapae,belongs_to,Pieridae
+Pieris rapae,is_type,Species
+Pinaceae,belongs_to,Pinales
+Pinaceae,belongs_to,Pinales
+Pinaceae,is_type,Family
+Pinaceae,is_type,Family
+Pinales,belongs_to,Pinopsida
+Pinales,belongs_to,Pinopsida
+Pinales,belongs_to,Pinopsida
+Pinales,belongs_to,Pinopsida
+Pinales,belongs_to,Pinopsida
+Pinales,is_type,Order
+Pinales,is_type,Order
+Pinales,is_type,Order
+Pinales,is_type,Order
+Pinales,is_type,Order
+Pinophyta,belongs_to,Plantae
+Pinophyta,belongs_to,Plantae
+Pinophyta,belongs_to,Plantae
+Pinophyta,belongs_to,Plantae
+Pinophyta,belongs_to,Plantae
+Pinophyta,is_type,Phylum
+Pinophyta,is_type,Phylum
+Pinophyta,is_type,Phylum
+Pinophyta,is_type,Phylum
+Pinophyta,is_type,Phylum
+Pinopsida,belongs_to,Pinophyta
+Pinopsida,belongs_to,Pinophyta
+Pinopsida,belongs_to,Pinophyta
+Pinopsida,belongs_to,Pinophyta
+Pinopsida,belongs_to,Pinophyta
+Pinopsida,is_type,Class
+Pinopsida,is_type,Class
+Pinopsida,is_type,Class
+Pinopsida,is_type,Class
+Pinopsida,is_type,Class
+Pinus rigida,belongs_to,Pinaceae
+Pinus rigida,is_type,Species
+Pinus strobus,belongs_to,Pinaceae
+Pinus strobus,is_type,Species
+Pipilo erythrophthalmus,belongs_to,Emberizidae
+Pipilo erythrophthalmus,is_type,Species
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantae,is_type,Kingdom
+Plantaginaceae,belongs_to,Lamiales
+Plantaginaceae,belongs_to,Lamiales
+Plantaginaceae,belongs_to,Lamiales
+Plantaginaceae,is_type,Family
+Plantaginaceae,is_type,Family
+Plantaginaceae,is_type,Family
+Plantago lanceolata,belongs_to,Plantaginaceae
+Plantago lanceolata,is_type,Species
+Plantago major,belongs_to,Plantaginaceae
+Plantago major,is_type,Species
+Plantago maritima,belongs_to,Plantaginaceae
+Plantago maritima,is_type,Species
+Pleurogona,belongs_to,Ascidiacea
+Pleurogona,is_type,Order
+Pleuroprucha asthenaria,belongs_to,Geometridae
+Pleuroprucha asthenaria,is_type,Species
+Pleurotaceae,belongs_to,Agaricales
+Pleurotaceae,belongs_to,Agaricales
+Pleurotaceae,is_type,Family
+Pleurotaceae,is_type,Family
+Pleurotus ostreatus,belongs_to,Pleurotaceae
+Pleurotus ostreatus,is_type,Species
+Pleurotus pulmonarius,belongs_to,Pleurotaceae
+Pleurotus pulmonarius,is_type,Species
+Pleurozium schreberi,belongs_to,Hylocomiaceae
+Pleurozium schreberi,is_type,Species
+Pluchea odorata,belongs_to,Asteraceae
+Pluchea odorata,is_type,Species
+Plumbaginaceae,belongs_to,Caryophyllales
+Plumbaginaceae,is_type,Family
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,belongs_to,Poales
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poaceae,is_type,Family
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,belongs_to,Liliopsida
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poales,is_type,Order
+Poecile atricapillus,belongs_to,Paridae
+Poecile atricapillus,is_type,Species
+Polistes fuscatus,belongs_to,Vespidae
+Polistes fuscatus,is_type,Species
+Polychaeta,belongs_to,Annelida
+Polychaeta,is_type,Class
+Polygala cruciata,belongs_to,Polygalaceae
+Polygala cruciata,is_type,Species
+Polygala nuttallii,belongs_to,Polygalaceae
+Polygala nuttallii,is_type,Species
+Polygalaceae,belongs_to,Fabales
+Polygalaceae,belongs_to,Fabales
+Polygalaceae,is_type,Family
+Polygalaceae,is_type,Family
+Polygonaceae,belongs_to,Caryophyllales
+Polygonaceae,belongs_to,Caryophyllales
+Polygonaceae,belongs_to,Caryophyllales
+Polygonaceae,belongs_to,Caryophyllales
+Polygonaceae,is_type,Family
+Polygonaceae,is_type,Family
+Polygonaceae,is_type,Family
+Polygonaceae,is_type,Family
+Polygonum cuspidatum,belongs_to,Polygonaceae
+Polygonum cuspidatum,is_type,Species
+Polygonum hydropiperoides,belongs_to,Polygonaceae
+Polygonum hydropiperoides,is_type,Species
+Polygonum persicaria,belongs_to,Polygonaceae
+Polygonum persicaria,is_type,Species
+Polygonum scandens,belongs_to,Polygonaceae
+Polygonum scandens,is_type,Species
+Polypodiales,belongs_to,Polypodiopsida
+Polypodiales,belongs_to,Polypodiopsida
+Polypodiales,belongs_to,Polypodiopsida
+Polypodiales,is_type,Order
+Polypodiales,is_type,Order
+Polypodiales,is_type,Order
+Polypodiopsida,belongs_to,Pteridophyta
+Polypodiopsida,belongs_to,Pteridophyta
+Polypodiopsida,belongs_to,Pteridophyta
+Polypodiopsida,belongs_to,Pteridophyta
+Polypodiopsida,is_type,Class
+Polypodiopsida,is_type,Class
+Polypodiopsida,is_type,Class
+Polypodiopsida,is_type,Class
+Polyporaceae,belongs_to,Polyporales
+Polyporaceae,belongs_to,Polyporales
+Polyporaceae,belongs_to,Polyporales
+Polyporaceae,is_type,Family
+Polyporaceae,is_type,Family
+Polyporaceae,is_type,Family
+Polyporales,belongs_to,Agaricomycetes
+Polyporales,belongs_to,Agaricomycetes
+Polyporales,belongs_to,Agaricomycetes
+Polyporales,belongs_to,Agaricomycetes
+Polyporales,belongs_to,Agaricomycetes
+Polyporales,belongs_to,Agaricomycetes
+Polyporales,belongs_to,Agaricomycetes
+Polyporales,belongs_to,Agaricomycetes
+Polyporales,is_type,Order
+Polyporales,is_type,Order
+Polyporales,is_type,Order
+Polyporales,is_type,Order
+Polyporales,is_type,Order
+Polyporales,is_type,Order
+Polyporales,is_type,Order
+Polyporales,is_type,Order
+Polytrichaceae,belongs_to,Polytrichales
+Polytrichaceae,is_type,Family
+Polytrichales,belongs_to,Polytrichopsida
+Polytrichales,is_type,Order
+Polytrichopsida,belongs_to,Bryophyta
+Polytrichopsida,is_type,Class
+Polytrichum commune,belongs_to,Polytrichaceae
+Polytrichum commune,is_type,Species
+Pontederiaceae,belongs_to,Commelinales
+Pontederiaceae,is_type,Family
+Populus tremuloides,belongs_to,Salicaceae
+Populus tremuloides,is_type,Species
+Portunidae,belongs_to,Decapoda
+Portunidae,is_type,Family
+Potentilla canadensis,belongs_to,Rosaceae
+Potentilla canadensis,is_type,Species
+Prenanthes trifoliolata,belongs_to,Asteraceae
+Prenanthes trifoliolata,is_type,Species
+Primates,belongs_to,Mammalia
+Primates,is_type,Order
+Primulaceae,belongs_to,Ericales
+Primulaceae,is_type,Family
+Procellariiformes,belongs_to,Aves
+Procellariiformes,is_type,Order
+Prunella vulgaris,belongs_to,Lamiaceae
+Prunella vulgaris,is_type,Species
+Prunus caroliniana,belongs_to,Rosaceae
+Prunus caroliniana,is_type,Species
+Prunus maritima,belongs_to,Rosaceae
+Prunus maritima,is_type,Species
+Prunus serotina,belongs_to,Rosaceae
+Prunus serotina,is_type,Species
+Psathyrellaceae,belongs_to,Agaricales
+Psathyrellaceae,is_type,Family
+Pseudacris crucifer,belongs_to,Hylidae
+Pseudacris crucifer,is_type,Species
+Pseudoboletus parasiticus,belongs_to,Boletaceae
+Pseudoboletus parasiticus,is_type,Species
+Pseudognaphalium obtusifolium,belongs_to,Asteraceae
+Pseudognaphalium obtusifolium,is_type,Species
+Pteridium aquilinum,belongs_to,Dennstaedtiaceae
+Pteridium aquilinum,is_type,Species
+Pteridophyta,belongs_to,Plantae
+Pteridophyta,belongs_to,Plantae
+Pteridophyta,belongs_to,Plantae
+Pteridophyta,belongs_to,Plantae
+Pteridophyta,is_type,Phylum
+Pteridophyta,is_type,Phylum
+Pteridophyta,is_type,Phylum
+Pteridophyta,is_type,Phylum
+Puccinia eriophori,belongs_to,Pucciniaceae
+Puccinia eriophori,is_type,Species
+Puccinia glechomatis,belongs_to,Pucciniaceae
+Puccinia glechomatis,is_type,Species
+Pucciniaceae,belongs_to,Pucciniales
+Pucciniaceae,belongs_to,Pucciniales
+Pucciniaceae,is_type,Family
+Pucciniaceae,is_type,Family
+Pucciniales,belongs_to,Pucciniomycetes
+Pucciniales,belongs_to,Pucciniomycetes
+Pucciniales,is_type,Order
+Pucciniales,is_type,Order
+Pucciniomycetes,belongs_to,Basidiomycota
+Pucciniomycetes,belongs_to,Basidiomycota
+Pucciniomycetes,is_type,Class
+Pucciniomycetes,is_type,Class
+Pycnanthemum muticum,belongs_to,Lamiaceae
+Pycnanthemum muticum,is_type,Species
+Pycnanthemum tenuifolium,belongs_to,Lamiaceae
+Pycnanthemum tenuifolium,is_type,Species
+Pyrolaceae,belongs_to,Ericales
+Pyrolaceae,belongs_to,Ericales
+Pyrolaceae,is_type,Family
+Pyrolaceae,is_type,Family
+Pyrrharctia isabella,belongs_to,Arctiidae
+Pyrrharctia isabella,is_type,Species
+Quercus alba,belongs_to,Fagaceae
+Quercus alba,is_type,Species
+Quercus coccinea,belongs_to,Fagaceae
+Quercus coccinea,is_type,Species
+Quercus ilicifolia,belongs_to,Fagaceae
+Quercus ilicifolia,is_type,Species
+Quercus prinoides,belongs_to,Fagaceae
+Quercus prinoides,is_type,Species
+Quercus rubra,belongs_to,Fagaceae
+Quercus rubra,is_type,Species
+Quercus velutina,belongs_to,Fagaceae
+Quercus velutina,is_type,Species
+Rana sylvatica,belongs_to,Ranidae
+Rana sylvatica,is_type,Species
+Ranidae,belongs_to,Anura
+Ranidae,belongs_to,Anura
+Ranidae,is_type,Family
+Ranidae,is_type,Family
+Rhamnaceae,belongs_to,Rosales
+Rhamnaceae,is_type,Family
+Rhizangiidae,belongs_to,Scleractinia
+Rhizangiidae,is_type,Family
+Rhododendron viscosum,belongs_to,Ericaceae
+Rhododendron viscosum,is_type,Species
+Rhodomela confervoides,belongs_to,Rhodomelaceae
+Rhodomela confervoides,is_type,Species
+Rhodomelaceae,belongs_to,Ceramiales
+Rhodomelaceae,is_type,Family
+Rhodophyceae,belongs_to,Rhodophyta
+Rhodophyceae,belongs_to,Rhodophyta
+Rhodophyceae,is_type,Class
+Rhodophyceae,is_type,Class
+Rhodophyta,belongs_to,Plantae
+Rhodophyta,belongs_to,Plantae
+Rhodophyta,belongs_to,Plantae
+Rhodophyta,belongs_to,Plantae
+Rhodophyta,belongs_to,Plantae
+Rhodophyta,belongs_to,Plantae
+Rhodophyta,is_type,Phylum
+Rhodophyta,is_type,Phylum
+Rhodophyta,is_type,Phylum
+Rhodophyta,is_type,Phylum
+Rhodophyta,is_type,Phylum
+Rhodophyta,is_type,Phylum
+Rhodymeniales,belongs_to,Florideophyceae
+Rhodymeniales,is_type,Order
+Rhus copallinum,belongs_to,Anacardiaceae
+Rhus copallinum,is_type,Species
+Rhus typhina,belongs_to,Anacardiaceae
+Rhus typhina,is_type,Species
+Rodentia,belongs_to,Mammalia
+Rodentia,belongs_to,Mammalia
+Rodentia,is_type,Order
+Rodentia,is_type,Order
+Rosa multiflora,belongs_to,Rosaceae
+Rosa multiflora,is_type,Species
+Rosa nitida,belongs_to,Rosaceae
+Rosa nitida,is_type,Species
+Rosa rugosa,belongs_to,Rosaceae
+Rosa rugosa,is_type,Species
+Rosaceae,belongs_to,Rosales
+Rosaceae,belongs_to,Rosales
+Rosaceae,belongs_to,Rosales
+Rosaceae,belongs_to,Rosales
+Rosaceae,belongs_to,Rosales
+Rosaceae,belongs_to,Rosales
+Rosaceae,belongs_to,Rosales
+Rosaceae,belongs_to,Rosales
+Rosaceae,belongs_to,Rosales
+Rosaceae,belongs_to,Rosales
+Rosaceae,belongs_to,Rosales
+Rosaceae,belongs_to,Rosales
+Rosaceae,belongs_to,Rosales
+Rosaceae,is_type,Family
+Rosaceae,is_type,Family
+Rosaceae,is_type,Family
+Rosaceae,is_type,Family
+Rosaceae,is_type,Family
+Rosaceae,is_type,Family
+Rosaceae,is_type,Family
+Rosaceae,is_type,Family
+Rosaceae,is_type,Family
+Rosaceae,is_type,Family
+Rosaceae,is_type,Family
+Rosaceae,is_type,Family
+Rosaceae,is_type,Family
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,belongs_to,Magnoliopsida
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rosales,is_type,Order
+Rubiaceae,belongs_to,Gentianales
+Rubiaceae,is_type,Family
+Rubus allegheniensis,belongs_to,Rosaceae
+Rubus allegheniensis,is_type,Species
+Rubus bifrons,belongs_to,Rosaceae
+Rubus bifrons,is_type,Species
+Rubus flagellaris,belongs_to,Rosaceae
+Rubus flagellaris,is_type,Species
+Rubus pensilvanicus,belongs_to,Rosaceae
+Rubus pensilvanicus,is_type,Species
+Rudbeckia hirta,belongs_to,Asteraceae
+Rudbeckia hirta,is_type,Species
+Russula compacta,belongs_to,Russulaceae
+Russula compacta,is_type,Species
+Russula disimulans,belongs_to,Russulaceae
+Russula disimulans,is_type,Species
+Russula mariae,belongs_to,Russulaceae
+Russula mariae,is_type,Species
+Russula mutabilis,belongs_to,Russulaceae
+Russula mutabilis,is_type,Species
+Russula variata,belongs_to,Russulaceae
+Russula variata,is_type,Species
+Russulaceae,belongs_to,Russulales
+Russulaceae,belongs_to,Russulales
+Russulaceae,belongs_to,Russulales
+Russulaceae,belongs_to,Russulales
+Russulaceae,belongs_to,Russulales
+Russulaceae,belongs_to,Russulales
+Russulaceae,belongs_to,Russulales
+Russulaceae,belongs_to,Russulales
+Russulaceae,belongs_to,Russulales
+Russulaceae,belongs_to,Russulales
+Russulaceae,belongs_to,Russulales
+Russulaceae,is_type,Family
+Russulaceae,is_type,Family
+Russulaceae,is_type,Family
+Russulaceae,is_type,Family
+Russulaceae,is_type,Family
+Russulaceae,is_type,Family
+Russulaceae,is_type,Family
+Russulaceae,is_type,Family
+Russulaceae,is_type,Family
+Russulaceae,is_type,Family
+Russulaceae,is_type,Family
+Russulales,belongs_to,Agaricomycetes
+Russulales,belongs_to,Agaricomycetes
+Russulales,belongs_to,Agaricomycetes
+Russulales,belongs_to,Agaricomycetes
+Russulales,belongs_to,Agaricomycetes
+Russulales,belongs_to,Agaricomycetes
+Russulales,belongs_to,Agaricomycetes
+Russulales,belongs_to,Agaricomycetes
+Russulales,belongs_to,Agaricomycetes
+Russulales,belongs_to,Agaricomycetes
+Russulales,belongs_to,Agaricomycetes
+Russulales,belongs_to,Agaricomycetes
+Russulales,belongs_to,Agaricomycetes
+Russulales,is_type,Order
+Russulales,is_type,Order
+Russulales,is_type,Order
+Russulales,is_type,Order
+Russulales,is_type,Order
+Russulales,is_type,Order
+Russulales,is_type,Order
+Russulales,is_type,Order
+Russulales,is_type,Order
+Russulales,is_type,Order
+Russulales,is_type,Order
+Russulales,is_type,Order
+Russulales,is_type,Order
+Salicaceae,belongs_to,Malpighiales
+Salicaceae,belongs_to,Malpighiales
+Salicaceae,belongs_to,Malpighiales
+Salicaceae,is_type,Family
+Salicaceae,is_type,Family
+Salicaceae,is_type,Family
+Salicornia depressa,belongs_to,Chenopodiaceae
+Salicornia depressa,is_type,Species
+Salix cinerea,belongs_to,Salicaceae
+Salix cinerea,is_type,Species
+Salix humilis,belongs_to,Salicaceae
+Salix humilis,is_type,Species
+Sambucus nigra,belongs_to,Caprifoliaceae
+Sambucus nigra,is_type,Species
+Sapindaceae,belongs_to,Sapindales
+Sapindaceae,belongs_to,Sapindales
+Sapindaceae,is_type,Family
+Sapindaceae,is_type,Family
+Sapindales,belongs_to,Magnoliopsida
+Sapindales,belongs_to,Magnoliopsida
+Sapindales,belongs_to,Magnoliopsida
+Sapindales,belongs_to,Magnoliopsida
+Sapindales,belongs_to,Magnoliopsida
+Sapindales,is_type,Order
+Sapindales,is_type,Order
+Sapindales,is_type,Order
+Sapindales,is_type,Order
+Sapindales,is_type,Order
+Sarcodon scabrosus,belongs_to,Bankeraceae
+Sarcodon scabrosus,is_type,Species
+Sargassaceae,belongs_to,Fucales
+Sargassaceae,is_type,Family
+Sargassum filipendula,belongs_to,Sargassaceae
+Sargassum filipendula,is_type,Species
+Sassafras albidum,belongs_to,Lauraceae
+Sassafras albidum,is_type,Species
+Sayornis phoebe,belongs_to,Tyrannidae
+Sayornis phoebe,is_type,Species
+Schizachyrium scoparium,belongs_to,Poaceae
+Schizachyrium scoparium,is_type,Species
+Scirpus cyperinus,belongs_to,Cyperaceae
+Scirpus cyperinus,is_type,Species
+Sciuridae,belongs_to,Rodentia
+Sciuridae,belongs_to,Rodentia
+Sciuridae,is_type,Family
+Sciuridae,is_type,Family
+Sciurus carolinensis,belongs_to,Sciuridae
+Sciurus carolinensis,is_type,Species
+Scleractinia,belongs_to,Anthozoa
+Scleractinia,is_type,Order
+Scleroderma cepa,belongs_to,Sclerodermataceae
+Scleroderma cepa,is_type,Species
+Scleroderma citrinum,belongs_to,Sclerodermataceae
+Scleroderma citrinum,is_type,Species
+Sclerodermataceae,belongs_to,Boletales
+Sclerodermataceae,belongs_to,Boletales
+Sclerodermataceae,is_type,Family
+Sclerodermataceae,is_type,Family
+Scombridae,belongs_to,Perciformes
+Scombridae,is_type,Family
+Scrophulariaceae,belongs_to,Lamiales
+Scrophulariaceae,belongs_to,Lamiales
+Scrophulariaceae,belongs_to,Lamiales
+Scrophulariaceae,is_type,Family
+Scrophulariaceae,is_type,Family
+Scrophulariaceae,is_type,Family
+Securigera varia,belongs_to,Fabaceae
+Securigera varia,is_type,Species
+Sericocarpus asteroides,belongs_to,Asteraceae
+Sericocarpus asteroides,is_type,Species
+Serpulidae,belongs_to,Canalipalpata
+Serpulidae,is_type,Family
+Sessilia,belongs_to,Maxillopoda
+Sessilia,is_type,Order
+Setaria parviflora,belongs_to,Poaceae
+Setaria parviflora,is_type,Species
+Sialia sialis,belongs_to,Turdidae
+Sialia sialis,is_type,Species
+Sitta carolinensis,belongs_to,Sittidae
+Sitta carolinensis,is_type,Species
+Sittidae,belongs_to,Passeriformes
+Sittidae,is_type,Family
+Smilacaceae,belongs_to,Liliales
+Smilacaceae,belongs_to,Liliales
+Smilacaceae,is_type,Family
+Smilacaceae,is_type,Family
+Smilax glauca,belongs_to,Smilacaceae
+Smilax glauca,is_type,Species
+Smilax rotundifolia,belongs_to,Smilacaceae
+Smilax rotundifolia,is_type,Species
+Solanaceae,belongs_to,Solanales
+Solanaceae,is_type,Family
+Solanales,belongs_to,Magnoliopsida
+Solanales,is_type,Order
+Solanum dulcamara,belongs_to,Solanaceae
+Solanum dulcamara,is_type,Species
+Solidago canadensis,belongs_to,Asteraceae
+Solidago canadensis,is_type,Species
+Solidago nemoralis,belongs_to,Asteraceae
+Solidago nemoralis,is_type,Species
+Solidago odora,belongs_to,Asteraceae
+Solidago odora,is_type,Species
+Solidago puberula,belongs_to,Asteraceae
+Solidago puberula,is_type,Species
+Solidago rugosa,belongs_to,Asteraceae
+Solidago rugosa,is_type,Species
+Solidago sempervirens,belongs_to,Asteraceae
+Solidago sempervirens,is_type,Species
+Solidago uliginosa,belongs_to,Asteraceae
+Solidago uliginosa,is_type,Species
+Somateria mollissima,belongs_to,Anatidae
+Somateria mollissima,is_type,Species
+Sordariomycetes,belongs_to,Ascomycota
+Sordariomycetes,is_type,Class
+Spartina alterniflora,belongs_to,Poaceae
+Spartina alterniflora,is_type,Species
+Spartina patens,belongs_to,Poaceae
+Spartina patens,is_type,Species
+Spartina pectinata,belongs_to,Poaceae
+Spartina pectinata,is_type,Species
+Spergularia salina,belongs_to,Caryophyllaceae
+Spergularia salina,is_type,Species
+Sphagnaceae,belongs_to,Sphagnales
+Sphagnaceae,belongs_to,Sphagnales
+Sphagnaceae,is_type,Family
+Sphagnaceae,is_type,Family
+Sphagnales,belongs_to,Sphagnopsida
+Sphagnales,belongs_to,Sphagnopsida
+Sphagnales,is_type,Order
+Sphagnales,is_type,Order
+Sphagnopsida,belongs_to,Bryophyta
+Sphagnopsida,belongs_to,Bryophyta
+Sphagnopsida,is_type,Class
+Sphagnopsida,is_type,Class
+Sphagnum fimbriatum,belongs_to,Sphagnaceae
+Sphagnum fimbriatum,is_type,Species
+Sphagnum papillosum,belongs_to,Sphagnaceae
+Sphagnum papillosum,is_type,Species
+Spirorbis borealis,belongs_to,Serpulidae
+Spirorbis borealis,is_type,Species
+Spizella passerina,belongs_to,Emberizidae
+Spizella passerina,is_type,Species
+Spodoptera frugiperda,belongs_to,Noctuidae
+Spodoptera frugiperda,is_type,Species
+Stercorariidae,belongs_to,Charadriiformes
+Stercorariidae,is_type,Family
+Stercorarius parasiticus,belongs_to,Stercorariidae
+Stercorarius parasiticus,is_type,Species
+Stereaceae,belongs_to,Russulales
+Stereaceae,belongs_to,Russulales
+Stereaceae,is_type,Family
+Stereaceae,is_type,Family
+Stereopalpus vestitus,belongs_to,Anthicidae
+Stereopalpus vestitus,is_type,Species
+Stereum complicatum,belongs_to,Stereaceae
+Stereum complicatum,is_type,Species
+Stereum ostrea,belongs_to,Stereaceae
+Stereum ostrea,is_type,Species
+Sterna paradisaea,belongs_to,Laridae
+Sterna paradisaea,is_type,Species
+Strobilomyces confusus,belongs_to,Boletaceae
+Strobilomyces confusus,is_type,Species
+Strobilomyces floccopus,belongs_to,Boletaceae
+Strobilomyces floccopus,is_type,Species
+Strobilomyces strobilaceus,belongs_to,Boletaceae
+Strobilomyces strobilaceus,is_type,Species
+Sturnidae,belongs_to,Passeriformes
+Sturnidae,is_type,Family
+Sturnus vulgaris,belongs_to,Sturnidae
+Sturnus vulgaris,is_type,Species
+Styela clava,belongs_to,Styelidae
+Styela clava,is_type,Species
+Styelidae,belongs_to,Enterogona
+Styelidae,is_type,Family
+Suillaceae,belongs_to,Boletales
+Suillaceae,is_type,Family
+Suillus salmonicolor,belongs_to,Suillaceae
+Suillus salmonicolor,is_type,Species
+Sulidae,belongs_to,Suliformes
+Sulidae,is_type,Family
+Suliformes,belongs_to,Aves
+Suliformes,belongs_to,Aves
+Suliformes,belongs_to,Aves
+Suliformes,is_type,Order
+Suliformes,is_type,Order
+Suliformes,is_type,Order
+Sunira bicolorago,belongs_to,Noctuidae
+Sunira bicolorago,is_type,Species
+Sympetrum vicinum,belongs_to,Libellulidae
+Sympetrum vicinum,is_type,Species
+Symphyotrichum dumosum,belongs_to,Asteraceae
+Symphyotrichum dumosum,is_type,Species
+Symphyotrichum ericoides,belongs_to,Asteraceae
+Symphyotrichum ericoides,is_type,Species
+Symphyotrichum laeve,belongs_to,Asteraceae
+Symphyotrichum laeve,is_type,Species
+Symphyotrichum novi-belgii,belongs_to,Asteraceae
+Symphyotrichum novi-belgii,is_type,Species
+Symphyotrichum pilosum,belongs_to,Asteraceae
+Symphyotrichum pilosum,is_type,Species
+Symphyotrichum tenuifolium,belongs_to,Asteraceae
+Symphyotrichum tenuifolium,is_type,Species
+Syrphidae,belongs_to,Diptera
+Syrphidae,is_type,Family
+Tachycineta bicolor,belongs_to,Hirundinidae
+Tachycineta bicolor,is_type,Species
+Tamias striatus,belongs_to,Sciuridae
+Tamias striatus,is_type,Species
+Tapinella atrotomentosa,belongs_to,Tapinellaceae
+Tapinella atrotomentosa,is_type,Species
+Tapinellaceae,belongs_to,Boletales
+Tapinellaceae,is_type,Family
+Taxaceae,belongs_to,Pinales
+Taxaceae,is_type,Family
+Taxus baccata,belongs_to,Taxaceae
+Taxus baccata,is_type,Species
+Teloschistaceae,belongs_to,Teloschistales
+Teloschistaceae,is_type,Family
+Teloschistales,belongs_to,Lecanoromycetes
+Teloschistales,is_type,Order
+Tentaculata,belongs_to,Ctenophora
+Tentaculata,is_type,Class
+Tetanolita mynesalis,belongs_to,Noctuidae
+Tetanolita mynesalis,is_type,Species
+Tetramorium caespitum,belongs_to,Formicidae
+Tetramorium caespitum,is_type,Species
+Thelephorales,belongs_to,Agaricomycetes
+Thelephorales,is_type,Order
+Thryothorus ludovicianus,belongs_to,Troglodytidae
+Thryothorus ludovicianus,is_type,Species
+Thunnus thynnus,belongs_to,Scombridae
+Thunnus thynnus,is_type,Species
+Tilopteridales,belongs_to,Phaeophyceae
+Tilopteridales,is_type,Order
+Tortricidae,belongs_to,Lepidoptera
+Tortricidae,is_type,Family
+Toxicodendron radicans,belongs_to,Anacardiaceae
+Toxicodendron radicans,is_type,Species
+Toxomerus marginatus,belongs_to,Syrphidae
+Toxomerus marginatus,is_type,Species
+Trametes pubescens,belongs_to,Polyporaceae
+Trametes pubescens,is_type,Species
+Trametes versicolor,belongs_to,Polyporaceae
+Trametes versicolor,is_type,Species
+Triadenum virginicum,belongs_to,Clusiaceae
+Triadenum virginicum,is_type,Species
+Trichaptum biforme,belongs_to,Polyporaceae
+Trichaptum biforme,is_type,Species
+Trichoglossum walteri,belongs_to,Geoglossaceae
+Trichoglossum walteri,is_type,Species
+Tricholoma caligatum,belongs_to,Tricholomataceae
+Tricholoma caligatum,is_type,Species
+Tricholoma davisiae,belongs_to,Tricholomataceae
+Tricholoma davisiae,is_type,Species
+Tricholomataceae,belongs_to,Agaricales
+Tricholomataceae,belongs_to,Agaricales
+Tricholomataceae,belongs_to,Agaricales
+Tricholomataceae,is_type,Family
+Tricholomataceae,is_type,Family
+Tricholomataceae,is_type,Family
+Trientalis borealis,belongs_to,Primulaceae
+Trientalis borealis,is_type,Species
+Trifolium repens,belongs_to,Fabaceae
+Trifolium repens,is_type,Species
+Troglodytidae,belongs_to,Passeriformes
+Troglodytidae,is_type,Family
+Turdidae,belongs_to,Passeriformes
+Turdidae,belongs_to,Passeriformes
+Turdidae,is_type,Family
+Turdidae,is_type,Family
+Turdus migratorius,belongs_to,Turdidae
+Turdus migratorius,is_type,Species
+Tylopilus ballouii,belongs_to,Boletaceae
+Tylopilus ballouii,is_type,Species
+Tylopilus chromipes,belongs_to,Boletaceae
+Tylopilus chromipes,is_type,Species
+Tylopilus felleus,belongs_to,Boletaceae
+Tylopilus felleus,is_type,Species
+Typha latifolia,belongs_to,Typhaceae
+Typha latifolia,is_type,Species
+Typhaceae,belongs_to,Poales
+Typhaceae,is_type,Family
+Tyrannidae,belongs_to,Passeriformes
+Tyrannidae,is_type,Family
+Uca pugnax,belongs_to,Ocypodidae
+Uca pugnax,is_type,Species
+Udea rubigalis,belongs_to,Crambidae
+Udea rubigalis,is_type,Species
+Ulmaceae,belongs_to,Rosales
+Ulmaceae,is_type,Family
+Ulmus pumila,belongs_to,Ulmaceae
+Ulmus pumila,is_type,Species
+Ulva intestinalis,belongs_to,Ulvaceae
+Ulva intestinalis,is_type,Species
+Ulvaceae,belongs_to,Ulvales
+Ulvaceae,is_type,Family
+Ulvales,belongs_to,Ulvophyceae
+Ulvales,is_type,Order
+Ulvophyceae,belongs_to,Chlorophyta
+Ulvophyceae,is_type,Class
+Urosalpinx cinerea,belongs_to,Muricidae
+Urosalpinx cinerea,is_type,Species
+Vaccinium angustifolium,belongs_to,Ericaceae
+Vaccinium angustifolium,is_type,Species
+Vaccinium corymbosum,belongs_to,Ericaceae
+Vaccinium corymbosum,is_type,Species
+Vaccinium macrocarpon,belongs_to,Ericaceae
+Vaccinium macrocarpon,is_type,Species
+Vaccinium pallidum,belongs_to,Ericaceae
+Vaccinium pallidum,is_type,Species
+Vanessa cardui,belongs_to,Nymphalidae
+Vanessa cardui,is_type,Species
+Varunidae,belongs_to,Decapoda
+Varunidae,is_type,Family
+Verbascum thapsus,belongs_to,Scrophulariaceae
+Verbascum thapsus,is_type,Species
+Vespidae,belongs_to,Hymenoptera
+Vespidae,belongs_to,Hymenoptera
+Vespidae,is_type,Family
+Vespidae,is_type,Family
+Viburnum dentatum,belongs_to,Caprifoliaceae
+Viburnum dentatum,is_type,Species
+Viburnum nudum,belongs_to,Caprifoliaceae
+Viburnum nudum,is_type,Species
+Vitaceae,belongs_to,Vitales
+Vitaceae,belongs_to,Vitales
+Vitaceae,belongs_to,Vitales
+Vitaceae,belongs_to,Vitales
+Vitaceae,is_type,Family
+Vitaceae,is_type,Family
+Vitaceae,is_type,Family
+Vitaceae,is_type,Family
+Vitales,belongs_to,Magnoliopsida
+Vitales,belongs_to,Magnoliopsida
+Vitales,belongs_to,Magnoliopsida
+Vitales,belongs_to,Magnoliopsida
+Vitales,is_type,Order
+Vitales,is_type,Order
+Vitales,is_type,Order
+Vitales,is_type,Order
+Vitis aestivalis,belongs_to,Vitaceae
+Vitis aestivalis,is_type,Species
+Woodwardia areolata,belongs_to,Blechnaceae
+Woodwardia areolata,is_type,Species
+Woodwardia virginica,belongs_to,Blechnaceae
+Woodwardia virginica,is_type,Species
+Xanthoria elegans,belongs_to,Teloschistaceae
+Xanthoria elegans,is_type,Species
+Xestia dilucida,belongs_to,Noctuidae
+Xestia dilucida,is_type,Species
+Yponomeutidae,belongs_to,Lepidoptera
+Yponomeutidae,is_type,Family
+Zanclognatha marcidilinea,belongs_to,Noctuidae
+Zanclognatha marcidilinea,is_type,Species
+Zenaida macroura,belongs_to,Columbidae
+Zenaida macroura,is_type,Species
+Zostera marina,belongs_to,Zosteraceae
+Zostera marina,is_type,Species
+Zosteraceae,belongs_to,Alismatales
+Zosteraceae,is_type,Family
