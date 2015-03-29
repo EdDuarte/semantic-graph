@@ -179,26 +179,35 @@ class Grafo:
         out.write('}\n')
         out.close()
 
+    def triplestodot(triples, filename):
+        out = open(filename, 'w')
+        out.write('graph "SimpleGraph" {\n')
+        out.write('overlap = "scale";\n')
+        for t in triples:
+            out.write('"%s" -- "%s" [label="%s"]\n' % (t[0], t[2], t[1]))
+            out.write('}\n')
+        out.close()
 
-    def triplestodot(self):
-        print ("triplestodot")
-
-        graph = pydot.Dot(graph_type='digraph', labelloc='t', label='Trabalho Prático - Web Semântica')
-        for sub, pre, obj in self.triples(None, None, None):
-            if pre == "is_parent" or pre == "is_grandparent" or pre == "is_great_grandparent" or pre == "is_grandchildren" or pre == "is_brother" or pre == "is_couple" or pre == "is_cousin" or pre == "is_uncle" or pre == "is_nephew":
-                color = "#FF4040"
-            else:
-                color = "#000000"
-            node_a = pydot.Node(sub.encode('utf-8'), shape="circle")
-            graph.add_node(node_a)
-            node_b = pydot.Node(obj.encode('utf-8'), shape="circle")
-            graph.add_node(node_b)
-            graph.add_edge(pydot.Edge(node_a, node_b, label=pre.encode('utf-8'), color=color))
-
-        graph.write_png('graph.png')
-        graph.write('graph.dot')
-        im1 = Image.open("graph.png")
-        im1.show()
+    #
+    # def triplestodot(self):
+    #     print ("triplestodot")
+    #
+    #     graph = pydot.Dot(graph_type='digraph', labelloc='t', label='Trabalho Prático - Web Semântica')
+    #     for sub, pre, obj in self.triples(None, None, None):
+    #         if pre == "is_parent" or pre == "is_grandparent" or pre == "is_great_grandparent" or pre == "is_grandchildren" or pre == "is_brother" or pre == "is_couple" or pre == "is_cousin" or pre == "is_uncle" or pre == "is_nephew":
+    #             color = "#FF4040"
+    #         else:
+    #             color = "#000000"
+    #         node_a = pydot.Node(sub.encode('utf-8'), shape="circle")
+    #         graph.add_node(node_a)
+    #         node_b = pydot.Node(obj.encode('utf-8'), shape="circle")
+    #         graph.add_node(node_b)
+    #         graph.add_edge(pydot.Edge(node_a, node_b, label=pre.encode('utf-8'), color=color))
+    #
+    #     graph.write_png('graph.png')
+    #     graph.write('graph.dot')
+    #     im1 = Image.open("graph.png")
+    #     im1.show()
 
     #pesquisa de um triplo
     def triples(self, sub, pre, obj):
