@@ -1,5 +1,0 @@
-graph "Graph" {
-overlap = "scale";
-"Codiaceae" -- "Bryopsidales" [label="belongs_to"]
-"Codiaceae" -- "Family" [label="is_type"]
-}
