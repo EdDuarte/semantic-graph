@@ -1,6 +1,6 @@
 import csv
 
-doc = open("Dados.csv", "r")
+doc = open("original-data.csv", "r")
 reader = csv.reader(doc)
 
 kingdom = dict()
@@ -77,7 +77,7 @@ for row in reader:
 
 doc.close()
 
-fp = open("taxon.csv", "w")
+fp = open("processed-data.csv", "w")
 
 for ele in lista:
     fp.write(ele + '\n')

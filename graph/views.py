@@ -13,7 +13,7 @@ class IndexView(TemplateView):
     template_name = 'index.html'
 
 grafo = Grafo()
-filename = os.path.realpath('taxon.csv')
+filename = os.path.realpath('core/processed-data.csv')
 grafo.load(filename)
 
 def search_subjects(query):
