@@ -1,34 +1,39 @@
 
 from inferencerule import InferenceRule
 
-class ParentsRule(InferenceRule):
+class TypeRule(InferenceRule):
     def getqueries(self):
-        partner_enemy = [('?especie', 'is_type', 'Species')]
+        partner_enemy = [
+            ('?typeId', 'name', 'Kingdom'),
+            ('?kingdomId','type','?typeId'),
+            ('?kingdomId', 'name', '?kingdomName'),
+            ('?phylumId', 'belongs_to', '?kingdomId'),
+            ('?classId', 'belongs_to', '?phylumId'),
+            ('?orderId', 'belongs_to', '?classId'),
+            ('?familyId', 'belongs_to', '?orderId'),
+            ('?specieId', 'belongs_to', '?familyId')]
         return [partner_enemy]
 
-    def _maketriples(self, family, order, className, especie):
-        return [(especie, 'belongs_to_class', className)]
+    def _maketriples(self, typeId, kingdomId, kingdomName, phylumId, classId, orderId, familyId, specieId):
+        if (kingdomName == 'Fungi'):
+            kingdomName = 'Fungo'
+        elif (kingdomName == 'Animalia'):
+            kingdomName = 'Animal'
+        elif (kingdomName == 'Chromista'):
+            kingdomName = 'Alga'
+        else:
+            kingdomName = 'Planta'
+        return [(specieId, 'is', kingdomName)]
 
-class OrderInSpecieRule(InferenceRule):
+class ParentSpeciesRule(InferenceRule):
     def getqueries(self):
-        partner_enemy = [('?especie', 'is_type', 'Species'),
-                         ('?especie', 'belongs_to', '?family'),
-                         ('?family', 'is_type', 'Family'),
-                         ('?family', 'belongs_to', '?order'),
-                         ('?order', 'is_type', 'Order')]
+        partner_enemy = [
+            ('?typeId', 'name', 'Species'),
+            ('?specieId','type','?typeId'),
+            ('?specieId', 'belongs_to', '?familyId'),
+            ('?specieParentId', 'belongs_to', '?familyId')]
         return [partner_enemy]
 
-    def _maketriples(self, family, order, especie):
-        return [(especie, 'belongs_to_order', order)]
-
-class ClassInFamilyRule(InferenceRule):
-    def getqueries(self):
-        partner_enemy = [('?family', 'is_type', 'Family'),
-                         ('?family', 'belongs_to', '?order'),
-                         ('?order', 'is_type', 'Order'),
-                         ('?order', 'belongs_to', '?className'),
-                         ('?className', 'is_type', 'Class')]
-        return [partner_enemy]
-
-    def _maketriples(self, family, order, className):
-        return [(family, 'belongs_to_class', className)]
+    def _maketriples(self, typeId, specieId, familyId, specieParentId):
+        if specieId != specieParentId:
+            return [(specieId, 'parent_of', specieParentId)]
