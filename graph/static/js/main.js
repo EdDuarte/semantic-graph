@@ -1,9 +1,6 @@
 $(document).ready(function() {
 
-    var predicates = [
-        { value: 'belongs_to', data: 'belongs_to' },
-        { value: 'is_type', data: 'is_type' }
-    ];
+    var predicates = ['belongs_to', 'is', 'name', 'parent_of', 'type'];
 
     $('#subjectField').devbridgeAutocomplete({
         minChars: 0,
@@ -134,6 +131,49 @@ function parseResponse(rawResponse) {
 }
 
 
-function addInference() {
+function inferTypeOfSpecies() {
+    $.ajax({
+        type: "POST",
+        url: "/inferTypeOfSpecies/",
+        contentType: "application/json",
+        dataType: "html",
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        },
+        success: function (response) {
+            if(response.state === "success") {
+                search(
+                    lastSearchRequest.subject,
+                    lastSearchRequest.predicate,
+                    lastSearchRequest.object
+                );
+            }
+        }
+    });
+}
 
+
+function inferParentOfSpecies() {
+    $.ajax({
+        type: "POST",
+        url: "/inferParentOfSpecies/",
+        contentType: "application/json",
+        dataType: "html",
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        },
+        success: function (response) {
+            if(response.state === "success") {
+                search(
+                    lastSearchRequest.subject,
+                    lastSearchRequest.predicate,
+                    lastSearchRequest.object
+                );
+            }
+        }
+    });
 }

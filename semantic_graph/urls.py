@@ -26,5 +26,7 @@ urlpatterns = patterns('',
     url(r'^index.html', TemplateView.as_view(template_name="index.html")),
     url(r'^suggestSubject/$', suggestSubject),
     url(r'^suggestObject/$', suggestObject),
-    url(r'^search/$', search)
+    url(r'^search/$', search),
+    url(r'^inferTypeOfSpecies/$', inferTypeOfSpecies),
+    url(r'^inferParentOfSpecies/$', inferParentOfSpecies)
 )
