@@ -21,12 +21,12 @@ router.register(r'users', UserViewSet)
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = patterns('',
-    # Examples:
-    url(r'^$', TemplateView.as_view(template_name="index.html")),
-    url(r'^index.html', TemplateView.as_view(template_name="index.html")),
-    url(r'^suggestSubject/$', suggestSubject),
-    url(r'^suggestObject/$', suggestObject),
-    url(r'^search/$', search),
-    url(r'^inferTypeOfSpecies/$', inferTypeOfSpecies),
-    url(r'^inferParentOfSpecies/$', inferParentOfSpecies)
-)
+                       url(r'^$', TemplateView.as_view(template_name="index.html")),
+                       url(r'^index.html', TemplateView.as_view(template_name="index.html")),
+                       url(r'^suggest_subject/$', suggest_subject),
+                       url(r'^suggest_predicate/$', suggest_predicate),
+                       url(r'^suggest_object/$', suggest_object),
+                       url(r'^search/$', search),
+                       url(r'^infer_types/$', infer_types),
+                       url(r'^infer_parents/$', infer_parents)
+                       )

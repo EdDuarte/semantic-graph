@@ -1,29 +1,25 @@
 $(document).ready(function() {
 
-    var predicates = ['belongs_to', 'is', 'name', 'parent_of', 'type'];
-
     $('#subjectField').devbridgeAutocomplete({
         minChars: 0,
-        width: 300,
         triggerSelectOnValidInput: false,
         preventBadQueries: false,
-        serviceUrl: '/suggestSubject/'
+        serviceUrl: '/suggest_subject/'
     });
 
     $('#predicateField').devbridgeAutocomplete({
         minChars: 0,
-        width: 300,
+        noCache: true,
         triggerSelectOnValidInput: false,
         preventBadQueries: false,
-        lookup: predicates
+        serviceUrl: '/suggest_predicate/'
     });
 
     $('#objectField').devbridgeAutocomplete({
         minChars: 0,
-        width: 300,
         triggerSelectOnValidInput: false,
         preventBadQueries: false,
-        serviceUrl: '/suggestObject/'
+        serviceUrl: '/suggest_object/'
     });
 
     $("#searchform").submit(function(event) {
@@ -131,10 +127,10 @@ function parseResponse(rawResponse) {
 }
 
 
-function inferTypeOfSpecies() {
+function inferTypes() {
     $.ajax({
         type: "POST",
-        url: "/inferTypeOfSpecies/",
+        url: "/infer_types/",
         contentType: "application/json",
         dataType: "html",
         beforeSend: function(xhr, settings) {
@@ -155,10 +151,10 @@ function inferTypeOfSpecies() {
 }
 
 
-function inferParentOfSpecies() {
+function inferParents() {
     $.ajax({
         type: "POST",
-        url: "/inferParentOfSpecies/",
+        url: "/infer_parents/",
         contentType: "application/json",
         dataType: "html",
         beforeSend: function(xhr, settings) {

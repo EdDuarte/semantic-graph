@@ -3,41 +3,35 @@ from django.http import HttpResponse
 from django.views.generic import TemplateView
 from django.views.decorators.csrf import csrf_exempt
 import json
-from graph.grafo import Grafo
+from graph.graph import Graph
 from graph.rules import *
 import codecs
 import os.path
 import base64
 
+
 class IndexView(TemplateView):
     template_name = 'index.html'
 
-grafo = Grafo()
-filename = os.path.realpath('core/processed-data.csv')
-grafo.load(filename)
+graph = Graph()
+filename = os.path.realpath('data/processed-data.csv')
+graph.load(filename)
 
-def search_subjects(query):
-    query = query.lower()
-    triples = grafo.triples(None, None, None)
-    result = list()
-    for t in triples:
-        if t[0].lower().startswith(query):
-            result.append(t[0])
-    return result
 
-def search_object(query):
+def search_resource(query, index):
     query = query.lower()
-    triples = grafo.triples(None, None, None)
-    result = list()
+    triples = graph.triples(None, None, None)
+    result = set()
     for t in triples:
-        if t[2].lower().startswith(query):
-            result.append(t[2])
-    return result
+        if query in t[index].lower():
+            result.add(t[index])
+    return list(result)
+
 
 @csrf_exempt
-def inferTypeOfSpecies(request):
+def infer_types(request):
     if request.method == "POST":
-        grafo.apply_inference(TypeRule())
+        graph.apply_inference(TypeRule())
 
         return HttpResponse(
             json.dumps({"state": "success"}),
@@ -49,10 +43,11 @@ def inferTypeOfSpecies(request):
             content_type="application/json"
         )
 
+
 @csrf_exempt
-def inferParentOfSpecies(request):
+def infer_parents(request):
     if request.method == "POST":
-        grafo.apply_inference(ParentSpeciesRule())
+        graph.apply_inference(ParentSpeciesRule())
 
         return HttpResponse(
             json.dumps({"state": "success"}),
@@ -64,25 +59,39 @@ def inferParentOfSpecies(request):
             content_type="application/json"
         )
 
+
 @csrf_exempt
-def suggestSubject(request):
+def suggest_subject(request):
     if request.method == 'GET':
         query = request.GET.get('query', '')
 
         return HttpResponse(
-            json.dumps({"query": query, "suggestions": search_subjects(query)}),
+            json.dumps({"query": query, "suggestions": search_resource(query, 0)}),
             content_type="application/json"
         )
 
+
 @csrf_exempt
-def suggestObject(request):
+def suggest_predicate(request):
     if request.method == 'GET':
         query = request.GET.get('query', '')
 
         return HttpResponse(
-            json.dumps({"query": query, "suggestions": search_object(query)}),
+            json.dumps({"query": query, "suggestions": search_resource(query, 1)}),
             content_type="application/json"
         )
+
+
+@csrf_exempt
+def suggest_object(request):
+    if request.method == 'GET':
+        query = request.GET.get('query', '')
+
+        return HttpResponse(
+            json.dumps({"query": query, "suggestions": search_resource(query, 2)}),
+            content_type="application/json"
+        )
+
 
 @csrf_exempt
 def search(request):
@@ -93,10 +102,10 @@ def search(request):
         print(data)
 
         # obtain resulting triples
-        results = grafo.triples(data['subject'], data['predicate'], data['object'])
+        results = graph.triples(data['subject'], data['predicate'], data['object'])
 
         # create graph from results as the file 'graph.png'
-        grafo.create_graph(results)
+        graph.create_graph(results)
 
         # open the image created above
         graph_file_name = os.path.realpath('graph.png')
@@ -110,3 +119,4 @@ def search(request):
             json.dumps({"nothing to see": "this isn't happening"}),
             content_type="application/json"
         )
+

@@ -5,7 +5,7 @@ import csv
 import os.path
 import sys
 
-class Grafo:
+class Graph:
     # indice: [(sub, [(pred, set([obj]))])]
     def __init__(self):
         self._spo = []
@@ -250,12 +250,12 @@ class Grafo:
         return bindings
 
     def apply_inference(self,rule):
-            queries = rule.getqueries()
-            bindings = []
-            for query in queries:
-                bindings += self.query(query)
-            for b in bindings:
-                new_triples = rule.maketriples(b)
-                if new_triples is not None:
-                    for s, p, o in new_triples:
-                        self.add(s, p, o)
+        queries = rule.getqueries()
+        bindings = []
+        for query in queries:
+            bindings += self.query(query)
+        for b in bindings:
+            new_triples = rule.maketriples(b)
+            if new_triples is not None:
+                for s, p, o in new_triples:
+                    self.add(s, p, o)
