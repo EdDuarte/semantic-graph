@@ -9,14 +9,20 @@
 
     <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/font-awesome.css" rel="stylesheet">
-{#    <link href="{{ STATIC_URL }}css/simple-sidebar.css" rel="stylesheet">#}
+    <link href="{{ STATIC_URL }}css/simple-sidebar.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/simplegrid.css" rel="stylesheet">
 
-    <script src="{{ STATIC_URL }}js/libs/jquery.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}js/libs/jquery-1.11.2.js" type="text/javascript"></script>
     <script src="{{ STATIC_URL }}js/libs/jquery.autocomplete.js" type="text/javascript"></script>
     <script src="{{ STATIC_URL }}js/libs/bootstrap.js" type="text/javascript"></script>
 
-    <style type="text/css">
+    <style media="screen" type="text/css">
+
+        /* <!-- */
+        body {
+            margin:0;
+            padding:0;
+        }
 
         .result {
             display:none;
@@ -63,6 +69,87 @@
         .autocomplete-group { padding: 2px 5px; }
         .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
 
+        #header h1,
+        #header h2,
+        #header p {
+            margin-left:2%;
+            padding-right:2%;
+        }
+        #active2 #tab2,
+        #active3 #tab3,
+        #active4 #tab4,
+        #active5 #tab5 {
+            font-weight:bold;
+            text-decoration:none;
+            color:#000;
+        }
+        #footer {
+            clear:both;
+            float:left;
+            width:100%;
+        }
+        #footer p {
+            margin-left:2%;
+            padding-right:2%;
+        }
+
+        /* Start of Column CSS */
+        .container4 {
+            clear:left;
+            float:left;
+            width:100%;
+            overflow:hidden;
+        }
+        .container3 {
+            clear:left;
+            float:left;
+            width:100%;
+            position:relative;
+            right:25%;
+        }
+        .container2 {
+            clear:left;
+            float:left;
+            width:100%;
+            position:relative;
+            right:25%;
+        }
+        .container1 {
+            float:left;
+            width:100%;
+            position:relative;
+            right:25%;
+        }
+        .col1 {
+            float:left;
+            width:25%;
+            position:relative;
+            left:77%;
+            overflow:hidden;
+        }
+        .col2 {
+            float:left;
+            width:25%;
+            position:relative;
+            left:81%;
+            overflow:hidden;
+        }
+        .col3 {
+            float:left;
+            width:25%;
+            position:relative;
+            left:85%;
+            overflow:hidden;
+        }
+        .col4 {
+            float:left;
+            width:21%;
+            padding-top: 3px;
+            position:relative;
+            left:89%;
+            overflow:hidden;
+        }
+        /* --> */
     </style>
 </head>
 
@@ -70,61 +157,28 @@
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
-
+        <a class="navbar-brand" href="#">Semantic Graph</a>
         <!-- Header -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#" data-toggle="modal" data-target="#search-modal">
-                        <i class="icon-cog icon-large"></i>
+                    <a href="#menu-toggle" id="menu-toggle">
+                        <i class="fa fa-minus fa-1x"></i>
                     </a>
                 </li>
-{#                <li>#}
-{#                    <a href="#menu-toggle" id="menu-toggle">#}
-{#                        <i class="icon-align-justify icon-large"></i>#}
-{#                    </a>#}
-{#                </li>#}
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#search-modal">
+                        <i class="fa fa-cog fa-1x"></i>
+                    </a>
+                </li>
             </ul>
-
-            <form action="" id="searchform" class="navbar-form" method="post">
-                <div class="form-group" style="display:inline;">
-                    <div class="input-group">
-                        <div class="grid grid-pad">
-                            <div class="col-1-4">
-                                <div class="content">
-                                    <input id="subjectField" type="text" class="form-control" placeholder="Subject">
-                                </div>
-                            </div>
-                            <div class="col-1-4">
-                                <div class="content">
-                                    <input id="predicateField" type="text" class="form-control" placeholder="Predicate">
-                                </div>
-                            </div>
-                            <div class="col-1-4">
-                                <div class="content">
-                                    <input id="objectField" type="text" class="form-control" placeholder="Object">
-                                    {#                                    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>#}
-                                </div>
-                            </div>
-                            <div class="col-1-4">
-                                <div class="content">
-                                    <button class="btn btn-inverse btn-large"><span class="glyphicon glyphicon-search"></span>  Search</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
 
         </div>
     </div>
 </nav>
 
 <div class="container">
-
     <br/><br/>
-
-    <img id="result_image">
 
     <!-- Search settings -->
     <div class="modal fade" id="search-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -150,15 +204,72 @@
 
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="#" id="clearFacet" onclick="clearFacet(); return false;">
-                    Clear facet filter
-                </a>
-            </li>
-            <div id="facets">
+        <br/>
+        <form id="fieldForm" method="post" class="form-horizontal">
+            <div class="container4">
+                <div class="container3">
+                    <div class="container2">
+                        <div class="container1">
+                            <div class="col1">
+                                <!-- Column one start -->
+                                <input type="text" class="form-control" name="field[0].subject" placeholder="Subject" />
+                                <!-- Column one end -->
+                            </div>
+                            <div class="col2">
+                                <!-- Column two start -->
+                                <input type="text" class="form-control" name="field[0].predicate" placeholder="Predicate" />
+                                <!-- Column two end -->
+                            </div>
+                            <div class="col3">
+                                <!-- Column three start -->
+                                <input type="text" class="form-control" name="field[0].object" placeholder="Object" />
+                                <!-- Column three end -->
+                            </div>
+                            <div class="col4">
+                                <!-- Column four start -->
+                                <button style="align-content: center;" type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
+                                <!-- Column four end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </ul>
+            <!-- The template for adding new field -->
+            <div id="fieldTemplate" class="container4 hide">
+                <div class="container3">
+                    <div class="container2">
+                        <div class="container1">
+                            <div class="col1">
+                                <!-- Column one start -->
+                                <input type="text" class="form-control" name="subject" placeholder="Subject" />
+                                <!-- Column one end -->
+                            </div>
+                            <div class="col2">
+                                <!-- Column two start -->
+                                <input type="text" class="form-control" name="predicate" placeholder="Predicate" />
+                                <!-- Column two end -->
+                            </div>
+                            <div class="col3">
+                                <!-- Column three start -->
+                                <input type="text" class="form-control" name="object" placeholder="Object" />
+                                <!-- Column three end -->
+                            </div>
+                            <div class="col4">
+                                <!-- Column four start -->
+                                <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
+                                <!-- Column four end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" style="margin: 9px" class="btn btn-default btn-large">
+                <span class="glyphicon glyphicon-search"></span>
+                Search
+            </button>
+        </form>
+        <br/>
+        <br/>
     </div>
     <!-- /#sidebar-wrapper -->
 
@@ -168,10 +279,22 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <div id="results">
+                    <br>
+                    <div class="alert alert-warning alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>Welcome!</strong><br>
+                        Search for a subject, a predicate and/or an object on
+                        the left to show a graph. To include all values of a specific field, leave that field empty.
+                        <br><br>
+                        You can also add more fields to perform union queries,
+                        outputting a graph that contains every matched
+                        relations!
+                        <br>
+                    </div>
+
+                    <div id="results" style="text-align: center;">
                     </div>
                     <div class="span3" style="padding:25px;">
-{#                        <button type="button" class="btn btn-default" id="load" onclick="continueSearch(); return false;">See more results</button>#}
                     </div>
 
                 </div>
@@ -185,7 +308,7 @@
 
 <!-- Menu Toggle Script -->
 <script>
-    $("#menu-toggle").click(function(e) {
+    $("#menu-toggle").click(function (e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });

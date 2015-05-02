@@ -11,7 +11,8 @@ class TypeRule(InferenceRule):
             ('?classId', 'belongs_to', '?phylumId'),
             ('?orderId', 'belongs_to', '?classId'),
             ('?familyId', 'belongs_to', '?orderId'),
-            ('?specieId', 'belongs_to', '?familyId')]
+            ('?specieId', 'belongs_to', '?familyId')
+        ]
         return [partner_enemy]
 
     def _maketriples(self, typeId, kingdomId, kingdomName, phylumId, classId, orderId, familyId, specieId):
@@ -31,7 +32,8 @@ class ParentSpeciesRule(InferenceRule):
             ('?typeId', 'name', 'Species'),
             ('?specieId','type','?typeId'),
             ('?specieId', 'belongs_to', '?familyId'),
-            ('?specieParentId', 'belongs_to', '?familyId')]
+            ('?specieParentId', 'belongs_to', '?familyId')
+        ]
         return [partner_enemy]
 
     def _maketriples(self, typeId, specieId, familyId, specieParentId):

@@ -209,12 +209,12 @@ class Graph:
             qc = []                          # lista de elementos a passar ao método triples
             for pos, x in enumerate(clause): # enumera o triplo, para poder ir buscar cada elemento e sua posição
                 if x.startswith('?'):        # para as variáveis
-                    qc.append(None)          # adiciona o valor None à lista de elementos a pssar ao método triples
+                    qc.append(None)          # adiciona o valor None à lista de elementos a passar ao método triples
                     #bpos[x] = pos           # guarda a posição da variável no triplo (0,1 ou 2)
                     bpos[x[
                          1:]] = pos          # linha de cima re-escrita porque é necessário guardar o nome da variável, mas sem o ponto de interrogação (?)
                 else:
-                    qc.append(x)             # adiciona o valor dado à lista de elementos a pssar ao método triples
+                    qc.append(x)             # adiciona o valor dado à lista de elementos a passar ao método triples
 
             rows = list(self.triples(qc[0], qc[1], qc[2])) # faz a pesquisa com o triplo acabado de construir
 
@@ -231,7 +231,6 @@ class Graph:
 
             else:                            # triplos pesquisa seguintes, eliminar resultados que não servem
                 # In subsequent passes, eliminate bindings that don't work
-                # Retira da lista dicionários, aqueles que
                 newb = []                    # cria nova lista a devolver
                 for binding in bindings:     # para cada dicionario da lista de dicionarios
                     for row in rows:         # para cada triplo resultado

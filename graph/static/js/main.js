@@ -1,34 +1,108 @@
 $(document).ready(function() {
 
-    $('#subjectField').devbridgeAutocomplete({
+    $('[name="field[0].subject"]').devbridgeAutocomplete({
         minChars: 0,
         triggerSelectOnValidInput: false,
         preventBadQueries: false,
         serviceUrl: '/suggest_subject/'
     });
 
-    $('#predicateField').devbridgeAutocomplete({
-        minChars: 0,
-        noCache: true,
-        triggerSelectOnValidInput: false,
-        preventBadQueries: false,
-        serviceUrl: '/suggest_predicate/'
-    });
-
-    $('#objectField').devbridgeAutocomplete({
+    $('[name="field[0].predicate"]').devbridgeAutocomplete({
         minChars: 0,
         triggerSelectOnValidInput: false,
         preventBadQueries: false,
-        serviceUrl: '/suggest_object/'
+        serviceUrl: '/suggest_predicate/',
+        noCache: true
     });
 
-    $("#searchform").submit(function(event) {
-        event.preventDefault();
-        search($("#subjectField").val(), $("#predicateField").val(), $("#objectField").val())
+    $('[name="field[0].object"]').devbridgeAutocomplete({
+        minChars: 0,
+        triggerSelectOnValidInput: false,
+        preventBadQueries: false,
+        serviceUrl: '/suggest_object/',
+        width: 200
     });
 
-    //$("#load").hide();
-    $("#clearFacet").hide();
+    var fieldIndex = 0;
+
+    $('#fieldForm')
+        .submit(function(event) {
+            event.preventDefault();
+            var triples = [];
+            for(var i = 0; i <= fieldIndex; i++) {
+                var t = {
+                    subject: $('[name="field['+i+'].subject"]').val(),
+                    predicate: $('[name="field['+i+'].predicate"]').val(),
+                    object: $('[name="field['+i+'].object"]').val()
+                };
+                if(t.subject === ""){
+                    t.subject = null
+                }
+                if(t.predicate === ""){
+                    t.predicate = null
+                }
+                if(t.object === ""){
+                    t.object = null
+                }
+                triples.push(t);
+            }
+            search(triples)
+        })
+        // Add button click handler
+        .on('click', '.addButton', function() {
+            fieldIndex++;
+            var $template = $('#fieldTemplate'),
+                $clone = $template
+                    .clone()
+                    .removeClass('hide')
+                    .removeAttr('id')
+                    .attr('data-field-index', fieldIndex)
+                    .insertBefore($template);
+
+            // Update the name attributes
+            $clone
+                .find('[name="subject"]')
+                .attr('name', 'field[' + fieldIndex + '].subject')
+                .devbridgeAutocomplete({
+                    minChars: 0,
+                    autoSelectFirst: true,
+                    triggerSelectOnValidInput: false,
+                    preventBadQueries: false,
+                    serviceUrl: '/suggest_subject/'
+                })
+                .end()
+                .find('[name="predicate"]')
+                .attr('name', 'field[' + fieldIndex + '].predicate')
+                .devbridgeAutocomplete({
+                    minChars: 0,
+                    autoSelectFirst: true,
+                    triggerSelectOnValidInput: false,
+                    preventBadQueries: false,
+                    serviceUrl: '/suggest_predicate/',
+                    noCache: true
+                })
+                .end()
+                .find('[name="object"]')
+                .attr('name', 'field[' + fieldIndex + '].object')
+                .devbridgeAutocomplete({
+                    minChars: 0,
+                    autoSelectFirst: true,
+                    triggerSelectOnValidInput: false,
+                    preventBadQueries: false,
+                    serviceUrl: '/suggest_object/',
+                    width: 200
+                })
+                .end();
+        })
+        // Remove button click handler
+        .on('click', '.removeButton', function() {
+            var $row  = $(this).parents('.container4'),
+                index = $row.attr('data-field-index');
+
+            // Remove element containing the fields
+            $row.remove();
+            fieldIndex--;
+        });
 
 });
 
@@ -63,23 +137,7 @@ $.ajaxSetup({
     }
 });
 
-function search(subject, predicate, object) {
-    if(subject === ""){
-        subject = null
-    }
-    if(predicate === ""){
-        predicate = null
-    }
-    if(object === ""){
-        object = null
-    }
-
-    $("#clearFacet").hide();
-    //$("#load").hide();
-    $('#subjectField').val(subject);
-    $('#predicateField').val(predicate);
-    $('#objectField').val(object);
-
+function search(triples) {
     $('#results').html(
         '<div style="text-align: center; margin-top: 50px; ">' +
         '<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate">' +
@@ -87,16 +145,12 @@ function search(subject, predicate, object) {
         '</div>'
     );
 
-    lastSearchRequest = {
-        "subject":subject,
-        "predicate":predicate,
-        "object":object
-    };
+    lastSearchRequest = triples;
 
     $.ajax({
         type: "POST",
         url: "/search/",
-        data: JSON.stringify(lastSearchRequest),
+        data: JSON.stringify(triples),
         contentType: "application/json",
         dataType: "html",
         beforeSend: function(xhr, settings) {
@@ -122,7 +176,7 @@ function parseResponse(rawResponse) {
 
         var img = new Image();
         img.src = 'data:image/png;base64,' + rawResponse;
-        $('#results').html("<br><br><br><br>").append(img);
+        $('#results').html("<br><br>").append(img);
     }
 }
 
@@ -140,11 +194,7 @@ function inferTypes() {
         },
         success: function (response) {
             if(response.state === "success") {
-                search(
-                    lastSearchRequest.subject,
-                    lastSearchRequest.predicate,
-                    lastSearchRequest.object
-                );
+                search(lastSearchRequest);
             }
         }
     });
@@ -164,11 +214,7 @@ function inferParents() {
         },
         success: function (response) {
             if(response.state === "success") {
-                search(
-                    lastSearchRequest.subject,
-                    lastSearchRequest.predicate,
-                    lastSearchRequest.object
-                );
+                search(lastSearchRequest);
             }
         }
     });

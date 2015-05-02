@@ -21,11 +21,16 @@ graph.load(filename)
 def search_resource(query, index):
     query = query.lower()
     triples = graph.triples(None, None, None)
-    result = set()
+    results = []
     for t in triples:
         if query in t[index].lower():
-            result.add(t[index])
-    return list(result)
+            results.append(t[index])
+    return unique(results)
+
+
+def unique(iterable):
+    seen = set()
+    return [seen.add(x) or x for x in iterable if x not in seen]
 
 
 @csrf_exempt
@@ -100,9 +105,16 @@ def search(request):
         data = json.load(reader(request))
 
         print(data)
+        l = []
+        for d in data:
+            r = graph.triples(d['subject'], d['predicate'], d['object'])
+            l.append(r)
+
+        results = [item for sublist in l for item in sublist]
+        print(results)
 
         # obtain resulting triples
-        results = graph.triples(data['subject'], data['predicate'], data['object'])
+        # results = graph.triples(d['subject'], d['predicate'], d['object'])
 
         # create graph from results as the file 'graph.png'
         graph.create_graph(results)
