@@ -1,3 +1,5 @@
+__author__ = 'edduarte'
+
 import csv
 
 doc = open("original-data.csv", "r")
@@ -77,7 +79,7 @@ for row in reader:
 
 doc.close()
 
-fp = open("processed-data.csv", "w")
+fp = open("triples-data.csv", "w")
 
 for ele in lista:
     fp.write(ele + '\n')

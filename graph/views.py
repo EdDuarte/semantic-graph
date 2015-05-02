@@ -14,8 +14,7 @@ class IndexView(TemplateView):
     template_name = 'index.html'
 
 graph = Graph()
-filename = os.path.realpath('data/processed-data.csv')
-graph.load(filename)
+is_graph_ready = False
 
 
 def search_resource(query, index):
@@ -126,6 +125,60 @@ def search(request):
     else:
         return HttpResponse(
             json.dumps({"nothing to see": "this isn't happening"}),
+            content_type="application/json"
+        )
+
+
+@csrf_exempt
+def upload(request):
+    global is_graph_ready
+    if request.method == "POST":
+        reader = codecs.getreader("utf-8")
+        data = json.load(reader(request))
+
+        try:
+            # get request base64 file
+            file_bytes = base64.decodestring(bytes(data['base'], "utf-8"))
+            format = data['format']
+
+            # save binary bytes into a local file
+            f = open("upload-input", "w")
+            f.write(file_bytes.decode("utf-8"))
+            f.close()
+
+            # send local file path to graph according to format
+            filename = os.path.realpath('upload-input')
+            graph.load(filename)
+            is_graph_ready = True
+
+        except Exception as e:
+            return HttpResponse(
+                json.dumps({"state": "failed", "message": str(e)}),
+                content_type="application/json"
+            )
+
+        # serialize image to Base64
+        return HttpResponse(
+            json.dumps({"state": "success"}),
+            content_type="application/json"
+        )
+    else:
+        return HttpResponse(
+            json.dumps({"state": "failed", "message": "Request was not POST!"}),
+            content_type="application/json"
+        )
+
+
+@csrf_exempt
+def is_ready(request):
+    if request.method == "GET":
+        return HttpResponse(
+            json.dumps({"state": "success", "result": is_graph_ready}),
+            content_type="application/json"
+        )
+    else:
+        return HttpResponse(
+            json.dumps({"state": "failed", "result": False}),
             content_type="application/json"
         )
 

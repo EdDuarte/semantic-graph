@@ -1,5 +1,29 @@
 $(document).ready(function() {
 
+    $.ajax({
+        type: "GET",
+        url: "/is_ready/",
+        contentType: "application/json",
+        dataType: "html",
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        },
+        success: function (rawResponse) {
+            var jsonResponse = JSON.parse(rawResponse);
+            if(jsonResponse.state === "success" && jsonResponse.result) {
+                $('#upload-alert').hide();
+                $('#ready-alert').show();
+                $('#error-alert').hide();
+            } else {
+                $('#upload-alert').show();
+                $('#ready-alert').hide();
+                $('#error-alert').hide();
+            }
+        }
+    });
+
     $('[name="field[0].subject"]').devbridgeAutocomplete({
         minChars: 0,
         triggerSelectOnValidInput: false,
@@ -22,6 +46,67 @@ $(document).ready(function() {
         serviceUrl: '/suggest_object/',
         width: 200
     });
+
+    var files;
+    $('#uploadFile').on('change', function (event) {
+        files = event.target.files;
+    });
+
+    $('#uploadForm')
+        .submit(function(event) {
+            event.preventDefault();
+
+            if(files) {
+                var file = files[0];
+                $('#uploadSubmit').attr("disabled", true);
+
+                var reader = new FileReader();
+                var formatVal = $("input:radio[name ='uploadFormatRadio']:checked").val();
+
+                reader.onload = function(readerEvt) {
+                    var binaryString = readerEvt.target.result;
+                    var uploadRequest = {
+                        base: btoa(binaryString),
+                        format: formatVal
+                    };
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/upload/",
+                        data: JSON.stringify(uploadRequest),
+                        contentType: "application/json",
+                        dataType: "html",
+                        beforeSend: function(xhr, settings) {
+                            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                            }
+                        },
+                        success: function (rawResponse) {
+                            var jsonResponse = JSON.parse(rawResponse);
+                            if(jsonResponse.state === "success") {
+                                $('#upload-modal').modal('hide');
+                                $('#upload-alert').hide();
+                                $('#ready-alert').show();
+                                $('#error-alert').hide();
+                            } else {
+                                $('#upload-modal').modal('hide');
+                                $('#upload-alert').hide();
+                                $('#ready-alert').hide();
+                                $('#error-alert').show();
+                                $('#error-message').html(jsonResponse.message);
+                            }
+                            $('#uploadSubmit').removeAttr("disabled");
+                            files = null;
+                        }
+                    });
+                };
+
+                reader.readAsBinaryString(file);
+            }
+
+
+
+        });
 
     var fieldIndex = 0;
 
@@ -170,7 +255,6 @@ function parseResponse(rawResponse) {
         '<br/><br/>The inserted search query is invalid.</div>');
 
     } else {
-
         //var encodedResponse = btoa(encodeURI(rawResponse));
         //$('#results').html("<br><br><br><br>").append(encodedResponse);
 

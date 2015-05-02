@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+__author__ = 'edduarte'
+
 import csv
 import os.path
 import sys
@@ -80,7 +82,12 @@ class Graph:
         except KeyError:
             pass
 
-    def triples_to_dot(self, triples, filename):
+    def create_graph(self, triples):
+        filename = 'graph.dot'
+        if os.path.isfile(filename):
+            os.remove(filename)
+
+        # convert graph into a dot file
         out = open(filename, 'w')
         out.write('graph "Graph" {\n')
         out.write('overlap = "scale";\n')
@@ -89,13 +96,7 @@ class Graph:
         out.write('}\n')
         out.close()
 
-    def create_graph(self, triples):
-        graphFileName = 'graph.dot'
-        if os.path.isfile(graphFileName):
-            os.remove(graphFileName)
-
-        self.triples_to_dot(triples, graphFileName)
-
+        # convert dot file into a png file using dot app
         os.system("dot -Tpng graph.dot -o graph.png")
 
     # pesquisa de um triplo

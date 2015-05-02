@@ -157,18 +157,28 @@
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Semantic Graph</a>
+        <a class="navbar-brand" href="#">Taxonomy Semantic Graph</a>
         <!-- Header -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#menu-toggle" id="menu-toggle">
-                        <i class="fa fa-minus fa-1x"></i>
+                    <a href="#" data-toggle="modal" data-target="#upload-modal">
+                        <i class="fa fa-upload fa-1x"></i> Upload
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#export-modal">
+                        <i class="fa fa-download fa-1x"></i> Export
                     </a>
                 </li>
                 <li>
                     <a href="#" data-toggle="modal" data-target="#search-modal">
-                        <i class="fa fa-cog fa-1x"></i>
+                        <i class="fa fa-plus-square fa-1x"></i> Add Inferences
+                    </a>
+                </li>
+                <li>
+                    <a href="#menu-toggle" id="menu-toggle">
+                        <i class="fa fa-minus fa-1x"></i> Hide Search
                     </a>
                 </li>
             </ul>
@@ -180,7 +190,55 @@
 <div class="container">
     <br/><br/>
 
-    <!-- Search settings -->
+    <!-- Upload dialog -->
+    <div class="modal fade" id="upload-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="form-signin-heading">Upload file</h2>
+                </div>
+                <form id="uploadForm" method="post" class="form-horizontal">
+                    <div class="modal-body">
+                        Upload a file to be added to the semantic graph.
+{#                        The current graph will be overridden and lost, so it is#}
+{#                        recommended you export it first!#}
+                        <br/><br/>
+                        <input id="uploadFile" type="file" class="btn btn-default"/>
+                        <br/>
+                        Format of the uploaded file:
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default active">
+                                <input type="radio" name="uploadFormatRadio" id="upload-csv" value="csv" checked>
+                                CSV
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="uploadFormatRadio" id="upload-nt" value="nt">
+                                NT
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="uploadFormatRadio" id="upload-n3" value="n3">
+                                N3
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="uploadFormatRadio" id="upload-xml" value="xml">
+                                RDF/XML
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="uploadFormatRadio" id="upload-sqlite" value="sqlite3">
+                                SQLite
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="uploadSubmit" type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inference dialog -->
     <div class="modal fade" id="search-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -188,7 +246,7 @@
                     <h2 class="form-signin-heading">Add inferences</h2>
                 </div>
                 <div class="modal-body">
-                    Select below the inferences you wish to process, so that the new-found are included in the triplestore:<br><br>
+                    Select below the inferences you wish to process, so that the new-found are included in the triplestore:<br/><br/>
                     <button type="button" class="btn btn-default" onclick="inferTypes()">Infer types of species</button>
                     <button type="button" class="btn btn-default" onclick="inferParents()">Infer parents of species</button>
                 </div>
@@ -279,17 +337,32 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <br>
-                    <div class="alert alert-warning alert-dismissible" role="alert">
+                    <br/>
+                    <div id="upload-alert" class="alert alert-warning" hidden role="alert">
+                        To start using this application,
+                        <a href="#" data-toggle="modal" data-target="#upload-modal">
+                            <i class="fa fa-upload fa-1x"></i> Upload
+                        </a>
+                        a triple-store file!
+                    </div>
+                    <div id="error-alert" class="alert alert-danger" hidden role="alert">
+                        The following error occurred while loading the uploaded
+                        file:
+                        <br/>
+                        <p id="error-message"></p>
+                        <br/><br/>
+                        Are you sure you set the right file format?
+                    </div>
+                    <div id="ready-alert" class="alert alert-success alert-dismissible" hidden role="alert">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <strong>Welcome!</strong><br>
-                        Search for a subject, a predicate and/or an object on
-                        the left to show a graph. To include all values of a specific field, leave that field empty.
-                        <br><br>
+                        <strong>Your graph was successfully loaded!</strong><br/>
+                        You can now search for a subject, a predicate and/or an
+                        object on the left to show a graph. To query all values
+                        of a specific field, leave that field empty.
+                        <br/><br/>
                         You can also add more fields to perform union queries,
                         outputting a graph that contains every matched
-                        relations!
-                        <br>
+                        relation.
                     </div>
 
                     <div id="results" style="text-align: center;">

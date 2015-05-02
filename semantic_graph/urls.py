@@ -28,5 +28,7 @@ urlpatterns = patterns('',
                        url(r'^suggest_object/$', suggest_object),
                        url(r'^search/$', search),
                        url(r'^infer_types/$', infer_types),
-                       url(r'^infer_parents/$', infer_parents)
+                       url(r'^infer_parents/$', infer_parents),
+                       url(r'^upload/$', upload),
+                       url(r'^is_ready/$', is_ready)
                        )
