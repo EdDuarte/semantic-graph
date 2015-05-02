@@ -104,20 +104,17 @@ def search(request):
         reader = codecs.getreader("utf-8")
         data = json.load(reader(request))
 
-        print(data)
+        # obtain resulting triples
         l = []
         for d in data:
             r = graph.triples(d['subject'], d['predicate'], d['object'])
             l.append(r)
 
-        results = [item for sublist in l for item in sublist]
-        print(results)
-
-        # obtain resulting triples
-        # results = graph.triples(d['subject'], d['predicate'], d['object'])
+        # flatten results
+        l = [item for sublist in l for item in sublist]
 
         # create graph from results as the file 'graph.png'
-        graph.create_graph(results)
+        graph.create_graph(l)
 
         # open the image created above
         graph_file_name = os.path.realpath('graph.png')
