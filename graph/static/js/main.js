@@ -296,7 +296,6 @@ function search(triples) {
             }
         },
         success: function (rawResponse) {
-            alert(rawResponse);
             if(rawResponse == null || !rawResponse) {
                 $('#results').html('<div class="span3" style="padding-left:25px;">' +
                 '<br/><br/>No results were found.</div>');

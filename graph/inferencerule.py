@@ -5,4 +5,4 @@ class InferenceRule:
         return None
 
     def maketriples(self,binding):
-        return self._maketriples(**binding)
+        return self._maketriples(*binding)
