@@ -1,19 +1,24 @@
 # Create your views here.
 from django.http import HttpResponse
+from django.http import StreamingHttpResponse
 from django.views.generic import TemplateView
 from django.views.decorators.csrf import csrf_exempt
 import json
 from graph.graph import Graph
+from graph.graphrdf import GraphRdf
 from graph.rules import *
 import codecs
-import os.path
+import os
 import base64
+from django.core.servers.basehttp import FileWrapper
+from django.core.files import File
 
 
 class IndexView(TemplateView):
     template_name = 'index.html'
 
-graph = Graph()
+
+graph = GraphRdf()
 is_graph_ready = False
 
 
@@ -24,7 +29,21 @@ def search_resource(query, index):
     for t in triples:
         if query in t[index].lower():
             results.append(t[index])
-    return unique(results)
+    results = unique(results)
+    if len(results) is not 0:
+        results = sorted(results)
+    return results
+
+def search_predicates(query):
+    query = query.lower()
+    results = []
+    for p in graph.predicates():
+        if query in p.lower():
+            results.append(p)
+    results = unique(results)
+    if len(results) is not 0:
+        results = sorted(results)
+    return results
 
 
 def unique(iterable):
@@ -34,7 +53,7 @@ def unique(iterable):
 
 @csrf_exempt
 def infer_types(request):
-    if request.method == "POST":
+    if request.method == "GET":
         graph.apply_inference(TypeRule())
 
         return HttpResponse(
@@ -50,7 +69,7 @@ def infer_types(request):
 
 @csrf_exempt
 def infer_parents(request):
-    if request.method == "POST":
+    if request.method == "GET":
         graph.apply_inference(ParentSpeciesRule())
 
         return HttpResponse(
@@ -81,7 +100,7 @@ def suggest_predicate(request):
         query = request.GET.get('query', '')
 
         return HttpResponse(
-            json.dumps({"query": query, "suggestions": search_resource(query, 1)}),
+            json.dumps({"query": query, "suggestions": search_predicates(query)}),
             content_type="application/json"
         )
 
@@ -106,26 +125,27 @@ def search(request):
         # obtain resulting triples
         l = []
         for d in data:
-            r = graph.triples(d['subject'], d['predicate'], d['object'])
+            sub = d['subject']
+            pre = d['predicate']
+            obj = d['object']
+            r = graph.triples(sub, pre, obj)
             l.append(r)
 
         # flatten results
         l = [item for sublist in l for item in sublist]
 
+        if len(l) == 0:
+            return HttpResponse()
+
         # create graph from results as the file 'graph.png'
-        graph.create_graph(l)
+        graph.draw_graph(l)
 
         # open the image created above
         graph_file_name = os.path.realpath('graph.png')
 
         # serialize image to Base64
         return HttpResponse(
-            base64.encodestring(open(graph_file_name,"rb").read())
-        )
-    else:
-        return HttpResponse(
-            json.dumps({"nothing to see": "this isn't happening"}),
-            content_type="application/json"
+            base64.encodestring(open(graph_file_name, "rb").read())
         )
 
 
@@ -139,7 +159,7 @@ def upload(request):
         try:
             # get request base64 file
             file_bytes = base64.decodestring(bytes(data['base'], "utf-8"))
-            format = data['format']
+            file_format = data['format']
 
             # save binary bytes into a local file
             f = open("upload-input", "w")
@@ -147,26 +167,68 @@ def upload(request):
             f.close()
 
             # send local file path to graph according to format
-            filename = os.path.realpath('upload-input')
-            graph.load(filename)
+            file_name = os.path.realpath('upload-input')
+            graph.load(file_name, file_format)
             is_graph_ready = True
+
+            # output success state
+            return HttpResponse(
+                json.dumps({"state": "success"}),
+                content_type="application/json"
+            )
 
         except Exception as e:
             return HttpResponse(
                 json.dumps({"state": "failed", "message": str(e)}),
                 content_type="application/json"
             )
-
-        # serialize image to Base64
-        return HttpResponse(
-            json.dumps({"state": "success"}),
-            content_type="application/json"
-        )
     else:
         return HttpResponse(
             json.dumps({"state": "failed", "message": "Request was not POST!"}),
             content_type="application/json"
         )
+
+
+@csrf_exempt
+def export(request):
+    global is_graph_ready
+    if request.method == "POST":
+        reader = codecs.getreader("utf-8")
+        data = json.load(reader(request))
+
+        # get request file format
+        file_format = data['format']
+
+        # save graph into a local file
+        file_name = os.path.realpath("export-output")
+        if file_format == "sqlite3":
+            file_name += ".db"
+        graph.save(file_name, file_format)
+
+        ext = file_format
+        if file_format == "nt":
+            ct = "text/nt"
+        elif file_format == "n3":
+            ct = "text/n3"
+        elif file_format == "pretty-xml":
+            ct = "application/rdf+xml"
+            ext = "rdf"
+        # elif file_format == "sqlite3":
+        #     ct = "file/sqlite3"
+        else:
+            ct = "text/plain"
+
+        # serve local file to client
+        # if file_format == "sqlite3":
+        #     file = File(open(file_name, "rb"))
+        #     response = HttpResponse(file, content_type='application/x-sqlite3')
+        #     response['Content-Length'] = file.size
+        # else:
+        wrapper = FileWrapper(open(file_name, "rb"))
+        response = HttpResponse(wrapper, content_type=ct)
+        response['Content-Length'] = os.path.getsize(file_name)
+        response['Content-Disposition'] = 'attachment; filename=export.'+ext
+        return response
 
 
 @csrf_exempt

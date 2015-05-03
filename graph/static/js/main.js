@@ -25,6 +25,7 @@ $(document).ready(function() {
     });
 
     $('[name="field[0].subject"]').devbridgeAutocomplete({
+        width: 200,
         minChars: 0,
         triggerSelectOnValidInput: false,
         preventBadQueries: false,
@@ -32,6 +33,7 @@ $(document).ready(function() {
     });
 
     $('[name="field[0].predicate"]').devbridgeAutocomplete({
+        width: 200,
         minChars: 0,
         triggerSelectOnValidInput: false,
         preventBadQueries: false,
@@ -40,11 +42,11 @@ $(document).ready(function() {
     });
 
     $('[name="field[0].object"]').devbridgeAutocomplete({
+        width: 200,
         minChars: 0,
         triggerSelectOnValidInput: false,
         preventBadQueries: false,
-        serviceUrl: '/suggest_object/',
-        width: 200
+        serviceUrl: '/suggest_object/'
     });
 
     var files;
@@ -108,6 +110,39 @@ $(document).ready(function() {
 
         });
 
+    $('#exportForm')
+        .submit(function(event) {
+            event.preventDefault();
+            $('#export-modal').modal('hide');
+
+            $('#exportSubmit').attr("disabled", true);
+
+            var formatVal = $("input:radio[name ='exportFormatRadio']:checked").val();
+            var params = JSON.stringify({
+                format: formatVal
+            });
+
+            $.ajax({
+                type: "POST",
+                url: "/export/",
+                data: params,
+                contentType: "application/json",
+                dataType: "html",
+                beforeSend: function(xhr, settings) {
+                    if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                    }
+                },
+                success: function(response) {
+                    if(formatVal == "pretty-xml"){
+                        formatVal = "xml";
+                    }
+                    download("export."+formatVal, response);
+                    $('#exportSubmit').removeAttr("disabled");
+                }
+            });
+        });
+
     var fieldIndex = 0;
 
     $('#fieldForm')
@@ -149,6 +184,7 @@ $(document).ready(function() {
                 .find('[name="subject"]')
                 .attr('name', 'field[' + fieldIndex + '].subject')
                 .devbridgeAutocomplete({
+                    width: 200,
                     minChars: 0,
                     autoSelectFirst: true,
                     triggerSelectOnValidInput: false,
@@ -159,6 +195,7 @@ $(document).ready(function() {
                 .find('[name="predicate"]')
                 .attr('name', 'field[' + fieldIndex + '].predicate')
                 .devbridgeAutocomplete({
+                    width: 200,
                     minChars: 0,
                     autoSelectFirst: true,
                     triggerSelectOnValidInput: false,
@@ -170,18 +207,18 @@ $(document).ready(function() {
                 .find('[name="object"]')
                 .attr('name', 'field[' + fieldIndex + '].object')
                 .devbridgeAutocomplete({
+                    width: 200,
                     minChars: 0,
                     autoSelectFirst: true,
                     triggerSelectOnValidInput: false,
                     preventBadQueries: false,
-                    serviceUrl: '/suggest_object/',
-                    width: 200
+                    serviceUrl: '/suggest_object/'
                 })
                 .end();
         })
         // Remove button click handler
         .on('click', '.removeButton', function() {
-            var $row  = $(this).parents('.container4'),
+            var $row  = $(this).parents('.container2'),
                 index = $row.attr('data-field-index');
 
             // Remove element containing the fields
@@ -190,6 +227,21 @@ $(document).ready(function() {
         });
 
 });
+
+function download(filename, text) {
+    var pom = document.createElement('a');
+    pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    pom.setAttribute('download', filename);
+
+    if (document.createEvent) {
+        var event = document.createEvent('MouseEvents');
+        event.initEvent('click', true, true);
+        pom.dispatchEvent(event);
+    }
+    else {
+        pom.click();
+    }
+}
 
 function getCookie(name) {
     var cookieValue = null;
@@ -243,31 +295,30 @@ function search(triples) {
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             }
         },
-        success: function (response) {
-            parseResponse(response);
+        success: function (rawResponse) {
+            alert(rawResponse);
+            if(rawResponse == null || !rawResponse) {
+                $('#results').html('<div class="span3" style="padding-left:25px;">' +
+                '<br/><br/>No results were found.</div>');
+
+            } else {
+                //var encodedResponse = btoa(encodeURI(rawResponse));
+                //$('#results').html("<br><br><br><br>").append(encodedResponse);
+
+                var img = new Image();
+                img.src = 'data:image/png;base64,' + rawResponse;
+                $('#results').html("<br/><br/>").append(img);
+            }
         }
     });
 }
 
-function parseResponse(rawResponse) {
-    if(rawResponse == null || !rawResponse) {
-        resultsContainer.html('<div class="span3" style="padding-left:25px;">' +
-        '<br/><br/>The inserted search query is invalid.</div>');
-
-    } else {
-        //var encodedResponse = btoa(encodeURI(rawResponse));
-        //$('#results').html("<br><br><br><br>").append(encodedResponse);
-
-        var img = new Image();
-        img.src = 'data:image/png;base64,' + rawResponse;
-        $('#results').html("<br><br>").append(img);
-    }
-}
-
-
 function inferTypes() {
+
+    $('#inference-modal').modal('hide');
+
     $.ajax({
-        type: "POST",
+        type: "GET",
         url: "/infer_types/",
         contentType: "application/json",
         dataType: "html",
@@ -286,8 +337,11 @@ function inferTypes() {
 
 
 function inferParents() {
+
+    $('#inference-modal').modal('hide');
+
     $.ajax({
-        type: "POST",
+        type: "GET",
         url: "/infer_parents/",
         contentType: "application/json",
         dataType: "html",

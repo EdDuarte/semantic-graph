@@ -82,7 +82,7 @@ class Graph:
         except KeyError:
             pass
 
-    def create_graph(self, triples):
+    def draw_graph(self, triples):
         filename = 'graph.dot'
         if os.path.isfile(filename):
             os.remove(filename)

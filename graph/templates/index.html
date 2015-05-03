@@ -94,59 +94,33 @@
         }
 
         /* Start of Column CSS */
-        .container4 {
-            clear:left;
-            float:left;
-            width:100%;
-            overflow:hidden;
-        }
-        .container3 {
-            clear:left;
-            float:left;
-            width:100%;
-            position:relative;
-            right:25%;
-        }
         .container2 {
             clear:left;
             float:left;
             width:100%;
-            position:relative;
-            right:25%;
+            overflow:hidden;
         }
         .container1 {
             float:left;
             width:100%;
             position:relative;
-            right:25%;
+            right:50%;
         }
         .col1 {
             float:left;
-            width:25%;
+            width:76%;
             position:relative;
-            left:77%;
+            left:52%;
             overflow:hidden;
         }
         .col2 {
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 38px;
             float:left;
-            width:25%;
+            width:16%;
             position:relative;
-            left:81%;
-            overflow:hidden;
-        }
-        .col3 {
-            float:left;
-            width:25%;
-            position:relative;
-            left:85%;
-            overflow:hidden;
-        }
-        .col4 {
-            float:left;
-            width:21%;
-            padding-top: 3px;
-            position:relative;
-            left:89%;
+            left:56%;
             overflow:hidden;
         }
         /* --> */
@@ -172,7 +146,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" data-toggle="modal" data-target="#search-modal">
+                    <a href="#" data-toggle="modal" data-target="#inference-modal">
                         <i class="fa fa-plus-square fa-1x"></i> Add Inferences
                     </a>
                 </li>
@@ -200,8 +174,8 @@
                 <form id="uploadForm" method="post" class="form-horizontal">
                     <div class="modal-body">
                         Upload a file to be added to the semantic graph.
-{#                        The current graph will be overridden and lost, so it is#}
-{#                        recommended you export it first!#}
+                        {#                        The current graph will be overridden and lost, so it is#}
+                        {#                        recommended you export it first!#}
                         The uploaded triples are appended to the current graph!
                         <br/><br/>
                         <input id="uploadFile" type="file" class="btn btn-default"/>
@@ -209,29 +183,56 @@
                         Format of the uploaded file:
                         <div class="btn-group" data-toggle="buttons">
                             <label class="btn btn-default active">
-                                <input type="radio" name="uploadFormatRadio" id="upload-csv" value="csv" checked>
-                                CSV
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" name="uploadFormatRadio" id="upload-nt" value="nt">
-                                NT
+                                <input type="radio" name="uploadFormatRadio" id="upload-nt" value="nt" checked>
+                                RDF/NT
                             </label>
                             <label class="btn btn-default">
                                 <input type="radio" name="uploadFormatRadio" id="upload-n3" value="n3">
-                                N3
+                                RDF/N3
                             </label>
                             <label class="btn btn-default">
                                 <input type="radio" name="uploadFormatRadio" id="upload-xml" value="xml">
                                 RDF/XML
                             </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="uploadSubmit" type="submit" class="btn btn-primary">Upload</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Export dialog -->
+    <div class="modal fade" id="export-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="form-signin-heading">Export to file</h2>
+                </div>
+                <form id="exportForm" method="post" class="form-horizontal">
+                    <div class="modal-body">
+                        Choose the RDF format of the exported file:
+                        <br/><br/>
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default active">
+                                <input type="radio" name="exportFormatRadio" id="export-nt" value="nt" checked>
+                                RDF/NT
+                            </label>
                             <label class="btn btn-default">
-                                <input type="radio" name="uploadFormatRadio" id="upload-sqlite" value="sqlite3">
-                                SQLite
+                                <input type="radio" name="exportFormatRadio" id="export-n3" value="n3">
+                                RDF/N3
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="exportFormatRadio" id="export-xml" value="pretty-xml">
+                                RDF/XML
                             </label>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button id="uploadSubmit" type="submit" class="btn btn-primary">Submit</button>
+                        <button id="exportSubmit" type="submit" class="btn btn-primary">Export</button>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                     </div>
                 </form>
@@ -240,7 +241,7 @@
     </div>
 
     <!-- Inference dialog -->
-    <div class="modal fade" id="search-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="inference-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -265,60 +266,29 @@
     <div id="sidebar-wrapper">
         <br/>
         <form id="fieldForm" method="post" class="form-horizontal">
-            <div class="container4">
-                <div class="container3">
-                    <div class="container2">
-                        <div class="container1">
-                            <div class="col1">
-                                <!-- Column one start -->
-                                <input type="text" class="form-control" name="field[0].subject" placeholder="Subject" />
-                                <!-- Column one end -->
-                            </div>
-                            <div class="col2">
-                                <!-- Column two start -->
-                                <input type="text" class="form-control" name="field[0].predicate" placeholder="Predicate" />
-                                <!-- Column two end -->
-                            </div>
-                            <div class="col3">
-                                <!-- Column three start -->
-                                <input type="text" class="form-control" name="field[0].object" placeholder="Object" />
-                                <!-- Column three end -->
-                            </div>
-                            <div class="col4">
-                                <!-- Column four start -->
-                                <button style="align-content: center;" type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
-                                <!-- Column four end -->
-                            </div>
-                        </div>
+            <div class="container2">
+                <div class="container1">
+                    <div class="col1">
+                        <input type="text" class="form-control" name="field[0].subject" placeholder="Subject" />
+                        <input type="text" class="form-control" name="field[0].predicate" placeholder="Predicate" />
+                        <input type="text" class="form-control" name="field[0].object" placeholder="Object" />
+                    </div>
+                    <div class="col2">
+                        <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
                     </div>
                 </div>
             </div>
             <!-- The template for adding new field -->
-            <div id="fieldTemplate" class="container4 hide">
-                <div class="container3">
-                    <div class="container2">
-                        <div class="container1">
-                            <div class="col1">
-                                <!-- Column one start -->
-                                <input type="text" class="form-control" name="subject" placeholder="Subject" />
-                                <!-- Column one end -->
-                            </div>
-                            <div class="col2">
-                                <!-- Column two start -->
-                                <input type="text" class="form-control" name="predicate" placeholder="Predicate" />
-                                <!-- Column two end -->
-                            </div>
-                            <div class="col3">
-                                <!-- Column three start -->
-                                <input type="text" class="form-control" name="object" placeholder="Object" />
-                                <!-- Column three end -->
-                            </div>
-                            <div class="col4">
-                                <!-- Column four start -->
-                                <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
-                                <!-- Column four end -->
-                            </div>
-                        </div>
+            <div id="fieldTemplate" class="container2 hide">
+                <br>
+                <div class="container1">
+                    <div class="col1">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" />
+                        <input type="text" class="form-control" name="predicate" placeholder="Predicate" />
+                        <input type="text" class="form-control" name="object" placeholder="Object" />
+                    </div>
+                    <div class="col2">
+                        <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
                     </div>
                 </div>
             </div>

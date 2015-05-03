@@ -30,5 +30,6 @@ urlpatterns = patterns('',
                        url(r'^infer_types/$', infer_types),
                        url(r'^infer_parents/$', infer_parents),
                        url(r'^upload/$', upload),
+                       url(r'^export/$', export),
                        url(r'^is_ready/$', is_ready)
                        )
