@@ -100,11 +100,19 @@ $(document).ready(function() {
 
             $('#addSubmit').attr("disabled", true);
 
+            var addSubjectForm = $('#addSubject');
+            var addPredicateForm = $('#addPredicate');
+            var addObjectForm = $('#addObject');
+
             var params = JSON.stringify({
-                subject: $('#addSubject').val(),
-                predicate: $('#addPredicate').val(),
-                object: $('#addObject').val()
+                subject: addSubjectForm.val(),
+                predicate: addPredicateForm.val(),
+                object: addObjectForm.val()
             });
+
+            addSubjectForm.val("");
+            addPredicateForm.val("");
+            addObjectForm.val("");
 
             $.ajax({
                 type: "POST",
@@ -143,11 +151,19 @@ $(document).ready(function() {
 
             $('#removeSubmit').attr("disabled", true);
 
+            var removeSubjectForm = $('#removeSubject');
+            var removePredicateForm = $('#removePredicate');
+            var removeObjectForm = $('#removeObject');
+
             var params = JSON.stringify({
-                subject: $('#removeSubject').val(),
-                predicate: $('#removePredicate').val(),
-                object: $('#removeObject').val()
+                subject: removeSubjectForm.val(),
+                predicate: removePredicateForm.val(),
+                object: removeObjectForm.val()
             });
+
+            removeSubjectForm.val("");
+            removePredicateForm.val("");
+            removeObjectForm.val("");
 
             $.ajax({
                 type: "POST",
