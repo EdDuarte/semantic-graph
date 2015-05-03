@@ -49,6 +49,92 @@ $(document).ready(function() {
         serviceUrl: '/suggest_object/'
     });
 
+    $('#addForm')
+        .submit(function(event) {
+            event.preventDefault();
+            $('#add-modal').modal('hide');
+
+            $('#addSubmit').attr("disabled", true);
+
+            var params = JSON.stringify({
+                subject: $('#addSubject').val(),
+                predicate: $('#addPredicate').val(),
+                object: $('#addObject').val()
+            });
+
+            $.ajax({
+                type: "POST",
+                url: "/add/",
+                data: params,
+                contentType: "application/json",
+                dataType: "html",
+                beforeSend: function(xhr, settings) {
+                    if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                    }
+                },
+                success: function(rawResponse) {
+                    var jsonResponse = JSON.parse(rawResponse);
+                    if(jsonResponse.state === "success") {
+                        $('#upload-modal').modal('hide');
+                        $('#upload-alert').hide();
+                        $('#ready-alert').show();
+                        $('#error-alert').hide();
+                    } else {
+                        $('#upload-modal').modal('hide');
+                        $('#upload-alert').hide();
+                        $('#ready-alert').hide();
+                        $('#error-alert').show();
+                        $('#error-message').html(jsonResponse.message);
+                    }
+                    $('#addSubmit').removeAttr("disabled");
+                }
+            });
+        });
+
+    $('#removeForm')
+        .submit(function(event) {
+            event.preventDefault();
+            $('#remove-modal').modal('hide');
+
+            $('#removeSubmit').attr("disabled", true);
+
+            var params = JSON.stringify({
+                subject: $('#removeSubject').val(),
+                predicate: $('#removePredicate').val(),
+                object: $('#removeObject').val()
+            });
+
+            $.ajax({
+                type: "POST",
+                url: "/remove/",
+                data: params,
+                contentType: "application/json",
+                dataType: "html",
+                beforeSend: function(xhr, settings) {
+                    if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                    }
+                },
+                success: function(rawResponse) {
+                    var jsonResponse = JSON.parse(rawResponse);
+                    if(jsonResponse.state === "success") {
+                        $('#upload-modal').modal('hide');
+                        $('#upload-alert').hide();
+                        $('#ready-alert').show();
+                        $('#error-alert').hide();
+                    } else {
+                        $('#upload-modal').modal('hide');
+                        $('#upload-alert').hide();
+                        $('#ready-alert').hide();
+                        $('#error-alert').show();
+                        $('#error-message').html(jsonResponse.message);
+                    }
+                    $('#removeSubmit').removeAttr("disabled");
+                }
+            });
+        });
+
     var files;
     $('#uploadFile').on('change', function (event) {
         files = event.target.files;

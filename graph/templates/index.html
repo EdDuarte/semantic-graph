@@ -136,6 +136,16 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
+                    <a href="#" data-toggle="modal" data-target="#add-modal">
+                        <i class="fa fa-plus-square fa-1x"></i> Add
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#remove-modal">
+                        <i class="fa fa-minus-square fa-1x"></i> Remove
+                    </a>
+                </li>
+                <li>
                     <a href="#" data-toggle="modal" data-target="#upload-modal">
                         <i class="fa fa-upload fa-1x"></i> Upload
                     </a>
@@ -147,7 +157,7 @@
                 </li>
                 <li>
                     <a href="#" data-toggle="modal" data-target="#inference-modal">
-                        <i class="fa fa-plus-square fa-1x"></i> Add Inferences
+                        <i class="fa fa-book fa-1x"></i> Inferences
                     </a>
                 </li>
                 <li>
@@ -163,6 +173,50 @@
 
 <div class="container">
     <br/><br/>
+
+    <!-- Add dialog -->
+    <div class="modal fade" id="add-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="form-signin-heading">Add a new triple</h2>
+                </div>
+                <form id="addForm" method="post" class="form-horizontal">
+                    <div class="modal-body">
+                        <input type="text" id="addSubject" class="form-control" name="field[0].subject" placeholder="Subject" />
+                        <input type="text" id="addPredicate" class="form-control" name="field[0].predicate" placeholder="Predicate" />
+                        <input type="text" id="addObject" class="form-control" name="field[0].object" placeholder="Object" />
+                    </div>
+                    <div class="modal-footer">
+                        <button id="addSubmit" type="submit" class="btn btn-primary">Add</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Remove dialog -->
+    <div class="modal fade" id="remove-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="form-signin-heading">Remove a new triple</h2>
+                </div>
+                <form id="removeForm" method="post" class="form-horizontal">
+                    <div class="modal-body">
+                        <input type="text" id="removeSubject" class="form-control" name="field[0].subject" placeholder="Subject" />
+                        <input type="text" id="removePredicate" class="form-control" name="field[0].predicate" placeholder="Predicate" />
+                        <input type="text" id="removeObject" class="form-control" name="field[0].object" placeholder="Object" />
+                    </div>
+                    <div class="modal-footer">
+                        <button id="removeSubmit" type="submit" class="btn btn-primary">Remove</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Upload dialog -->
     <div class="modal fade" id="upload-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -245,7 +299,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="form-signin-heading">Add inferences</h2>
+                    <h2 class="form-signin-heading">Inferences</h2>
                 </div>
                 <div class="modal-body">
                     Select below the inferences you wish to process, so that the new-found are included in the triplestore:<br/><br/>
@@ -309,12 +363,17 @@
                 <div class="col-lg-12">
 
                     <br/>
-                    <div id="upload-alert" class="alert alert-warning" hidden role="alert">
-                        To start using this application,
+                    <div id="upload-alert" class="alert alert-warning alert-dismissible" hidden role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>Quick Start:</strong>
+                        <a href="#" data-toggle="modal" data-target="#add-modal">
+                            <i class="fa fa-plus-square fa-1x"></i> Add
+                        </a>
+                        a triple or
                         <a href="#" data-toggle="modal" data-target="#upload-modal">
                             <i class="fa fa-upload fa-1x"></i> Upload
                         </a>
-                        a triple-store file!
+                        a RDF file!
                     </div>
                     <div id="error-alert" class="alert alert-danger" hidden role="alert">
                         The following error occurred while loading the uploaded
@@ -326,8 +385,8 @@
                     </div>
                     <div id="ready-alert" class="alert alert-success alert-dismissible" hidden role="alert">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <strong>Your graph was successfully loaded!</strong><br/>
-                        You can now search for a subject, a predicate and/or an
+                        Now that you added new triples, you can search for a
+                        subject, a predicate and/or an
                         object on the left to show a graph. To query all values
                         of a specific field, leave that field empty.
                         <br/><br/>

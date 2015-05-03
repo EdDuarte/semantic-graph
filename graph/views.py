@@ -115,6 +115,66 @@ def suggest_object(request):
             content_type="application/json"
         )
 
+@csrf_exempt
+def add(request):
+    global is_graph_ready
+    if request.method == "POST":
+        reader = codecs.getreader("utf-8")
+        data = json.load(reader(request))
+
+        sub = data['subject']
+        pre = data['predicate']
+        obj = data['object']
+
+        try:
+            graph.add(sub, pre, obj)
+            is_graph_ready = True
+        except Exception as e:
+            return HttpResponse(
+                json.dumps({"state": "failed", "message": str(e)}),
+                content_type="application/json"
+            )
+
+        return HttpResponse(
+            json.dumps({"state": "success"}),
+            content_type="application/json"
+        )
+    else:
+        return HttpResponse(
+            json.dumps({"state": "failed"}),
+            content_type="application/json"
+        )
+
+@csrf_exempt
+def remove(request):
+    global is_graph_ready
+    if request.method == "POST":
+        reader = codecs.getreader("utf-8")
+        data = json.load(reader(request))
+
+        sub = data['subject']
+        pre = data['predicate']
+        obj = data['object']
+
+        try:
+            graph.remove(sub, pre, obj)
+            if len(list(graph.triples(None, None, None))) == 0:
+                is_graph_ready = False
+        except Exception as e:
+            return HttpResponse(
+                json.dumps({"state": "failed", "message": str(e)}),
+                content_type="application/json"
+            )
+
+        return HttpResponse(
+            json.dumps({"state": "success"}),
+            content_type="application/json"
+        )
+    else:
+        return HttpResponse(
+            json.dumps({"state": "failed"}),
+            content_type="application/json"
+        )
 
 @csrf_exempt
 def search(request):

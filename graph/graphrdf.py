@@ -26,25 +26,19 @@ class GraphRdf():
 
     # Adds a new triple as (sub, pre, obj)
     def add(self, sub, pre, obj):
-        try:
-            start = time.clock()
-            t = self.parse_triple(sub, pre, obj)
-            self.graph.add(t)
-            elapsed = (time.clock() - start)
-            print("Elapsed addition time: %ss" % elapsed)
-        except KeyError:
-            pass
+        start = time.clock()
+        t = self.parse_triple(sub, pre, obj)
+        self.graph.add(t)
+        elapsed = (time.clock() - start)
+        print("Elapsed addition time: %ss" % elapsed)
 
     # Removes a triple that matches (sub, pre, obj)
     def remove(self, sub, pre, obj):
-        try:
-            start = time.clock()
-            t = self.parse_triple(sub, pre, obj)
-            self.graph.remove(t)
-            elapsed = (time.clock() - start)
-            print("Elapsed removal time: %ss" % elapsed)
-        except KeyError:
-            pass
+        start = time.clock()
+        t = self.parse_triple(sub, pre, obj)
+        self.graph.remove(t)
+        elapsed = (time.clock() - start)
+        print("Elapsed removal time: %ss" % elapsed)
 
     # Searches for triples that match (sub, pre, obj)
     def triples(self, sub, pre, obj):
