@@ -9,12 +9,8 @@ import time
 import rdflib
 from rdflib import plugin, store
 from rdflib import ConjunctiveGraph
-# from inferencerule import *
-
 
 class GraphRdf():
-
-    typeFileRead = 'n3'
 
     # Create Graph
     def __init__(self):
@@ -99,7 +95,6 @@ class GraphRdf():
     # Save graph to file
     def save(self, filename, file_format):
         start = time.clock()
-        print(filename)
         if filename != '':
             of = open(filename, "wb")
             of.write(self.graph.serialize(format=file_format))

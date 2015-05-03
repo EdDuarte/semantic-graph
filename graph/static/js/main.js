@@ -49,6 +49,50 @@ $(document).ready(function() {
         serviceUrl: '/suggest_object/'
     });
 
+    $('#addSubject').devbridgeAutocomplete({
+        minChars: 0,
+        triggerSelectOnValidInput: false,
+        preventBadQueries: false,
+        serviceUrl: '/suggest_subject/'
+    });
+
+    $('#addPredicate').devbridgeAutocomplete({
+        minChars: 0,
+        triggerSelectOnValidInput: false,
+        preventBadQueries: false,
+        serviceUrl: '/suggest_predicate/',
+        noCache: true
+    });
+
+    $('#addObject').devbridgeAutocomplete({
+        minChars: 0,
+        triggerSelectOnValidInput: false,
+        preventBadQueries: false,
+        serviceUrl: '/suggest_object/'
+    });
+
+    $('#removeSubject').devbridgeAutocomplete({
+        minChars: 0,
+        triggerSelectOnValidInput: false,
+        preventBadQueries: false,
+        serviceUrl: '/suggest_subject/'
+    });
+
+    $('#removePredicate').devbridgeAutocomplete({
+        minChars: 0,
+        triggerSelectOnValidInput: false,
+        preventBadQueries: false,
+        serviceUrl: '/suggest_predicate/',
+        noCache: true
+    });
+
+    $('#removeObject').devbridgeAutocomplete({
+        minChars: 0,
+        triggerSelectOnValidInput: false,
+        preventBadQueries: false,
+        serviceUrl: '/suggest_object/'
+    });
+
     $('#addForm')
         .submit(function(event) {
             event.preventDefault();
@@ -411,11 +455,11 @@ function inferTypes() {
             if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             }
-        },
-        success: function (response) {
-            if(response.state === "success") {
-                search(lastSearchRequest);
-            }
+        //},
+        //success: function (response) {
+        //    if(response.state === "success") {
+        //        search(lastSearchRequest);
+        //    }
         }
     });
 }
@@ -434,11 +478,11 @@ function inferParents() {
             if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             }
-        },
-        success: function (response) {
-            if(response.state === "success") {
-                search(lastSearchRequest);
-            }
+        //},
+        //success: function (response) {
+        //    if(response.state === "success") {
+        //        search(lastSearchRequest);
+        //    }
         }
     });
 }
