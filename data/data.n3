@@ -1,0 +1,3167 @@
+@prefix ns1: <http://taxonomy/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://taxonomy/103> ns1:belongs_to <http://taxonomy/102> ;
+    ns1:name "Astrangia poculata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/106> ns1:belongs_to <http://taxonomy/105> ;
+    ns1:name "Atriplex patula"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/108> ns1:belongs_to <http://taxonomy/107> ;
+    ns1:name "Atteva aurea"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/109> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Baccharis halimifolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/110> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Baccharis pilularis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/113> ns1:belongs_to <http://taxonomy/112> ;
+    ns1:name "Baeolophus bicolor"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/117> ns1:belongs_to <http://taxonomy/116> ;
+    ns1:name "Balanus balanus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/118> ns1:belongs_to <http://taxonomy/70> ;
+    ns1:name "Baptisia tinctoria"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/12> ns1:belongs_to <http://taxonomy/11> ;
+    ns1:name "Abagrotis alternata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/120> ns1:belongs_to <http://taxonomy/119> ;
+    ns1:name "Bartonia virginica"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/121> ns1:belongs_to <http://taxonomy/42> ;
+    ns1:name "Betula pendula"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/122> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Bidens frondosa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/125> ns1:belongs_to <http://taxonomy/124> ;
+    ns1:name "Boletus bicolor"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/127> ns1:belongs_to <http://taxonomy/126> ;
+    ns1:name "Boloria selene"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/128> ns1:belongs_to <http://taxonomy/73> ;
+    ns1:name "Bombus abnormis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/129> ns1:belongs_to <http://taxonomy/73> ;
+    ns1:name "Bombus impatiens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/133> ns1:belongs_to <http://taxonomy/132> ;
+    ns1:name "Botryllus schlosseri"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/134> ns1:belongs_to <http://taxonomy/66> ;
+    ns1:name "Branta canadensis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/138> ns1:belongs_to <http://taxonomy/137> ;
+    ns1:name "Bufo americanus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/143> ns1:belongs_to <http://taxonomy/142> ;
+    ns1:name "Busycon carica"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/144> ns1:belongs_to <http://taxonomy/22> ;
+    ns1:name "Buteo jamaicensis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/147> ns1:belongs_to <http://taxonomy/146> ;
+    ns1:name "Butorides virescens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/150> ns1:belongs_to <http://taxonomy/149> ;
+    ns1:name "Callinectes sapidus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/152> ns1:belongs_to <http://taxonomy/151> ;
+    ns1:name "Campaea perlata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/155> ns1:belongs_to <http://taxonomy/154> ;
+    ns1:name "Cantharellus cinnabarinus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/157> ns1:belongs_to <http://taxonomy/156> ;
+    ns1:name "Cardinalis cardinalis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/159> ns1:belongs_to <http://taxonomy/158> ;
+    ns1:name "Carduelis tristis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/163> ns1:belongs_to <http://taxonomy/162> ;
+    ns1:name "Carex pensylvanica"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/164> ns1:belongs_to <http://taxonomy/158> ;
+    ns1:name "Carpodacus mexicanus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/166> ns1:belongs_to <http://taxonomy/165> ;
+    ns1:name "Cathartes aura"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/169> ns1:belongs_to <http://taxonomy/168> ;
+    ns1:name "Celastrus orbiculatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/170> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Centaurea stoebe"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/172> ns1:belongs_to <http://taxonomy/171> ;
+    ns1:name "Cerastium glomeratum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/177> ns1:belongs_to <http://taxonomy/176> ;
+    ns1:name "Chamaecyparis thyoides"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/178> ns1:belongs_to <http://taxonomy/81> ;
+    ns1:name "Chamaedaphne calyculata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/18> ns1:belongs_to <http://taxonomy/17> ;
+    ns1:name "Acarospora fuscata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/181> ns1:belongs_to <http://taxonomy/180> ;
+    ns1:name "Chamaesyce maculata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/186> ns1:belongs_to <http://taxonomy/185> ;
+    ns1:name "Champia parvula"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/188> ns1:belongs_to <http://taxonomy/187> ;
+    ns1:name "Chimaphila maculata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/189> ns1:belongs_to <http://taxonomy/187> ;
+    ns1:name "Chimaphila umbellata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/192> ns1:belongs_to <http://taxonomy/191> ;
+    ns1:name "Chondrus crispus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/193> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Cichorium intybus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/196> ns1:belongs_to <http://taxonomy/195> ;
+    ns1:name "Cicindela sexguttata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/199> ns1:belongs_to <http://taxonomy/198> ;
+    ns1:name "Ciona intestinalis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/200> ns1:belongs_to <http://taxonomy/22> ;
+    ns1:name "Circus cyaneus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/202> ns1:belongs_to <http://taxonomy/201> ;
+    ns1:name "Clethra alnifolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/204> ns1:belongs_to <http://taxonomy/203> ;
+    ns1:name "Coccotylus truncatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/209> ns1:belongs_to <http://taxonomy/208> ;
+    ns1:name "Codium fragile"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/212> ns1:belongs_to <http://taxonomy/211> ;
+    ns1:name "Colinus virginianus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/214> ns1:belongs_to <http://taxonomy/213> ;
+    ns1:name "Collybia tuberosa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/217> ns1:belongs_to <http://taxonomy/216> ;
+    ns1:name "Commelina communis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/219> ns1:belongs_to <http://taxonomy/218> ;
+    ns1:name "Comptonia peregrina"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/221> ns1:belongs_to <http://taxonomy/220> ;
+    ns1:name "Coprinellus truncorum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/223> ns1:belongs_to <http://taxonomy/222> ;
+    ns1:name "Coprinus truncorum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/226> ns1:belongs_to <http://taxonomy/225> ;
+    ns1:name "Cornus florida"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/228> ns1:belongs_to <http://taxonomy/227> ;
+    ns1:name "Cortinarius alboviolaceus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/229> ns1:belongs_to <http://taxonomy/227> ;
+    ns1:name "Cortinarius corrugatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/23> ns1:belongs_to <http://taxonomy/22> ;
+    ns1:name "Accipiter cooperii"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/230> ns1:belongs_to <http://taxonomy/227> ;
+    ns1:name "Cortinarius iodes"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/231> ns1:belongs_to <http://taxonomy/227> ;
+    ns1:name "Cortinarius purpurascens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/232> ns1:belongs_to <http://taxonomy/227> ;
+    ns1:name "Cortinarius semisanguineus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/234> ns1:belongs_to <http://taxonomy/233> ;
+    ns1:name "Corvus brachyrhynchos"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/235> ns1:belongs_to <http://taxonomy/42> ;
+    ns1:name "Corylus cornuta"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/237> ns1:belongs_to <http://taxonomy/236> ;
+    ns1:name "Costoanachis translirata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/238> ns1:belongs_to <http://taxonomy/154> ;
+    ns1:name "Craterellus cornucopiodes"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/241> ns1:belongs_to <http://taxonomy/240> ;
+    ns1:name "Crepidula fornicata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/243> ns1:belongs_to <http://taxonomy/242> ;
+    ns1:name "Cupido comyntas"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/244> ns1:belongs_to <http://taxonomy/233> ;
+    ns1:name "Cyanocitta cristata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/245> ns1:belongs_to <http://taxonomy/92> ;
+    ns1:name "Cynanchum louiseae"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/246> ns1:belongs_to <http://taxonomy/162> ;
+    ns1:name "Cyperus esculentus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/250> ns1:belongs_to <http://taxonomy/249> ;
+    ns1:name "Cyprinodon variegatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/253> ns1:belongs_to <http://taxonomy/252> ;
+    ns1:name "Cypripedium acaule"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/254> ns1:belongs_to <http://taxonomy/126> ;
+    ns1:name "Danaus plexippus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/258> ns1:belongs_to <http://taxonomy/257> ;
+    ns1:name "Dasya baillouviana"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/261> ns1:belongs_to <http://taxonomy/260> ;
+    ns1:name "Daucus carota"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/264> ns1:belongs_to <http://taxonomy/263> ;
+    ns1:name "Decodon verticillatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/266> ns1:belongs_to <http://taxonomy/265> ;
+    ns1:name "Dendroica coronata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/267> ns1:belongs_to <http://taxonomy/265> ;
+    ns1:name "Dendroica palmarum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/268> ns1:belongs_to <http://taxonomy/265> ;
+    ns1:name "Dendroica petechia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/269> ns1:belongs_to <http://taxonomy/70> ;
+    ns1:name "Desmodium paniculatum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/271> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Dichanthelium clandestinum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/276> ns1:belongs_to <http://taxonomy/275> ;
+    ns1:name "Dicranum bonjeanii"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/277> ns1:belongs_to <http://taxonomy/275> ;
+    ns1:name "Dicranum scoparium"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/279> ns1:belongs_to <http://taxonomy/278> ;
+    ns1:name "Didemnum albidum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/280> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Digitaria sanguinalis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/281> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Distichlis spicata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/283> ns1:belongs_to <http://taxonomy/282> ;
+    ns1:name "Dolichovespula maculata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/285> ns1:belongs_to <http://taxonomy/284> ;
+    ns1:name "Drosera rotundifolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/287> ns1:belongs_to <http://taxonomy/286> ;
+    ns1:name "Dumetella carolinensis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/289> ns1:belongs_to <http://taxonomy/288> ;
+    ns1:name "Eichhornia crassipes"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/29> ns1:belongs_to <http://taxonomy/28> ;
+    ns1:name "Acer pseudoplatanus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/292> ns1:belongs_to <http://taxonomy/291> ;
+    ns1:name "Elaeagnus umbellata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/294> ns1:belongs_to <http://taxonomy/293> ;
+    ns1:name "Epifagus virginiana"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/295> ns1:belongs_to <http://taxonomy/81> ;
+    ns1:name "Epigaea repens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/296> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Eragrostis spectabilis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/298> ns1:belongs_to <http://taxonomy/297> ;
+    ns1:name "Eucosma dorsisignatana"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/299> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Eupatorium hyssopifolium"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/30> ns1:belongs_to <http://taxonomy/28> ;
+    ns1:name "Acer rubrum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/300> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Eupatorium perfoliatum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/301> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Eurybia spectabilis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/302> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Euthamia caroliniana"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/303> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Euthamia graminifolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/305> ns1:belongs_to <http://taxonomy/304> ;
+    ns1:name "Fagus grandifolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/308> ns1:belongs_to <http://taxonomy/307> ;
+    ns1:name "Falco columbarius"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/309> ns1:belongs_to <http://taxonomy/307> ;
+    ns1:name "Falco peregrinus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/310> ns1:belongs_to <http://taxonomy/307> ;
+    ns1:name "Falco sparverius"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/311> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Festuca filiformis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/312> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Festuca rubra"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/314> ns1:belongs_to <http://taxonomy/313> ;
+    ns1:name "Fistulina hepatica"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/316> ns1:belongs_to <http://taxonomy/315> ;
+    ns1:name "Fragaria virginiana"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/318> ns1:belongs_to <http://taxonomy/317> ;
+    ns1:name "Frangula alnus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/324> ns1:belongs_to <http://taxonomy/323> ;
+    ns1:name "Fucus vesiculosus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/326> ns1:belongs_to <http://taxonomy/325> ;
+    ns1:name "Galium aparine"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/328> ns1:belongs_to <http://taxonomy/327> ;
+    ns1:name "Gallus gallus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/329> ns1:belongs_to <http://taxonomy/81> ;
+    ns1:name "Gaultheria procumbens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/33> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Achillea millefolium"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/330> ns1:belongs_to <http://taxonomy/81> ;
+    ns1:name "Gaylussacia baccata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/334> ns1:belongs_to <http://taxonomy/333> ;
+    ns1:name "Geukensia demissa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/339> ns1:belongs_to <http://taxonomy/338> ;
+    ns1:name "Ginkgo biloba"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/340> ns1:belongs_to <http://taxonomy/70> ;
+    ns1:name "Gleditsia triacanthos"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/343> ns1:belongs_to <http://taxonomy/342> ;
+    ns1:name "Grifola frondosa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/345> ns1:belongs_to <http://taxonomy/344> ;
+    ns1:name "Gymnopus dryophilus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/346> ns1:belongs_to <http://taxonomy/344> ;
+    ns1:name "Gymnopus spongiosus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/349> ns1:belongs_to <http://taxonomy/348> ;
+    ns1:name "Gyponana octolineata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/35> ns1:belongs_to <http://taxonomy/34> ;
+    ns1:name "Acrolophus morus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/351> ns1:belongs_to <http://taxonomy/350> ;
+    ns1:name "Gyrodon castaneus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/354> ns1:belongs_to <http://taxonomy/353> ;
+    ns1:name "Halosiphon tomentosum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/357> ns1:belongs_to <http://taxonomy/356> ;
+    ns1:name "Helianthemum canadense"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/359> ns1:belongs_to <http://taxonomy/358> ;
+    ns1:name "Hemigrapsus sanguineus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/361> ns1:belongs_to <http://taxonomy/360> ;
+    ns1:name "Hibiscus rosa-sinensis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/362> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Holcus lanatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/366> ns1:belongs_to <http://taxonomy/365> ;
+    ns1:name "Homo sapiens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/368> ns1:belongs_to <http://taxonomy/367> ;
+    ns1:name "Humidicutis marginata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/370> ns1:belongs_to <http://taxonomy/369> ;
+    ns1:name "Hydnellum scorbiculatum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/373> ns1:belongs_to <http://taxonomy/372> ;
+    ns1:name "Hymenochaete olivaceum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/375> ns1:belongs_to <http://taxonomy/374> ;
+    ns1:name "Hypericum mutilum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/376> ns1:belongs_to <http://taxonomy/374> ;
+    ns1:name "Hypericum perforatum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/377> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Hypochaeris radicata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/38> ns1:belongs_to <http://taxonomy/37> ;
+    ns1:name "Agalinis acuta"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/381> ns1:belongs_to <http://taxonomy/380> ;
+    ns1:name "Hypomyces chrysospermus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/382> ns1:belongs_to <http://taxonomy/11> ;
+    ns1:name "Idia aemula"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/383> ns1:belongs_to <http://taxonomy/11> ;
+    ns1:name "Idia americalis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/386> ns1:belongs_to <http://taxonomy/385> ;
+    ns1:name "Ilex glabra"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/387> ns1:belongs_to <http://taxonomy/385> ;
+    ns1:name "Ilex verticillata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/389> ns1:belongs_to <http://taxonomy/388> ;
+    ns1:name "Impatiens capensis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/39> ns1:belongs_to <http://taxonomy/11> ;
+    ns1:name "Agnorisma badinodis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/391> ns1:belongs_to <http://taxonomy/390> ;
+    ns1:name "Inocephalus quadratus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/392> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Iva frutescens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/394> ns1:belongs_to <http://taxonomy/393> ;
+    ns1:name "Juncus gerardii"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/395> ns1:belongs_to <http://taxonomy/393> ;
+    ns1:name "Juncus tenuis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/396> ns1:belongs_to <http://taxonomy/176> ;
+    ns1:name "Juniperus virginiana"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/397> ns1:belongs_to <http://taxonomy/126> ;
+    ns1:name "Junonia coenia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/398> ns1:belongs_to <http://taxonomy/81> ;
+    ns1:name "Kalmia angustifolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/399> ns1:belongs_to <http://taxonomy/81> ;
+    ns1:name "Kalmia latifolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/40> ns1:belongs_to <http://taxonomy/11> ;
+    ns1:name "Agonopterix thelmae"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/400> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Krigia biflora"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/402> ns1:belongs_to <http://taxonomy/401> ;
+    ns1:name "Laccaria laccata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/405> ns1:belongs_to <http://taxonomy/404> ;
+    ns1:name "Lactarius chrysorrheus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/406> ns1:belongs_to <http://taxonomy/404> ;
+    ns1:name "Lactarius imperleptus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/407> ns1:belongs_to <http://taxonomy/404> ;
+    ns1:name "Lactarius piperatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/408> ns1:belongs_to <http://taxonomy/404> ;
+    ns1:name "Lactarius quietus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/409> ns1:belongs_to <http://taxonomy/404> ;
+    ns1:name "Lactarius rimusellus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/410> ns1:belongs_to <http://taxonomy/404> ;
+    ns1:name "Lactarius subvellereus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/411> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Lactuca biennis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/413> ns1:belongs_to <http://taxonomy/412> ;
+    ns1:name "Laetiporus sulphureus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/416> ns1:belongs_to <http://taxonomy/415> ;
+    ns1:name "Larus argentatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/417> ns1:belongs_to <http://taxonomy/415> ;
+    ns1:name "Larus atricilla"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/418> ns1:belongs_to <http://taxonomy/415> ;
+    ns1:name "Larus marinus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/420> ns1:belongs_to <http://taxonomy/419> ;
+    ns1:name "Lasius alienus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/421> ns1:belongs_to <http://taxonomy/70> ;
+    ns1:name "Lathyrus japonicus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/422> ns1:belongs_to <http://taxonomy/70> ;
+    ns1:name "Lathyrus latifolius"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/423> ns1:belongs_to <http://taxonomy/70> ;
+    ns1:name "Lathyrus sylvestris"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/424> ns1:belongs_to <http://taxonomy/124> ;
+    ns1:name "Leccinum aurantiacum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/425> ns1:belongs_to <http://taxonomy/356> ;
+    ns1:name "Lechea tenuifolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/426> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Leontodon autumnalis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/427> ns1:belongs_to <http://taxonomy/70> ;
+    ns1:name "Lespedeza angustifolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/428> ns1:belongs_to <http://taxonomy/70> ;
+    ns1:name "Lespedeza capitata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/429> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Leymus mollis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/43> ns1:belongs_to <http://taxonomy/42> ;
+    ns1:name "Alnus glutinosa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/431> ns1:belongs_to <http://taxonomy/430> ;
+    ns1:name "Libinia emarginata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/433> ns1:belongs_to <http://taxonomy/432> ;
+    ns1:name "Ligustrum lucidum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/434> ns1:belongs_to <http://taxonomy/432> ;
+    ns1:name "Ligustrum obtusifolium"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/435> ns1:belongs_to <http://taxonomy/432> ;
+    ns1:name "Ligustrum vulgare"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/437> ns1:belongs_to <http://taxonomy/436> ;
+    ns1:name "Limonium carolinianum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/438> ns1:belongs_to <http://taxonomy/37> ;
+    ns1:name "Linaria vulgaris"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/440> ns1:belongs_to <http://taxonomy/439> ;
+    ns1:name "Linum intercursum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/442> ns1:belongs_to <http://taxonomy/441> ;
+    ns1:name "Lithobates catesbeianus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/444> ns1:belongs_to <http://taxonomy/443> ;
+    ns1:name "Littoraria irrorata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/445> ns1:belongs_to <http://taxonomy/443> ;
+    ns1:name "Littorina littorea"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/448> ns1:belongs_to <http://taxonomy/447> ;
+    ns1:name "Lonicera japonica"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/449> ns1:belongs_to <http://taxonomy/447> ;
+    ns1:name "Lonicera morrowii"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/452> ns1:belongs_to <http://taxonomy/451> ;
+    ns1:name "Lucilia sericata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/453> ns1:belongs_to <http://taxonomy/393> ;
+    ns1:name "Luzula banksiana"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/454> ns1:belongs_to <http://taxonomy/393> ;
+    ns1:name "Luzula luzuloides"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/455> ns1:belongs_to <http://taxonomy/242> ;
+    ns1:name "Lycaena phlaeas"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/456> ns1:belongs_to <http://taxonomy/222> ;
+    ns1:name "Lycoperdon marginatum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/458> ns1:belongs_to <http://taxonomy/457> ;
+    ns1:name "Lyophyllum decastes"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/459> ns1:belongs_to <http://taxonomy/263> ;
+    ns1:name "Lythrum salicaria"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/462> ns1:belongs_to <http://taxonomy/461> ;
+    ns1:name "Maianthemum canadense"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/463> ns1:belongs_to <http://taxonomy/461> ;
+    ns1:name "Maianthemum racemosum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/465> ns1:belongs_to <http://taxonomy/464> ;
+    ns1:name "Mastocarpus stellatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/468> ns1:belongs_to <http://taxonomy/467> ;
+    ns1:name "Megaceryle alcyon"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/471> ns1:belongs_to <http://taxonomy/470> ;
+    ns1:name "Megaptera novaeangliae"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/474> ns1:belongs_to <http://taxonomy/473> ;
+    ns1:name "Melanerpes carolinus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/477> ns1:belongs_to <http://taxonomy/476> ;
+    ns1:name "Melanoplus femurrubrum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/479> ns1:belongs_to <http://taxonomy/478> ;
+    ns1:name "Melospiza melodia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/48> ns1:belongs_to <http://taxonomy/47> ;
+    ns1:name "Amanita aestivalis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/482> ns1:belongs_to <http://taxonomy/481> ;
+    ns1:name "Menidia menidia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/485> ns1:belongs_to <http://taxonomy/484> ;
+    ns1:name "Mephitis mephitis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/486> ns1:belongs_to <http://taxonomy/342> ;
+    ns1:name "Meripilus sumstinei"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/487> ns1:belongs_to <http://taxonomy/286> ;
+    ns1:name "Mimus polyglottos"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/49> ns1:belongs_to <http://taxonomy/47> ;
+    ns1:name "Amanita amerifulva"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/492> ns1:belongs_to <http://taxonomy/491> ;
+    ns1:name "Mnemiopsis leidyi"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/496> ns1:belongs_to <http://taxonomy/495> ;
+    ns1:name "Mollisia cinerea"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/498> ns1:belongs_to <http://taxonomy/497> ;
+    ns1:name "Monotropa uniflora"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/499> ns1:belongs_to <http://taxonomy/218> ;
+    ns1:name "Morella cerifera"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/50> ns1:belongs_to <http://taxonomy/47> ;
+    ns1:name "Amanita amerirubescens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/500> ns1:belongs_to <http://taxonomy/218> ;
+    ns1:name "Morella pensylvanica"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/503> ns1:belongs_to <http://taxonomy/502> ;
+    ns1:name "Morus bassanus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/505> ns1:belongs_to <http://taxonomy/504> ;
+    ns1:name "Mycena galericulata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/506> ns1:belongs_to <http://taxonomy/504> ;
+    ns1:name "Mycena haematopus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/509> ns1:belongs_to <http://taxonomy/508> ;
+    ns1:name "Myrmeleon immaculatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/51> ns1:belongs_to <http://taxonomy/47> ;
+    ns1:name "Amanita brunescens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/510> ns1:belongs_to <http://taxonomy/419> ;
+    ns1:name "Myrmica rubra"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/511> ns1:belongs_to <http://taxonomy/333> ;
+    ns1:name "Mytilus edulis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/513> ns1:belongs_to <http://taxonomy/512> ;
+    ns1:name "Nomophila nearctica"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/516> ns1:belongs_to <http://taxonomy/515> ;
+    ns1:name "Nymphaea odorata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/517> ns1:belongs_to <http://taxonomy/225> ;
+    ns1:name "Nyssa sylvatica"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/52> ns1:belongs_to <http://taxonomy/47> ;
+    ns1:name "Amanita citrinia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/520> ns1:belongs_to <http://taxonomy/519> ;
+    ns1:name "Oceanites oceanicus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/521> ns1:belongs_to <http://taxonomy/412> ;
+    ns1:name "Oligoporus fragilis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/526> ns1:belongs_to <http://taxonomy/525> ;
+    ns1:name "Osmunda cinnamomea"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/528> ns1:belongs_to <http://taxonomy/527> ;
+    ns1:name "Pandion haliaetus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/529> ns1:belongs_to <http://taxonomy/504> ;
+    ns1:name "Panellus stypticus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/53> ns1:belongs_to <http://taxonomy/47> ;
+    ns1:name "Amanita crenulata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/530> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Panicum virgatum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/532> ns1:belongs_to <http://taxonomy/531> ;
+    ns1:name "Papilio canadensis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/533> ns1:belongs_to <http://taxonomy/61> ;
+    ns1:name "Parthenocissus quinquefolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/534> ns1:belongs_to <http://taxonomy/61> ;
+    ns1:name "Parthenocissus vitacea"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/536> ns1:belongs_to <http://taxonomy/535> ;
+    ns1:name "Passer domesticus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/537> ns1:belongs_to <http://taxonomy/478> ;
+    ns1:name "Passerculus sandwichensis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/538> ns1:belongs_to <http://taxonomy/512> ;
+    ns1:name "Pediasia trisecta"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/539> ns1:belongs_to <http://taxonomy/412> ;
+    ns1:name "Phaeolus schweinitzii"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/54> ns1:belongs_to <http://taxonomy/47> ;
+    ns1:name "Amanita falvoconia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/541> ns1:belongs_to <http://taxonomy/540> ;
+    ns1:name "Phalacrocorax auritus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/542> ns1:belongs_to <http://taxonomy/540> ;
+    ns1:name "Phalacrocorax carbo"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/543> ns1:belongs_to <http://taxonomy/11> ;
+    ns1:name "Phlogophora periculosa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/545> ns1:belongs_to <http://taxonomy/544> ;
+    ns1:name "Phoca vitulina"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/546> ns1:belongs_to <http://taxonomy/315> ;
+    ns1:name "Photinia pyrifolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/547> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Phragmites australis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/548> ns1:belongs_to <http://taxonomy/126> ;
+    ns1:name "Phyciodes cocyta"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/549> ns1:belongs_to <http://taxonomy/126> ;
+    ns1:name "Phyciodes tharos"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/55> ns1:belongs_to <http://taxonomy/47> ;
+    ns1:name "Amanita flavorubens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/550> ns1:belongs_to <http://taxonomy/126> ;
+    ns1:name "Phycitodes reliquella"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/554> ns1:belongs_to <http://taxonomy/553> ;
+    ns1:name "Phyllosticta smilacis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/556> ns1:belongs_to <http://taxonomy/555> ;
+    ns1:name "Phytolacca americana"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/557> ns1:belongs_to <http://taxonomy/473> ;
+    ns1:name "Picoides pubescens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/559> ns1:belongs_to <http://taxonomy/558> ;
+    ns1:name "Pieris rapae"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/56> ns1:belongs_to <http://taxonomy/47> ;
+    ns1:name "Amanita fulva"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/561> ns1:belongs_to <http://taxonomy/560> ;
+    ns1:name "Pinus rigida"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/562> ns1:belongs_to <http://taxonomy/560> ;
+    ns1:name "Pinus strobus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/563> ns1:belongs_to <http://taxonomy/478> ;
+    ns1:name "Pipilo erythrophthalmus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/565> ns1:belongs_to <http://taxonomy/564> ;
+    ns1:name "Plantago lanceolata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/566> ns1:belongs_to <http://taxonomy/564> ;
+    ns1:name "Plantago major"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/567> ns1:belongs_to <http://taxonomy/564> ;
+    ns1:name "Plantago maritima"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/568> ns1:belongs_to <http://taxonomy/151> ;
+    ns1:name "Pleuroprucha asthenaria"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/57> ns1:belongs_to <http://taxonomy/47> ;
+    ns1:name "Amanita solaneolens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/570> ns1:belongs_to <http://taxonomy/569> ;
+    ns1:name "Pleurotus ostreatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/571> ns1:belongs_to <http://taxonomy/569> ;
+    ns1:name "Pleurotus pulmonarius"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/574> ns1:belongs_to <http://taxonomy/573> ;
+    ns1:name "Pleurozium schreberi"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/575> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Pluchea odorata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/576> ns1:belongs_to <http://taxonomy/112> ;
+    ns1:name "Poecile atricapillus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/577> ns1:belongs_to <http://taxonomy/282> ;
+    ns1:name "Polistes fuscatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/579> ns1:belongs_to <http://taxonomy/578> ;
+    ns1:name "Polygala cruciata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/58> ns1:belongs_to <http://taxonomy/47> ;
+    ns1:name "Amanita tuberosa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/580> ns1:belongs_to <http://taxonomy/578> ;
+    ns1:name "Polygala nuttallii"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/582> ns1:belongs_to <http://taxonomy/581> ;
+    ns1:name "Polygonum cuspidatum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/583> ns1:belongs_to <http://taxonomy/581> ;
+    ns1:name "Polygonum hydropiperoides"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/584> ns1:belongs_to <http://taxonomy/581> ;
+    ns1:name "Polygonum persicaria"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/585> ns1:belongs_to <http://taxonomy/581> ;
+    ns1:name "Polygonum scandens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/589> ns1:belongs_to <http://taxonomy/588> ;
+    ns1:name "Polytrichum commune"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/59> ns1:belongs_to <http://taxonomy/47> ;
+    ns1:name "Amanita virginiana"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/591> ns1:belongs_to <http://taxonomy/590> ;
+    ns1:name "Populus tremuloides"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/592> ns1:belongs_to <http://taxonomy/315> ;
+    ns1:name "Potentilla canadensis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/593> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Prenanthes trifoliolata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/595> ns1:belongs_to <http://taxonomy/594> ;
+    ns1:name "Prunella vulgaris"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/596> ns1:belongs_to <http://taxonomy/315> ;
+    ns1:name "Prunus caroliniana"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/597> ns1:belongs_to <http://taxonomy/315> ;
+    ns1:name "Prunus maritima"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/598> ns1:belongs_to <http://taxonomy/315> ;
+    ns1:name "Prunus serotina"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/600> ns1:belongs_to <http://taxonomy/599> ;
+    ns1:name "Pseudacris crucifer"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/601> ns1:belongs_to <http://taxonomy/124> ;
+    ns1:name "Pseudoboletus parasiticus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/602> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Pseudognaphalium obtusifolium"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/605> ns1:belongs_to <http://taxonomy/604> ;
+    ns1:name "Pteridium aquilinum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/609> ns1:belongs_to <http://taxonomy/608> ;
+    ns1:name "Puccinia eriophori"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/610> ns1:belongs_to <http://taxonomy/608> ;
+    ns1:name "Puccinia glechomatis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/611> ns1:belongs_to <http://taxonomy/594> ;
+    ns1:name "Pycnanthemum muticum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/612> ns1:belongs_to <http://taxonomy/594> ;
+    ns1:name "Pycnanthemum tenuifolium"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/614> ns1:belongs_to <http://taxonomy/613> ;
+    ns1:name "Pyrrharctia isabella"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/615> ns1:belongs_to <http://taxonomy/304> ;
+    ns1:name "Quercus alba"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/616> ns1:belongs_to <http://taxonomy/304> ;
+    ns1:name "Quercus coccinea"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/617> ns1:belongs_to <http://taxonomy/304> ;
+    ns1:name "Quercus ilicifolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/618> ns1:belongs_to <http://taxonomy/304> ;
+    ns1:name "Quercus prinoides"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/619> ns1:belongs_to <http://taxonomy/304> ;
+    ns1:name "Quercus rubra"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/62> ns1:belongs_to <http://taxonomy/61> ;
+    ns1:name "Ampelopsis brevipedunculata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/620> ns1:belongs_to <http://taxonomy/304> ;
+    ns1:name "Quercus velutina"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/621> ns1:belongs_to <http://taxonomy/441> ;
+    ns1:name "Rana sylvatica"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/622> ns1:belongs_to <http://taxonomy/81> ;
+    ns1:name "Rhododendron viscosum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/624> ns1:belongs_to <http://taxonomy/623> ;
+    ns1:name "Rhodomela confervoides"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/626> ns1:belongs_to <http://taxonomy/625> ;
+    ns1:name "Rhus copallinum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/627> ns1:belongs_to <http://taxonomy/625> ;
+    ns1:name "Rhus typhina"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/628> ns1:belongs_to <http://taxonomy/315> ;
+    ns1:name "Rosa multiflora"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/629> ns1:belongs_to <http://taxonomy/315> ;
+    ns1:name "Rosa nitida"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/63> ns1:belongs_to <http://taxonomy/11> ;
+    ns1:name "Amphipyra glabella"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/630> ns1:belongs_to <http://taxonomy/315> ;
+    ns1:name "Rosa rugosa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/631> ns1:belongs_to <http://taxonomy/315> ;
+    ns1:name "Rubus allegheniensis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/632> ns1:belongs_to <http://taxonomy/315> ;
+    ns1:name "Rubus bifrons"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/633> ns1:belongs_to <http://taxonomy/315> ;
+    ns1:name "Rubus flagellaris"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/634> ns1:belongs_to <http://taxonomy/315> ;
+    ns1:name "Rubus pensilvanicus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/635> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Rudbeckia hirta"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/636> ns1:belongs_to <http://taxonomy/404> ;
+    ns1:name "Russula compacta"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/637> ns1:belongs_to <http://taxonomy/404> ;
+    ns1:name "Russula disimulans"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/638> ns1:belongs_to <http://taxonomy/404> ;
+    ns1:name "Russula mariae"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/639> ns1:belongs_to <http://taxonomy/404> ;
+    ns1:name "Russula mutabilis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/64> ns1:belongs_to <http://taxonomy/11> ;
+    ns1:name "Amphipyra pyramidoides"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/640> ns1:belongs_to <http://taxonomy/404> ;
+    ns1:name "Russula variata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/641> ns1:belongs_to <http://taxonomy/105> ;
+    ns1:name "Salicornia depressa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/642> ns1:belongs_to <http://taxonomy/590> ;
+    ns1:name "Salix cinerea"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/643> ns1:belongs_to <http://taxonomy/590> ;
+    ns1:name "Salix humilis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/644> ns1:belongs_to <http://taxonomy/447> ;
+    ns1:name "Sambucus nigra"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/646> ns1:belongs_to <http://taxonomy/369> ;
+    ns1:name "Sarcodon scabrosus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/648> ns1:belongs_to <http://taxonomy/647> ;
+    ns1:name "Sargassum filipendula"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/651> ns1:belongs_to <http://taxonomy/650> ;
+    ns1:name "Sassafras albidum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/653> ns1:belongs_to <http://taxonomy/652> ;
+    ns1:name "Sayornis phoebe"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/654> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Schizachyrium scoparium"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/655> ns1:belongs_to <http://taxonomy/162> ;
+    ns1:name "Scirpus cyperinus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/658> ns1:belongs_to <http://taxonomy/657> ;
+    ns1:name "Sciurus carolinensis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/660> ns1:belongs_to <http://taxonomy/659> ;
+    ns1:name "Scleroderma cepa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/661> ns1:belongs_to <http://taxonomy/659> ;
+    ns1:name "Scleroderma citrinum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/662> ns1:belongs_to <http://taxonomy/70> ;
+    ns1:name "Securigera varia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/663> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Sericocarpus asteroides"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/664> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Setaria parviflora"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/666> ns1:belongs_to <http://taxonomy/665> ;
+    ns1:name "Sialia sialis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/668> ns1:belongs_to <http://taxonomy/667> ;
+    ns1:name "Sitta carolinensis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/67> ns1:belongs_to <http://taxonomy/66> ;
+    ns1:name "Anas platyrhynchos"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/670> ns1:belongs_to <http://taxonomy/669> ;
+    ns1:name "Smilax glauca"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/671> ns1:belongs_to <http://taxonomy/669> ;
+    ns1:name "Smilax rotundifolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/674> ns1:belongs_to <http://taxonomy/673> ;
+    ns1:name "Solanum dulcamara"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/675> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Solidago canadensis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/676> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Solidago nemoralis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/677> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Solidago odora"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/678> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Solidago puberula"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/679> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Solidago rugosa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/68> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Anthemis cotula"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/680> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Solidago sempervirens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/681> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Solidago uliginosa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/682> ns1:belongs_to <http://taxonomy/66> ;
+    ns1:name "Somateria mollissima"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/683> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Spartina alterniflora"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/684> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Spartina patens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/685> ns1:belongs_to <http://taxonomy/270> ;
+    ns1:name "Spartina pectinata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/686> ns1:belongs_to <http://taxonomy/171> ;
+    ns1:name "Spergularia salina"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/690> ns1:belongs_to <http://taxonomy/689> ;
+    ns1:name "Sphagnum fimbriatum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/691> ns1:belongs_to <http://taxonomy/689> ;
+    ns1:name "Sphagnum papillosum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/696> ns1:belongs_to <http://taxonomy/695> ;
+    ns1:name "Spirorbis borealis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/697> ns1:belongs_to <http://taxonomy/478> ;
+    ns1:name "Spizella passerina"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/698> ns1:belongs_to <http://taxonomy/11> ;
+    ns1:name "Spodoptera frugiperda"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/700> ns1:belongs_to <http://taxonomy/699> ;
+    ns1:name "Stercorarius parasiticus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/702> ns1:belongs_to <http://taxonomy/701> ;
+    ns1:name "Stereopalpus vestitus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/704> ns1:belongs_to <http://taxonomy/703> ;
+    ns1:name "Stereum complicatum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/705> ns1:belongs_to <http://taxonomy/703> ;
+    ns1:name "Stereum ostrea"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/706> ns1:belongs_to <http://taxonomy/415> ;
+    ns1:name "Sterna paradisaea"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/707> ns1:belongs_to <http://taxonomy/124> ;
+    ns1:name "Strobilomyces confusus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/708> ns1:belongs_to <http://taxonomy/124> ;
+    ns1:name "Strobilomyces floccopus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/709> ns1:belongs_to <http://taxonomy/124> ;
+    ns1:name "Strobilomyces strobilaceus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/71> ns1:belongs_to <http://taxonomy/70> ;
+    ns1:name "Apios americana"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/711> ns1:belongs_to <http://taxonomy/710> ;
+    ns1:name "Sturnus vulgaris"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/713> ns1:belongs_to <http://taxonomy/712> ;
+    ns1:name "Styela clava"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/715> ns1:belongs_to <http://taxonomy/714> ;
+    ns1:name "Suillus salmonicolor"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/716> ns1:belongs_to <http://taxonomy/11> ;
+    ns1:name "Sunira bicolorago"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/719> ns1:belongs_to <http://taxonomy/718> ;
+    ns1:name "Sympetrum vicinum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/720> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Symphyotrichum dumosum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/721> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Symphyotrichum ericoides"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/722> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Symphyotrichum laeve"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/723> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Symphyotrichum novi-belgii"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/724> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Symphyotrichum pilosum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/725> ns1:belongs_to <http://taxonomy/32> ;
+    ns1:name "Symphyotrichum tenuifolium"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/727> ns1:belongs_to <http://taxonomy/726> ;
+    ns1:name "Tachycineta bicolor"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/728> ns1:belongs_to <http://taxonomy/657> ;
+    ns1:name "Tamias striatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/730> ns1:belongs_to <http://taxonomy/729> ;
+    ns1:name "Tapinella atrotomentosa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/732> ns1:belongs_to <http://taxonomy/731> ;
+    ns1:name "Taxus baccata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/733> ns1:belongs_to <http://taxonomy/11> ;
+    ns1:name "Tetanolita mynesalis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/734> ns1:belongs_to <http://taxonomy/419> ;
+    ns1:name "Tetramorium caespitum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/736> ns1:belongs_to <http://taxonomy/735> ;
+    ns1:name "Thryothorus ludovicianus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/739> ns1:belongs_to <http://taxonomy/738> ;
+    ns1:name "Thunnus thynnus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/74> ns1:belongs_to <http://taxonomy/73> ;
+    ns1:name "Apis mellifera"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/740> ns1:belongs_to <http://taxonomy/625> ;
+    ns1:name "Toxicodendron radicans"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/742> ns1:belongs_to <http://taxonomy/741> ;
+    ns1:name "Toxomerus marginatus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/744> ns1:belongs_to <http://taxonomy/743> ;
+    ns1:name "Trametes pubescens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/745> ns1:belongs_to <http://taxonomy/743> ;
+    ns1:name "Trametes versicolor"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/746> ns1:belongs_to <http://taxonomy/374> ;
+    ns1:name "Triadenum virginicum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/747> ns1:belongs_to <http://taxonomy/743> ;
+    ns1:name "Trichaptum biforme"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/749> ns1:belongs_to <http://taxonomy/748> ;
+    ns1:name "Trichoglossum walteri"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/750> ns1:belongs_to <http://taxonomy/213> ;
+    ns1:name "Tricholoma caligatum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/751> ns1:belongs_to <http://taxonomy/213> ;
+    ns1:name "Tricholoma davisiae"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/753> ns1:belongs_to <http://taxonomy/752> ;
+    ns1:name "Trientalis borealis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/754> ns1:belongs_to <http://taxonomy/70> ;
+    ns1:name "Trifolium repens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/755> ns1:belongs_to <http://taxonomy/665> ;
+    ns1:name "Turdus migratorius"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/756> ns1:belongs_to <http://taxonomy/124> ;
+    ns1:name "Tylopilus ballouii"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/757> ns1:belongs_to <http://taxonomy/124> ;
+    ns1:name "Tylopilus chromipes"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/758> ns1:belongs_to <http://taxonomy/124> ;
+    ns1:name "Tylopilus felleus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/760> ns1:belongs_to <http://taxonomy/759> ;
+    ns1:name "Typha latifolia"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/762> ns1:belongs_to <http://taxonomy/761> ;
+    ns1:name "Uca pugnax"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/763> ns1:belongs_to <http://taxonomy/512> ;
+    ns1:name "Udea rubigalis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/765> ns1:belongs_to <http://taxonomy/764> ;
+    ns1:name "Ulmus pumila"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/769> ns1:belongs_to <http://taxonomy/768> ;
+    ns1:name "Ulva intestinalis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/771> ns1:belongs_to <http://taxonomy/770> ;
+    ns1:name "Urosalpinx cinerea"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/772> ns1:belongs_to <http://taxonomy/81> ;
+    ns1:name "Vaccinium angustifolium"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/773> ns1:belongs_to <http://taxonomy/81> ;
+    ns1:name "Vaccinium corymbosum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/774> ns1:belongs_to <http://taxonomy/81> ;
+    ns1:name "Vaccinium macrocarpon"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/775> ns1:belongs_to <http://taxonomy/81> ;
+    ns1:name "Vaccinium pallidum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/776> ns1:belongs_to <http://taxonomy/126> ;
+    ns1:name "Vanessa cardui"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/777> ns1:belongs_to <http://taxonomy/37> ;
+    ns1:name "Verbascum thapsus"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/778> ns1:belongs_to <http://taxonomy/447> ;
+    ns1:name "Viburnum dentatum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/779> ns1:belongs_to <http://taxonomy/447> ;
+    ns1:name "Viburnum nudum"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/780> ns1:belongs_to <http://taxonomy/61> ;
+    ns1:name "Vitis aestivalis"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/782> ns1:belongs_to <http://taxonomy/781> ;
+    ns1:name "Woodwardia areolata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/783> ns1:belongs_to <http://taxonomy/781> ;
+    ns1:name "Woodwardia virginica"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/786> ns1:belongs_to <http://taxonomy/785> ;
+    ns1:name "Xanthoria elegans"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/787> ns1:belongs_to <http://taxonomy/11> ;
+    ns1:name "Xestia dilucida"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/788> ns1:belongs_to <http://taxonomy/11> ;
+    ns1:name "Zanclognatha marcidilinea"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/79> ns1:belongs_to <http://taxonomy/78> ;
+    ns1:name "Arbacia punctulata"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/791> ns1:belongs_to <http://taxonomy/790> ;
+    ns1:name "Zenaida macroura"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/794> ns1:belongs_to <http://taxonomy/793> ;
+    ns1:name "Zostera marina"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/82> ns1:belongs_to <http://taxonomy/81> ;
+    ns1:name "Arctostaphylos uva-ursi"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/86> ns1:belongs_to <http://taxonomy/85> ;
+    ns1:name "Armadillidium vulgare"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/88> ns1:belongs_to <http://taxonomy/87> ;
+    ns1:name "Armillaria gallica"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/89> ns1:belongs_to <http://taxonomy/87> ;
+    ns1:name "Armillaria mellea"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/90> ns1:belongs_to <http://taxonomy/87> ;
+    ns1:name "Armillaria tabescens"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/93> ns1:belongs_to <http://taxonomy/92> ;
+    ns1:name "Asclepias syriaca"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/94> ns1:belongs_to <http://taxonomy/92> ;
+    ns1:name "Asclepias tuberosa"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/98> ns1:belongs_to <http://taxonomy/97> ;
+    ns1:name "Asterias forbesi"^^<NULL> ;
+    ns1:type <http://taxonomy/6> .
+
+<http://taxonomy/100> ns1:belongs_to <http://taxonomy/99> ;
+    ns1:name "Anthozoa"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/101> ns1:belongs_to <http://taxonomy/100> ;
+    ns1:name "Scleractinia"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/102> ns1:belongs_to <http://taxonomy/101> ;
+    ns1:name "Rhizangiidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/107> ns1:belongs_to <http://taxonomy/10> ;
+    ns1:name "Yponomeutidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/114> ns1:belongs_to <http://taxonomy/8> ;
+    ns1:name "Maxillopoda"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/115> ns1:belongs_to <http://taxonomy/114> ;
+    ns1:name "Sessilia"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/116> ns1:belongs_to <http://taxonomy/115> ;
+    ns1:name "Balanidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/119> ns1:belongs_to <http://taxonomy/91> ;
+    ns1:name "Gentianaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/131> ns1:belongs_to <http://taxonomy/130> ;
+    ns1:name "Pleurogona"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/132> ns1:belongs_to <http://taxonomy/131> ;
+    ns1:name "Botryllidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/135> ns1:belongs_to <http://taxonomy/19> ;
+    ns1:name "Amphibia"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/137> ns1:belongs_to <http://taxonomy/136> ;
+    ns1:name "Bufonidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/142> ns1:belongs_to <http://taxonomy/141> ;
+    ns1:name "Buccinidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/145> ns1:belongs_to <http://taxonomy/20> ;
+    ns1:name "Pelecaniformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/146> ns1:belongs_to <http://taxonomy/145> ;
+    ns1:name "Ardeidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/149> ns1:belongs_to <http://taxonomy/148> ;
+    ns1:name "Portunidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/153> ns1:belongs_to <http://taxonomy/45> ;
+    ns1:name "Cantharellales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/156> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Cardinalidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/16> ns1:belongs_to <http://taxonomy/15> ;
+    ns1:name "Acarosporales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/165> ns1:belongs_to <http://taxonomy/21> ;
+    ns1:name "Cathartidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/167> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Celastrales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/168> ns1:belongs_to <http://taxonomy/167> ;
+    ns1:name "Celastraceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/17> ns1:belongs_to <http://taxonomy/16> ;
+    ns1:name "Acarosporaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/173> ns1:belongs_to <http://taxonomy/24> ;
+    ns1:name "Pinophyta"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/174> ns1:belongs_to <http://taxonomy/173> ;
+    ns1:name "Pinopsida"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/180> ns1:belongs_to <http://taxonomy/179> ;
+    ns1:name "Euphorbiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/184> ns1:belongs_to <http://taxonomy/183> ;
+    ns1:name "Rhodymeniales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/185> ns1:belongs_to <http://taxonomy/184> ;
+    ns1:name "Champiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/191> ns1:belongs_to <http://taxonomy/190> ;
+    ns1:name "Gigartinaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/195> ns1:belongs_to <http://taxonomy/194> ;
+    ns1:name "Carabidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/198> ns1:belongs_to <http://taxonomy/197> ;
+    ns1:name "Cionidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/201> ns1:belongs_to <http://taxonomy/80> ;
+    ns1:name "Clethraceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/203> ns1:belongs_to <http://taxonomy/190> ;
+    ns1:name "Phyllophoraceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/206> ns1:belongs_to <http://taxonomy/205> ;
+    ns1:name "Bryopsidophyceae"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/207> ns1:belongs_to <http://taxonomy/206> ;
+    ns1:name "Bryopsidales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/208> ns1:belongs_to <http://taxonomy/207> ;
+    ns1:name "Codiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/211> ns1:belongs_to <http://taxonomy/210> ;
+    ns1:name "Odontophoridae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/216> ns1:belongs_to <http://taxonomy/215> ;
+    ns1:name "Commelinaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/220> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Psathyrellaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/224> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Cornales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/236> ns1:belongs_to <http://taxonomy/141> ;
+    ns1:name "Columbellidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/240> ns1:belongs_to <http://taxonomy/239> ;
+    ns1:name "Calyptraeidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/248> ns1:belongs_to <http://taxonomy/247> ;
+    ns1:name "Cyprinodontiformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/249> ns1:belongs_to <http://taxonomy/248> ;
+    ns1:name "Cyprinodontidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/251> ns1:belongs_to <http://taxonomy/160> ;
+    ns1:name "Asparagales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/252> ns1:belongs_to <http://taxonomy/251> ;
+    ns1:name "Orchidaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/255> ns1:belongs_to <http://taxonomy/182> ;
+    ns1:name "Rhodophyceae"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/257> ns1:belongs_to <http://taxonomy/256> ;
+    ns1:name "Dasyaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/259> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Apiales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/260> ns1:belongs_to <http://taxonomy/259> ;
+    ns1:name "Apiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/262> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Myrtales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/274> ns1:belongs_to <http://taxonomy/273> ;
+    ns1:name "Dicranales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/278> ns1:belongs_to <http://taxonomy/197> ;
+    ns1:name "Didemnidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/284> ns1:belongs_to <http://taxonomy/104> ;
+    ns1:name "Droseraceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/288> ns1:belongs_to <http://taxonomy/215> ;
+    ns1:name "Pontederiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/291> ns1:belongs_to <http://taxonomy/290> ;
+    ns1:name "Elaeagnaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/293> ns1:belongs_to <http://taxonomy/36> ;
+    ns1:name "Orobanchaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/297> ns1:belongs_to <http://taxonomy/10> ;
+    ns1:name "Tortricidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/306> ns1:belongs_to <http://taxonomy/20> ;
+    ns1:name "Falconiformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/31> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Asterales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/313> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Fistulinaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/317> ns1:belongs_to <http://taxonomy/290> ;
+    ns1:name "Rhamnaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/319> ns1:name "Chromista"^^<NULL> ;
+    ns1:type <http://taxonomy/1> .
+
+<http://taxonomy/320> ns1:belongs_to <http://taxonomy/319> ;
+    ns1:name "Ochrophyta"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/323> ns1:belongs_to <http://taxonomy/322> ;
+    ns1:name "Fucaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/325> ns1:belongs_to <http://taxonomy/91> ;
+    ns1:name "Rubiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/327> ns1:belongs_to <http://taxonomy/210> ;
+    ns1:name "Phasianidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/331> ns1:belongs_to <http://taxonomy/139> ;
+    ns1:name "Bivalvia"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/332> ns1:belongs_to <http://taxonomy/331> ;
+    ns1:name "Mytiloida"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/335> ns1:belongs_to <http://taxonomy/24> ;
+    ns1:name "Ginkgophyta"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/336> ns1:belongs_to <http://taxonomy/335> ;
+    ns1:name "Ginkgoopsida"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/337> ns1:belongs_to <http://taxonomy/336> ;
+    ns1:name "Ginkgoales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/338> ns1:belongs_to <http://taxonomy/337> ;
+    ns1:name "Ginkgoaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/34> ns1:belongs_to <http://taxonomy/10> ;
+    ns1:name "Acrolophidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/347> ns1:belongs_to <http://taxonomy/9> ;
+    ns1:name "Hemiptera"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/348> ns1:belongs_to <http://taxonomy/347> ;
+    ns1:name "Cicadellidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/350> ns1:belongs_to <http://taxonomy/123> ;
+    ns1:name "Paxillaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/352> ns1:belongs_to <http://taxonomy/321> ;
+    ns1:name "Tilopteridales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/353> ns1:belongs_to <http://taxonomy/352> ;
+    ns1:name "Halosiphonaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/358> ns1:belongs_to <http://taxonomy/148> ;
+    ns1:name "Varunidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/360> ns1:belongs_to <http://taxonomy/355> ;
+    ns1:name "Malvaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/364> ns1:belongs_to <http://taxonomy/363> ;
+    ns1:name "Primates"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/365> ns1:belongs_to <http://taxonomy/364> ;
+    ns1:name "Hominidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/367> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Hygrophoraceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/371> ns1:belongs_to <http://taxonomy/45> ;
+    ns1:name "Hymenochaetales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/372> ns1:belongs_to <http://taxonomy/371> ;
+    ns1:name "Hymenochaetaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/378> ns1:belongs_to <http://taxonomy/14> ;
+    ns1:name "Sordariomycetes"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/379> ns1:belongs_to <http://taxonomy/378> ;
+    ns1:name "Hypocreales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/380> ns1:belongs_to <http://taxonomy/379> ;
+    ns1:name "Hypocreaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/384> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Aquifoliales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/388> ns1:belongs_to <http://taxonomy/80> ;
+    ns1:name "Balsaminaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/390> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Entolomataceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/401> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Hydnangiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/430> ns1:belongs_to <http://taxonomy/148> ;
+    ns1:name "Epialtidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/436> ns1:belongs_to <http://taxonomy/104> ;
+    ns1:name "Plumbaginaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/439> ns1:belongs_to <http://taxonomy/179> ;
+    ns1:name "Linaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/446> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Dipsacales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/451> ns1:belongs_to <http://taxonomy/450> ;
+    ns1:name "Calliphoridae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/457> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Lyophyllaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/464> ns1:belongs_to <http://taxonomy/190> ;
+    ns1:name "Petrocelidaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/466> ns1:belongs_to <http://taxonomy/20> ;
+    ns1:name "Coraciiformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/467> ns1:belongs_to <http://taxonomy/466> ;
+    ns1:name "Alcedinidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/469> ns1:belongs_to <http://taxonomy/363> ;
+    ns1:name "Cetacea"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/470> ns1:belongs_to <http://taxonomy/469> ;
+    ns1:name "Balaenopteridae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/472> ns1:belongs_to <http://taxonomy/20> ;
+    ns1:name "Piciformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/475> ns1:belongs_to <http://taxonomy/9> ;
+    ns1:name "Orthoptera"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/476> ns1:belongs_to <http://taxonomy/475> ;
+    ns1:name "Acrididae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/480> ns1:belongs_to <http://taxonomy/247> ;
+    ns1:name "Atheriniformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/481> ns1:belongs_to <http://taxonomy/480> ;
+    ns1:name "Atherinopsidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/484> ns1:belongs_to <http://taxonomy/483> ;
+    ns1:name "Mephitidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/488> ns1:belongs_to <http://taxonomy/7> ;
+    ns1:name "Ctenophora"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/489> ns1:belongs_to <http://taxonomy/488> ;
+    ns1:name "Tentaculata"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/490> ns1:belongs_to <http://taxonomy/489> ;
+    ns1:name "Lobata"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/491> ns1:belongs_to <http://taxonomy/490> ;
+    ns1:name "Bolinopsidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/493> ns1:belongs_to <http://taxonomy/14> ;
+    ns1:name "Leotiomycetes"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/495> ns1:belongs_to <http://taxonomy/494> ;
+    ns1:name "Dermateaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/497> ns1:belongs_to <http://taxonomy/80> ;
+    ns1:name "Monotropaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/502> ns1:belongs_to <http://taxonomy/501> ;
+    ns1:name "Sulidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/507> ns1:belongs_to <http://taxonomy/9> ;
+    ns1:name "Neuroptera"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/508> ns1:belongs_to <http://taxonomy/507> ;
+    ns1:name "Myrmeleontidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/514> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Nymphaeales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/515> ns1:belongs_to <http://taxonomy/514> ;
+    ns1:name "Nymphaeaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/518> ns1:belongs_to <http://taxonomy/20> ;
+    ns1:name "Procellariiformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/519> ns1:belongs_to <http://taxonomy/518> ;
+    ns1:name "Hydrobatidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/522> ns1:belongs_to <http://taxonomy/24> ;
+    ns1:name "Pteridophyta"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/524> ns1:belongs_to <http://taxonomy/523> ;
+    ns1:name "Osmundales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/525> ns1:belongs_to <http://taxonomy/524> ;
+    ns1:name "Osmundaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/527> ns1:belongs_to <http://taxonomy/21> ;
+    ns1:name "Pandionidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/531> ns1:belongs_to <http://taxonomy/10> ;
+    ns1:name "Papilionidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/535> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Passeridae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/544> ns1:belongs_to <http://taxonomy/483> ;
+    ns1:name "Phocidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/551> ns1:belongs_to <http://taxonomy/14> ;
+    ns1:name "Dothideomycetes"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/552> ns1:belongs_to <http://taxonomy/551> ;
+    ns1:name "Dothideales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/553> ns1:belongs_to <http://taxonomy/552> ;
+    ns1:name "Botryosphaeriaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/555> ns1:belongs_to <http://taxonomy/104> ;
+    ns1:name "Phytolaccaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/558> ns1:belongs_to <http://taxonomy/10> ;
+    ns1:name "Pieridae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/572> ns1:belongs_to <http://taxonomy/273> ;
+    ns1:name "Hypnales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/573> ns1:belongs_to <http://taxonomy/572> ;
+    ns1:name "Hylocomiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/586> ns1:belongs_to <http://taxonomy/272> ;
+    ns1:name "Polytrichopsida"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/587> ns1:belongs_to <http://taxonomy/586> ;
+    ns1:name "Polytrichales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/588> ns1:belongs_to <http://taxonomy/587> ;
+    ns1:name "Polytrichaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/599> ns1:belongs_to <http://taxonomy/136> ;
+    ns1:name "Hylidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/60> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Vitales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/604> ns1:belongs_to <http://taxonomy/603> ;
+    ns1:name "Dennstaedtiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/606> ns1:belongs_to <http://taxonomy/44> ;
+    ns1:name "Pucciniomycetes"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/607> ns1:belongs_to <http://taxonomy/606> ;
+    ns1:name "Pucciniales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/613> ns1:belongs_to <http://taxonomy/10> ;
+    ns1:name "Arctiidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/623> ns1:belongs_to <http://taxonomy/256> ;
+    ns1:name "Rhodomelaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/645> ns1:belongs_to <http://taxonomy/45> ;
+    ns1:name "Thelephorales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/647> ns1:belongs_to <http://taxonomy/322> ;
+    ns1:name "Sargassaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/649> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Laurales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/65> ns1:belongs_to <http://taxonomy/20> ;
+    ns1:name "Anseriformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/650> ns1:belongs_to <http://taxonomy/649> ;
+    ns1:name "Lauraceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/652> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Tyrannidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/656> ns1:belongs_to <http://taxonomy/363> ;
+    ns1:name "Rodentia"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/667> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Sittidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/672> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Solanales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/673> ns1:belongs_to <http://taxonomy/672> ;
+    ns1:name "Solanaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/687> ns1:belongs_to <http://taxonomy/272> ;
+    ns1:name "Sphagnopsida"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/688> ns1:belongs_to <http://taxonomy/687> ;
+    ns1:name "Sphagnales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/692> ns1:belongs_to <http://taxonomy/7> ;
+    ns1:name "Annelida"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/693> ns1:belongs_to <http://taxonomy/692> ;
+    ns1:name "Polychaeta"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/694> ns1:belongs_to <http://taxonomy/693> ;
+    ns1:name "Canalipalpata"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/695> ns1:belongs_to <http://taxonomy/694> ;
+    ns1:name "Serpulidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/699> ns1:belongs_to <http://taxonomy/414> ;
+    ns1:name "Stercorariidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/701> ns1:belongs_to <http://taxonomy/194> ;
+    ns1:name "Anthicidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/710> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Sturnidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/712> ns1:belongs_to <http://taxonomy/197> ;
+    ns1:name "Styelidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/714> ns1:belongs_to <http://taxonomy/123> ;
+    ns1:name "Suillaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/717> ns1:belongs_to <http://taxonomy/9> ;
+    ns1:name "Odonata"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/718> ns1:belongs_to <http://taxonomy/717> ;
+    ns1:name "Libellulidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/726> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Hirundinidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/729> ns1:belongs_to <http://taxonomy/123> ;
+    ns1:name "Tapinellaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/731> ns1:belongs_to <http://taxonomy/175> ;
+    ns1:name "Taxaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/735> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Troglodytidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/737> ns1:belongs_to <http://taxonomy/247> ;
+    ns1:name "Perciformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/738> ns1:belongs_to <http://taxonomy/737> ;
+    ns1:name "Scombridae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/741> ns1:belongs_to <http://taxonomy/450> ;
+    ns1:name "Syrphidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/748> ns1:belongs_to <http://taxonomy/494> ;
+    ns1:name "Geoglossaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/752> ns1:belongs_to <http://taxonomy/80> ;
+    ns1:name "Primulaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/759> ns1:belongs_to <http://taxonomy/161> ;
+    ns1:name "Typhaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/76> ns1:belongs_to <http://taxonomy/75> ;
+    ns1:name "Echinoidea"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/761> ns1:belongs_to <http://taxonomy/148> ;
+    ns1:name "Ocypodidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/764> ns1:belongs_to <http://taxonomy/290> ;
+    ns1:name "Ulmaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/766> ns1:belongs_to <http://taxonomy/205> ;
+    ns1:name "Ulvophyceae"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/767> ns1:belongs_to <http://taxonomy/766> ;
+    ns1:name "Ulvales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/768> ns1:belongs_to <http://taxonomy/767> ;
+    ns1:name "Ulvaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/77> ns1:belongs_to <http://taxonomy/76> ;
+    ns1:name "Arbacioida"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/770> ns1:belongs_to <http://taxonomy/141> ;
+    ns1:name "Muricidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/78> ns1:belongs_to <http://taxonomy/77> ;
+    ns1:name "Arbaciidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/784> ns1:belongs_to <http://taxonomy/15> ;
+    ns1:name "Teloschistales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/785> ns1:belongs_to <http://taxonomy/784> ;
+    ns1:name "Teloschistaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/789> ns1:belongs_to <http://taxonomy/20> ;
+    ns1:name "Columbiformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/790> ns1:belongs_to <http://taxonomy/789> ;
+    ns1:name "Columbidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/792> ns1:belongs_to <http://taxonomy/160> ;
+    ns1:name "Alismatales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/793> ns1:belongs_to <http://taxonomy/792> ;
+    ns1:name "Zosteraceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/84> ns1:belongs_to <http://taxonomy/83> ;
+    ns1:name "Isopoda"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/85> ns1:belongs_to <http://taxonomy/84> ;
+    ns1:name "Armadillidiidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/95> ns1:belongs_to <http://taxonomy/75> ;
+    ns1:name "Asteroidea"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/96> ns1:belongs_to <http://taxonomy/95> ;
+    ns1:name "Forcipulatida"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/97> ns1:belongs_to <http://taxonomy/96> ;
+    ns1:name "Asteriidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/99> ns1:belongs_to <http://taxonomy/7> ;
+    ns1:name "Cnidaria"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/105> ns1:belongs_to <http://taxonomy/104> ;
+    ns1:name "Chenopodiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/112> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Paridae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/13> ns1:name "Fungi"^^<NULL> ;
+    ns1:type <http://taxonomy/1> .
+
+<http://taxonomy/130> ns1:belongs_to <http://taxonomy/19> ;
+    ns1:name "Ascidiacea"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/139> ns1:belongs_to <http://taxonomy/7> ;
+    ns1:name "Mollusca"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/140> ns1:belongs_to <http://taxonomy/139> ;
+    ns1:name "Gastropoda"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/15> ns1:belongs_to <http://taxonomy/14> ;
+    ns1:name "Lecanoromycetes"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/151> ns1:belongs_to <http://taxonomy/10> ;
+    ns1:name "Geometridae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/154> ns1:belongs_to <http://taxonomy/153> ;
+    ns1:name "Cantharellaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/158> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Fringillidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/171> ns1:belongs_to <http://taxonomy/104> ;
+    ns1:name "Caryophyllaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/176> ns1:belongs_to <http://taxonomy/175> ;
+    ns1:name "Cupressaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/182> ns1:belongs_to <http://taxonomy/24> ;
+    ns1:name "Rhodophyta"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/183> ns1:belongs_to <http://taxonomy/182> ;
+    ns1:name "Florideophyceae"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/187> ns1:belongs_to <http://taxonomy/80> ;
+    ns1:name "Pyrolaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/194> ns1:belongs_to <http://taxonomy/9> ;
+    ns1:name "Coleoptera"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/205> ns1:belongs_to <http://taxonomy/24> ;
+    ns1:name "Chlorophyta"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/210> ns1:belongs_to <http://taxonomy/20> ;
+    ns1:name "Galliformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/215> ns1:belongs_to <http://taxonomy/160> ;
+    ns1:name "Commelinales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/222> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Agaricaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/225> ns1:belongs_to <http://taxonomy/224> ;
+    ns1:name "Cornaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/233> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Corvidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/239> ns1:belongs_to <http://taxonomy/140> ;
+    ns1:name "Neotaenioglossa"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/242> ns1:belongs_to <http://taxonomy/10> ;
+    ns1:name "Lycaenidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/25> ns1:belongs_to <http://taxonomy/24> ;
+    ns1:name "Magnoliophyta"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/256> ns1:belongs_to <http://taxonomy/255> ;
+    ns1:name "Ceramiales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/263> ns1:belongs_to <http://taxonomy/262> ;
+    ns1:name "Lythraceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/27> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Sapindales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/273> ns1:belongs_to <http://taxonomy/272> ;
+    ns1:name "Bryopsida"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/275> ns1:belongs_to <http://taxonomy/274> ;
+    ns1:name "Dicranaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/28> ns1:belongs_to <http://taxonomy/27> ;
+    ns1:name "Sapindaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/282> ns1:belongs_to <http://taxonomy/72> ;
+    ns1:name "Vespidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/286> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Mimidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/321> ns1:belongs_to <http://taxonomy/320> ;
+    ns1:name "Phaeophyceae"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/322> ns1:belongs_to <http://taxonomy/321> ;
+    ns1:name "Fucales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/333> ns1:belongs_to <http://taxonomy/332> ;
+    ns1:name "Mytilidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/342> ns1:belongs_to <http://taxonomy/341> ;
+    ns1:name "Meripilaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/344> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Marasmiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/355> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Malvales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/356> ns1:belongs_to <http://taxonomy/355> ;
+    ns1:name "Cistaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/369> ns1:belongs_to <http://taxonomy/123>,
+        <http://taxonomy/645> ;
+    ns1:name "Bankeraceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/385> ns1:belongs_to <http://taxonomy/384> ;
+    ns1:name "Aquifoliaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/403> ns1:belongs_to <http://taxonomy/45> ;
+    ns1:name "Russulales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/414> ns1:belongs_to <http://taxonomy/20> ;
+    ns1:name "Charadriiformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/44> ns1:belongs_to <http://taxonomy/13> ;
+    ns1:name "Basidiomycota"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/441> ns1:belongs_to <http://taxonomy/136> ;
+    ns1:name "Ranidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/443> ns1:belongs_to <http://taxonomy/239> ;
+    ns1:name "Littorinidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/450> ns1:belongs_to <http://taxonomy/9> ;
+    ns1:name "Diptera"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/460> ns1:belongs_to <http://taxonomy/160> ;
+    ns1:name "Liliales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/461> ns1:belongs_to <http://taxonomy/460> ;
+    ns1:name "Liliaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/473> ns1:belongs_to <http://taxonomy/472> ;
+    ns1:name "Picidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/483> ns1:belongs_to <http://taxonomy/363> ;
+    ns1:name "Carnivora"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/494> ns1:belongs_to <http://taxonomy/493> ;
+    ns1:name "Helotiales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/501> ns1:belongs_to <http://taxonomy/20> ;
+    ns1:name "Suliformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/523> ns1:belongs_to <http://taxonomy/522> ;
+    ns1:name "Polypodiopsida"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/540> ns1:belongs_to <http://taxonomy/501> ;
+    ns1:name "Phalacrocoracidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/560> ns1:belongs_to <http://taxonomy/175> ;
+    ns1:name "Pinaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/569> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Pleurotaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/578> ns1:belongs_to <http://taxonomy/69> ;
+    ns1:name "Polygalaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/603> ns1:belongs_to <http://taxonomy/523> ;
+    ns1:name "Polypodiales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/608> ns1:belongs_to <http://taxonomy/607> ;
+    ns1:name "Pucciniaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/657> ns1:belongs_to <http://taxonomy/656> ;
+    ns1:name "Sciuridae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/659> ns1:belongs_to <http://taxonomy/123> ;
+    ns1:name "Sclerodermataceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/665> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Turdidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/669> ns1:belongs_to <http://taxonomy/460> ;
+    ns1:name "Smilacaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/689> ns1:belongs_to <http://taxonomy/688> ;
+    ns1:name "Sphagnaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/69> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Fabales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/703> ns1:belongs_to <http://taxonomy/403> ;
+    ns1:name "Stereaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/75> ns1:belongs_to <http://taxonomy/7> ;
+    ns1:name "Echinodermata"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/781> ns1:belongs_to <http://taxonomy/603> ;
+    ns1:name "Blechnaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/83> ns1:belongs_to <http://taxonomy/8> ;
+    ns1:name "Malacostraca"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/136> ns1:belongs_to <http://taxonomy/135> ;
+    ns1:name "Anura"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/141> ns1:belongs_to <http://taxonomy/140> ;
+    ns1:name "Neogastropoda"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/162> ns1:belongs_to <http://taxonomy/161> ;
+    ns1:name "Cyperaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/175> ns1:belongs_to <http://taxonomy/174> ;
+    ns1:name "Pinales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/190> ns1:belongs_to <http://taxonomy/183> ;
+    ns1:name "Gigartinales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/197> ns1:belongs_to <http://taxonomy/130> ;
+    ns1:name "Enterogona"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/21> ns1:belongs_to <http://taxonomy/20> ;
+    ns1:name "Accipitriformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/213> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Tricholomataceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/218> ns1:belongs_to <http://taxonomy/41> ;
+    ns1:name "Myricaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/22> ns1:belongs_to <http://taxonomy/21> ;
+    ns1:name "Accipitridae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/247> ns1:belongs_to <http://taxonomy/19> ;
+    ns1:name "Actinopterygii"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/265> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Parulidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/272> ns1:belongs_to <http://taxonomy/24> ;
+    ns1:name "Bryophyta"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/307> ns1:belongs_to <http://taxonomy/306> ;
+    ns1:name "Falconidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/341> ns1:belongs_to <http://taxonomy/45> ;
+    ns1:name "Polyporales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/37> ns1:belongs_to <http://taxonomy/36> ;
+    ns1:name "Scrophulariaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/374> ns1:belongs_to <http://taxonomy/179> ;
+    ns1:name "Clusiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/41> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Fagales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/412> ns1:belongs_to <http://taxonomy/341> ;
+    ns1:name "Fomitopsidaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/419> ns1:belongs_to <http://taxonomy/72> ;
+    ns1:name "Formicidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/42> ns1:belongs_to <http://taxonomy/41> ;
+    ns1:name "Betulaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/432> ns1:belongs_to <http://taxonomy/36> ;
+    ns1:name "Oleaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/504> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Mycenaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/512> ns1:belongs_to <http://taxonomy/10> ;
+    ns1:name "Crambidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/564> ns1:belongs_to <http://taxonomy/36> ;
+    ns1:name "Plantaginaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/590> ns1:belongs_to <http://taxonomy/179> ;
+    ns1:name "Salicaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/594> ns1:belongs_to <http://taxonomy/36> ;
+    ns1:name "Lamiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/625> ns1:belongs_to <http://taxonomy/27> ;
+    ns1:name "Anacardiaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/66> ns1:belongs_to <http://taxonomy/65> ;
+    ns1:name "Anatidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/72> ns1:belongs_to <http://taxonomy/9> ;
+    ns1:name "Hymenoptera"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/73> ns1:belongs_to <http://taxonomy/72> ;
+    ns1:name "Apidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/743> ns1:belongs_to <http://taxonomy/341> ;
+    ns1:name "Polyporaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/8> ns1:belongs_to <http://taxonomy/7> ;
+    ns1:name "Arthropoda"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/87> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Physalacriaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/91> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Gentianales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/92> ns1:belongs_to <http://taxonomy/91> ;
+    ns1:name "Asclepiadaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/1> ns1:name "Kingdom"^^<NULL> .
+
+<http://taxonomy/14> ns1:belongs_to <http://taxonomy/13> ;
+    ns1:name "Ascomycota"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/148> ns1:belongs_to <http://taxonomy/83> ;
+    ns1:name "Decapoda"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/161> ns1:belongs_to <http://taxonomy/160> ;
+    ns1:name "Poales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/179> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Malpighiales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/290> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Rosales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/363> ns1:belongs_to <http://taxonomy/19> ;
+    ns1:name "Mammalia"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/393> ns1:belongs_to <http://taxonomy/161> ;
+    ns1:name "Juncaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/415> ns1:belongs_to <http://taxonomy/414> ;
+    ns1:name "Laridae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/478> ns1:belongs_to <http://taxonomy/111> ;
+    ns1:name "Emberizidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/581> ns1:belongs_to <http://taxonomy/104> ;
+    ns1:name "Polygonaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/61> ns1:belongs_to <http://taxonomy/60> ;
+    ns1:name "Vitaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/160> ns1:belongs_to <http://taxonomy/25> ;
+    ns1:name "Liliopsida"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/19> ns1:belongs_to <http://taxonomy/7> ;
+    ns1:name "Chordata"^^<NULL> ;
+    ns1:type <http://taxonomy/2> .
+
+<http://taxonomy/227> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Cortinariaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/36> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Lamiales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/447> ns1:belongs_to <http://taxonomy/446> ;
+    ns1:name "Caprifoliaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/104> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Caryophyllales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/123> ns1:belongs_to <http://taxonomy/45> ;
+    ns1:name "Boletales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/80> ns1:belongs_to <http://taxonomy/26> ;
+    ns1:name "Ericales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/126> ns1:belongs_to <http://taxonomy/10> ;
+    ns1:name "Nymphalidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/24> ns1:name "Plantae"^^<NULL> ;
+    ns1:type <http://taxonomy/1> .
+
+<http://taxonomy/304> ns1:belongs_to <http://taxonomy/41> ;
+    ns1:name "Fagaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/45> ns1:belongs_to <http://taxonomy/44> ;
+    ns1:name "Agaricomycetes"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/7> ns1:name "Animalia"^^<NULL> ;
+    ns1:type <http://taxonomy/1> .
+
+<http://taxonomy/9> ns1:belongs_to <http://taxonomy/8> ;
+    ns1:name "Insecta"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/124> ns1:belongs_to <http://taxonomy/123> ;
+    ns1:name "Boletaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/10> ns1:belongs_to <http://taxonomy/9> ;
+    ns1:name "Lepidoptera"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/404> ns1:belongs_to <http://taxonomy/403> ;
+    ns1:name "Russulaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/70> ns1:belongs_to <http://taxonomy/69> ;
+    ns1:name "Fabaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/20> ns1:belongs_to <http://taxonomy/19> ;
+    ns1:name "Aves"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/47> ns1:belongs_to <http://taxonomy/46> ;
+    ns1:name "Amanitaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/81> ns1:belongs_to <http://taxonomy/80> ;
+    ns1:name "Ericaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/11> ns1:belongs_to <http://taxonomy/10> ;
+    ns1:name "Noctuidae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/315> ns1:belongs_to <http://taxonomy/290> ;
+    ns1:name "Rosaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/111> ns1:belongs_to <http://taxonomy/20> ;
+    ns1:name "Passeriformes"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/46> ns1:belongs_to <http://taxonomy/45> ;
+    ns1:name "Agaricales"^^<NULL> ;
+    ns1:type <http://taxonomy/4> .
+
+<http://taxonomy/270> ns1:belongs_to <http://taxonomy/161> ;
+    ns1:name "Poaceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/2> ns1:name "Phylum"^^<NULL> .
+
+<http://taxonomy/26> ns1:belongs_to <http://taxonomy/25> ;
+    ns1:name "Magnoliopsida"^^<NULL> ;
+    ns1:type <http://taxonomy/3> .
+
+<http://taxonomy/3> ns1:name "Class"^^<NULL> .
+
+<http://taxonomy/32> ns1:belongs_to <http://taxonomy/31> ;
+    ns1:name "Asteraceae"^^<NULL> ;
+    ns1:type <http://taxonomy/5> .
+
+<http://taxonomy/4> ns1:name "Order"^^<NULL> .
+
+<http://taxonomy/5> ns1:name "Family"^^<NULL> .
+
+<http://taxonomy/6> ns1:name "Species"^^<NULL> .
+

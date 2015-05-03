@@ -2,7 +2,7 @@ __author__ = 'edduarte'
 
 import csv
 
-doc = open("original-data.csv", "r")
+doc = open("original.csv", "r")
 reader = csv.reader(doc)
 
 kingdom = dict()
@@ -18,60 +18,60 @@ index = 1
 
 triples = list()
 
-for row in reader:
-    if row[0] not in kingdom.keys():
-        kingdom.update({row[0]: "<http://taxonomy/"+str(index)+">"})
+for column in reader:
+    if column[0] not in kingdom.keys():
+        kingdom.update({column[0]: "<http://taxonomy/"+str(index)+">"})
         index += 1
-    if row[1] not in phylum.keys():
-        phylum.update({row[1]: "<http://taxonomy/"+str(index)+">"})
+    if column[1] not in phylum.keys():
+        phylum.update({column[1]: "<http://taxonomy/"+str(index)+">"})
         index += 1
-    if row[2] not in classes.keys():
-        classes.update({row[2]: "<http://taxonomy/"+str(index)+">"})
+    if column[2] not in classes.keys():
+        classes.update({column[2]: "<http://taxonomy/"+str(index)+">"})
         index += 1
-    if row[3] not in order.keys():
-        order.update({row[3]: "<http://taxonomy/"+str(index)+">"})
+    if column[3] not in order.keys():
+        order.update({column[3]: "<http://taxonomy/"+str(index)+">"})
         index += 1
-    if row[4] not in family.keys():
-        family.update({row[4]: "<http://taxonomy/"+str(index)+">"})
+    if column[4] not in family.keys():
+        family.update({column[4]: "<http://taxonomy/"+str(index)+">"})
         index += 1
-    if row[5] not in species.keys():
-        species.update({row[5]: "<http://taxonomy/"+str(index)+">"})
+    if column[5] not in species.keys():
+        species.update({column[5]: "<http://taxonomy/"+str(index)+">"})
         index += 1
 
     if(index == 7):
-        triples.append(str(kingdom.get(row[0])) + ' <http://taxonomy/name> "' + row[0] + '" .')
-        triples.append(str(phylum.get(row[1])) + ' <http://taxonomy/name> "' + row[1] + '" .')
-        triples.append(str(classes.get(row[2])) + ' <http://taxonomy/name> "' + row[2] + '" .')
-        triples.append(str(order.get(row[3])) + ' <http://taxonomy/name> "' + row[3] + '" .')
-        triples.append(str(family.get(row[4])) + ' <http://taxonomy/name> "' + row[4] + '" .')
-        triples.append(str(species.get(row[5])) + ' <http://taxonomy/name> "' + row[5] + '" .')
+        triples.append(str(kingdom.get(column[0])) + ' <http://taxonomy/name> "' + column[0] + '" .')
+        triples.append(str(phylum.get(column[1])) + ' <http://taxonomy/name> "' + column[1] + '" .')
+        triples.append(str(classes.get(column[2])) + ' <http://taxonomy/name> "' + column[2] + '" .')
+        triples.append(str(order.get(column[3])) + ' <http://taxonomy/name> "' + column[3] + '" .')
+        triples.append(str(family.get(column[4])) + ' <http://taxonomy/name> "' + column[4] + '" .')
+        triples.append(str(species.get(column[5])) + ' <http://taxonomy/name> "' + column[5] + '" .')
     else:
-        triples.append(str(kingdom.get(row[0])) + ' <http://taxonomy/name> "' + row[0] + '" .')
-        triples.append(str(kingdom.get(row[0])) + ' <http://taxonomy/type> <http://taxonomy/1>.')
+        triples.append(str(kingdom.get(column[0])) + ' <http://taxonomy/name> "' + column[0] + '" .')
+        triples.append(str(kingdom.get(column[0])) + ' <http://taxonomy/type> <http://taxonomy/1>.')
 
-        triples.append(str(phylum.get(row[1])) + ' <http://taxonomy/name> "' + row[1] + '" .')
-        triples.append(str(phylum.get(row[1])) + ' <http://taxonomy/type> <http://taxonomy/2>.')
-        triples.append(str(phylum.get(row[1])) + ' <http://taxonomy/belongs_to> ' + str(kingdom.get(row[0])) + '.')
+        triples.append(str(phylum.get(column[1])) + ' <http://taxonomy/name> "' + column[1] + '" .')
+        triples.append(str(phylum.get(column[1])) + ' <http://taxonomy/type> <http://taxonomy/2>.')
+        triples.append(str(phylum.get(column[1])) + ' <http://taxonomy/belongs_to> ' + str(kingdom.get(column[0])) + '.')
 
-        triples.append(str(classes.get(row[2])) + ' <http://taxonomy/name> "' + row[2] + '" .')
-        triples.append(str(classes.get(row[2])) + ' <http://taxonomy/type> <http://taxonomy/3>.')
-        triples.append(str(classes.get(row[2])) + ' <http://taxonomy/belongs_to> ' + str(phylum.get(row[1])) + '.')
+        triples.append(str(classes.get(column[2])) + ' <http://taxonomy/name> "' + column[2] + '" .')
+        triples.append(str(classes.get(column[2])) + ' <http://taxonomy/type> <http://taxonomy/3>.')
+        triples.append(str(classes.get(column[2])) + ' <http://taxonomy/belongs_to> ' + str(phylum.get(column[1])) + '.')
 
-        triples.append(str(order.get(row[3])) + ' <http://taxonomy/name> "' + row[3] + '" .')
-        triples.append(str(order.get(row[3])) + ' <http://taxonomy/type> <http://taxonomy/4>.')
-        triples.append(str(order.get(row[3])) + ' <http://taxonomy/belongs_to> ' + str(classes.get(row[2])) + '.')
+        triples.append(str(order.get(column[3])) + ' <http://taxonomy/name> "' + column[3] + '" .')
+        triples.append(str(order.get(column[3])) + ' <http://taxonomy/type> <http://taxonomy/4>.')
+        triples.append(str(order.get(column[3])) + ' <http://taxonomy/belongs_to> ' + str(classes.get(column[2])) + '.')
 
-        triples.append(str(family.get(row[4])) + ' <http://taxonomy/name> "' + row[4] + '" .')
-        triples.append(str(family.get(row[4])) + ' <http://taxonomy/type> <http://taxonomy/5>.')
-        triples.append(str(family.get(row[4])) + ' <http://taxonomy/belongs_to> ' + str(order.get(row[3])) + '.')
+        triples.append(str(family.get(column[4])) + ' <http://taxonomy/name> "' + column[4] + '" .')
+        triples.append(str(family.get(column[4])) + ' <http://taxonomy/type> <http://taxonomy/5>.')
+        triples.append(str(family.get(column[4])) + ' <http://taxonomy/belongs_to> ' + str(order.get(column[3])) + '.')
 
-        triples.append(str(species.get(row[5])) + ' <http://taxonomy/name> "' + row[5] + '" .')
-        triples.append(str(species.get(row[5])) + ' <http://taxonomy/type> <http://taxonomy/6>.')
-        triples.append(str(species.get(row[5])) + ' <http://taxonomy/belongs_to> ' + str(family.get(row[4])) + '.')
+        triples.append(str(species.get(column[5])) + ' <http://taxonomy/name> "' + column[5] + '" .')
+        triples.append(str(species.get(column[5])) + ' <http://taxonomy/type> <http://taxonomy/6>.')
+        triples.append(str(species.get(column[5])) + ' <http://taxonomy/belongs_to> ' + str(family.get(column[4])) + '.')
 
 doc.close()
 
-fp = open("nt-data.nt", "w")
+fp = open("data.nt", "w")
 
 for t in triples:
     fp.write(t + '\n')

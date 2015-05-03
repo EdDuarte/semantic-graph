@@ -1,24 +1,22 @@
-# Create your views here.
+__author__ = 'edduarte'
+
 from django.http import HttpResponse
-from django.http import StreamingHttpResponse
 from django.views.generic import TemplateView
 from django.views.decorators.csrf import csrf_exempt
 import json
 from graph.graph import Graph
-from graph.graphrdf import GraphRdf
 from graph.rules import *
 import codecs
 import os
 import base64
 from django.core.servers.basehttp import FileWrapper
-from django.core.files import File
 
 
 class IndexView(TemplateView):
     template_name = 'index.html'
 
 
-graph = GraphRdf()
+graph = Graph()
 is_graph_ready = False
 
 
@@ -49,38 +47,6 @@ def search_predicates(query):
 def unique(iterable):
     seen = set()
     return [seen.add(x) or x for x in iterable if x not in seen]
-
-
-@csrf_exempt
-def infer_types(request):
-    if request.method == "GET":
-        graph.apply_inference(TypeRule())
-
-        return HttpResponse(
-            json.dumps({"state": "success"}),
-            content_type="application/json"
-        )
-    else:
-        return HttpResponse(
-            json.dumps({"state": "failed"}),
-            content_type="application/json"
-        )
-
-
-@csrf_exempt
-def infer_parents(request):
-    if request.method == "GET":
-        graph.apply_inference(ParentSpeciesRule())
-
-        return HttpResponse(
-            json.dumps({"state": "success"}),
-            content_type="application/json"
-        )
-    else:
-        return HttpResponse(
-            json.dumps({"state": "failed"}),
-            content_type="application/json"
-        )
 
 
 @csrf_exempt
@@ -116,67 +82,6 @@ def suggest_object(request):
         )
 
 @csrf_exempt
-def add(request):
-    global is_graph_ready
-    if request.method == "POST":
-        reader = codecs.getreader("utf-8")
-        data = json.load(reader(request))
-
-        sub = data['subject']
-        pre = data['predicate']
-        obj = data['object']
-
-        try:
-            graph.add(sub, pre, obj)
-            is_graph_ready = True
-        except Exception as e:
-            return HttpResponse(
-                json.dumps({"state": "failed", "message": str(e)}),
-                content_type="application/json"
-            )
-
-        return HttpResponse(
-            json.dumps({"state": "success"}),
-            content_type="application/json"
-        )
-    else:
-        return HttpResponse(
-            json.dumps({"state": "failed"}),
-            content_type="application/json"
-        )
-
-@csrf_exempt
-def remove(request):
-    global is_graph_ready
-    if request.method == "POST":
-        reader = codecs.getreader("utf-8")
-        data = json.load(reader(request))
-
-        sub = data['subject']
-        pre = data['predicate']
-        obj = data['object']
-
-        try:
-            graph.remove(sub, pre, obj)
-            if len(list(graph.triples(None, None, None))) == 0:
-                is_graph_ready = False
-        except Exception as e:
-            return HttpResponse(
-                json.dumps({"state": "failed", "message": str(e)}),
-                content_type="application/json"
-            )
-
-        return HttpResponse(
-            json.dumps({"state": "success"}),
-            content_type="application/json"
-        )
-    else:
-        return HttpResponse(
-            json.dumps({"state": "failed"}),
-            content_type="application/json"
-        )
-
-@csrf_exempt
 def search(request):
     if request.method == "POST":
         reader = codecs.getreader("utf-8")
@@ -206,6 +111,38 @@ def search(request):
         # serialize image to Base64
         return HttpResponse(
             base64.encodestring(open(graph_file_name, "rb").read())
+        )
+
+
+@csrf_exempt
+def infer_types(request):
+    if request.method == "GET":
+        graph.apply_inference(TypeRule())
+
+        return HttpResponse(
+            json.dumps({"state": "success"}),
+            content_type="application/json"
+        )
+    else:
+        return HttpResponse(
+            json.dumps({"state": "failed"}),
+            content_type="application/json"
+        )
+
+
+@csrf_exempt
+def infer_parents(request):
+    if request.method == "GET":
+        graph.apply_inference(ParentSpeciesRule())
+
+        return HttpResponse(
+            json.dumps({"state": "success"}),
+            content_type="application/json"
+        )
+    else:
+        return HttpResponse(
+            json.dumps({"state": "failed"}),
+            content_type="application/json"
         )
 
 
@@ -261,8 +198,6 @@ def export(request):
 
         # save graph into a local file
         file_name = os.path.realpath("export-output")
-        if file_format == "sqlite3":
-            file_name += ".db"
         graph.save(file_name, file_format)
 
         ext = file_format
@@ -289,6 +224,69 @@ def export(request):
         response['Content-Length'] = os.path.getsize(file_name)
         response['Content-Disposition'] = 'attachment; filename=export.'+ext
         return response
+
+
+@csrf_exempt
+def add(request):
+    global is_graph_ready
+    if request.method == "POST":
+        reader = codecs.getreader("utf-8")
+        data = json.load(reader(request))
+
+        sub = data['subject']
+        pre = data['predicate']
+        obj = data['object']
+
+        try:
+            graph.add(sub, pre, obj)
+            is_graph_ready = True
+        except Exception as e:
+            return HttpResponse(
+                json.dumps({"state": "failed", "message": str(e)}),
+                content_type="application/json"
+            )
+
+        return HttpResponse(
+            json.dumps({"state": "success"}),
+            content_type="application/json"
+        )
+    else:
+        return HttpResponse(
+            json.dumps({"state": "failed"}),
+            content_type="application/json"
+        )
+
+
+@csrf_exempt
+def remove(request):
+    global is_graph_ready
+    if request.method == "POST":
+        reader = codecs.getreader("utf-8")
+        data = json.load(reader(request))
+
+        sub = data['subject']
+        pre = data['predicate']
+        obj = data['object']
+
+        try:
+            graph.remove(sub, pre, obj)
+            if len(list(graph.triples(None, None, None))) == 0:
+                is_graph_ready = False
+        except Exception as e:
+            return HttpResponse(
+                json.dumps({"state": "failed", "message": str(e)}),
+                content_type="application/json"
+            )
+
+        return HttpResponse(
+            json.dumps({"state": "success"}),
+            content_type="application/json"
+        )
+    else:
+        return HttpResponse(
+            json.dumps({"state": "failed"}),
+            content_type="application/json"
+        )
 
 
 @csrf_exempt

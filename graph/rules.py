@@ -1,3 +1,4 @@
+__author__ = 'edduarte'
 
 from graph.inferencerule import InferenceRule
 from rdflib import Namespace
