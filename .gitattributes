@@ -1,4 +1,4 @@
-graph/static/css/* linguist-vendored
-graph/static/fonts/* linguist-vendored
+graph/static/css/libs* linguist-vendored
+graph/static/css/fonts/* linguist-vendored
 graph/static/js/libs/* linguist-vendored
 graph/static/js/plugins/* linguist-vendored
