@@ -1,18 +1,18 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     $.ajax({
         type: "GET",
         url: "/is_ready/",
         contentType: "application/json",
         dataType: "html",
-        beforeSend: function(xhr, settings) {
+        beforeSend: function (xhr, settings) {
             if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             }
         },
         success: function (rawResponse) {
             var jsonResponse = JSON.parse(rawResponse);
-            if(jsonResponse.state === "success" && jsonResponse.result) {
+            if (jsonResponse.state === "success" && jsonResponse.result) {
                 $('#upload-alert').hide();
                 $('#ready-alert').show();
                 $('#error-alert').hide();
@@ -94,7 +94,7 @@ $(document).ready(function() {
     });
 
     $('#addForm')
-        .submit(function(event) {
+        .submit(function (event) {
             event.preventDefault();
             $('#add-modal').modal('hide');
 
@@ -120,14 +120,14 @@ $(document).ready(function() {
                 data: params,
                 contentType: "application/json",
                 dataType: "html",
-                beforeSend: function(xhr, settings) {
+                beforeSend: function (xhr, settings) {
                     if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
                         xhr.setRequestHeader("X-CSRFToken", csrftoken);
                     }
                 },
-                success: function(rawResponse) {
+                success: function (rawResponse) {
                     var jsonResponse = JSON.parse(rawResponse);
-                    if(jsonResponse.state === "success") {
+                    if (jsonResponse.state === "success") {
                         $('#upload-modal').modal('hide');
                         $('#upload-alert').hide();
                         $('#ready-alert').show();
@@ -145,7 +145,7 @@ $(document).ready(function() {
         });
 
     $('#removeForm')
-        .submit(function(event) {
+        .submit(function (event) {
             event.preventDefault();
             $('#remove-modal').modal('hide');
 
@@ -171,14 +171,14 @@ $(document).ready(function() {
                 data: params,
                 contentType: "application/json",
                 dataType: "html",
-                beforeSend: function(xhr, settings) {
+                beforeSend: function (xhr, settings) {
                     if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
                         xhr.setRequestHeader("X-CSRFToken", csrftoken);
                     }
                 },
-                success: function(rawResponse) {
+                success: function (rawResponse) {
                     var jsonResponse = JSON.parse(rawResponse);
-                    if(jsonResponse.state === "success") {
+                    if (jsonResponse.state === "success") {
                         $('#upload-modal').modal('hide');
                         $('#upload-alert').hide();
                         $('#ready-alert').show();
@@ -201,17 +201,17 @@ $(document).ready(function() {
     });
 
     $('#uploadForm')
-        .submit(function(event) {
+        .submit(function (event) {
             event.preventDefault();
 
-            if(files) {
+            if (files) {
                 var file = files[0];
                 $('#uploadSubmit').attr("disabled", true);
 
                 var reader = new FileReader();
                 var formatVal = $("input:radio[name ='uploadFormatRadio']:checked").val();
 
-                reader.onload = function(readerEvt) {
+                reader.onload = function (readerEvt) {
                     var binaryString = readerEvt.target.result;
                     var uploadRequest = {
                         base: btoa(binaryString),
@@ -224,14 +224,14 @@ $(document).ready(function() {
                         data: JSON.stringify(uploadRequest),
                         contentType: "application/json",
                         dataType: "html",
-                        beforeSend: function(xhr, settings) {
+                        beforeSend: function (xhr, settings) {
                             if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
                                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
                             }
                         },
                         success: function (rawResponse) {
                             var jsonResponse = JSON.parse(rawResponse);
-                            if(jsonResponse.state === "success") {
+                            if (jsonResponse.state === "success") {
                                 $('#upload-modal').modal('hide');
                                 $('#upload-alert').hide();
                                 $('#ready-alert').show();
@@ -251,13 +251,10 @@ $(document).ready(function() {
 
                 reader.readAsBinaryString(file);
             }
-
-
-
         });
 
     $('#exportForm')
-        .submit(function(event) {
+        .submit(function (event) {
             event.preventDefault();
             $('#export-modal').modal('hide');
 
@@ -274,16 +271,16 @@ $(document).ready(function() {
                 data: params,
                 contentType: "application/json",
                 dataType: "html",
-                beforeSend: function(xhr, settings) {
+                beforeSend: function (xhr, settings) {
                     if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
                         xhr.setRequestHeader("X-CSRFToken", csrftoken);
                     }
                 },
-                success: function(response) {
-                    if(formatVal == "pretty-xml"){
+                success: function (response) {
+                    if (formatVal == "pretty-xml") {
                         formatVal = "xml";
                     }
-                    download("export."+formatVal, response);
+                    download("export." + formatVal, response);
                     $('#exportSubmit').removeAttr("disabled");
                 }
             });
@@ -292,22 +289,22 @@ $(document).ready(function() {
     var fieldIndex = 0;
 
     $('#fieldForm')
-        .submit(function(event) {
+        .submit(function (event) {
             event.preventDefault();
             var triples = [];
-            for(var i = 0; i <= fieldIndex; i++) {
+            for (var i = 0; i <= fieldIndex; i++) {
                 var t = {
-                    subject: $('[name="field['+i+'].subject"]').val(),
-                    predicate: $('[name="field['+i+'].predicate"]').val(),
-                    object: $('[name="field['+i+'].object"]').val()
+                    subject: $('[name="field[' + i + '].subject"]').val(),
+                    predicate: $('[name="field[' + i + '].predicate"]').val(),
+                    object: $('[name="field[' + i + '].object"]').val()
                 };
-                if(t.subject === ""){
+                if (t.subject === "") {
                     t.subject = null
                 }
-                if(t.predicate === ""){
+                if (t.predicate === "") {
                     t.predicate = null
                 }
-                if(t.object === ""){
+                if (t.object === "") {
                     t.object = null
                 }
                 triples.push(t);
@@ -315,7 +312,7 @@ $(document).ready(function() {
             search(triples)
         })
         // Add button click handler
-        .on('click', '.addButton', function() {
+        .on('click', '.addButton', function () {
             fieldIndex++;
             var $template = $('#fieldTemplate'),
                 $clone = $template
@@ -363,8 +360,8 @@ $(document).ready(function() {
                 .end();
         })
         // Remove button click handler
-        .on('click', '.removeButton', function() {
-            var $row  = $(this).parents('.container2'),
+        .on('click', '.removeButton', function () {
+            var $row = $(this).parents('.container2'),
                 index = $row.attr('data-field-index');
 
             // Remove element containing the fields
@@ -413,7 +410,7 @@ function csrfSafeMethod(method) {
     return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
 }
 $.ajaxSetup({
-    beforeSend: function(xhr, settings) {
+    beforeSend: function (xhr, settings) {
         if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
             xhr.setRequestHeader("X-CSRFToken", csrftoken);
         }
@@ -436,13 +433,13 @@ function search(triples) {
         data: JSON.stringify(triples),
         contentType: "application/json",
         dataType: "html",
-        beforeSend: function(xhr, settings) {
+        beforeSend: function (xhr, settings) {
             if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             }
         },
         success: function (rawResponse) {
-            if(rawResponse == null || !rawResponse) {
+            if (rawResponse == null || !rawResponse) {
                 $('#results').html('<div class="span3" style="padding-left:25px;">' +
                 '<br/><br/>No results were found.</div>');
 
@@ -467,15 +464,15 @@ function inferTypes() {
         url: "/infer_types/",
         contentType: "application/json",
         dataType: "html",
-        beforeSend: function(xhr, settings) {
+        beforeSend: function (xhr, settings) {
             if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             }
-        //},
-        //success: function (response) {
-        //    if(response.state === "success") {
-        //        search(lastSearchRequest);
-        //    }
+            //},
+            //success: function (response) {
+            //    if(response.state === "success") {
+            //        search(lastSearchRequest);
+            //    }
         }
     });
 }
@@ -490,15 +487,15 @@ function inferParents() {
         url: "/infer_parents/",
         contentType: "application/json",
         dataType: "html",
-        beforeSend: function(xhr, settings) {
+        beforeSend: function (xhr, settings) {
             if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             }
-        //},
-        //success: function (response) {
-        //    if(response.state === "success") {
-        //        search(lastSearchRequest);
-        //    }
+            //},
+            //success: function (response) {
+            //    if(response.state === "success") {
+            //        search(lastSearchRequest);
+            //    }
         }
     });
 }

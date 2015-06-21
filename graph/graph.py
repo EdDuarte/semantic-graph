@@ -4,14 +4,13 @@
 __author__ = 'edduarte'
 
 import os.path
-import sys
 import time
+
 import rdflib
-from rdflib import plugin, store
 from rdflib import ConjunctiveGraph
 
-class Graph():
 
+class Graph():
     # Create Graph
     def __init__(self):
         self.graph = ConjunctiveGraph('SQLite')
@@ -107,7 +106,7 @@ class Graph():
         return list(set(self.graph.predicates()))
 
     # Query the database (using SPARQL) with a rule and create new triples
-    def apply_inference(self,rule):
+    def apply_inference(self, rule):
         query_text = rule.getqueries()
         query_result = self.graph.query(query_text)
         for r in query_result:

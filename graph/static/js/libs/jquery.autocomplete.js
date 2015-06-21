@@ -52,7 +52,8 @@
         };
 
     function Autocomplete(el, options) {
-        var noop = function () { },
+        var noop = function () {
+            },
             that = this,
             defaults = {
                 ajaxSettings: {},
@@ -192,12 +193,24 @@
 
             $(window).on('resize.autocomplete', that.fixPositionCapture);
 
-            that.el.on('keydown.autocomplete', function (e) { that.onKeyPress(e); });
-            that.el.on('keyup.autocomplete', function (e) { that.onKeyUp(e); });
-            that.el.on('blur.autocomplete', function () { that.onBlur(); });
-            that.el.on('focus.autocomplete', function () { that.onFocus(); });
-            that.el.on('change.autocomplete', function (e) { that.onKeyUp(e); });
-            that.el.on('input.autocomplete', function (e) { that.onKeyUp(e); });
+            that.el.on('keydown.autocomplete', function (e) {
+                that.onKeyPress(e);
+            });
+            that.el.on('keyup.autocomplete', function (e) {
+                that.onKeyUp(e);
+            });
+            that.el.on('blur.autocomplete', function () {
+                that.onBlur();
+            });
+            that.el.on('focus.autocomplete', function () {
+                that.onFocus();
+            });
+            that.el.on('change.autocomplete', function (e) {
+                that.onKeyUp(e);
+            });
+            that.el.on('input.autocomplete', function (e) {
+                that.onKeyUp(e);
+            });
         },
 
         onFocus: function () {
@@ -276,7 +289,7 @@
                 containerHeight = $container.outerHeight(),
                 height = that.el.outerHeight(),
                 offset = that.el.offset(),
-                styles = { 'top': offset.top, 'left': offset.left };
+                styles = {'top': offset.top, 'left': offset.left};
 
             if (orientation === 'auto') {
                 var viewPortHeight = $(window).height(),
@@ -295,11 +308,11 @@
 
             // If container is not positioned to body,
             // correct its position using offset parent offset
-            if(containerParent !== document.body) {
+            if (containerParent !== document.body) {
                 var opacity = $container.css('opacity'),
                     parentOffsetDiff;
 
-                if (!that.visible){
+                if (!that.visible) {
                     $container.css('opacity', 0).show();
                 }
 
@@ -307,7 +320,7 @@
                 styles.top -= parentOffsetDiff.top;
                 styles.left -= parentOffsetDiff.left;
 
-                if (!that.visible){
+                if (!that.visible) {
                     $container.css('opacity', opacity).hide();
                 }
             }
@@ -543,7 +556,7 @@
                 return;
             }
 
-            if ($.isFunction(options.lookup)){
+            if ($.isFunction(options.lookup)) {
                 options.lookup(q, function (data) {
                     that.suggestions = data.suggestions;
                     that.suggest();
@@ -595,7 +608,7 @@
         },
 
         isBadQuery: function (q) {
-            if (!this.options.preventBadQueries){
+            if (!this.options.preventBadQueries) {
                 return false;
             }
 
@@ -645,7 +658,7 @@
                 formatGroup = function (suggestion, index) {
                     var currentCategory = suggestion.data[groupBy];
 
-                    if (category === currentCategory){
+                    if (category === currentCategory) {
                         return '';
                     }
 
@@ -665,7 +678,7 @@
 
             // Build suggestions inner HTML:
             $.each(that.suggestions, function (i, suggestion) {
-                if (groupBy){
+                if (groupBy) {
                     html += formatGroup(suggestion, value, i);
                 }
 
@@ -695,7 +708,7 @@
             that.findBestHint();
         },
 
-        noSuggestions: function() {
+        noSuggestions: function () {
             var that = this,
                 container = $(that.suggestionsContainer),
                 noSuggestionsContainer = $(that.noSuggestionsContainer);
@@ -714,7 +727,7 @@
             that.visible = true;
         },
 
-        adjustContainerWidth: function() {
+        adjustContainerWidth: function () {
             var that = this,
                 options = that.options,
                 width,
@@ -767,17 +780,17 @@
             // If suggestions is string array, convert them to supported format:
             if (suggestions.length && typeof suggestions[0] === 'string') {
                 return $.map(suggestions, function (value) {
-                    return { value: value, data: null };
+                    return {value: value, data: null};
                 });
             }
 
             return suggestions;
         },
 
-        validateOrientation: function(orientation, fallback) {
+        validateOrientation: function (orientation, fallback) {
             orientation = $.trim(orientation || '').toLowerCase();
 
-            if($.inArray(orientation, ['auto', 'bottom', 'top']) === -1){
+            if ($.inArray(orientation, ['auto', 'bottom', 'top']) === -1) {
                 orientation = fallback;
             }
 

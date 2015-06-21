@@ -1,15 +1,17 @@
 __author__ = 'edduarte'
 
-from django.http import HttpResponse
-from django.views.generic import TemplateView
-from django.views.decorators.csrf import csrf_exempt
 import json
-from graph.graph import Graph
-from graph.rules import *
 import codecs
 import os
 import base64
+
+from django.http import HttpResponse
+from django.views.generic import TemplateView
+from django.views.decorators.csrf import csrf_exempt
 from django.core.servers.basehttp import FileWrapper
+
+from graph.graph import Graph
+from graph.rules import *
 
 
 class IndexView(TemplateView):
@@ -31,6 +33,7 @@ def search_resource(query, index):
     if len(results) is not 0:
         results = sorted(results)
     return results
+
 
 def search_predicates(query):
     query = query.lower()
@@ -55,7 +58,8 @@ def suggest_subject(request):
         query = request.GET.get('query', '')
 
         return HttpResponse(
-            json.dumps({"query": query, "suggestions": search_resource(query, 0)}),
+            json.dumps(
+                {"query": query, "suggestions": search_resource(query, 0)}),
             content_type="application/json"
         )
 
@@ -66,7 +70,8 @@ def suggest_predicate(request):
         query = request.GET.get('query', '')
 
         return HttpResponse(
-            json.dumps({"query": query, "suggestions": search_predicates(query)}),
+            json.dumps(
+                {"query": query, "suggestions": search_predicates(query)}),
             content_type="application/json"
         )
 
@@ -77,9 +82,11 @@ def suggest_object(request):
         query = request.GET.get('query', '')
 
         return HttpResponse(
-            json.dumps({"query": query, "suggestions": search_resource(query, 2)}),
+            json.dumps(
+                {"query": query, "suggestions": search_resource(query, 2)}),
             content_type="application/json"
         )
+
 
 @csrf_exempt
 def search(request):
@@ -222,7 +229,7 @@ def export(request):
         wrapper = FileWrapper(open(file_name, "rb"))
         response = HttpResponse(wrapper, content_type=ct)
         response['Content-Length'] = os.path.getsize(file_name)
-        response['Content-Disposition'] = 'attachment; filename=export.'+ext
+        response['Content-Disposition'] = 'attachment; filename=export.' + ext
         return response
 
 

@@ -1,9 +1,9 @@
 __author__ = 'edduarte'
 
-class InferenceRule:
 
+class InferenceRule:
     def getqueries(self):
         return None
 
-    def maketriples(self,binding):
+    def maketriples(self, binding):
         return self._maketriples(*binding)

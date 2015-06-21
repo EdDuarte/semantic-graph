@@ -37,7 +37,7 @@ for column in reader:
     if column[5] not in species.keys():
         species.update({column[5]: index})
         index += 1
-    if(index == 7):
+    if (index == 7):
         triples.append(str(kingdom.get(column[0])) + ',name,' + column[0])
         triples.append(str(phylum.get(column[1])) + ',name,' + column[1])
         triples.append(str(classes.get(column[2])) + ',name,' + column[2])
@@ -49,19 +49,24 @@ for column in reader:
         triples.append(str(kingdom.get(column[0])) + ',type,1')
         triples.append(str(phylum.get(column[1])) + ',name,' + column[1])
         triples.append(str(phylum.get(column[1])) + ',type,2')
-        triples.append(str(phylum.get(column[1])) + ',belongs_to,' + str(kingdom.get(column[0])))
+        triples.append(str(phylum.get(column[1])) + ',belongs_to,' + str(
+            kingdom.get(column[0])))
         triples.append(str(classes.get(column[2])) + ',name,' + column[2])
         triples.append(str(classes.get(column[2])) + ',type,3')
-        triples.append(str(classes.get(column[2])) + ',belongs_to,' + str(phylum.get(column[1])))
+        triples.append(str(classes.get(column[2])) + ',belongs_to,' + str(
+            phylum.get(column[1])))
         triples.append(str(order.get(column[3])) + ',name,' + column[3])
         triples.append(str(order.get(column[3])) + ',type,4')
-        triples.append(str(order.get(column[3])) + ',belongs_to,' + str(classes.get(column[2])))
+        triples.append(str(order.get(column[3])) + ',belongs_to,' + str(
+            classes.get(column[2])))
         triples.append(str(family.get(column[4])) + ',name,' + column[4])
         triples.append(str(family.get(column[4])) + ',type,5')
-        triples.append(str(family.get(column[4])) + ',belongs_to,' + str(order.get(column[3])))
+        triples.append(str(family.get(column[4])) + ',belongs_to,' + str(
+            order.get(column[3])))
         triples.append(str(species.get(column[5])) + ',name,' + column[5])
         triples.append(str(species.get(column[5])) + ',type,6')
-        triples.append(str(species.get(column[5])) + ',belongs_to,' + str(family.get(column[4])))
+        triples.append(str(species.get(column[5])) + ',belongs_to,' + str(
+            family.get(column[4])))
 
 doc.close()
 

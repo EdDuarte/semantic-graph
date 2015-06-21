@@ -4,28 +4,32 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>Semantic Graph</title>
-    <meta name="generator" content="Bootply" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="generator" content="Bootply"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link href="{{ STATIC_URL }}css/libs/bootstrap.min.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/libs/font-awesome.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/libs/simple-sidebar.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/libs/simplegrid.css" rel="stylesheet">
 
-    <script src="{{ STATIC_URL }}js/libs/jquery-1.11.2.js" type="text/javascript"></script>
-    <script src="{{ STATIC_URL }}js/libs/jquery.autocomplete.js" type="text/javascript"></script>
-    <script src="{{ STATIC_URL }}js/libs/bootstrap.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}js/libs/jquery-1.11.2.js"
+            type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}js/libs/jquery.autocomplete.js"
+            type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}js/libs/bootstrap.js"
+            type="text/javascript"></script>
 
     <style media="screen" type="text/css">
 
         /* <!-- */
         body {
-            margin:0;
-            padding:0;
+            margin: 0;
+            padding: 0;
         }
 
         .result {
-            display:none;
+            display: none;
         }
 
         .glyphicon-refresh-animate {
@@ -34,95 +38,136 @@
         }
 
         @-webkit-keyframes spin2 {
-            from { -webkit-transform: rotate(0deg);}
-            to { -webkit-transform: rotate(360deg);}
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+            }
         }
 
         @keyframes spin {
-            from { transform: scale(1) rotate(0deg);}
-            to { transform: scale(1) rotate(360deg);}
+            from {
+                transform: scale(1) rotate(0deg);
+            }
+            to {
+                transform: scale(1) rotate(360deg);
+            }
         }
+
         .wrap {
-            width:100%;
+            width: 100%;
             height: 50px;
-            margin:0 auto;
+            margin: 0 auto;
         }
+
         .full_col {
             margin-top: 30px;
             margin-bottom: 30px;
-            list-style:none;
-            clear:both;
-        }
-        .left_col {
-            float:left;
-            width:40%;
-        }
-        .right_col {
-            float:right;
-            width:40%;
+            list-style: none;
+            clear: both;
         }
 
-        .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
-        .autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
-        .autocomplete-selected { background: #F0F0F0; }
-        .autocomplete-suggestions strong { font-weight: bold; }
-        .autocomplete-group { padding: 2px 5px; }
-        .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+        .left_col {
+            float: left;
+            width: 40%;
+        }
+
+        .right_col {
+            float: right;
+            width: 40%;
+        }
+
+        .autocomplete-suggestions {
+            border: 1px solid #999;
+            background: #FFF;
+            overflow: auto;
+        }
+
+        .autocomplete-suggestion {
+            padding: 2px 5px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .autocomplete-selected {
+            background: #F0F0F0;
+        }
+
+        .autocomplete-suggestions strong {
+            font-weight: bold;
+        }
+
+        .autocomplete-group {
+            padding: 2px 5px;
+        }
+
+        .autocomplete-group strong {
+            display: block;
+            border-bottom: 1px solid #000;
+        }
 
         #header h1,
         #header h2,
         #header p {
-            margin-left:2%;
-            padding-right:2%;
+            margin-left: 2%;
+            padding-right: 2%;
         }
+
         #active2 #tab2,
         #active3 #tab3,
         #active4 #tab4,
         #active5 #tab5 {
-            font-weight:bold;
-            text-decoration:none;
-            color:#000;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
         }
+
         #footer {
-            clear:both;
-            float:left;
-            width:100%;
+            clear: both;
+            float: left;
+            width: 100%;
         }
+
         #footer p {
-            margin-left:2%;
-            padding-right:2%;
+            margin-left: 2%;
+            padding-right: 2%;
         }
 
         /* Start of Column CSS */
         .container2 {
-            clear:left;
-            float:left;
-            width:100%;
-            overflow:hidden;
+            clear: left;
+            float: left;
+            width: 100%;
+            overflow: hidden;
         }
+
         .container1 {
-            float:left;
-            width:100%;
-            position:relative;
-            right:50%;
+            float: left;
+            width: 100%;
+            position: relative;
+            right: 50%;
         }
+
         .col1 {
-            float:left;
-            width:76%;
-            position:relative;
-            left:52%;
-            overflow:hidden;
+            float: left;
+            width: 76%;
+            position: relative;
+            left: 52%;
+            overflow: hidden;
         }
+
         .col2 {
             text-align: center;
             vertical-align: middle;
             padding-top: 38px;
-            float:left;
-            width:16%;
-            position:relative;
-            left:56%;
-            overflow:hidden;
+            float: left;
+            width: 16%;
+            position: relative;
+            left: 56%;
+            overflow: hidden;
         }
+
         /* --> */
     </style>
 </head>
@@ -156,7 +201,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" data-toggle="modal" data-target="#inference-modal">
+                    <a href="#" data-toggle="modal"
+                       data-target="#inference-modal">
                         <i class="fa fa-book fa-1x"></i> Inferences
                     </a>
                 </li>
@@ -175,7 +221,8 @@
     <br/><br/>
 
     <!-- Add dialog -->
-    <div class="modal fade" id="add-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="add-modal" data-width="1000" tabindex="-1"
+         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -183,13 +230,21 @@
                 </div>
                 <form id="addForm" method="post" class="form-horizontal">
                     <div class="modal-body">
-                        <input type="text" id="addSubject" class="form-control" name="addSubject" placeholder="Subject" />
-                        <input type="text" id="addPredicate" class="form-control" name="addPredicate" placeholder="Predicate" />
-                        <input type="text" id="addObject" class="form-control" name="addObject" placeholder="Object" />
+                        <input type="text" id="addSubject" class="form-control"
+                               name="addSubject" placeholder="Subject"/>
+                        <input type="text" id="addPredicate"
+                               class="form-control" name="addPredicate"
+                               placeholder="Predicate"/>
+                        <input type="text" id="addObject" class="form-control"
+                               name="addObject" placeholder="Object"/>
                     </div>
                     <div class="modal-footer">
-                        <button id="addSubmit" type="submit" class="btn btn-primary">Add</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button id="addSubmit" type="submit"
+                                class="btn btn-primary">Add
+                        </button>
+                        <button type="button" class="btn btn-default"
+                                data-dismiss="modal">Cancel
+                        </button>
                     </div>
                 </form>
             </div>
@@ -197,7 +252,8 @@
     </div>
 
     <!-- Remove dialog -->
-    <div class="modal fade" id="remove-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="remove-modal" data-width="1000" tabindex="-1"
+         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -205,13 +261,23 @@
                 </div>
                 <form id="removeForm" method="post" class="form-horizontal">
                     <div class="modal-body">
-                        <input type="text" id="removeSubject" class="form-control" name="removeSubject" placeholder="Subject" />
-                        <input type="text" id="removePredicate" class="form-control" name="removePredicate" placeholder="Predicate" />
-                        <input type="text" id="removeObject" class="form-control" name="removeObject" placeholder="Object" />
+                        <input type="text" id="removeSubject"
+                               class="form-control" name="removeSubject"
+                               placeholder="Subject"/>
+                        <input type="text" id="removePredicate"
+                               class="form-control" name="removePredicate"
+                               placeholder="Predicate"/>
+                        <input type="text" id="removeObject"
+                               class="form-control" name="removeObject"
+                               placeholder="Object"/>
                     </div>
                     <div class="modal-footer">
-                        <button id="removeSubmit" type="submit" class="btn btn-primary">Remove</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button id="removeSubmit" type="submit"
+                                class="btn btn-primary">Remove
+                        </button>
+                        <button type="button" class="btn btn-default"
+                                data-dismiss="modal">Cancel
+                        </button>
                     </div>
                 </form>
             </div>
@@ -219,7 +285,8 @@
     </div>
 
     <!-- Upload dialog -->
-    <div class="modal fade" id="upload-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="upload-modal" data-width="1000" tabindex="-1"
+         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -232,27 +299,35 @@
                         {#                        recommended you export it first!#}
                         The uploaded triples are appended to the current graph!
                         <br/><br/>
-                        <input id="uploadFile" type="file" class="btn btn-default"/>
+                        <input id="uploadFile" type="file"
+                               class="btn btn-default"/>
                         <br/>
                         Format of the uploaded file:
                         <div class="btn-group" data-toggle="buttons">
                             <label class="btn btn-default active">
-                                <input type="radio" name="uploadFormatRadio" id="upload-nt" value="nt" checked>
+                                <input type="radio" name="uploadFormatRadio"
+                                       id="upload-nt" value="nt" checked>
                                 RDF/NT
                             </label>
                             <label class="btn btn-default">
-                                <input type="radio" name="uploadFormatRadio" id="upload-n3" value="n3">
+                                <input type="radio" name="uploadFormatRadio"
+                                       id="upload-n3" value="n3">
                                 RDF/N3
                             </label>
                             <label class="btn btn-default">
-                                <input type="radio" name="uploadFormatRadio" id="upload-xml" value="xml">
+                                <input type="radio" name="uploadFormatRadio"
+                                       id="upload-xml" value="xml">
                                 RDF/XML
                             </label>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button id="uploadSubmit" type="submit" class="btn btn-primary">Upload</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button id="uploadSubmit" type="submit"
+                                class="btn btn-primary">Upload
+                        </button>
+                        <button type="button" class="btn btn-default"
+                                data-dismiss="modal">Cancel
+                        </button>
                     </div>
                 </form>
             </div>
@@ -260,7 +335,8 @@
     </div>
 
     <!-- Export dialog -->
-    <div class="modal fade" id="export-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="export-modal" data-width="1000" tabindex="-1"
+         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -270,24 +346,32 @@
                     <div class="modal-body">
                         Choose the RDF format of the exported file:
                         <br/><br/>
+
                         <div class="btn-group" data-toggle="buttons">
                             <label class="btn btn-default active">
-                                <input type="radio" name="exportFormatRadio" id="export-nt" value="nt" checked>
+                                <input type="radio" name="exportFormatRadio"
+                                       id="export-nt" value="nt" checked>
                                 RDF/NT
                             </label>
                             <label class="btn btn-default">
-                                <input type="radio" name="exportFormatRadio" id="export-n3" value="n3">
+                                <input type="radio" name="exportFormatRadio"
+                                       id="export-n3" value="n3">
                                 RDF/N3
                             </label>
                             <label class="btn btn-default">
-                                <input type="radio" name="exportFormatRadio" id="export-xml" value="pretty-xml">
+                                <input type="radio" name="exportFormatRadio"
+                                       id="export-xml" value="pretty-xml">
                                 RDF/XML
                             </label>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button id="exportSubmit" type="submit" class="btn btn-primary">Export</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button id="exportSubmit" type="submit"
+                                class="btn btn-primary">Export
+                        </button>
+                        <button type="button" class="btn btn-default"
+                                data-dismiss="modal">Cancel
+                        </button>
                     </div>
                 </form>
             </div>
@@ -295,19 +379,27 @@
     </div>
 
     <!-- Inference dialog -->
-    <div class="modal fade" id="inference-modal" data-width="1000" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="inference-modal" data-width="1000" tabindex="-1"
+         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h2 class="form-signin-heading">Inferences</h2>
                 </div>
                 <div class="modal-body">
-                    Select below the inferences you wish to process, so that the new-found are included in the triplestore:<br/><br/>
-                    <button type="button" class="btn btn-default" onclick="inferTypes()">Infer types of species</button>
-                    <button type="button" class="btn btn-default" onclick="inferParents()">Infer parents of species</button>
+                    Select below the inferences you wish to process, so that the
+                    new-found are included in the triplestore:<br/><br/>
+                    <button type="button" class="btn btn-default"
+                            onclick="inferTypes()">Infer types of species
+                    </button>
+                    <button type="button" class="btn btn-default"
+                            onclick="inferParents()">Infer parents of species
+                    </button>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default"
+                            data-dismiss="modal">Close
+                    </button>
                 </div>
             </div>
         </div>
@@ -319,34 +411,47 @@
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
         <br/>
+
         <form id="fieldForm" method="post" class="form-horizontal">
             <div class="container2">
                 <div class="container1">
                     <div class="col1">
-                        <input type="text" class="form-control" name="field[0].subject" placeholder="Subject" />
-                        <input type="text" class="form-control" name="field[0].predicate" placeholder="Predicate" />
-                        <input type="text" class="form-control" name="field[0].object" placeholder="Object" />
+                        <input type="text" class="form-control"
+                               name="field[0].subject" placeholder="Subject"/>
+                        <input type="text" class="form-control"
+                               name="field[0].predicate"
+                               placeholder="Predicate"/>
+                        <input type="text" class="form-control"
+                               name="field[0].object" placeholder="Object"/>
                     </div>
                     <div class="col2">
-                        <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
+                        <button type="button" class="btn btn-default addButton">
+                            <i class="fa fa-plus"></i></button>
                     </div>
                 </div>
             </div>
             <!-- The template for adding new field -->
             <div id="fieldTemplate" class="container2 hide">
                 <br>
+
                 <div class="container1">
                     <div class="col1">
-                        <input type="text" class="form-control" name="subject" placeholder="Subject" />
-                        <input type="text" class="form-control" name="predicate" placeholder="Predicate" />
-                        <input type="text" class="form-control" name="object" placeholder="Object" />
+                        <input type="text" class="form-control" name="subject"
+                               placeholder="Subject"/>
+                        <input type="text" class="form-control" name="predicate"
+                               placeholder="Predicate"/>
+                        <input type="text" class="form-control" name="object"
+                               placeholder="Object"/>
                     </div>
                     <div class="col2">
-                        <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
+                        <button type="button"
+                                class="btn btn-default removeButton"><i
+                                class="fa fa-minus"></i></button>
                     </div>
                 </div>
             </div>
-            <button type="submit" style="margin: 9px" class="btn btn-default btn-large">
+            <button type="submit" style="margin: 9px"
+                    class="btn btn-default btn-large">
                 <span class="fa fa-search"></span>
                 Search
             </button>
@@ -363,27 +468,40 @@
                 <div class="col-lg-12">
 
                     <br/>
-                    <div id="upload-alert" class="alert alert-warning alert-dismissible" hidden role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                    <div id="upload-alert"
+                         class="alert alert-warning alert-dismissible" hidden
+                         role="alert">
+                        <button type="button" class="close" data-dismiss="alert"
+                                aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
                         <strong>Quick Start:</strong>
-                        <a href="#" data-toggle="modal" data-target="#add-modal">
+                        <a href="#" data-toggle="modal"
+                           data-target="#add-modal">
                             <i class="fa fa-plus-square fa-1x"></i> Add
                         </a>
                         a triple or
-                        <a href="#" data-toggle="modal" data-target="#upload-modal">
+                        <a href="#" data-toggle="modal"
+                           data-target="#upload-modal">
                             <i class="fa fa-upload fa-1x"></i> Upload
                         </a>
                         a RDF file!
                     </div>
-                    <div id="error-alert" class="alert alert-danger" hidden role="alert">
+                    <div id="error-alert" class="alert alert-danger" hidden
+                         role="alert">
                         Error:
                         <br/>
+
                         <p id="error-message"></p>
                         <br/>
                         Are you sure you set the right file format?
                     </div>
-                    <div id="ready-alert" class="alert alert-success alert-dismissible" hidden role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div id="ready-alert"
+                         class="alert alert-success alert-dismissible" hidden
+                         role="alert">
+                        <button type="button" class="close" data-dismiss="alert"
+                                aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
                         Now that you added new triples, you can search for a
                         subject, a predicate and/or an
                         object on the left to show a graph. To query all values
