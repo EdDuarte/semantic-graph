@@ -6,27 +6,6 @@
 
 $(document).ready(function () {
 
-    $("#menu-toggle").click(function (e) {
-        e.preventDefault();
-        $(".wrapper").toggleClass("toggled");
-    });
-
-    $("#browseTabButton").click(function (e) {
-        e.preventDefault();
-        $("#browseTabLi").addClass("active");
-        $("#relationshipTabLi").removeClass("active");
-        $("#browseTab").show();
-        $("#relationshipTab").hide();
-    });
-
-    $("#relationshipTabButton").click(function (e) {
-        e.preventDefault();
-        $("#browseTabLi").removeClass("active");
-        $("#relationshipTabLi").addClass("active");
-        $("#relationshipTab").show();
-        $("#browseTab").hide();
-    });
-
     $.ajax({
         type: "GET",
         url: "/is_ready/",
@@ -40,46 +19,15 @@ $(document).ready(function () {
         success: function (rawResponse) {
             var jsonResponse = JSON.parse(rawResponse);
             if (jsonResponse.state === "success" && jsonResponse.result) {
-                $('#upload-alert-browse').hide();
-                $('#ready-alert-browse').show();
-                $('#error-alert-browse').hide();
-                $('#upload-alert-relationships').hide();
-                $('#ready-alert-relationships').show();
-                $('#error-alert-relationships').hide();
+                $('#upload-alert').hide();
+                $('#ready-alert').show();
+                $('#error-alert').hide();
             } else {
-                $('#upload-alert-browse').show();
-                $('#ready-alert-browse').hide();
-                $('#error-alert-browse').hide();
-                $('#upload-alert-relationships').show();
-                $('#ready-alert-relationships').hide();
-                $('#error-alert-relationships').hide();
+                $('#upload-alert').show();
+                $('#ready-alert').hide();
+                $('#error-alert').hide();
             }
         }
-    });
-
-    $('[name="field[0].subject"]').devbridgeAutocomplete({
-        width: 200,
-        minChars: 0,
-        triggerSelectOnValidInput: false,
-        preventBadQueries: false,
-        serviceUrl: '/suggest_subject/'
-    });
-
-    $('[name="field[0].predicate"]').devbridgeAutocomplete({
-        width: 200,
-        minChars: 0,
-        triggerSelectOnValidInput: false,
-        preventBadQueries: false,
-        serviceUrl: '/suggest_predicate/',
-        noCache: true
-    });
-
-    $('[name="field[0].object"]').devbridgeAutocomplete({
-        width: 200,
-        minChars: 0,
-        triggerSelectOnValidInput: false,
-        preventBadQueries: false,
-        serviceUrl: '/suggest_object/'
     });
 
     $('#addSubject').devbridgeAutocomplete({
@@ -162,21 +110,15 @@ $(document).ready(function () {
                     var jsonResponse = JSON.parse(rawResponse);
                     if (jsonResponse.state === "success") {
                         $('#upload-modal').modal('hide');
-                        $('#upload-alert-browse').hide();
-                        $('#ready-alert-browse').show();
-                        $('#error-alert-browse').hide();
-                        $('#upload-alert-relationships').hide();
-                        $('#ready-alert-relationships').show();
-                        $('#error-alert-relationships').hide();
+                        $('#upload-alert').hide();
+                        $('#ready-alert').show();
+                        $('#error-alert').hide();
                     } else {
                         $('#upload-modal').modal('hide');
                         $('#error-message').html(jsonResponse.message);
-                        $('#upload-alert-browse').hide();
-                        $('#ready-alert-browse').hide();
-                        $('#error-alert-browse').show();
-                        $('#upload-alert-relationships').hide();
-                        $('#ready-alert-relationships').hide();
-                        $('#error-alert-relationships').show();
+                        $('#upload-alert').hide();
+                        $('#ready-alert').hide();
+                        $('#error-alert').show();
                     }
                     $('#addSubmit').removeAttr("disabled");
                 }
@@ -219,20 +161,14 @@ $(document).ready(function () {
                     var jsonResponse = JSON.parse(rawResponse);
                     if (jsonResponse.state === "success") {
                         $('#upload-modal').modal('hide');
-                        $('#upload-alert-browse').hide();
-                        $('#ready-alert-browse').show();
-                        $('#error-alert-browse').hide();
-                        $('#upload-alert-relationships').hide();
-                        $('#ready-alert-relationships').show();
-                        $('#error-alert-relationships').hide();
+                        $('#upload-alert').hide();
+                        $('#ready-alert').show();
+                        $('#error-alert').hide();
                     } else {
                         $('#upload-modal').modal('hide');
-                        $('#upload-alert-browse').hide();
-                        $('#ready-alert-browse').hide();
-                        $('#error-alert-browse').show();
-                        $('#upload-alert-relationships').hide();
-                        $('#ready-alert-relationships').hide();
-                        $('#error-alert-relationships').show();
+                        $('#upload-alert').hide();
+                        $('#ready-alert').hide();
+                        $('#error-alert').show();
                         $('#error-message').html(jsonResponse.message);
                     }
                     $('#removeSubmit').removeAttr("disabled");
@@ -278,20 +214,14 @@ $(document).ready(function () {
                             var jsonResponse = JSON.parse(rawResponse);
                             if (jsonResponse.state === "success") {
                                 $('#upload-modal').modal('hide');
-                                $('#upload-alert-browse').hide();
-                                $('#ready-alert-browse').show();
-                                $('#error-alert-browse').hide();
-                                $('#upload-alert-relationships').hide();
-                                $('#ready-alert-relationships').show();
-                                $('#error-alert-relationships').hide();
+                                $('#upload-alert').hide();
+                                $('#ready-alert').show();
+                                $('#error-alert').hide();
                             } else {
                                 $('#upload-modal').modal('hide');
-                                $('#upload-alert-browse').hide();
-                                $('#ready-alert-browse').hide();
-                                $('#error-alert-browse').show();
-                                $('#upload-alert-relationships').hide();
-                                $('#ready-alert-relationships').hide();
-                                $('#error-alert-relationships').show();
+                                $('#upload-alert').hide();
+                                $('#ready-alert').hide();
+                                $('#error-alert').show();
                                 $('#error-message').html(jsonResponse.message);
                             }
                             $('#uploadSubmit').removeAttr("disabled");
@@ -337,89 +267,6 @@ $(document).ready(function () {
             });
         });
 
-    var fieldIndex = 0;
-
-    $('#fieldForm')
-        .submit(function (event) {
-            event.preventDefault();
-            var triples = [];
-            for (var i = 0; i <= fieldIndex; i++) {
-                var t = {
-                    subject: $('[name="field[' + i + '].subject"]').val(),
-                    predicate: $('[name="field[' + i + '].predicate"]').val(),
-                    object: $('[name="field[' + i + '].object"]').val()
-                };
-                if (t.subject === "") {
-                    t.subject = null
-                }
-                if (t.predicate === "") {
-                    t.predicate = null
-                }
-                if (t.object === "") {
-                    t.object = null
-                }
-                triples.push(t);
-            }
-            search(triples)
-        })
-        // Add button click handler
-        .on('click', '.addButton', function () {
-            fieldIndex++;
-            var $template = $('#fieldTemplate'),
-                $clone = $template
-                    .clone()
-                    .removeClass('hide')
-                    .removeAttr('id')
-                    .attr('data-field-index', fieldIndex)
-                    .insertBefore($template);
-
-            // Update the name attributes
-            $clone
-                .find('[name="subject"]')
-                .attr('name', 'field[' + fieldIndex + '].subject')
-                .devbridgeAutocomplete({
-                    width: 200,
-                    minChars: 0,
-                    autoSelectFirst: true,
-                    triggerSelectOnValidInput: false,
-                    preventBadQueries: false,
-                    serviceUrl: '/suggest_subject/'
-                })
-                .end()
-                .find('[name="predicate"]')
-                .attr('name', 'field[' + fieldIndex + '].predicate')
-                .devbridgeAutocomplete({
-                    width: 200,
-                    minChars: 0,
-                    autoSelectFirst: true,
-                    triggerSelectOnValidInput: false,
-                    preventBadQueries: false,
-                    serviceUrl: '/suggest_predicate/',
-                    noCache: true
-                })
-                .end()
-                .find('[name="object"]')
-                .attr('name', 'field[' + fieldIndex + '].object')
-                .devbridgeAutocomplete({
-                    width: 200,
-                    minChars: 0,
-                    autoSelectFirst: true,
-                    triggerSelectOnValidInput: false,
-                    preventBadQueries: false,
-                    serviceUrl: '/suggest_object/'
-                })
-                .end();
-        })
-        // Remove button click handler
-        .on('click', '.removeButton', function () {
-            var $row = $(this).parents('.container2'),
-                index = $row.attr('data-field-index');
-
-            // Remove element containing the fields
-            $row.remove();
-            fieldIndex--;
-        });
-
 });
 
 function download(filename, text) {
@@ -454,7 +301,6 @@ function getCookie(name) {
 }
 
 var csrftoken = getCookie('csrftoken');
-var lastSearchRequest;
 
 function csrfSafeMethod(method) {
     // these HTTP methods do not require CSRF protection
@@ -467,44 +313,6 @@ $.ajaxSetup({
         }
     }
 });
-
-function search(triples) {
-    $('#results').html(
-        '<div style="text-align: center; margin-top: 50px; ">' +
-        '<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate">' +
-        '</span>' +
-        '</div>'
-    );
-
-    lastSearchRequest = triples;
-
-    $.ajax({
-        type: "POST",
-        url: "/search/",
-        data: JSON.stringify(triples),
-        contentType: "application/json",
-        dataType: "html",
-        beforeSend: function (xhr, settings) {
-            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
-                xhr.setRequestHeader("X-CSRFToken", csrftoken);
-            }
-        },
-        success: function (rawResponse) {
-            if (rawResponse == null || !rawResponse) {
-                $('#results').html('<div class="span3" style="padding-left:25px;">' +
-                '<br/><br/>No results were found.</div>');
-
-            } else {
-                //var encodedResponse = btoa(encodeURI(rawResponse));
-                //$('#results').html("<br><br><br><br>").append(encodedResponse);
-
-                var img = new Image();
-                img.src = 'data:image/png;base64,' + rawResponse;
-                $('#results').html("<br/><br/>").append(img);
-            }
-        }
-    });
-}
 
 function inferTypes() {
 

@@ -1,0 +1,187 @@
+<!-- Semantic Graph v2.0.0 -->
+<!-- Author: Ed Duarte -->
+<!-- Email: edmiguelduarte@gmail.com -->
+
+{% extends "base.html" %}
+
+{% block menu %}
+    <ul class="nav navbar-nav navbar-left">
+        <li>
+            <a href="/browse">
+                <i class="fa fa-folder fa-1x"></i> Browse
+            </a>
+        </li>
+        <li class="active">
+            <a href="#">
+                <i class="fa fa-exchange fa-1x"></i> Graph
+            </a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <div id="content" class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar-wrapper">
+            <br/>
+
+            <form id="fieldForm" method="post" class="form-horizontal">
+                <div class="container2">
+                    <div class="container1">
+                        <div class="col1">
+                            <input type="text"
+                                   class="form-control"
+                                   style="margin-top: 5px; margin-bottom: 5px;"
+                                   name="field[0].subject"
+                                   placeholder="Subject"/>
+                            <input type="text"
+                                   class="form-control"
+                                   style="margin-top: 5px; margin-bottom: 5px;"
+                                   name="field[0].predicate"
+                                   placeholder="Predicate"/>
+                            <input type="text"
+                                   class="form-control"
+                                   style="margin-top: 5px; margin-bottom: 5px;"
+                                   name="field[0].object"
+                                   placeholder="Object"/>
+                        </div>
+                        <div class="col2">
+                            <button type="button"
+                                    style="height: 70px"
+                                    class="btn btn-default addButton">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- The template for adding new field -->
+                <div id="fieldTemplate" class="container2 hide">
+                    <br>
+
+                    <div class="container1">
+                        <div class="col1">
+                            <input type="text"
+                                   class="form-control"
+                                   style="margin-top: 5px; margin-bottom: 5px;"
+                                   name="subject"
+                                   placeholder="Subject"/>
+                            <input type="text"
+                                   class="form-control"
+                                   style="margin-top: 5px; margin-bottom: 5px;"
+                                   name="predicate"
+                                   placeholder="Predicate"/>
+                            <input type="text"
+                                   class="form-control"
+                                   style="margin-top: 5px; margin-bottom: 5px;"
+                                   name="object"
+                                   placeholder="Object"/>
+                        </div>
+                        <div class="col2">
+                            <button type="button"
+                                    style="height: 70px"
+                                    class="btn btn-default removeButton">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit"
+                        style="margin: 9px; width: 200px"
+                        class="btn btn-default btn-large">
+                    <span class="fa fa-search"></span>
+                    Search
+                </button>
+            </form>
+            <br/>
+            <br/>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div class="page-content-wrapper">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 65px;">
+                                    <button type="button"
+                                            style="margin-top: 10px"
+                                            class="btn btn-default btn-large"
+                                            id="menu-toggle">
+                                        <i id="menu-toggle-icon"
+                                           class="fa fa-arrow-left fa-1x">
+                                        </i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <h1 class="page-header">
+                                        <small>Graph</small>
+                                    </h1>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="upload-alert"
+                             class="alert alert-warning alert-dismissible"
+                             hidden
+                             role="alert">
+                            <button type="button" class="close" data-dismiss="alert"
+                                    aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <strong>Quick Start:</strong>
+                            <a href="#" class="alert-link" data-toggle="modal" data-target="#add-modal">
+                                <i class="fa fa-plus-square fa-1x"></i> Add
+                            </a>
+                            a triple or
+                            <a href="#" class="alert-link" data-toggle="modal" data-target="#upload-modal">
+                                <i class="fa fa-upload fa-1x"></i> Upload
+                            </a>
+                            a RDF file!
+                        </div>
+                        <div id="error-alert"
+                             class="alert alert-danger"
+                             hidden
+                             role="alert">
+                            Error:
+                            <br/>
+                            <p id="error-message"></p>
+                            <br/>
+                            Are you sure you set the right file format?
+                        </div>
+                        <div id="ready-alert"
+                             class="alert alert-info alert-dismissible"
+                             hidden
+                             role="alert">
+                            <button type="button" class="close" data-dismiss="alert"
+                                    aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            The triplestore has triples! You can search for a
+                            subject, a predicate and/or an
+                            object on the left to display a graph with its
+                            relations. To query all values of a specific field,
+                            leave that field empty.
+                            <br/><br/>
+                            You can also add more fields to perform union queries,
+                            outputting a graph that contains every matched
+                            relation.
+                        </div>
+                        <br/>
+                        <div id="results" style="text-align: center;">
+                        </div>
+                        <div class="span3" style="padding:25px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#content -->
+
+    <script src="{{ STATIC_URL }}js/graph.js" type="text/javascript"></script>
+{% endblock %}

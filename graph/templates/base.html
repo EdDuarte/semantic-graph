@@ -1,0 +1,267 @@
+<!-- Semantic Graph v2.0.0 -->
+<!-- Author: Ed Duarte -->
+<!-- Email: edmiguelduarte@gmail.com -->
+
+<html lang="en"
+      xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Semantic Graph</title>
+    <meta name="generator" content="Bootply"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="{{ STATIC_URL }}css/libs/bootstrap.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/libs/font-awesome.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/libs/simple-sidebar.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/libs/simplegrid.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Semantic Graph</a>
+        <!-- Header -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            {% block menu %}
+            {% endblock %}
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#add-modal">
+                        <i class="fa fa-plus-square fa-1x"></i> Add
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#remove-modal">
+                        <i class="fa fa-minus-square fa-1x"></i> Remove
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#upload-modal">
+                        <i class="fa fa-upload fa-1x"></i> Upload
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#export-modal">
+                        <i class="fa fa-download fa-1x"></i> Export
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal"
+                       data-target="#inference-modal">
+                        <i class="fa fa-book fa-1x"></i> Inferences
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<br/><br/>
+
+<!-- Add dialog -->
+<div class="modal fade" id="add-modal" data-width="1000" tabindex="-1"
+     role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="form-signin-heading">Add a new triple</h2>
+            </div>
+            <form id="addForm" method="post" class="form-horizontal">
+                <div class="modal-body">
+                    <input type="text" id="addSubject" class="form-control"
+                           name="addSubject" placeholder="Subject"/>
+                    <input type="text" id="addPredicate"
+                           class="form-control" name="addPredicate"
+                           placeholder="Predicate"/>
+                    <input type="text" id="addObject" class="form-control"
+                           name="addObject" placeholder="Object"/>
+                </div>
+                <div class="modal-footer">
+                    <button id="addSubmit" type="submit"
+                            class="btn btn-primary">Add
+                    </button>
+                    <button type="button" class="btn btn-default"
+                            data-dismiss="modal">Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Remove dialog -->
+<div class="modal fade" id="remove-modal" data-width="1000" tabindex="-1"
+     role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="form-signin-heading">Remove a new triple</h2>
+            </div>
+            <form id="removeForm" method="post" class="form-horizontal">
+                <div class="modal-body">
+                    <input type="text" id="removeSubject"
+                           class="form-control" name="removeSubject"
+                           placeholder="Subject"/>
+                    <input type="text" id="removePredicate"
+                           class="form-control" name="removePredicate"
+                           placeholder="Predicate"/>
+                    <input type="text" id="removeObject"
+                           class="form-control" name="removeObject"
+                           placeholder="Object"/>
+                </div>
+                <div class="modal-footer">
+                    <button id="removeSubmit" type="submit"
+                            class="btn btn-primary">Remove
+                    </button>
+                    <button type="button" class="btn btn-default"
+                            data-dismiss="modal">Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Upload dialog -->
+<div class="modal fade" id="upload-modal" data-width="1000" tabindex="-1"
+     role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="form-signin-heading">Upload file</h2>
+            </div>
+            <form id="uploadForm" method="post" class="form-horizontal">
+                <div class="modal-body">
+                    Upload a file to be added to the semantic graph.
+{#                    The current graph will be overridden and lost, so it is #}
+{#                    recommended you export it first! #}
+                    The uploaded triples are appended to the current graph!
+                    <br/><br/>
+                    <input id="uploadFile" type="file"
+                           class="btn btn-default"/>
+                    <br/>
+                    Format of the uploaded file:
+{#                    <div class="btn-group" data-toggle="buttons"> #}
+                    <label class="btn btn-default">
+                        <input type="radio" name="uploadFormatRadio"
+                               id="upload-nt" value="nt" checked>
+                        NT
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="uploadFormatRadio"
+                               id="upload-n3" value="n3">
+                        N3
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="uploadFormatRadio"
+                               id="upload-xml" value="xml">
+                        RDF/XML
+                    </label>
+{#                    </div> #}
+                </div>
+                <div class="modal-footer">
+                    <button id="uploadSubmit" type="submit"
+                            class="btn btn-primary">Upload
+                    </button>
+                    <button type="button" class="btn btn-default"
+                            data-dismiss="modal">Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Export dialog -->
+<div class="modal fade" id="export-modal" data-width="1000" tabindex="-1"
+     role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="form-signin-heading">Export to file</h2>
+            </div>
+            <form id="exportForm" method="post" class="form-horizontal">
+                <div class="modal-body">
+                    Choose the RDF format of the exported file:
+                    <br/><br/>
+
+                    {#                    <div class="btn-group" data-toggle="buttons">#}
+                    <label class="btn btn-default">
+                        <input type="radio" name="exportFormatRadio"
+                               id="export-nt" value="nt" checked>
+                        NT
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="exportFormatRadio"
+                               id="export-n3" value="n3">
+                        N3
+                    </label>
+                    <label class="btn btn-default">
+                        <input type="radio" name="exportFormatRadio"
+                               id="export-xml" value="pretty-xml">
+                        RDF/XML
+                    </label>
+                    {#                    </div>#}
+                </div>
+                <div class="modal-footer">
+                    <button id="exportSubmit" type="submit"
+                            class="btn btn-primary">Export
+                    </button>
+                    <button type="button" class="btn btn-default"
+                            data-dismiss="modal">Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Inference dialog -->
+<div class="modal fade" id="inference-modal" data-width="1000" tabindex="-1"
+     role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="form-signin-heading">Inferences</h2>
+            </div>
+            <div class="modal-body">
+                Select below the inferences you wish to process, so that the
+                new-found are included in the triplestore:<br/><br/>
+                <button type="button" class="btn btn-default"
+                        onclick="inferTypes()">Infer types of species
+                </button>
+                <button type="button" class="btn btn-default"
+                        onclick="inferParents()">Infer parents of species
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ STATIC_URL }}js/libs/jquery-1.11.2.js"
+        type="text/javascript"></script>
+<script src="{{ STATIC_URL }}js/libs/jquery.autocomplete.js"
+        type="text/javascript"></script>
+<script src="{{ STATIC_URL }}js/libs/jquery.iphonecheckbox.js"
+        type="text/javascript"></script>
+<script src="{{ STATIC_URL }}js/libs/bootstrap.min.js"
+        type="text/javascript"></script>
+<script src="{{ STATIC_URL }}js/common.js" type="text/javascript"></script>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
