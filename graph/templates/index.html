@@ -1,4 +1,9 @@
-<html lang="en" xmlns="http://www.w3.org/1999/html"
+<!-- Semantic Graph v2.0.0 -->
+<!-- Author: Ed Duarte -->
+<!-- Email: edmiguelduarte@gmail.com -->
+
+<html lang="en"
+      xmlns="http://www.w3.org/1999/html"
       xmlns="http://www.w3.org/1999/html">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -8,177 +13,33 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link href="{{ STATIC_URL }}css/libs/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/libs/bootstrap.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/libs/font-awesome.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/libs/simple-sidebar.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/libs/simplegrid.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/main.css" rel="stylesheet">
 
-    <script src="{{ STATIC_URL }}js/libs/jquery-1.11.2.js"
-            type="text/javascript"></script>
-    <script src="{{ STATIC_URL }}js/libs/jquery.autocomplete.js"
-            type="text/javascript"></script>
-    <script src="{{ STATIC_URL }}js/libs/bootstrap.js"
-            type="text/javascript"></script>
-
-    <style media="screen" type="text/css">
-
-        /* <!-- */
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .result {
-            display: none;
-        }
-
-        .glyphicon-refresh-animate {
-            -animation: spin .7s infinite linear;
-            -webkit-animation: spin2 .7s infinite linear;
-        }
-
-        @-webkit-keyframes spin2 {
-            from {
-                -webkit-transform: rotate(0deg);
-            }
-            to {
-                -webkit-transform: rotate(360deg);
-            }
-        }
-
-        @keyframes spin {
-            from {
-                transform: scale(1) rotate(0deg);
-            }
-            to {
-                transform: scale(1) rotate(360deg);
-            }
-        }
-
-        .wrap {
-            width: 100%;
-            height: 50px;
-            margin: 0 auto;
-        }
-
-        .full_col {
-            margin-top: 30px;
-            margin-bottom: 30px;
-            list-style: none;
-            clear: both;
-        }
-
-        .left_col {
-            float: left;
-            width: 40%;
-        }
-
-        .right_col {
-            float: right;
-            width: 40%;
-        }
-
-        .autocomplete-suggestions {
-            border: 1px solid #999;
-            background: #FFF;
-            overflow: auto;
-        }
-
-        .autocomplete-suggestion {
-            padding: 2px 5px;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-        .autocomplete-selected {
-            background: #F0F0F0;
-        }
-
-        .autocomplete-suggestions strong {
-            font-weight: bold;
-        }
-
-        .autocomplete-group {
-            padding: 2px 5px;
-        }
-
-        .autocomplete-group strong {
-            display: block;
-            border-bottom: 1px solid #000;
-        }
-
-        #header h1,
-        #header h2,
-        #header p {
-            margin-left: 2%;
-            padding-right: 2%;
-        }
-
-        #active2 #tab2,
-        #active3 #tab3,
-        #active4 #tab4,
-        #active5 #tab5 {
-            font-weight: bold;
-            text-decoration: none;
-            color: #000;
-        }
-
-        #footer {
-            clear: both;
-            float: left;
-            width: 100%;
-        }
-
-        #footer p {
-            margin-left: 2%;
-            padding-right: 2%;
-        }
-
-        /* Start of Column CSS */
-        .container2 {
-            clear: left;
-            float: left;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .container1 {
-            float: left;
-            width: 100%;
-            position: relative;
-            right: 50%;
-        }
-
-        .col1 {
-            float: left;
-            width: 76%;
-            position: relative;
-            left: 52%;
-            overflow: hidden;
-        }
-
-        .col2 {
-            text-align: center;
-            vertical-align: middle;
-            padding-top: 38px;
-            float: left;
-            width: 16%;
-            position: relative;
-            left: 56%;
-            overflow: hidden;
-        }
-
-        /* --> */
-    </style>
 </head>
 
 <body>
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Taxonomy Semantic Graph</a>
+        <a class="navbar-brand" href="#">Semantic Graph</a>
         <!-- Header -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+                <li id="browseTabLi" class="active">
+                    <a id="browseTabButton" href="#">
+                        <i class="fa fa-folder fa-1x"></i> Browse
+                    </a>
+                </li>
+                <li id="relationshipTabLi">
+                    <a id="relationshipTabButton" href="#">
+                        <i class="fa fa-exchange fa-1x"></i> Relationships
+                    </a>
+                </li>
+            </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="#" data-toggle="modal" data-target="#add-modal">
@@ -206,227 +67,337 @@
                         <i class="fa fa-book fa-1x"></i> Inferences
                     </a>
                 </li>
-                <li>
-                    <a href="#menu-toggle" id="menu-toggle">
-                        <i class="fa fa-minus fa-1x"></i> Hide Search
-                    </a>
-                </li>
             </ul>
 
         </div>
     </div>
 </nav>
 
-<div class="container">
-    <br/><br/>
+<br/><br/>
 
-    <!-- Add dialog -->
-    <div class="modal fade" id="add-modal" data-width="1000" tabindex="-1"
-         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="form-signin-heading">Add a new triple</h2>
-                </div>
-                <form id="addForm" method="post" class="form-horizontal">
-                    <div class="modal-body">
-                        <input type="text" id="addSubject" class="form-control"
-                               name="addSubject" placeholder="Subject"/>
-                        <input type="text" id="addPredicate"
-                               class="form-control" name="addPredicate"
-                               placeholder="Predicate"/>
-                        <input type="text" id="addObject" class="form-control"
-                               name="addObject" placeholder="Object"/>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="addSubmit" type="submit"
-                                class="btn btn-primary">Add
-                        </button>
-                        <button type="button" class="btn btn-default"
-                                data-dismiss="modal">Cancel
-                        </button>
-                    </div>
-                </form>
+<!-- Add dialog -->
+<div class="modal fade" id="add-modal" data-width="1000" tabindex="-1"
+     role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="form-signin-heading">Add a new triple</h2>
             </div>
-        </div>
-    </div>
-
-    <!-- Remove dialog -->
-    <div class="modal fade" id="remove-modal" data-width="1000" tabindex="-1"
-         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="form-signin-heading">Remove a new triple</h2>
-                </div>
-                <form id="removeForm" method="post" class="form-horizontal">
-                    <div class="modal-body">
-                        <input type="text" id="removeSubject"
-                               class="form-control" name="removeSubject"
-                               placeholder="Subject"/>
-                        <input type="text" id="removePredicate"
-                               class="form-control" name="removePredicate"
-                               placeholder="Predicate"/>
-                        <input type="text" id="removeObject"
-                               class="form-control" name="removeObject"
-                               placeholder="Object"/>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="removeSubmit" type="submit"
-                                class="btn btn-primary">Remove
-                        </button>
-                        <button type="button" class="btn btn-default"
-                                data-dismiss="modal">Cancel
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Upload dialog -->
-    <div class="modal fade" id="upload-modal" data-width="1000" tabindex="-1"
-         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="form-signin-heading">Upload file</h2>
-                </div>
-                <form id="uploadForm" method="post" class="form-horizontal">
-                    <div class="modal-body">
-                        Upload a file to be added to the semantic graph.
-                        {#                        The current graph will be overridden and lost, so it is#}
-                        {#                        recommended you export it first!#}
-                        The uploaded triples are appended to the current graph!
-                        <br/><br/>
-                        <input id="uploadFile" type="file"
-                               class="btn btn-default"/>
-                        <br/>
-                        Format of the uploaded file:
-                        <div class="btn-group" data-toggle="buttons">
-                            <label class="btn btn-default active">
-                                <input type="radio" name="uploadFormatRadio"
-                                       id="upload-nt" value="nt" checked>
-                                RDF/NT
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" name="uploadFormatRadio"
-                                       id="upload-n3" value="n3">
-                                RDF/N3
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" name="uploadFormatRadio"
-                                       id="upload-xml" value="xml">
-                                RDF/XML
-                            </label>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="uploadSubmit" type="submit"
-                                class="btn btn-primary">Upload
-                        </button>
-                        <button type="button" class="btn btn-default"
-                                data-dismiss="modal">Cancel
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Export dialog -->
-    <div class="modal fade" id="export-modal" data-width="1000" tabindex="-1"
-         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="form-signin-heading">Export to file</h2>
-                </div>
-                <form id="exportForm" method="post" class="form-horizontal">
-                    <div class="modal-body">
-                        Choose the RDF format of the exported file:
-                        <br/><br/>
-
-                        <div class="btn-group" data-toggle="buttons">
-                            <label class="btn btn-default active">
-                                <input type="radio" name="exportFormatRadio"
-                                       id="export-nt" value="nt" checked>
-                                RDF/NT
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" name="exportFormatRadio"
-                                       id="export-n3" value="n3">
-                                RDF/N3
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" name="exportFormatRadio"
-                                       id="export-xml" value="pretty-xml">
-                                RDF/XML
-                            </label>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="exportSubmit" type="submit"
-                                class="btn btn-primary">Export
-                        </button>
-                        <button type="button" class="btn btn-default"
-                                data-dismiss="modal">Cancel
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Inference dialog -->
-    <div class="modal fade" id="inference-modal" data-width="1000" tabindex="-1"
-         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="form-signin-heading">Inferences</h2>
-                </div>
+            <form id="addForm" method="post" class="form-horizontal">
                 <div class="modal-body">
-                    Select below the inferences you wish to process, so that the
-                    new-found are included in the triplestore:<br/><br/>
-                    <button type="button" class="btn btn-default"
-                            onclick="inferTypes()">Infer types of species
-                    </button>
-                    <button type="button" class="btn btn-default"
-                            onclick="inferParents()">Infer parents of species
-                    </button>
+                    <input type="text" id="addSubject" class="form-control"
+                           name="addSubject" placeholder="Subject"/>
+                    <input type="text" id="addPredicate"
+                           class="form-control" name="addPredicate"
+                           placeholder="Predicate"/>
+                    <input type="text" id="addObject" class="form-control"
+                           name="addObject" placeholder="Object"/>
                 </div>
                 <div class="modal-footer">
+                    <button id="addSubmit" type="submit"
+                            class="btn btn-primary">Add
+                    </button>
                     <button type="button" class="btn btn-default"
-                            data-dismiss="modal">Close
+                            data-dismiss="modal">Cancel
                     </button>
                 </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Remove dialog -->
+<div class="modal fade" id="remove-modal" data-width="1000" tabindex="-1"
+     role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="form-signin-heading">Remove a new triple</h2>
+            </div>
+            <form id="removeForm" method="post" class="form-horizontal">
+                <div class="modal-body">
+                    <input type="text" id="removeSubject"
+                           class="form-control" name="removeSubject"
+                           placeholder="Subject"/>
+                    <input type="text" id="removePredicate"
+                           class="form-control" name="removePredicate"
+                           placeholder="Predicate"/>
+                    <input type="text" id="removeObject"
+                           class="form-control" name="removeObject"
+                           placeholder="Object"/>
+                </div>
+                <div class="modal-footer">
+                    <button id="removeSubmit" type="submit"
+                            class="btn btn-primary">Remove
+                    </button>
+                    <button type="button" class="btn btn-default"
+                            data-dismiss="modal">Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Upload dialog -->
+<div class="modal fade" id="upload-modal" data-width="1000" tabindex="-1"
+     role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="form-signin-heading">Upload file</h2>
+            </div>
+            <form id="uploadForm" method="post" class="form-horizontal">
+                <div class="modal-body">
+                    Upload a file to be added to the semantic graph.
+                    {#                        The current graph will be overridden and lost, so it is#}
+                    {#                        recommended you export it first!#}
+                    The uploaded triples are appended to the current graph!
+                    <br/><br/>
+                    <input id="uploadFile" type="file"
+                           class="btn btn-default"/>
+                    <br/>
+                    Format of the uploaded file:
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="uploadFormatRadio"
+                                   id="upload-nt" value="nt" checked>
+                            NT
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="uploadFormatRadio"
+                                   id="upload-n3" value="n3">
+                            N3
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="uploadFormatRadio"
+                                   id="upload-xml" value="xml">
+                            RDF/XML
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="uploadSubmit" type="submit"
+                            class="btn btn-primary">Upload
+                    </button>
+                    <button type="button" class="btn btn-default"
+                            data-dismiss="modal">Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Export dialog -->
+<div class="modal fade" id="export-modal" data-width="1000" tabindex="-1"
+     role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="form-signin-heading">Export to file</h2>
+            </div>
+            <form id="exportForm" method="post" class="form-horizontal">
+                <div class="modal-body">
+                    Choose the RDF format of the exported file:
+                    <br/><br/>
+
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="exportFormatRadio"
+                                   id="export-nt" value="nt" checked>
+                            NT
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="exportFormatRadio"
+                                   id="export-n3" value="n3">
+                            N3
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="exportFormatRadio"
+                                   id="export-xml" value="pretty-xml">
+                            RDF/XML
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="exportSubmit" type="submit"
+                            class="btn btn-primary">Export
+                    </button>
+                    <button type="button" class="btn btn-default"
+                            data-dismiss="modal">Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Inference dialog -->
+<div class="modal fade" id="inference-modal" data-width="1000" tabindex="-1"
+     role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="form-signin-heading">Inferences</h2>
+            </div>
+            <div class="modal-body">
+                Select below the inferences you wish to process, so that the
+                new-found are included in the triplestore:<br/><br/>
+                <button type="button" class="btn btn-default"
+                        onclick="inferTypes()">Infer types of species
+                </button>
+                <button type="button" class="btn btn-default"
+                        onclick="inferParents()">Infer parents of species
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">Close
+                </button>
             </div>
         </div>
     </div>
 </div>
 
-<div id="wrapper">
+<div id="browseTab">
+
+    <!-- Page Content -->
+    <div class="container-fluid">
+        <br/>
+        <table style="width: 100%">
+            <tr>
+                <td>
+                    <h1 class="page-header">
+                        <small>Browse</small>
+                    </h1>
+                </td>
+            </tr>
+        </table>
+        <div id="upload-alert-browse"
+             class="alert alert-warning alert-dismissible"
+             hidden
+             role="alert">
+            <button type="button" class="close" data-dismiss="alert"
+                    aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <strong>Quick Start:</strong>
+            <a href="#" class="alert-link" data-toggle="modal" data-target="#add-modal">
+                <i class="fa fa-plus-square fa-1x"></i> Add
+            </a>
+            a triple or
+            <a href="#" class="alert-link" data-toggle="modal" data-target="#upload-modal">
+                <i class="fa fa-upload fa-1x"></i> Upload
+            </a>
+            a RDF file!
+        </div>
+        <div id="error-alert-browse"
+             class="alert alert-danger"
+             hidden
+             role="alert">
+            Error:
+            <br/>
+            <p id="error-message"></p>
+            <br/>
+            Are you sure you set the right file format?
+        </div>
+        <div id="ready-alert-browse"
+             class="alert alert-info alert-dismissible"
+             hidden
+             role="alert">
+            <button type="button" class="close" data-dismiss="alert"
+                    aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            The triplestore has triples! You can search for a
+            class below to see all its properties
+            exposed using owl format.
+        </div>
+        <form id="browseFieldForm" method="post" class="form-horizontal">
+            <div class="row">
+                <div class="col-lg-9 col-md-9">
+                    <input type="text"
+                           class="form-control"
+                           style="margin-top: 5px; margin-bottom: 5px;"
+                           name="search"
+                           placeholder="Search for a class..."/>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                    <button type="submit"
+                            style="margin-top: 5px; margin-bottom: 5px; width: 180px"
+                            class="btn btn-default btn-large">
+                        <span class="fa fa-search"></span>
+                        Search
+                    </button>
+                </div>
+            </div>
+        </form>
+        <br/>
+        <br/>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-comments fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">26</div>
+                                <div>New Comments!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="panel-footer">
+                            <span class="pull-left">View Details</span>
+                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div id="browseResult" style="text-align: center;">
+        </div>
+        <div class="span3" style="padding:25px;">
+        </div>
+    </div>
+</div>
+<!-- /#browseTab -->
+
+<div id="relationshipTab" class="wrapper" hidden>
 
     <!-- Sidebar -->
-    <div id="sidebar-wrapper">
+    <div class="sidebar-wrapper">
         <br/>
 
         <form id="fieldForm" method="post" class="form-horizontal">
             <div class="container2">
                 <div class="container1">
                     <div class="col1">
-                        <input type="text" class="form-control"
-                               name="field[0].subject" placeholder="Subject"/>
-                        <input type="text" class="form-control"
+                        <input type="text"
+                               class="form-control"
+                               style="margin-top: 5px; margin-bottom: 5px;"
+                               name="field[0].subject"
+                               placeholder="Subject"/>
+                        <input type="text"
+                               class="form-control"
+                               style="margin-top: 5px; margin-bottom: 5px;"
                                name="field[0].predicate"
                                placeholder="Predicate"/>
-                        <input type="text" class="form-control"
-                               name="field[0].object" placeholder="Object"/>
+                        <input type="text"
+                               class="form-control"
+                               style="margin-top: 5px; margin-bottom: 5px;"
+                               name="field[0].object"
+                               placeholder="Object"/>
                     </div>
                     <div class="col2">
-                        <button type="button" class="btn btn-default addButton">
-                            <i class="fa fa-plus"></i></button>
+                        <button type="button"
+                                style="height: 70px"
+                                class="btn btn-default addButton">
+                            <i class="fa fa-plus"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -436,21 +407,33 @@
 
                 <div class="container1">
                     <div class="col1">
-                        <input type="text" class="form-control" name="subject"
+                        <input type="text"
+                               class="form-control"
+                               style="margin-top: 5px; margin-bottom: 5px;"
+                               name="subject"
                                placeholder="Subject"/>
-                        <input type="text" class="form-control" name="predicate"
+                        <input type="text"
+                               class="form-control"
+                               style="margin-top: 5px; margin-bottom: 5px;"
+                               name="predicate"
                                placeholder="Predicate"/>
-                        <input type="text" class="form-control" name="object"
+                        <input type="text"
+                               class="form-control"
+                               style="margin-top: 5px; margin-bottom: 5px;"
+                               name="object"
                                placeholder="Object"/>
                     </div>
                     <div class="col2">
                         <button type="button"
-                                class="btn btn-default removeButton"><i
-                                class="fa fa-minus"></i></button>
+                                style="height: 70px"
+                                class="btn btn-default removeButton">
+                            <i class="fa fa-minus"></i>
+                        </button>
                     </div>
                 </div>
             </div>
-            <button type="submit" style="margin: 9px"
+            <button type="submit"
+                    style="margin: 9px; width: 200px"
                     class="btn btn-default btn-large">
                 <span class="fa fa-search"></span>
                 Search
@@ -462,78 +445,98 @@
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-    <div id="page-content-wrapper">
+    <div class="page-content-wrapper">
         <div class="container-fluid">
+
             <div class="row">
                 <div class="col-lg-12">
-
-                    <br/>
-
-                    <div id="upload-alert"
-                         class="alert alert-warning alert-dismissible" hidden
+                    <table style="width: 100%">
+                        <tr>
+                            <td style="width: 65px;">
+                                <button type="button"
+                                        style="margin-top: 10px"
+                                        class="btn btn-default btn-large"
+                                        id="menu-toggle">
+                                    <i class="fa fa-arrow-left fa-1x"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <h1 class="page-header">
+                                    <small>Relationships</small>
+                                </h1>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="upload-alert-relationships"
+                         class="alert alert-warning alert-dismissible"
+                         hidden
                          role="alert">
                         <button type="button" class="close" data-dismiss="alert"
                                 aria-label="Close"><span
                                 aria-hidden="true">&times;</span></button>
                         <strong>Quick Start:</strong>
-                        <a href="#" data-toggle="modal"
-                           data-target="#add-modal">
+                        <a href="#" class="alert-link" data-toggle="modal" data-target="#add-modal">
                             <i class="fa fa-plus-square fa-1x"></i> Add
                         </a>
                         a triple or
-                        <a href="#" data-toggle="modal"
-                           data-target="#upload-modal">
+                        <a href="#" class="alert-link" data-toggle="modal" data-target="#upload-modal">
                             <i class="fa fa-upload fa-1x"></i> Upload
                         </a>
                         a RDF file!
                     </div>
-                    <div id="error-alert" class="alert alert-danger" hidden
+                    <div id="error-alert-relationships"
+                         class="alert alert-danger"
+                         hidden
                          role="alert">
                         Error:
                         <br/>
-
                         <p id="error-message"></p>
                         <br/>
                         Are you sure you set the right file format?
                     </div>
-                    <div id="ready-alert"
-                         class="alert alert-success alert-dismissible" hidden
+                    <div id="ready-alert-relationships"
+                         class="alert alert-info alert-dismissible"
+                         hidden
                          role="alert">
                         <button type="button" class="close" data-dismiss="alert"
                                 aria-label="Close"><span
                                 aria-hidden="true">&times;</span></button>
-                        Now that you added new triples, you can search for a
+                        The triplestore has triples! You can search for a
                         subject, a predicate and/or an
-                        object on the left to show a graph. To query all values
-                        of a specific field, leave that field empty.
+                        object on the left to display a graph with its
+                        relations. To query all values of a specific field,
+                        leave that field empty.
                         <br/><br/>
                         You can also add more fields to perform union queries,
                         outputting a graph that contains every matched
                         relation.
                     </div>
-
+                    <br/>
                     <div id="results" style="text-align: center;">
                     </div>
                     <div class="span3" style="padding:25px;">
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
     <!-- /#page-content-wrapper -->
-
 </div>
-<!-- /#wrapper -->
+<!-- /#relationshipTab -->
 
-<!-- Menu Toggle Script -->
-<script>
-    $("#menu-toggle").click(function (e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-</script>
-
+<script src="{{ STATIC_URL }}js/libs/jquery-1.11.2.js"
+        type="text/javascript"></script>
+<script src="{{ STATIC_URL }}js/libs/jquery.autocomplete.js"
+        type="text/javascript"></script>
+<script src="{{ STATIC_URL }}js/libs/jquery.iphonecheckbox.js"
+        type="text/javascript"></script>
+<script src="{{ STATIC_URL }}js/libs/bootstrap.min.js"
+        type="text/javascript"></script>
 <script src="{{ STATIC_URL }}js/main.js" type="text/javascript"></script>
+
 </body>
 </html>

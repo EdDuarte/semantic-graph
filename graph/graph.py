@@ -1,7 +1,15 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-__author__ = 'edduarte'
+__author__ = 'Ed Duarte'
+__email__ = "edmiguelduarte@gmail.com"
+__copyright__ = "Copyright 2015, Ed Duarte"
+__credits__ = ["Ed Duarte"]
+
+__license__ = "Apache License 2.0"
+__version__ = "2.0.0"
+__maintainer__ = "Ed Duarte"
+__status__ = "Prototype"
 
 import os.path
 import time

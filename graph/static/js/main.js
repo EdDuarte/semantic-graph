@@ -1,4 +1,31 @@
+/**
+ * Semantic Graph v2.0.0
+ * Author: Ed Duarte
+ * Email: edmiguelduarte@gmail.com
+ */
+
 $(document).ready(function () {
+
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $(".wrapper").toggleClass("toggled");
+    });
+
+    $("#browseTabButton").click(function (e) {
+        e.preventDefault();
+        $("#browseTabLi").addClass("active");
+        $("#relationshipTabLi").removeClass("active");
+        $("#browseTab").show();
+        $("#relationshipTab").hide();
+    });
+
+    $("#relationshipTabButton").click(function (e) {
+        e.preventDefault();
+        $("#browseTabLi").removeClass("active");
+        $("#relationshipTabLi").addClass("active");
+        $("#relationshipTab").show();
+        $("#browseTab").hide();
+    });
 
     $.ajax({
         type: "GET",
@@ -13,13 +40,19 @@ $(document).ready(function () {
         success: function (rawResponse) {
             var jsonResponse = JSON.parse(rawResponse);
             if (jsonResponse.state === "success" && jsonResponse.result) {
-                $('#upload-alert').hide();
-                $('#ready-alert').show();
-                $('#error-alert').hide();
+                $('#upload-alert-browse').hide();
+                $('#ready-alert-browse').show();
+                $('#error-alert-browse').hide();
+                $('#upload-alert-relationships').hide();
+                $('#ready-alert-relationships').show();
+                $('#error-alert-relationships').hide();
             } else {
-                $('#upload-alert').show();
-                $('#ready-alert').hide();
-                $('#error-alert').hide();
+                $('#upload-alert-browse').show();
+                $('#ready-alert-browse').hide();
+                $('#error-alert-browse').hide();
+                $('#upload-alert-relationships').show();
+                $('#ready-alert-relationships').hide();
+                $('#error-alert-relationships').hide();
             }
         }
     });
@@ -129,15 +162,21 @@ $(document).ready(function () {
                     var jsonResponse = JSON.parse(rawResponse);
                     if (jsonResponse.state === "success") {
                         $('#upload-modal').modal('hide');
-                        $('#upload-alert').hide();
-                        $('#ready-alert').show();
-                        $('#error-alert').hide();
+                        $('#upload-alert-browse').hide();
+                        $('#ready-alert-browse').show();
+                        $('#error-alert-browse').hide();
+                        $('#upload-alert-relationships').hide();
+                        $('#ready-alert-relationships').show();
+                        $('#error-alert-relationships').hide();
                     } else {
                         $('#upload-modal').modal('hide');
-                        $('#upload-alert').hide();
-                        $('#ready-alert').hide();
-                        $('#error-alert').show();
                         $('#error-message').html(jsonResponse.message);
+                        $('#upload-alert-browse').hide();
+                        $('#ready-alert-browse').hide();
+                        $('#error-alert-browse').show();
+                        $('#upload-alert-relationships').hide();
+                        $('#ready-alert-relationships').hide();
+                        $('#error-alert-relationships').show();
                     }
                     $('#addSubmit').removeAttr("disabled");
                 }
@@ -180,14 +219,20 @@ $(document).ready(function () {
                     var jsonResponse = JSON.parse(rawResponse);
                     if (jsonResponse.state === "success") {
                         $('#upload-modal').modal('hide');
-                        $('#upload-alert').hide();
-                        $('#ready-alert').show();
-                        $('#error-alert').hide();
+                        $('#upload-alert-browse').hide();
+                        $('#ready-alert-browse').show();
+                        $('#error-alert-browse').hide();
+                        $('#upload-alert-relationships').hide();
+                        $('#ready-alert-relationships').show();
+                        $('#error-alert-relationships').hide();
                     } else {
                         $('#upload-modal').modal('hide');
-                        $('#upload-alert').hide();
-                        $('#ready-alert').hide();
-                        $('#error-alert').show();
+                        $('#upload-alert-browse').hide();
+                        $('#ready-alert-browse').hide();
+                        $('#error-alert-browse').show();
+                        $('#upload-alert-relationships').hide();
+                        $('#ready-alert-relationships').hide();
+                        $('#error-alert-relationships').show();
                         $('#error-message').html(jsonResponse.message);
                     }
                     $('#removeSubmit').removeAttr("disabled");
@@ -233,14 +278,20 @@ $(document).ready(function () {
                             var jsonResponse = JSON.parse(rawResponse);
                             if (jsonResponse.state === "success") {
                                 $('#upload-modal').modal('hide');
-                                $('#upload-alert').hide();
-                                $('#ready-alert').show();
-                                $('#error-alert').hide();
+                                $('#upload-alert-browse').hide();
+                                $('#ready-alert-browse').show();
+                                $('#error-alert-browse').hide();
+                                $('#upload-alert-relationships').hide();
+                                $('#ready-alert-relationships').show();
+                                $('#error-alert-relationships').hide();
                             } else {
                                 $('#upload-modal').modal('hide');
-                                $('#upload-alert').hide();
-                                $('#ready-alert').hide();
-                                $('#error-alert').show();
+                                $('#upload-alert-browse').hide();
+                                $('#ready-alert-browse').hide();
+                                $('#error-alert-browse').show();
+                                $('#upload-alert-relationships').hide();
+                                $('#ready-alert-relationships').hide();
+                                $('#error-alert-relationships').show();
                                 $('#error-message').html(jsonResponse.message);
                             }
                             $('#uploadSubmit').removeAttr("disabled");
