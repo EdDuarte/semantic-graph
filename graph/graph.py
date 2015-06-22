@@ -73,18 +73,70 @@ class Graph():
         return graph.triples(t)
 
     # # Searches for triples that match the provided entity
-    # def browse(self, entity):
-    #     graph = rdflib.ConjunctiveGraph()
-    #     data = StringInputSource(self.conn.statements_default_graph(
-    #         self.repository,
-    #         'text/plain'
-    #     ))
-    #     graph.parse(data, format="nt")
-    #     t1 = self.parse_triple(entity, None, None)
-    #     result1 = graph.triples(t1)
-    #     t2 = self.parse_triple(None, None, entity)
-    #     result2 = graph.triples(t2)
-    #     return result1, result2
+    def browse(self, entity):
+
+        # parse entity
+        if entity is not None:
+            if entity.startswith('http://'):
+                entity = "<" + entity + ">"
+            else:
+                entity = "\"" + entity + "\""
+
+        # query and group results for the entity as a subject
+        query_text1 = "CONSTRUCT { " + entity + " ?p ?o . } WHERE { " + entity + " ?p ?o . }"
+        results1 = self.conn.query_post(self.repository, query_text1)
+        results1 = json.loads(results1.decode("utf-8"))
+        results1_string = ""
+        for t in results1.keys():
+            sub = t
+            for y in results1[t].keys():
+                pre = y
+                for z in results1[t][y]:
+                    obj = z['value']
+
+                    if pre == "http://www.semanticweb.prv/taxonomy/name":
+                        results1_string += "<p>named <b><span property=\"foaf:name\">" + obj + "</span></b></p>"
+
+                    elif pre == "http://www.semanticweb.prv/taxonomy/isA":
+                        results1_string += "<p>is a <b><span class=\"specie\">" + obj + "</span></b></p>"
+
+                    elif pre == "http://www.semanticweb.prv/taxonomy/isParent":
+                        results1_string += "<p>is parent of <b><span property=\"skos:topConceptOf\">" + obj + "</span></b></p>"
+
+                    elif pre == "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":
+                        results1_string += "<p>is of concept <b><span property=\"skos:Concept\">" + obj + "</span></b></p>"
+
+                    elif pre == "http://www.w3.org/2002/07/owl#belongsTo":
+                        results1_string += "<p>has broader concept <b><span property=\"skos:broader\">" + obj + "</span></b></p>"
+
+        # query and group results for the entity as an object
+        query_text2 = "CONSTRUCT { ?s ?p " + entity + " . } WHERE { ?s ?p " + entity + " . }"
+        results2 = self.conn.query_post(self.repository, query_text2)
+        results2 = json.loads(results2.decode("utf-8"))
+        results2_string = ""
+        for t in results2.keys():
+            sub = t
+            for y in results2[t].keys():
+                pre = y
+                for z in results2[t][y]:
+                    obj = z['value']
+
+                    if pre == "http://www.semanticweb.prv/taxonomy/name":
+                        results2_string += "<p>named <b><span property=\"foaf:name\">" + sub + "</span></b></p>"
+
+                    elif pre == "http://www.semanticweb.prv/taxonomy/isA":
+                        results2_string += "<p>is a <b><span class=\"specie\">" + sub + "</span></b></p>"
+
+                    elif pre == "http://www.semanticweb.prv/taxonomy/isParent":
+                        results2_string += "<p>is parent of <b><span property=\"skos:topConceptOf\">" + sub + "</span></b></p>"
+
+                    elif pre == "http://www.w3.org/1999/02/22-rdf-syntax-ns#type":
+                        results2_string += "<p>is of concept <b><span property=\"skos:Concept\">" + sub + "</span></b></p>"
+
+                    elif pre == "http://www.w3.org/2002/07/owl#belongsTo":
+                        results2_string += "<p>has broader concept <b><span property=\"skos:broader\">" + sub + "</span></b></p>"
+
+        return results1_string, results2_string
 
     def has_triples(self):
         return len(list(self.triples(None, None, None))) != 0

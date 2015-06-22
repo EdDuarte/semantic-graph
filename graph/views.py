@@ -126,6 +126,46 @@ def search(request):
             base64.encodestring(open(graph_file_name, "rb").read())
         )
 
+@csrf_exempt
+def suggest_entity(request):
+    if request.method == 'GET':
+        query = request.GET.get('query', '')
+        query = query.lower()
+        triples = graph.triples(None, None, None)
+        results = []
+        for t in triples:
+            if query in t[0].lower():
+                results.append(t[0])
+
+            if query in t[2].lower():
+                results.append(t[2])
+        results = unique(results)
+        if len(results) is not 0:
+            results = sorted(results)
+
+        return HttpResponse(
+            json.dumps(
+                {"query": query, "suggestions": results}),
+            content_type="application/json"
+        )
+
+@csrf_exempt
+def search_entity(request):
+    if request.method == "POST":
+        reader = codecs.getreader("utf-8")
+        data = json.load(reader(request))
+        entity = data['entity']
+        if entity is None or entity.strip().isspace():
+            return HttpResponse("")
+
+        (subject_data, object_data) = graph.browse(entity)
+
+        # serialize strings
+        return HttpResponse(json.dumps({
+            "subjectResults": subject_data,
+            "objectResults": object_data
+        }))
+
 
 @csrf_exempt
 def infer_types(request):

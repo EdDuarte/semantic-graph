@@ -6,25 +6,53 @@
 
 $(document).ready(function () {
 
+    $('#search').devbridgeAutocomplete({
+        minChars: 0,
+        triggerSelectOnValidInput: false,
+        preventBadQueries: false,
+        serviceUrl: '/suggest_entity/'
+    });
 
-
+    $('#fieldForm')
+        .submit(function (event) {
+            event.preventDefault();
+            //for (var i = 0; i <= fieldIndex; i++) {
+            //    var t = {
+            //        subject: $('[name="field[' + i + '].subject"]').val(),
+            //        predicate: $('[name="field[' + i + '].predicate"]').val(),
+            //        object: $('[name="field[' + i + '].object"]').val()
+            //    };
+            //    if (t.subject === "") {
+            //        t.subject = null
+            //    }
+            //    if (t.predicate === "") {
+            //        t.predicate = null
+            //    }
+            //    if (t.object === "") {
+            //        t.object = null
+            //    }
+            //    triples.push(t);
+            //}
+            browse({entity: $("#search").val()})
+        })
 });
 
-var lastSearchRequest;
+var lastBrowseRequest;
 
-function search(args) {
-    $('#results').html(
+function browse(args) {
+    $('#panels').hide();
+    $('#loading').html(
         '<div style="text-align: center; margin-top: 50px; ">' +
         '<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate">' +
         '</span>' +
         '</div>'
     );
 
-    lastSearchRequest = args;
+    lastBrowseRequest = args;
 
     $.ajax({
         type: "POST",
-        url: "/search/",
+        url: "/search_entity/",
         data: JSON.stringify(args),
         contentType: "application/json",
         dataType: "html",
@@ -33,18 +61,19 @@ function search(args) {
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             }
         },
-        success: function (rawResponse) {
-            if (rawResponse == null || !rawResponse) {
-                $('#results').html('<div class="span3" style="padding-left:25px;">' +
+        success: function (response) {
+            if (response == null || !response) {
+                $('#loading').html('<div class="span3" style="padding-left:25px;">' +
                 '<br/><br/>No results were found.</div>');
 
             } else {
-                //var encodedResponse = btoa(encodeURI(rawResponse));
-                //$('#results').html("<br><br><br><br>").append(encodedResponse);
-
-                //var img = new Image();
-                //img.src = 'data:image/png;base64,' + rawResponse;
-                //$('#results').html("<br/><br/>").append(img);
+                var jsonResponse = JSON.parse(response);
+                $('#loading').html('');
+                $("#subjectResults").html(jsonResponse["subjectResults"]);
+                $("#objectResults").html(jsonResponse["objectResults"]);
+                $('#subjectTextarea').val(jsonResponse["subjectResults"]);
+                $('#objectTextarea').val(jsonResponse["objectResults"]);
+                $('#panels').show();
             }
         }
     });
