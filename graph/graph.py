@@ -18,7 +18,6 @@ import codecs
 
 import rdflib
 from rdflib.parser import StringInputSource
-from rdflib import ConjunctiveGraph
 from graph.connection import Connection
 
 
