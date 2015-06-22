@@ -13,6 +13,8 @@ __status__ = "Prototype"
 
 import os.path
 import time
+import json
+import codecs
 
 import rdflib
 from rdflib.parser import StringInputSource
@@ -29,7 +31,7 @@ class Graph():
     # Adds a new triple as (sub, pre, obj)
     def add(self, sub, pre, obj):
         start = time.clock()
-        t = (sub, pre, obj)
+        t = self.parse_triple_string(sub, pre, obj)
         self.conn.add_data_no_context(self.repository, t)
         elapsed = (time.clock() - start)
         print("Elapsed addition time: %ss" % elapsed)
@@ -37,8 +39,25 @@ class Graph():
     # Removes a triple that matches (sub, pre, obj)
     def remove(self, sub, pre, obj):
         start = time.clock()
-        # t = self.parse_triple(sub, pre, obj)
-        # self.graph.remove(t)
+        t = self.parse_triple(sub, pre, obj)
+
+        # create a new auxiliary graph
+        graph = rdflib.ConjunctiveGraph()
+        data = StringInputSource(self.conn.statements_default_graph(
+            self.repository,
+            'text/plain'
+        ))
+        graph.parse(data, format="nt")
+
+        # remove all triples from the Sesame repository
+        self.conn.remove_all_statements(self.repository)
+
+        # remove desired triple from auxiliary graph
+        graph.remove(t)
+
+        # send all remaining triples to the Sesame repository
+        self.conn.add_data_no_context(self.repository, graph.serialize(format="nt"))
+
         elapsed = (time.clock() - start)
         print("Elapsed removal time: %ss" % elapsed)
 
@@ -52,6 +71,20 @@ class Graph():
         graph.parse(data, format="nt")
         t = self.parse_triple(sub, pre, obj)
         return graph.triples(t)
+
+    # # Searches for triples that match the provided entity
+    # def browse(self, entity):
+    #     graph = rdflib.ConjunctiveGraph()
+    #     data = StringInputSource(self.conn.statements_default_graph(
+    #         self.repository,
+    #         'text/plain'
+    #     ))
+    #     graph.parse(data, format="nt")
+    #     t1 = self.parse_triple(entity, None, None)
+    #     result1 = graph.triples(t1)
+    #     t2 = self.parse_triple(None, None, entity)
+    #     result2 = graph.triples(t2)
+    #     return result1, result2
 
     def has_triples(self):
         return len(list(self.triples(None, None, None))) != 0
@@ -81,6 +114,31 @@ class Graph():
             o = None
         return s, p, o
 
+    @staticmethod
+    def parse_triple_string(sub, pre, obj):
+        if sub is not None:
+            if sub.startswith('http://'):
+                s = "<" + sub + ">"
+            else:
+                s = sub
+        else:
+            s = "?s"
+        if pre is not None:
+            if pre.startswith('http://'):
+                p = "<" + pre + ">"
+            else:
+                p = pre
+        else:
+            p = "?p"
+        if obj is not None:
+            if obj.startswith('http://'):
+                o = "<" + obj + ">"
+            else:
+                o = "\"" + obj + "\""
+        else:
+            o = "?o"
+        return s + " " + p + " " + o + " ."
+
     # Draws a graph of the specified triples to the file "graph.png"
     def draw_graph(self, triples):
         filename = 'graph.dot'
@@ -102,9 +160,14 @@ class Graph():
     # Load graph from file
     def load(self, file_content, file_format):
         start = time.clock()
-        self.conn.add_data_no_context(self.repository, file_content)
+        if file_format == "xml":
+            error_msg = self.conn.replace_data(self.repository, file_content)
+        else:
+            error_msg = self.conn.add_data_no_context(self.repository, file_content)
         elapsed = (time.clock() - start)
         print("Elapsed file read time: %ss" % elapsed)
+        if error_msg is not None:
+            raise Exception(error_msg)
 
     # Save graph to file
     def save(self, filename, file_format):
@@ -132,9 +195,19 @@ class Graph():
     # Query the database (using SPARQL) with a rule and create new triples
     def apply_inference(self, rule):
         query_text = rule.getqueries()
-        query_result = self.graph.query(query_text)
-        for r in query_result:
-            new_triples = rule.maketriples(r)
-            if new_triples is not None:
-                for t in new_triples:
-                    self.graph.add(t)
+        results = self.conn.query_post(self.repository, query_text)
+        results = json.loads(results.decode("utf-8"))
+
+        for t in results.keys():
+            sub = t
+            for y in results[t].keys():
+                pred = y
+                for z in results[t][y]:
+                    if z["type"] == "literal":
+                        obj = "\"" + z['value'] + "\""
+                    else:
+                        obj = "<" + z['value'] + ">"
+
+                    update = "INSERT {<%s> <%s> %s} " \
+                             "WHERE {?s ?p ?o}" % (sub, pred, obj)
+                    self.conn.update_described(self.repository, update)

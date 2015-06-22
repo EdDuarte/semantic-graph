@@ -8,8 +8,9 @@ __version__ = "2.0.0"
 __maintainer__ = "Ed Duarte"
 __status__ = "Prototype"
 
-import urllib
+from urllib.parse import quote
 import httplib2
+from json import dumps
 
 
 class Connection:
@@ -21,7 +22,6 @@ class Connection:
         endpoint = '%sprotocol' % self.baseurl
         (response, content) = httplib2.Http().request(endpoint, 'GET')
         print("Response %s" % response.status)
-        print(content)
 
     def repository_list(self):
         # Fetch the repository list
@@ -33,39 +33,40 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
         return content
 
     def query_get(self, repository, query):
         # Evaluate a SeRQL-select query on repository
-        params = {'query': query}
+        # params = {'query': query}
         header = {'accept': 'application/sparql-results+json'}
-        endpoint = '%srepositories/%s?%s' % (self.baseurl,
-                                             repository,
-                                             urllib.urlencode(params))
+        endpoint = '%srepositories/%s?query=%s' % (
+            self.baseurl,
+            repository,
+            quote(query)
+        )
         (response, content) = httplib2.Http().request(
             endpoint,
             'GET',
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
         return content
 
     def query_post(self, repository, query):
         # Evaluate a SPARQL-construct query on repository using a POST request
-        params = {'query': query}
         header = {'content-type': 'application/x-www-form-urlencoded',
                   'accept': 'application/rdf+json'}
-        endpoint = '%srepositories/%s?%s' % (
-            self.baseurl, repository, urllib.urlencode(params))
+        endpoint = '%srepositories/%s' % (
+            self.baseurl,
+            repository
+        )
         (response, content) = httplib2.Http().request(
             endpoint,
             'POST',
-            headers=header
+            headers=header,
+            body="query="+quote(query)
         )
         print("Response %s" % response.status)
-        print(content)
         return content
 
     def query_ask(self, repository, query):
@@ -73,14 +74,13 @@ class Connection:
         params = {'query': query}
         header = {'accept': 'text/boolean'}
         endpoint = '%srepositories/%s?%s' % (
-            self.baseurl, repository, urllib.urlencode(params))
+            self.baseurl, repository, quote(params))
         (response, content) = httplib2.Http().request(
             endpoint,
             'GET',
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
         return content
 
     def add_repository(self, repository, title):
@@ -90,7 +90,7 @@ class Connection:
         endpoint = '%srepositories/%s/statements?%s' % (
             self.baseurl,
             'SYSTEM',
-            urllib.urlencode(params)
+            quote(params)
         )
 
         body = """
@@ -117,14 +117,12 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
 
     def remove_repository(self, repository):
         # Remove the repository
         endpoint = '%srepositories/%s' % (self.baseurl, repository)
         (response, content) = httplib2.Http().request(endpoint, 'DELETE')
         print("Response %s" % response.status)
-        print(content)
 
     def statements(self, repository):
         # Fetch all statements from repository
@@ -136,7 +134,6 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
 
     def get_statements_of_context(self, repository, context):
         # Fetch all statements from a specific context in repository
@@ -149,14 +146,12 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
 
     def remove_all_statements(self, repository):
         # Remove all statements from the repository
         endpoint = '%srepositories/%s/statements' % (self.baseurl, repository)
-        (response, content) = httplib2.Http().request(endpoint, 'GET')
+        (response, content) = httplib2.Http().request(endpoint, 'DELETE')
         print("Response %s" % response.status)
-        print(content)
 
     def add_data(self, repository, data, context):
         # Add data to the repository
@@ -165,7 +160,7 @@ class Connection:
         endpoint = '%srepositories/%s/statements?%s' % (
             self.baseurl,
             repository,
-            urllib.urlencode(params)
+            quote(params)
         )
         (response, content) = httplib2.Http().request(
             endpoint,
@@ -174,7 +169,6 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
 
     def add_data_no_context(self, repository, data):
         # Add statements without a context to the repository, ignoring any
@@ -188,7 +182,10 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
+        if response.status != 204:
+            return content
+        else:
+            return None
 
     def replace_data(self, repository, data):
         # Add data to the repository, replacing any and all existing data
@@ -201,7 +198,10 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
+        if response.status != 204:
+            return content
+        else:
+            return None
 
     def replace_data_of_context(self, repository, data, context):
         # Add data to a specific context in the repository, replacing any data
@@ -209,7 +209,7 @@ class Connection:
         header = {'content-type': 'application/x-turtle;charset=UTF-8'}
         params = {'context': context}
         endpoint = '%srepositories/%s/statements?%s' % (
-            self.baseurl, repository, urllib.urlencode(params))
+            self.baseurl, repository, quote(params))
         (response, content) = httplib2.Http().request(
             endpoint,
             'PUT',
@@ -217,21 +217,18 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
 
     def update_described(self, repository, update):
         # Perform update described in a SPARQL 1.1 Update string
         header = {'content-type': 'application/x-www-form-urlencoded'}
-        params = {'update': urllib.urlencode(update)}
-        endpoint = '%srepositories/%s/statements?%s' % (
-            self.baseurl, repository, urllib.urlencode(params))
+        endpoint = '%srepositories/%s/statements' % (self.baseurl, repository)
         (response, content) = httplib2.Http().request(
             endpoint,
             'POST',
-            headers=header
+            headers=header,
+            body="update="+quote(update)
         )
-        print("Response %s" % response.status)
-        print(content)
+        # print("Response %s: %s" % (response.status, content))
 
     def update_described_document(self, repository, data, update):
         # Perform updates described in a transaction document and treat it as
@@ -245,7 +242,6 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
 
     def context_identifiers(self, repository):
         #  Fetch all context identifiers from repository
@@ -257,7 +253,6 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
 
     def namespace_info(self, repository):
         # Fetch all namespace declaration info
@@ -269,7 +264,6 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
 
     def remove_namespace(self, repository):
         # Remove all namespace declarations from the repository.
@@ -277,7 +271,6 @@ class Connection:
         endpoint = '%srepositories/%s/namespaces' % (self.baseurl, repository)
         (response, content) = httplib2.Http().request(endpoint, 'DELETE')
         print("Response %s" % response.status)
-        print(content)
 
     def get_namespace(self, repository, prefix):
         # Get the namespace for prefix
@@ -285,7 +278,6 @@ class Connection:
             self.baseurl, repository, prefix)
         (response, content) = httplib2.Http().request(endpoint, 'GET')
         print("Response %s" % response.status)
-        print(content)
 
     def set_namespace(self, repository, prefix):
         # Set the namespace for a specific prefix
@@ -298,7 +290,6 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
 
     def remove_namespace_prefix(self, repository, prefix):
         # Remove the namespace for a specific prefix
@@ -306,23 +297,20 @@ class Connection:
             self.baseurl, repository, prefix)
         (response, content) = httplib2.Http().request(endpoint, 'DELETE')
         print("Response %s" % response.status)
-        print(content)
 
     def size_of_repository(self, repository):
         # Get the size of repository
         endpoint = '%srepositories/%s/size' % (self.baseurl, repository)
         (response, content) = httplib2.Http().request(endpoint, 'GET')
         print("Response %s" % response.status)
-        print(content)
 
     def size_of_repository_context(self, repository, context):
         # Fetch the protocol version
         params = {'context': context}
         endpoint = '%srepositories/%s/size?%s' % (
-            self.baseurl, repository, urllib.urlencode(params))
+            self.baseurl, repository, quote(params))
         (response, content) = httplib2.Http().request(endpoint, 'GET')
         print("Response %s" % response.status)
-        print(content)
 
     def statements_directly_graph(self, repository):
         # Fetch all statements from a directly referenced named graph
@@ -336,7 +324,6 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
 
     def statements_indirectly_graph(self, repository, graph):
         # Fetch all statements from an indirectly referenced named graph
@@ -344,14 +331,13 @@ class Connection:
         header = {'accept': 'application/rdf+json'}
         params = {'graph': graph}
         endpoint = '%srepositories/%s/rdf-graphs/service?%s' % (
-            self.baseurl, repository, urllib.urlencode(params))
+            self.baseurl, repository, quote(params))
         (response, content) = httplib2.Http().request(
             endpoint,
             'GET',
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
 
     def statements_default_graph(self, repository, type):
         """ Fetch all statements from the default graph in repository """
@@ -366,7 +352,6 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
         return content
 
     def add_statements_referenced_graph(self, repository, data):
@@ -383,14 +368,12 @@ class Connection:
             headers=header
         )
         print("Response %s" % response.status)
-        print(content)
 
     def directly_referenced_graph(self, repository):
         # Clear a directly referenced named graph in the "mem-rdf" repository
         endpoint = '%srepositories/%s/namespaces/' % (self.baseurl, repository)
         (response, content) = httplib2.Http().request(endpoint, 'DELETE')
         print("Response %s" % response.status)
-        print(content)
 
 
 if __name__ == '__main__':
