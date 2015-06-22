@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
 
     $('[name="field[0].subject"]').devbridgeAutocomplete({
-        width: 200,
+        width: 340,
         minChars: 0,
         triggerSelectOnValidInput: false,
         preventBadQueries: false,
@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
 
     $('[name="field[0].predicate"]').devbridgeAutocomplete({
-        width: 200,
+        width: 340,
         minChars: 0,
         triggerSelectOnValidInput: false,
         preventBadQueries: false,
@@ -30,7 +30,7 @@ $(document).ready(function () {
     });
 
     $('[name="field[0].object"]').devbridgeAutocomplete({
-        width: 200,
+        width: 370,
         minChars: 0,
         triggerSelectOnValidInput: false,
         preventBadQueries: false,
@@ -78,7 +78,7 @@ $(document).ready(function () {
                 .find('[name="subject"]')
                 .attr('name', 'field[' + fieldIndex + '].subject')
                 .devbridgeAutocomplete({
-                    width: 200,
+                    width: 340,
                     minChars: 0,
                     autoSelectFirst: true,
                     triggerSelectOnValidInput: false,
@@ -89,7 +89,7 @@ $(document).ready(function () {
                 .find('[name="predicate"]')
                 .attr('name', 'field[' + fieldIndex + '].predicate')
                 .devbridgeAutocomplete({
-                    width: 200,
+                    width: 340,
                     minChars: 0,
                     autoSelectFirst: true,
                     triggerSelectOnValidInput: false,
@@ -101,7 +101,7 @@ $(document).ready(function () {
                 .find('[name="object"]')
                 .attr('name', 'field[' + fieldIndex + '].object')
                 .devbridgeAutocomplete({
-                    width: 200,
+                    width: 370,
                     minChars: 0,
                     autoSelectFirst: true,
                     triggerSelectOnValidInput: false,

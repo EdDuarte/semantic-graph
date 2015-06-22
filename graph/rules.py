@@ -16,7 +16,7 @@ from graph.inferencerule import InferenceRule
 class TypeRule(InferenceRule):
     def getqueries(self):
         q = '''
-        PREFIX txn: <http://taxonomy/>
+        PREFIX txn: <http://www.semanticweb.prv/taxonomy>
         SELECT ?type_id ?kingdom_id ?kingdom_name ?phylum_id ?class_id ?order_id ?family_id ?specie_id
         WHERE {
             ?type_id txn:name "Kingdom" .
@@ -43,14 +43,14 @@ class TypeRule(InferenceRule):
 
     def _maketriples(self, type_id, kingdom_id, kingdom_name, phylum_id,
                      class_id, order_id, family_id, specie_id):
-        txn = Namespace('http://taxonomy/')
+        txn = Namespace('http://www.semanticweb.prv/taxonomy')
         return [(specie_id, txn['is_a'], kingdom_name)]
 
 
 class ParentSpeciesRule(InferenceRule):
     def getqueries(self):
         q = '''
-        PREFIX txn: <http://taxonomy/>
+        PREFIX txn: <http://www.semanticweb.prv/taxonomy>
         SELECT ?type_id ?specie_id ?family_id ?specie_parent_id
         WHERE {
             ?type_id txn:name "Species" .
@@ -69,5 +69,5 @@ class ParentSpeciesRule(InferenceRule):
 
     def _maketriples(self, type_id, specie_id, family_id, specie_parent_id):
         if specie_id != specie_parent_id:
-            txn = Namespace('http://taxonomy/')
+            txn = Namespace('http://www.semanticweb.prv/taxonomy')
             return [(specie_id, txn['is_parent'], specie_parent_id)]

@@ -15,57 +15,65 @@ import os.path
 import time
 
 import rdflib
+from rdflib.parser import StringInputSource
 from rdflib import ConjunctiveGraph
+from graph.connection import Connection
 
 
 class Graph():
     # Create Graph
     def __init__(self):
-        self.graph = ConjunctiveGraph('SQLite')
-        try:
-            self.graph.open('./taxonomy.db', create=True)
-        except:
-            self.graph.open('./taxonomy.db', create=False)
+        self.conn = Connection("http://localhost:8080/openrdf-sesame/")
+        self.repository = "taxonomy"
 
     # Adds a new triple as (sub, pre, obj)
     def add(self, sub, pre, obj):
         start = time.clock()
-        t = self.parse_triple(sub, pre, obj)
-        self.graph.add(t)
+        t = (sub, pre, obj)
+        self.conn.add_data_no_context(self.repository, t)
         elapsed = (time.clock() - start)
         print("Elapsed addition time: %ss" % elapsed)
 
     # Removes a triple that matches (sub, pre, obj)
     def remove(self, sub, pre, obj):
         start = time.clock()
-        t = self.parse_triple(sub, pre, obj)
-        self.graph.remove(t)
+        # t = self.parse_triple(sub, pre, obj)
+        # self.graph.remove(t)
         elapsed = (time.clock() - start)
         print("Elapsed removal time: %ss" % elapsed)
 
     # Searches for triples that match (sub, pre, obj)
     def triples(self, sub, pre, obj):
+        graph = rdflib.ConjunctiveGraph()
+        data = StringInputSource(self.conn.statements_default_graph(
+            self.repository,
+            'text/plain'
+        ))
+        graph.parse(data, format="nt")
         t = self.parse_triple(sub, pre, obj)
-        return self.graph.triples(t)
+        return graph.triples(t)
+
+    def has_triples(self):
+        return len(list(self.triples(None, None, None))) != 0
 
     @staticmethod
     def parse_triple(sub, pre, obj):
         if sub is not None:
-            if sub.startswith('http://taxonomy/'):
+            if sub.startswith('http://'):
                 s = rdflib.URIRef(sub)
             else:
                 s = rdflib.Literal(sub)
         else:
             s = None
         if pre is not None:
-            if pre.startswith('http://taxonomy/'):
+            if pre.startswith('http://'):
                 p = rdflib.URIRef(pre)
             else:
                 p = rdflib.Literal(pre)
         else:
             p = None
         if obj is not None:
-            if obj.startswith('http://taxonomy/'):
+            if obj.startswith('http://'):
                 o = rdflib.URIRef(obj)
             else:
                 o = rdflib.Literal(obj)
@@ -92,10 +100,9 @@ class Graph():
         os.system("dot -Tpng graph.dot -o graph.png")
 
     # Load graph from file
-    def load(self, filename, file_format):
+    def load(self, file_content, file_format):
         start = time.clock()
-        if filename != '':
-            self.graph.parse(filename, format=file_format)
+        self.conn.add_data_no_context(self.repository, file_content)
         elapsed = (time.clock() - start)
         print("Elapsed file read time: %ss" % elapsed)
 
@@ -104,14 +111,23 @@ class Graph():
         start = time.clock()
         if filename != '':
             of = open(filename, "wb")
-            of.write(self.graph.serialize(format=file_format))
+            graph = rdflib.ConjunctiveGraph()
+            data = StringInputSource(self.conn.statements_default_graph(
+                self.repository,
+                'text/plain'
+            ))
+            graph.parse(data, format="nt")
+            of.write(graph.serialize(format=file_format))
             of.close()
         elapsed = (time.clock() - start)
         print("Elapsed file write time: %ss" % elapsed)
 
     # Return all unique predicates
     def predicates(self):
-        return list(set(self.graph.predicates()))
+        predicates = set()
+        for t in self.triples(None, None, None):
+            predicates.add(t[1])
+        return list(predicates)
 
     # Query the database (using SPARQL) with a rule and create new triples
     def apply_inference(self, rule):

@@ -12,7 +12,7 @@ import urllib
 import httplib2
 
 
-class connection:
+class Connection:
     def __init__(self, url):
         self.baseurl = url
 
@@ -163,7 +163,24 @@ class connection:
         header = {'content-type': 'application/rdf+xml;charset=UTF-8'}
         params = {'context': context}
         endpoint = '%srepositories/%s/statements?%s' % (
-            self.baseurl, repository, urllib.urlencode(params))
+            self.baseurl,
+            repository,
+            urllib.urlencode(params)
+        )
+        (response, content) = httplib2.Http().request(
+            endpoint,
+            'POST',
+            body=data,
+            headers=header
+        )
+        print("Response %s" % response.status)
+        print(content)
+
+    def add_data_no_context(self, repository, data):
+        # Add statements without a context to the repository, ignoring any
+        # context information that is encoded in the supplied data
+        header = {'content-type': 'application/x-turtle;charset=UTF-8'}
+        endpoint = '%srepositories/%s/statements' % (self.baseurl, repository)
         (response, content) = httplib2.Http().request(
             endpoint,
             'POST',
@@ -196,20 +213,6 @@ class connection:
         (response, content) = httplib2.Http().request(
             endpoint,
             'PUT',
-            body=data,
-            headers=header
-        )
-        print("Response %s" % response.status)
-        print(content)
-
-    def add_statements_no_context(self, repository, data):
-        # Add statements without a context to the repository, ignoring any
-        # context information that is encoded in the supplied data
-        header = {'content-type': 'application/x-turtle;charset=UTF-8'}
-        endpoint = '%srepositories/%s/statements' % (self.baseurl, repository)
-        (response, content) = httplib2.Http().request(
-            endpoint,
-            'POST',
             body=data,
             headers=header
         )
@@ -350,11 +353,13 @@ class connection:
         print("Response %s" % response.status)
         print(content)
 
-    def statements_default_graph(self, repository):
-        # Fetch all statements from the default graph in repository
-        header = {'accept': 'application/rdf+json'}
+    def statements_default_graph(self, repository, type):
+        """ Fetch all statements from the default graph in repository """
+        header = {'accept': type}
         endpoint = '%srepositories/%s/rdf-graphs/service?default' % (
-            self.baseurl, repository)
+            self.baseurl,
+            repository
+        )
         (response, content) = httplib2.Http().request(
             endpoint,
             'GET',
@@ -362,6 +367,7 @@ class connection:
         )
         print("Response %s" % response.status)
         print(content)
+        return content
 
     def add_statements_referenced_graph(self, repository, data):
         # Add statements to a directly referenced named graph in the repository
@@ -388,7 +394,7 @@ class connection:
 
 
 if __name__ == '__main__':
-    c = connection('http://localhost:8080/openrdf-sesame/')
+    c = Connection('http://localhost:8080/openrdf-sesame/')
     repository = 'taxonomy'
     prefix = 'PREFIX %s:<%s>\n' % (
         'taxonomy',

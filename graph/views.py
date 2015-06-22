@@ -27,8 +27,6 @@ class IndexView(TemplateView):
 
 
 graph = Graph()
-is_graph_ready = False
-
 
 def search_resource(query, index):
     query = query.lower()
@@ -163,25 +161,23 @@ def infer_parents(request):
 
 @csrf_exempt
 def upload(request):
-    global is_graph_ready
     if request.method == "POST":
         reader = codecs.getreader("utf-8")
         data = json.load(reader(request))
 
         try:
             # get request base64 file
-            file_bytes = base64.decodestring(bytes(data['base'], "utf-8"))
+            file_content = base64.decodestring(bytes(data['base'], "utf-8"))
             file_format = data['format']
 
-            # save binary bytes into a local file
-            f = open("upload-input", "w")
-            f.write(file_bytes.decode("utf-8"))
-            f.close()
-
-            # send local file path to graph according to format
-            file_name = os.path.realpath('upload-input')
-            graph.load(file_name, file_format)
-            is_graph_ready = True
+            # # save binary bytes into a local file
+            # f = open("upload-input", "w")
+            # f.write(file_content.decode("utf-8"))
+            # f.close()
+            #
+            # # send local file path to graph according to format
+            # file_name = os.path.realpath('upload-input')
+            graph.load(file_content, file_format)
 
             # output success state
             return HttpResponse(
@@ -203,7 +199,6 @@ def upload(request):
 
 @csrf_exempt
 def export(request):
-    global is_graph_ready
     if request.method == "POST":
         reader = codecs.getreader("utf-8")
         data = json.load(reader(request))
@@ -243,7 +238,6 @@ def export(request):
 
 @csrf_exempt
 def add(request):
-    global is_graph_ready
     if request.method == "POST":
         reader = codecs.getreader("utf-8")
         data = json.load(reader(request))
@@ -254,7 +248,6 @@ def add(request):
 
         try:
             graph.add(sub, pre, obj)
-            is_graph_ready = True
         except Exception as e:
             return HttpResponse(
                 json.dumps({"state": "failed", "message": str(e)}),
@@ -274,7 +267,6 @@ def add(request):
 
 @csrf_exempt
 def remove(request):
-    global is_graph_ready
     if request.method == "POST":
         reader = codecs.getreader("utf-8")
         data = json.load(reader(request))
@@ -285,8 +277,6 @@ def remove(request):
 
         try:
             graph.remove(sub, pre, obj)
-            if len(list(graph.triples(None, None, None))) == 0:
-                is_graph_ready = False
         except Exception as e:
             return HttpResponse(
                 json.dumps({"state": "failed", "message": str(e)}),
@@ -307,8 +297,9 @@ def remove(request):
 @csrf_exempt
 def is_ready(request):
     if request.method == "GET":
+
         return HttpResponse(
-            json.dumps({"state": "success", "result": is_graph_ready}),
+            json.dumps({"state": "success", "result": graph.has_triples()}),
             content_type="application/json"
         )
     else:
