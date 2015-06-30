@@ -10,12 +10,14 @@ Additionally, data is stored in Sesame triple store following a Protégé ontolo
 ## Screenshots
 
 ### Browse section
-![Screenshot1](screenshots/01.png)
 This section allows you to query any entity (subject or object) and find every semantic relationship associated with it, published using FOAF (Friend of a Friend), SKOS (Simple Knowledge Organization System) and Microformats Species standards.
 
-### Graph query section
-![Screenshot2](screenshots/02.png)
+![Screenshot1](screenshots/01.png)
+
+### Graph section
 This section allows you to query triples and observe a relationship graph between them. You can add multiple subjects, predicates and objects, and search these simultaneously, generating a graph that merges all common entities and triples without duplicating nodes.
+
+![Screenshot2](screenshots/02.png)
 
 
 ## How to use
