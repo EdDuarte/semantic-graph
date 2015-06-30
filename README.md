@@ -4,7 +4,7 @@ Django application for semantic search using RDF standards.
 
 It implements graph visualisation with GraphViz and data inference with SPARQL queries, and supports reading and writing of N-Triples, N3 and RDF/XML documents.
 
-Additionally, data is stored in Sesame triple store following a Protégé ontology specification.
+Additionally, data is stored in Sesame triple store following a OWL ontology specification.
 
 
 ## Screenshots
