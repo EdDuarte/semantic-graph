@@ -36,8 +36,8 @@ xcuserdata
 
 # images
 *.svn
-*.png
-*.dot
+graph.png
+graph.dot
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
