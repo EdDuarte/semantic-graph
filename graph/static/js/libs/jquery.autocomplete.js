@@ -1,6 +1,6 @@
 /**
- *  Ajax Autocomplete for jQuery, version 1.2.16
- *  (c) 2014 Tomas Kirda
+ *  Ajax Autocomplete for jQuery, version 1.2.21
+ *  (c) 2015 Tomas Kirda
  *
  *  Ajax Autocomplete for jQuery is freely distributable under the terms of an MIT-style license.
  *  For details, see the web site: https://github.com/devbridge/jQuery-Autocomplete
@@ -52,8 +52,7 @@
         };
 
     function Autocomplete(el, options) {
-        var noop = function () {
-            },
+        var noop = function () { },
             that = this,
             defaults = {
                 ajaxSettings: {},
@@ -128,9 +127,15 @@
     $.Autocomplete = Autocomplete;
 
     Autocomplete.formatResult = function (suggestion, currentValue) {
+        var htmlSafeString = suggestion.value
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+
         var pattern = '(' + utils.escapeRegExChars(currentValue) + ')';
 
-        return suggestion.value.replace(new RegExp(pattern, 'gi'), '<strong>$1<\/strong>');
+        return htmlSafeString.replace(new RegExp(pattern, 'gi'), '<strong>$1<\/strong>');
     };
 
     Autocomplete.prototype = {
@@ -193,36 +198,32 @@
 
             $(window).on('resize.autocomplete', that.fixPositionCapture);
 
-            that.el.on('keydown.autocomplete', function (e) {
-                that.onKeyPress(e);
-            });
-            that.el.on('keyup.autocomplete', function (e) {
-                that.onKeyUp(e);
-            });
-            that.el.on('blur.autocomplete', function () {
-                that.onBlur();
-            });
-            that.el.on('focus.autocomplete', function () {
-                that.onFocus();
-            });
-            that.el.on('change.autocomplete', function (e) {
-                that.onKeyUp(e);
-            });
-            that.el.on('input.autocomplete', function (e) {
-                that.onKeyUp(e);
-            });
+            that.el.on('keydown.autocomplete', function (e) { that.onKeyPress(e); });
+            that.el.on('keyup.autocomplete', function (e) { that.onKeyUp(e); });
+            that.el.on('blur.autocomplete', function () { that.onBlur(); });
+            that.el.on('focus.autocomplete', function () { that.onFocus(); });
+            that.el.on('change.autocomplete', function (e) { that.onKeyUp(e); });
+            that.el.on('input.autocomplete', function (e) { that.onKeyUp(e); });
         },
 
         onFocus: function () {
             var that = this;
             that.fixPosition();
-            if (that.options.minChars <= that.el.val().length) {
+            if (that.options.minChars === 0 && that.el.val().length === 0) {
                 that.onValueChange();
             }
         },
 
         onBlur: function () {
             this.enableKillerFn();
+        },
+
+        abortAjax: function () {
+            var that = this;
+            if (that.currentRequest) {
+                that.currentRequest.abort();
+                that.currentRequest = null;
+            }
         },
 
         setOptions: function (suppliedOptions) {
@@ -263,9 +264,7 @@
             var that = this;
             that.disabled = true;
             clearInterval(that.onChangeInterval);
-            if (that.currentRequest) {
-                that.currentRequest.abort();
-            }
+            that.abortAjax();
         },
 
         enable: function () {
@@ -289,7 +288,7 @@
                 containerHeight = $container.outerHeight(),
                 height = that.el.outerHeight(),
                 offset = that.el.offset(),
-                styles = {'top': offset.top, 'left': offset.left};
+                styles = { 'top': offset.top, 'left': offset.left };
 
             if (orientation === 'auto') {
                 var viewPortHeight = $(window).height(),
@@ -308,11 +307,11 @@
 
             // If container is not positioned to body,
             // correct its position using offset parent offset
-            if (containerParent !== document.body) {
+            if(containerParent !== document.body) {
                 var opacity = $container.css('opacity'),
                     parentOffsetDiff;
 
-                if (!that.visible) {
+                if (!that.visible){
                     $container.css('opacity', 0).show();
                 }
 
@@ -320,7 +319,7 @@
                 styles.top -= parentOffsetDiff.top;
                 styles.left -= parentOffsetDiff.left;
 
-                if (!that.visible) {
+                if (!that.visible){
                     $container.css('opacity', opacity).hide();
                 }
             }
@@ -465,8 +464,7 @@
             var that = this,
                 options = that.options,
                 value = that.el.val(),
-                query = that.getQuery(value),
-                index;
+                query = that.getQuery(value);
 
             if (that.selection && that.currentValue !== query) {
                 that.selection = null;
@@ -478,12 +476,9 @@
             that.selectedIndex = -1;
 
             // Check existing suggestion for the match before proceeding:
-            if (options.triggerSelectOnValidInput) {
-                index = that.findSuggestionIndex(query);
-                if (index !== -1) {
-                    that.select(index);
-                    return;
-                }
+            if (options.triggerSelectOnValidInput && that.isExactMatch(query)) {
+                that.select(0);
+                return;
             }
 
             if (query.length < options.minChars) {
@@ -493,19 +488,10 @@
             }
         },
 
-        findSuggestionIndex: function (query) {
-            var that = this,
-                index = -1,
-                queryLowerCase = query.toLowerCase();
+        isExactMatch: function (query) {
+            var suggestions = this.suggestions;
 
-            $.each(that.suggestions, function (i, suggestion) {
-                if (suggestion.value.toLowerCase() === queryLowerCase) {
-                    index = i;
-                    return false;
-                }
-            });
-
-            return index;
+            return (suggestions.length === 1 && suggestions[0].value.toLowerCase() === query.toLowerCase());
         },
 
         getQuery: function (value) {
@@ -556,7 +542,7 @@
                 return;
             }
 
-            if ($.isFunction(options.lookup)) {
+            if ($.isFunction(options.lookup)){
                 options.lookup(q, function (data) {
                     that.suggestions = data.suggestions;
                     that.suggest();
@@ -580,9 +566,7 @@
                 that.suggest();
                 options.onSearchComplete.call(that.element, q, response.suggestions);
             } else if (!that.isBadQuery(q)) {
-                if (that.currentRequest) {
-                    that.currentRequest.abort();
-                }
+                that.abortAjax();
 
                 ajaxSettings = {
                     url: serviceUrl,
@@ -596,7 +580,7 @@
                 that.currentRequest = $.ajax(ajaxSettings).done(function (data) {
                     var result;
                     that.currentRequest = null;
-                    result = options.transformResult(data);
+                    result = options.transformResult(data, q);
                     that.processResponse(result, q, cacheKey);
                     options.onSearchComplete.call(that.element, q, result.suggestions);
                 }).fail(function (jqXHR, textStatus, errorThrown) {
@@ -608,7 +592,7 @@
         },
 
         isBadQuery: function (q) {
-            if (!this.options.preventBadQueries) {
+            if (!this.options.preventBadQueries){
                 return false;
             }
 
@@ -625,7 +609,13 @@
         },
 
         hide: function () {
-            var that = this;
+            var that = this,
+                container = $(that.suggestionsContainer);
+
+            if ($.isFunction(that.options.onHide) && that.visible) {
+                that.options.onHide.call(that.element, container);
+            }
+
             that.visible = false;
             that.selectedIndex = -1;
             clearInterval(that.onChangeInterval);
@@ -658,27 +648,23 @@
                 formatGroup = function (suggestion, index) {
                     var currentCategory = suggestion.data[groupBy];
 
-                    if (category === currentCategory) {
+                    if (category === currentCategory){
                         return '';
                     }
 
                     category = currentCategory;
 
                     return '<div class="autocomplete-group"><strong>' + category + '</strong></div>';
-                },
-                index;
+                };
 
-            if (options.triggerSelectOnValidInput) {
-                index = that.findSuggestionIndex(value);
-                if (index !== -1) {
-                    that.select(index);
-                    return;
-                }
+            if (options.triggerSelectOnValidInput && that.isExactMatch(value)) {
+                that.select(0);
+                return;
             }
 
             // Build suggestions inner HTML:
             $.each(that.suggestions, function (i, suggestion) {
-                if (groupBy) {
+                if (groupBy){
                     html += formatGroup(suggestion, value, i);
                 }
 
@@ -701,14 +687,14 @@
             if (options.autoSelectFirst) {
                 that.selectedIndex = 0;
                 container.scrollTop(0);
-                container.children().first().addClass(classSelected);
+                container.children('.' + className).first().addClass(classSelected);
             }
 
             that.visible = true;
             that.findBestHint();
         },
 
-        noSuggestions: function () {
+        noSuggestions: function() {
             var that = this,
                 container = $(that.suggestionsContainer),
                 noSuggestionsContainer = $(that.noSuggestionsContainer);
@@ -727,7 +713,7 @@
             that.visible = true;
         },
 
-        adjustContainerWidth: function () {
+        adjustContainerWidth: function() {
             var that = this,
                 options = that.options,
                 width,
@@ -780,17 +766,17 @@
             // If suggestions is string array, convert them to supported format:
             if (suggestions.length && typeof suggestions[0] === 'string') {
                 return $.map(suggestions, function (value) {
-                    return {value: value, data: null};
+                    return { value: value, data: null };
                 });
             }
 
             return suggestions;
         },
 
-        validateOrientation: function (orientation, fallback) {
+        validateOrientation: function(orientation, fallback) {
             orientation = $.trim(orientation || '').toLowerCase();
 
-            if ($.inArray(orientation, ['auto', 'bottom', 'top']) === -1) {
+            if($.inArray(orientation, ['auto', 'bottom', 'top']) === -1){
                 orientation = fallback;
             }
 
