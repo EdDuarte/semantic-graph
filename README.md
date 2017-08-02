@@ -7,7 +7,7 @@ It implements graph visualisation with GraphViz and data inference with SPARQL q
 Additionally, data is stored in Sesame triple store following a OWL ontology specification.
 
 
-# Description
+## Description
 
 Once Semantic Graph has been deployed and triples have been added to the triple store, you can use the Browse section to query any entity (subject or object) and find every semantic relationship associated with it, published using FOAF (Friend of a Friend), SKOS (Simple Knowledge Organization System) and Microformats Species standards.
 
@@ -18,7 +18,7 @@ Additionally, you can use the Graph section to query triples and observe a relat
 ![Screenshot2](screenshots/02.png)
 
 
-# Getting Started
+## Getting Started
 
 [Download the latest release](https://github.com/edduarte/semantic-graph/releases) and run the following command:
 
